@@ -1,109 +1,131 @@
-<!-- custom-order.html -->
+<!-- custom-order.html - Visual Custom Builder Version -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Order | Little Gem Story</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+    <title>Custom Design | Little Gem Story</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .builder-layout { display: grid; grid-template-columns: 1.5fr 1fr; gap: 40px; padding: 40px 10%; }
+        .builder-options { background: white; padding: 30px; border-radius: 8px; box-shadow: var(--shadow); }
+        .confirmation-box { background: #fff; padding: 30px; border-radius: 8px; border: 1px solid var(--gold); position: sticky; top: 120px; height: fit-content; }
+        .visual-choice-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 20px 0; }
+        .choice-item { border: 1px solid #eee; padding: 10px; text-align: center; cursor: pointer; border-radius: 4px; transition: 0.3s; }
+        .choice-item:hover, .choice-item.active { border-color: var(--gold); background: var(--bg-light); }
+        .choice-item img { width: 100%; border-radius: 2px; margin-bottom: 5px; }
+        .choice-item span { font-size: 0.8rem; display: block; }
+        .builder-step-title { font-family: var(--serif); font-size: 1.5rem; margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        
+        @media (max-width: 900px) {
+            .builder-layout { grid-template-columns: 1fr; }
+            .confirmation-box { position: static; }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="brand-logo">LITTLE GEM STORY</div>
         <nav class="nav-links">
             <a href="index.html">Home</a>
-            <a href="custom-crystal-bracelets.html">Custom Bracelets</a>
-            <a href="gemstone-jewelry.html">Gemstone Jewelry</a>
-            <a href="birth-date-element-design.html">Element Design</a>
-            <a href="gift-guide.html">Gift Guide</a>
-            <a href="custom-order.html" class="btn btn-outline" style="padding: 5px 15px;">Inquiry</a>
+            <a href="custom-order.html">Custom Design</a>
+            <a href="gemstone-jewelry.html">Collections</a>
+            <a href="birth-date-element-design.html">About</a>
         </nav>
-        <div class="mobile-menu-btn">☰</div>
+        <div class="header-icons"><span>🔍</span> <span>👤</span> <span>👜</span></div>
     </header>
 
-    <section>
-        <h2 class="section-title">Start Your Custom Design</h2>
-        <p style="text-align: center; margin-bottom: 40px;">Tell us about yourself, and we will create a piece that resonates with your energy.</p>
-        
-        <form id="inquiryForm">
-            <div class="form-group">
-                <label>Name</label>
-                <input type="text" name="name" required placeholder="Your Full Name">
+    <div class="builder-layout">
+        <div class="builder-options">
+            <h2 class="brand-logo" style="font-size: 2.5rem; margin-bottom: 10px;">Create Your Personal Energy Talisman</h2>
+            <p style="color: #888;">Craft a unique piece of jewelry aligned with your intentions.</p>
+
+            <div class="builder-step-title">Step 1: Select Intention</div>
+            <div class="visual-choice-grid">
+                <div class="choice-item active"><span>💗 Love</span></div>
+                <div class="choice-item"><span>💰 Wealth</span></div>
+                <div class="choice-item"><span>🛡️ Protection</span></div>
+                <div class="choice-item"><span>🌿 Healing</span></div>
+                <div class="choice-item"><span>⚖️ Balance</span></div>
             </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" name="email" required placeholder="Your Email Address">
+
+            <div class="builder-step-title">Step 2: Select Crystals</div>
+            <div class="visual-choice-grid" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="choice-item active">
+                    <img src="https://images.unsplash.com/photo-1569333911003-9976317b9f39?q=80&w=200" alt="Rose Quartz">
+                    <strong>Rose Quartz</strong>
+                    <span style="display:block; font-size: 0.7rem; color: #666;">Unconditional love and peace.</span>
+                </div>
+                <div class="choice-item">
+                    <img src="https://images.unsplash.com/photo-1599643477109-19597148c903?q=80&w=200" alt="Amethyst">
+                    <strong>Amethyst</strong>
+                    <span style="display:block; font-size: 0.7rem; color: #666;">Calm and spiritual growth.</span>
+                </div>
+                <div class="choice-item">
+                    <img src="https://images.unsplash.com/photo-1615484477201-9f4953340fab?q=80&w=200" alt="Citrine">
+                    <strong>Citrine</strong>
+                    <span style="display:block; font-size: 0.7rem; color: #666;">Success and abundance.</span>
+                </div>
+                <div class="choice-item">
+                    <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?q=80&w=200" alt="Clear Quartz">
+                    <strong>Clear Quartz</strong>
+                    <span style="display:block; font-size: 0.7rem; color: #666;">Clarity and energy amplification.</span>
+                </div>
             </div>
-            <div class="form-group">
-                <label>Product Type</label>
-                <select name="product_type">
-                    <option value="crystal_bracelet">Custom Crystal Bracelet</option>
-                    <option value="gemstone_jewelry">Gemstone Jewelry Collection</option>
-                </select>
+
+            <div class="builder-step-title">Step 3: Select Accents</div>
+            <div class="visual-choice-grid" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="choice-item active">
+                    <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?q=80&w=200" alt="Charm">
+                    <strong>Celestial Moon Charm</strong>
+                    <span style="display:block; font-size: 0.7rem; color: #666;">Sterling Silver</span>
+                </div>
+                <div class="choice-item">
+                    <img src="https://images.unsplash.com/photo-1599643478191-20925e0a6e8b?q=80&w=200" alt="Tassel">
+                    <strong>Silk Tassel</strong>
+                    <span style="display:block; font-size: 0.7rem; color: #666;">Handmade Soft Silk</span>
+                </div>
             </div>
-            <div class="form-group">
-                <label>Birth Date</label>
-                <input type="date" name="birth_date">
+
+            <div class="builder-step-title">Step 4: Wrist Size</div>
+            <div class="visual-choice-grid">
+                <div class="choice-item"><span>XS</span></div>
+                <div class="choice-item active"><span>S</span></div>
+                <div class="choice-item"><span>M</span></div>
+                <div class="choice-item"><span>L</span></div>
+                <div class="choice-item"><span>Custom</span></div>
             </div>
-            <div class="form-group">
-                <label>Zodiac Sign</label>
-                <input type="text" name="zodiac" placeholder="e.g. Scorpio">
+            
+            <div style="margin-top: 30px;">
+                <label style="display:block; font-size: 0.8rem; text-transform:uppercase; margin-bottom:10px;">Additional Notes</label>
+                <textarea style="width:100%; padding:10px; border:1px solid #eee; border-radius:4px;" rows="4" placeholder="Any special requests or specific birth info..."></textarea>
             </div>
-            <div class="form-group">
-                <label>Element Preference</label>
-                <select name="element">
-                    <option value="not_sure">Help me decide</option>
-                    <option value="water">Water</option>
-                    <option value="fire">Fire</option>
-                    <option value="earth">Earth</option>
-                    <option value="air">Air</option>
-                </select>
+        </div>
+
+        <div class="confirmation-box">
+            <h3 style="font-family: var(--serif); font-size: 1.8rem; margin-bottom: 20px;">Design Confirmation</h3>
+            <div style="margin: 20px 0; font-size: 0.9rem; border-bottom: 1px solid #eee; padding-bottom: 20px;">
+                <p><strong>Intention:</strong> Love</p>
+                <p><strong>Wrist size:</strong> S (15cm)</p>
+                <div style="margin-top: 15px; background: var(--bg-light); padding: 15px; border-radius: 4px;">
+                    <p style="font-size: 0.8rem; color: var(--gold); text-transform: uppercase;">Selected Elements:</p>
+                    <ul style="margin-top: 5px; color: #666; font-size: 0.85rem;">
+                        <li>Rose Quartz (Natural Gemstones)</li>
+                        <li>Celestial Moon Charm (925 Silver)</li>
+                    </ul>
+                </div>
             </div>
-            <div class="form-group">
-                <label>Primary Intention</label>
-                <input type="text" name="intention" placeholder="e.g. Peace, Abundance, Protection">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                <span style="font-size: 0.9rem; color: #888;">Estimated Price:</span>
+                <span style="font-size: 1.8rem; font-family: var(--serif);">$128.00</span>
             </div>
-            <div class="form-group">
-                <label>Color Preference</label>
-                <input type="text" name="color" placeholder="e.g. Soft Blues and Clear Quartz">
-            </div>
-            <div class="form-group">
-                <label>Wrist Size</label>
-                <input type="text" name="wrist_size" placeholder="e.g. 15cm / Tight Fit">
-            </div>
-            <div class="form-group">
-                <label>Charm Option</label>
-                <input type="text" name="charm" placeholder="e.g. Silver Moon, Initial G">
-            </div>
-            <div class="form-group">
-                <label>Gift Occasion</label>
-                <input type="text" name="occasion" placeholder="e.g. Birthday, Anniversary">
-            </div>
-            <div class="form-group">
-                <label>Quantity</label>
-                <input type="number" name="quantity" value="1" min="1">
-            </div>
-            <div class="form-group">
-                <label>Budget Range (USD)</label>
-                <select name="budget">
-                    <option value="50-100">$50 - $100</option>
-                    <option value="100-200">$100 - $200</option>
-                    <option value="200plus">$200+</option>
-                </select>
-            </div>
-            <div class="form-group full-width">
-                <label>Message / Special Requests</label>
-                <textarea name="message" rows="4"></textarea>
-            </div>
-            <div class="full-width" style="text-align: center;">
-                <button type="submit" class="btn">Submit Inquiry</button>
-            </div>
-        </form>
-    </section>
+            <button class="btn-primary" style="width: 100%;" id="submitOrder">Submit Custom Design</button>
+            <p style="font-size: 0.7rem; text-align: center; margin-top: 15px; color: #aaa;">Free Worldwide Shipping | 30-Day Returns</p>
+        </div>
+    </div>
 
     <footer>
-        <p>&copy; 2026 Little Gem Story. Meaningful Jewelry for Your Unique Story.</p>
+        <p>&copy; 2026 Little Gem Story. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
