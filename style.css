@@ -1,0 +1,207 @@
+/* style.css */
+:root {
+    --bg-color: #FDFBF7; /* 奶油白 */
+    --primary-gold: #D4AF37; /* 浅金 */
+    --text-dark: #4A4A4A; /* 深灰 */
+    --accent-pink: #F4E1D2; /* 裸粉 */
+    --accent-purple: #E8DFF5; /* 淡紫 */
+    --white: #FFFFFF;
+    --serif-font: 'Playfair Display', serif;
+    --sans-font: 'Montserrat', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-dark);
+    font-family: var(--sans-font);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, .brand-logo {
+    font-family: var(--serif-font);
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header & Nav */
+header {
+    background: rgba(253, 251, 247, 0.95);
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+}
+
+.brand-logo {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: var(--primary-gold);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a:hover {
+    color: var(--primary-gold);
+}
+
+.mobile-menu-btn {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 5%;
+    text-align: center;
+    background: linear-gradient(to bottom, var(--accent-pink), var(--bg-color));
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 35px;
+    border: 1px solid var(--primary-gold);
+    background: var(--primary-gold);
+    color: white;
+    border-radius: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--primary-gold);
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background: var(--text-dark);
+    border-color: var(--text-dark);
+    color: white;
+}
+
+/* Sections Styling */
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: var(--primary-gold);
+    margin: 20px auto;
+}
+
+/* Grid Layouts */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: var(--white);
+    padding: 20px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.card:hover {
+    border-color: var(--accent-pink);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Forms */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+/* Footer */
+footer {
+    padding: 50px 10%;
+    background: #F4F4F4;
+    text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .mobile-menu-btn { display: block; }
+    .hero h1 { font-size: 2.2rem; }
+    form { grid-template-columns: 1fr; }
+    .full-width { grid-column: span 1; }
+}
