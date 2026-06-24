@@ -1,24 +1,14 @@
-# Auralis Jewelry Static Website
+# Auralis Jewelry Site V2
 
-This is a premium static independent website package for personalized crystal bracelets and gemstone jewelry.
+Static quote-based independent site for personalized crystal bead bracelets and gemstone jewelry.
 
-## Files
-- index.html
-- custom-bracelets.html
-- gemstone-jewelry.html
-- element-design.html
-- gift-guide.html
-- custom-order.html
-- styles.css
-- assets/ SVG image assets
+## V2 changes
+- Hero section changed to split layout so the image does not crop or sit awkwardly.
+- Removed hanging coin/star/moon charms from bracelet visuals.
+- Replaced charm language with bead style / spacer / accent language.
+- Removed all visible fixed prices from public pages.
+- Product cards now use custom quote and request design CTAs.
+- Kept old redirect files for previous page URLs.
 
-## Deployment
-Upload all files and the assets folder to the root of your GitHub repository. Cloudflare Pages/Workers deployment should rebuild automatically.
-
-## Important before promotion
-The custom-order.html form is a visual/static form. Replace the Formspree action URL:
-https://formspree.io/f/YOUR_FORM_ID
-with your real Formspree ID, or replace the form with Tally/Jotform embed code.
-
-## Brand name
-Default brand: Auralis Jewelry. You can globally replace it with another brand name.
+## Form setup
+Replace `https://formspree.io/f/YOUR_FORM_ID` inside `custom-order.html` with a real Formspree endpoint, or replace the form area with Tally/Jotform embed code.
