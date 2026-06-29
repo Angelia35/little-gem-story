@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Element-Inspired Design | Auralis Jewelry</title>
-<meta name="description" content="Try the Element Style Finder: enter your birth date and MBTI to receive a five-element inspired crystal bracelet design direction.">
+<meta name="description" content="Try the Element Style Finder: select your birth date and MBTI to receive a five-element inspired crystal bracelet design direction.">
 <link rel="stylesheet" href="styles.css">
 <style>
 :root{--cream:#fffaf4;--paper:#fffdf9;--soft:#f6ebe4;--blush:#ead4cf;--lav:#eee6f7;--gold:#b78a52;--gold-soft:#dbc09a;--ink:#332922;--muted:#786a62;--line:#e8d9c9;--shadow:0 24px 70px rgba(89,58,39,.12)}
@@ -38,7 +38,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 .finder-panel,.result-panel{background:#fff;border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);padding:34px}
 .finder-panel h2,.result-panel h2{font-size:40px;line-height:1.04;margin:0 0 12px}
 .finder-panel p,.result-panel p{color:var(--muted)}
-.form-row{margin:20px 0}.form-row label{display:block;font-weight:800;color:#5e514a;margin-bottom:8px}.form-row input,.form-row select{width:100%;border:1px solid #decfc1;border-radius:16px;padding:14px 15px;background:#fffaf6;font:inherit;color:var(--ink)}
+.form-row{margin:20px 0}.form-row label{display:block;font-weight:800;color:#5e514a;margin-bottom:8px}.form-row input,.form-row select{width:100%;border:1px solid #decfc1;border-radius:16px;padding:14px 15px;background:#fffaf6;font:inherit;color:var(--ink)}.date-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px}.date-grid select{width:100%;border:1px solid #decfc1;border-radius:16px;padding:14px 15px;background:#fffaf6;font:inherit;color:var(--ink)}
 .finder-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.finder-actions .btn{min-width:160px}
 .result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0}.result-card{background:#fffaf6;border:1px solid #eadbcb;border-radius:22px;padding:18px}.result-card span{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:900;color:var(--gold);margin-bottom:6px}.result-card strong{font-family:Georgia,"Times New Roman",serif;font-size:25px;font-weight:500}
 .palette-card{background:linear-gradient(135deg,#fff7ee,#f8eee9);border:1px solid #eadbcb;border-radius:24px;padding:22px;margin-top:16px}
@@ -73,7 +73,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     <div>
       <div class="eyebrow">Five-element inspired design</div>
       <h1>Find Your Element-Inspired Crystal Direction</h1>
-      <p>Enter your birth date and MBTI to receive a simple five-element inspired bracelet direction. The result is used as a design starting point for color, stone mood and gifting style.</p>
+      <p>Select your birth date and MBTI to receive a simple five-element direction, zodiac result and suggested support element. The result is used as a design starting point for color, stone mood and gifting style.</p>
       <div class="hero-actions"><a class="btn primary" href="#style-finder">Try the Finder</a><a class="btn" href="#palettes">View Element Palettes</a></div>
       <div class="badges"><span>Wood · Fire · Earth · Metal · Water</span><span>Zodiac + MBTI style direction</span><span>Design inspiration only</span><span>Quote before payment</span></div>
     </div>
@@ -86,15 +86,25 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     <div class="section-title">
       <div class="eyebrow">Interactive tool</div>
       <h2>Element Style Finder</h2>
-      <p>A light interactive window for buyers: birth date gives a Western zodiac and a simplified five-element direction; MBTI adds a style tone. The final bracelet still needs manual quote confirmation.</p>
+      <p>A light interactive window for buyers: birth date gives a Western zodiac, simplified five-element direction and suggested support element; MBTI adds a style tone. The final bracelet still needs manual quote confirmation.</p>
     </div>
     <div class="finder-wrap">
       <div class="finder-panel">
         <h2>Tell Us Your Basics</h2>
         <p>Use this as a first design inspiration. Customers can copy the result and paste it into the custom request form.</p>
         <div class="form-row">
-          <label for="birthdate">Birth Date</label>
-          <input type="date" id="birthdate">
+          <label>Birth Date</label>
+          <div class="date-grid">
+            <select id="birthYear" aria-label="Birth year">
+              <option value="">Year</option>
+            </select>
+            <select id="birthMonth" aria-label="Birth month">
+              <option value="">Month</option>
+            </select>
+            <select id="birthDay" aria-label="Birth day">
+              <option value="">Day</option>
+            </select>
+          </div>
         </div>
         <div class="form-row">
           <label for="mbti">MBTI Type</label>
@@ -110,7 +120,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
           <button class="btn primary" type="button" onclick="findStyle()">Find My Direction</button>
           <button class="btn" type="button" onclick="resetFinder()">Reset</button>
         </div>
-        <div class="disclaimer">For a precise traditional BaZi / lunar calendar reading, birth time and more advanced conversion would be required. This website tool uses a simplified birth-year element for jewelry design inspiration only.</div>
+        <div class="disclaimer">For an accurate traditional BaZi reading or exact “missing element” analysis, birth time, lunar calendar conversion and solar terms would be required. This tool provides a simplified design-oriented Five Element direction only.</div>
       </div>
       <div class="result-panel">
         <h2>Your Design Direction</h2>
@@ -118,9 +128,11 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
         <div id="resultBox" style="display:none">
           <div class="result-grid">
             <div class="result-card"><span>Western Zodiac</span><strong id="zodiacOut">-</strong></div>
-            <div class="result-card"><span>Element Direction</span><strong id="elementOut">-</strong></div>
+            <div class="result-card"><span>Your Element</span><strong id="elementOut">-</strong></div>
+            <div class="result-card"><span>Estimated Missing / Support</span><strong id="missingOut">-</strong></div>
             <div class="result-card"><span>MBTI Tone</span><strong id="mbtiOut">-</strong></div>
             <div class="result-card"><span>Style Mood</span><strong id="moodOut">-</strong></div>
+            <div class="result-card"><span>Design Focus</span><strong id="focusOut">-</strong></div>
           </div>
           <div class="palette-card">
             <h3 id="paletteTitle">Recommended Palette</h3>
@@ -187,11 +199,18 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 
 <script>
 const elementData = {
-  Wood:{mood:"Growth & Renewal", palette:"Fresh green, soft botanical and natural stone direction.", stones:["Green Aventurine","Jade Tone","Green Fluorite","Clear Quartz"]},
-  Fire:{mood:"Warmth & Presence", palette:"Warm gold, red accent and bright crystal direction.", stones:["Citrine","Garnet","Red Agate","Clear Quartz"]},
-  Earth:{mood:"Grounded Balance", palette:"Warm neutral, yellow, beige and softly grounded direction.", stones:["Tiger Eye","Yellow Jasper","Citrine","Smoky Quartz"]},
-  Metal:{mood:"Clean Refinement", palette:"White, clear, silver and minimal crystal direction.", stones:["Clear Quartz","Moonstone","White Agate","Hematite Accent"]},
-  Water:{mood:"Calm Depth", palette:"Deep black, smoky, blue and cool-toned direction.", stones:["Obsidian","Smoky Quartz","Labradorite","Aquamarine Tone"]}
+  Wood:{mood:"Growth & Renewal", focus:"Fresh green style", palette:"Fresh green, soft botanical and natural stone direction.", stones:["Green Aventurine","Jade Tone","Green Fluorite","Clear Quartz"]},
+  Fire:{mood:"Warmth & Presence", focus:"Warm bright style", palette:"Warm gold, red accent and bright crystal direction.", stones:["Citrine","Garnet","Red Agate","Clear Quartz"]},
+  Earth:{mood:"Grounded Balance", focus:"Warm neutral style", palette:"Warm neutral, yellow, beige and softly grounded direction.", stones:["Tiger Eye","Yellow Jasper","Citrine","Smoky Quartz"]},
+  Metal:{mood:"Clean Refinement", focus:"Clear minimal style", palette:"White, clear, silver and minimal crystal direction.", stones:["Clear Quartz","Moonstone","White Agate","Hematite Accent"]},
+  Water:{mood:"Calm Depth", focus:"Deep cool style", palette:"Deep black, smoky, blue and cool-toned direction.", stones:["Obsidian","Smoky Quartz","Labradorite","Aquamarine Tone"]}
+};
+const supportElement = {
+  Wood:"Water",
+  Fire:"Wood",
+  Earth:"Fire",
+  Metal:"Earth",
+  Water:"Metal"
 };
 const mbtiTone = {
   analyst:{types:["INTJ","INTP","ENTJ","ENTP"], tone:"Minimal · structured", extra:"clean lines, clear stones and a refined palette"},
@@ -199,6 +218,20 @@ const mbtiTone = {
   guardian:{types:["ISTJ","ISFJ","ESTJ","ESFJ"], tone:"Classic · stable", extra:"balanced colors, wearable stones and timeless styling"},
   explorer:{types:["ISTP","ISFP","ESTP","ESFP"], tone:"Natural · expressive", extra:"mixed stones, texture and a more personal visual rhythm"}
 };
+function populateDateSelects(){
+  const year=document.getElementById("birthYear");
+  const month=document.getElementById("birthMonth");
+  const day=document.getElementById("birthDay");
+  const currentYear=new Date().getFullYear();
+  for(let y=currentYear;y>=1940;y--){
+    year.insertAdjacentHTML("beforeend",`<option value="${y}">${y}</option>`);
+  }
+  const months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  months.forEach((name,i)=>month.insertAdjacentHTML("beforeend",`<option value="${i+1}">${name}</option>`));
+  for(let d=1;d<=31;d++){
+    day.insertAdjacentHTML("beforeend",`<option value="${d}">${d}</option>`);
+  }
+}
 function getZodiac(m,d){
   const signs=[
     ["Capricorn",1,19],["Aquarius",2,18],["Pisces",3,20],["Aries",4,19],["Taurus",5,20],["Gemini",6,20],
@@ -219,28 +252,34 @@ function getMbtiTone(type){
   return {tone:"Open · flexible", extra:"a flexible palette based on color preference and gift purpose"};
 }
 function findStyle(){
-  const dateVal=document.getElementById("birthdate").value;
+  const y=parseInt(document.getElementById("birthYear").value,10);
+  const m=parseInt(document.getElementById("birthMonth").value,10);
+  const d=parseInt(document.getElementById("birthDay").value,10);
   const mbti=document.getElementById("mbti").value;
-  if(!dateVal){ alert("Please enter a birth date first."); return; }
-  const date=new Date(dateVal+"T00:00:00");
-  const y=date.getFullYear(), m=date.getMonth()+1, d=date.getDate();
+  if(!y || !m || !d){ alert("Please select year, month and day first."); return; }
   const zodiac=getZodiac(m,d);
   const element=getElementByYear(y);
+  const missing=supportElement[element];
   const data=elementData[element];
+  const supportData=elementData[missing];
   const tone=getMbtiTone(mbti);
   document.getElementById("zodiacOut").textContent=zodiac;
   document.getElementById("elementOut").textContent=element;
+  document.getElementById("missingOut").textContent=missing;
   document.getElementById("mbtiOut").textContent=mbti || "Not selected";
   document.getElementById("moodOut").textContent=data.mood;
-  document.getElementById("paletteTitle").textContent=element+" Element Palette";
-  document.getElementById("paletteText").textContent=data.palette+" Based on your MBTI style tone, we would keep the design "+tone.extra+".";
-  document.getElementById("stoneTags").innerHTML=data.stones.map(s=>"<span>"+s+"</span>").join("");
+  document.getElementById("focusOut").textContent=supportData.focus;
+  document.getElementById("paletteTitle").textContent=element+" Element · Support with "+missing;
+  document.getElementById("paletteText").textContent="Your simplified year element is "+element+". As a design balance, we suggest adding "+missing+"-inspired colors or stones. "+supportData.palette+" Based on your MBTI style tone, we would keep the design "+tone.extra+".";
+  document.getElementById("stoneTags").innerHTML=supportData.stones.map(s=>"<span>"+s+"</span>").join("");
   document.getElementById("emptyText").style.display="none";
   document.getElementById("resultBox").style.display="block";
   document.getElementById("copyNote").style.display="none";
 }
 function resetFinder(){
-  document.getElementById("birthdate").value="";
+  document.getElementById("birthYear").value="";
+  document.getElementById("birthMonth").value="";
+  document.getElementById("birthDay").value="";
   document.getElementById("mbti").value="";
   document.getElementById("emptyText").style.display="block";
   document.getElementById("resultBox").style.display="none";
@@ -249,13 +288,16 @@ function resetFinder(){
 function copyBrief(){
   const zodiac=document.getElementById("zodiacOut").textContent;
   const element=document.getElementById("elementOut").textContent;
+  const missing=document.getElementById("missingOut").textContent;
   const mbti=document.getElementById("mbtiOut").textContent;
   const mood=document.getElementById("moodOut").textContent;
+  const focus=document.getElementById("focusOut").textContent;
   const palette=document.getElementById("paletteText").textContent;
   const stones=[...document.querySelectorAll("#stoneTags span")].map(s=>s.textContent).join(", ");
-  const brief=`Element Style Finder Result: Zodiac: ${zodiac}; Element direction: ${element}; MBTI: ${mbti}; Mood: ${mood}; Palette: ${palette}; Suggested stones: ${stones}.`;
+  const brief=`Element Style Finder Result: Zodiac: ${zodiac}; Five Element: ${element}; Suggested support / estimated missing element: ${missing}; MBTI: ${mbti}; Mood: ${mood}; Design focus: ${focus}; Palette: ${palette}; Suggested stones: ${stones}.`;
   navigator.clipboard.writeText(brief).then(()=>{document.getElementById("copyNote").style.display="block";});
 }
+document.addEventListener("DOMContentLoaded", populateDateSelects);
 </script>
 </body>
 </html>
