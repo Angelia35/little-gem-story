@@ -436,6 +436,55 @@
 .floating-contact.is-open .floating-contact-button span{font-size:24px;}
 @media(max-width:560px){.floating-contact{right:16px;bottom:16px;}.floating-contact-panel{width:min(235px,calc(100vw - 32px));}}
 </style>
+
+<style id="process-card-final-fix">
+.process-card{
+  position:relative !important;
+  padding:88px 24px 26px !important;
+  min-height:196px !important;
+  overflow:hidden !important;
+}
+.process-number{
+  position:absolute !important;
+  left:22px !important;
+  top:22px !important;
+  transform:none !important;
+  width:48px !important;
+  height:48px !important;
+  border-radius:50% !important;
+  display:grid !important;
+  place-items:center !important;
+  font-size:28px !important;
+  line-height:1 !important;
+  z-index:2 !important;
+  box-shadow:0 6px 16px rgba(189,139,74,.22) !important;
+}
+.process-icon{
+  margin:0 0 12px 62px !important;
+  line-height:1 !important;
+}
+.process-card h3{
+  margin-top:0 !important;
+}
+@media(max-width:620px){
+  .process-card{padding:84px 22px 24px !important;}
+}
+</style>
+
+
+<style id="product-picture-fit-fix">
+.home-product-card picture,
+.home-product-card picture img{
+  display:block;
+  width:100%;
+  height:210px;
+}
+.home-product-card picture img{
+  object-fit:cover;
+  background:#fbf2eb;
+}
+</style>
+
 </head>
 
 <body>
@@ -515,7 +564,10 @@
       </div>
       <div class="home-product-grid">
         <article class="home-product-card">
-          <img src="/assets/crystal-pendant-soft.png" alt="Soft crystal bracelet with pendant detail">
+          <picture>
+            <source srcset="/assets/soft-light-pendant-clear.webp" type="image/webp">
+            <img src="/assets/soft-light-pendant-clear.jpg" alt="Clear crystal bracelet with warm brown charm on a soft beige surface">
+          </picture>
           <div class="home-product-info"><h3>Soft Light Pendant</h3><p>Clear and blush tones with a decorative focal detail.</p><a class="quote-pill" href="/custom-order">Custom Quote</a></div>
         </article>
         <article class="home-product-card">
