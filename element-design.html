@@ -1,6 +1,261 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Element-Inspired Design | Auralis Jewelry</title><meta name="description" content="Five-element inspired crystal bracelet design using Wood, Fire, Earth, Metal and Water as visual color directions."><link rel="stylesheet" href="styles.css"></head><body>
-<header class="topbar"><div class="container nav"><a class="logo" href="index.html">Auralis Jewelry</a><nav class="menu"><a href="index.html">Home</a><a href="custom-bracelets.html">Custom Bracelets</a><a href="gemstone-jewelry.html">Gemstone Jewelry</a><a class="active" href="element-design.html">Element Design</a><a href="gift-guide.html">Gift Guide</a><a href="custom-order.html">Custom Order</a></nav><div class="nav-icons"><span>⌕</span><span>♡</span><span>✉</span></div><button class="hamburger">☰</button></div></header>
-<main><section class="page-hero"><div class="container"><div><div class="eyebrow">Five-element inspired</div><h1>Birth Date & Element Design</h1><p>Use Wood, Fire, Earth, Metal and Water as color and material inspiration. This is a design framework, not a medical or guaranteed outcome claim.</p><a class="btn primary" href="custom-order.html">Help Me Choose</a></div><img src="assets/balance.svg" alt="Five element inspired crystal color palette"></div></section>
-<section class="section"><div class="container"><div class="section-title"><h2>Five Element Palettes</h2><p>Choose one direction, or select “Help Me Decide” in the custom form.</p></div><div class="energy-grid"><article class="energy-card"><img src="assets/product-green.svg" alt="Wood element green crystal palette"><h3>Wood</h3><p>Fresh greens, growth, renewal and natural movement.</p></article><article class="energy-card"><img src="assets/citrine.svg" alt="Fire element warm crystal palette"><h3>Fire</h3><p>Warm gold, red accents, brightness and presence.</p></article><article class="energy-card"><img src="assets/rose-quartz.svg" alt="Earth element soft stone palette"><h3>Earth</h3><p>Soft beige, rose and grounding natural tones.</p></article><article class="energy-card"><img src="assets/product-moonlight.svg" alt="Metal element clear crystal palette"><h3>Metal</h3><p>Clear crystal, pearl white and refined neutral styling.</p></article><article class="energy-card"><img src="assets/labradorite.svg" alt="Water element blue grey crystal palette"><h3>Water</h3><p>Blue, grey, moonstone and fluid cool shades.</p></article></div></div></section>
-<section class="section soft-bg"><div class="container split"><div class="panel"><h2>How We Use Your Birth Date</h2><p>Your birth date helps us start a symbolic design direction. We then combine your color preference, wrist size, bead style and gift occasion to make the design feel more personal.</p></div><div class="panel"><h2>What We Avoid</h2><p>We do not promise luck, health results or life changes. The value is emotional, visual and symbolic: a beautiful piece that carries meaning for the wearer.</p></div></div></section></main>
-<footer class="footer"><div class="container copyright"><span>© 2026 Auralis Jewelry.</span><span><a href="custom-order.html">Start Custom Design</a></span></div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Element-Inspired Design | Auralis Jewelry</title>
+<meta name="description" content="Try the Element Style Finder: enter your birth date and MBTI to receive a five-element inspired crystal bracelet design direction.">
+<link rel="stylesheet" href="styles.css">
+<style>
+:root{--cream:#fffaf4;--paper:#fffdf9;--soft:#f6ebe4;--blush:#ead4cf;--lav:#eee6f7;--gold:#b78a52;--gold-soft:#dbc09a;--ink:#332922;--muted:#786a62;--line:#e8d9c9;--shadow:0 24px 70px rgba(89,58,39,.12)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,"Helvetica Neue",Arial,sans-serif;line-height:1.55}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{width:min(1180px,calc(100% - 40px));margin:0 auto}
+h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.02em}
+.topbar{position:sticky;top:0;z-index:40;height:76px;background:rgba(255,250,244,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(232,217,201,.78)}
+.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-size:31px;white-space:nowrap}.logo:before{content:"✦";font-size:14px;color:var(--gold);margin-right:8px}
+.menu{display:flex;align-items:center;gap:26px;font-size:14px;color:#493d37}.menu a{position:relative}.menu a.active,.menu a:hover{color:var(--gold)}.menu a.active:after{content:"";position:absolute;left:0;right:0;bottom:-11px;height:2px;background:var(--gold)}
+.nav-icons{display:flex;gap:14px;color:#3e342f;font-size:18px}.hamburger{display:none;border:0;background:transparent;font-size:27px;color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 22px;border:1px solid var(--gold-soft);font-weight:700;font-size:14px;background:rgba(255,255,255,.42);color:var(--ink);cursor:pointer}
+.btn.primary{background:linear-gradient(135deg,#caa06c,#ad7e44);color:#fff;border-color:transparent;box-shadow:0 14px 28px rgba(183,138,82,.22)}
+.btn:hover,.mini-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(82,55,40,.12)}
+.mini-btn{display:inline-flex;border:1px solid #d6b780;border-radius:999px;padding:9px 13px;background:#fffaf4;font-size:12px;font-weight:800;color:#6d5230}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.section{padding:80px 0}.soft-bg{background:linear-gradient(180deg,#fffaf4,#f7eee8)}
+.section-title{text-align:center;margin:0 0 36px}.section-title h2{font-size:44px;line-height:1.04;margin:6px 0 10px}.section-title p{max-width:760px;margin:0 auto;color:var(--muted)}
+.element-hero{padding:86px 0 82px;background:radial-gradient(circle at 78% 16%,rgba(238,230,247,.7),transparent 26%),linear-gradient(135deg,#fff8ef 0%,#f7e8df 54%,#ead4cf 100%);border-bottom:1px solid var(--line)}
+.element-hero .container{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,520px);gap:58px;align-items:center}
+.element-hero h1{font-size:64px;line-height:1;margin:12px 0 18px;max-width:720px}.element-hero p{font-size:18px;color:var(--muted);max-width:650px;margin:0 0 28px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.badges span{border:1px solid rgba(183,138,82,.28);background:rgba(255,255,255,.48);border-radius:999px;padding:9px 13px;font-size:12px;color:#715f54;font-weight:800}
+.visual{min-height:430px;background:rgba(255,255,255,.55);border:1px solid rgba(232,217,201,.9);border-radius:38px;box-shadow:var(--shadow);padding:22px;display:grid;place-items:center;overflow:hidden;position:relative}
+.visual:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.54);top:22px;left:48px}.visual img{position:relative;z-index:1;width:100%;max-height:380px;object-fit:contain;filter:drop-shadow(0 22px 32px rgba(82,55,40,.12))}.visual small{position:relative;z-index:1;font-family:Georgia,"Times New Roman",serif;color:var(--muted);font-size:18px}
+
+/* Interactive finder */
+.finder-wrap{display:grid;grid-template-columns:minmax(360px,500px) 1fr;gap:32px;align-items:stretch}
+.finder-panel,.result-panel{background:#fff;border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);padding:34px}
+.finder-panel h2,.result-panel h2{font-size:40px;line-height:1.04;margin:0 0 12px}
+.finder-panel p,.result-panel p{color:var(--muted)}
+.form-row{margin:20px 0}.form-row label{display:block;font-weight:800;color:#5e514a;margin-bottom:8px}.form-row input,.form-row select{width:100%;border:1px solid #decfc1;border-radius:16px;padding:14px 15px;background:#fffaf6;font:inherit;color:var(--ink)}
+.finder-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.finder-actions .btn{min-width:160px}
+.result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0}.result-card{background:#fffaf6;border:1px solid #eadbcb;border-radius:22px;padding:18px}.result-card span{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:900;color:var(--gold);margin-bottom:6px}.result-card strong{font-family:Georgia,"Times New Roman",serif;font-size:25px;font-weight:500}
+.palette-card{background:linear-gradient(135deg,#fff7ee,#f8eee9);border:1px solid #eadbcb;border-radius:24px;padding:22px;margin-top:16px}
+.palette-card h3{font-size:28px;margin:0 0 8px}.palette-card p{margin:0 0 12px}.stone-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.stone-tags span{font-size:12px;font-weight:800;color:#6d5230;border:1px solid #d8b77a;border-radius:999px;padding:7px 10px;background:#fff}
+.disclaimer{font-size:12px;color:#8d7f76;background:#fff7ea;border:1px solid #e1c492;border-radius:18px;padding:14px;margin-top:18px}
+.copy-note{display:none;color:var(--gold);font-weight:800;font-size:13px;margin-top:10px}
+
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.panel{background:#fff;border:1px solid var(--line);border-radius:30px;padding:34px;box-shadow:0 10px 28px rgba(82,55,40,.06)}.panel h2{font-size:40px;line-height:1.05;margin:0 0 14px}.panel p{color:var(--muted);margin:0 0 14px}.note{background:#fff7ea;border:1px solid #e1c492;color:#66533a;border-radius:20px;padding:18px;margin-top:18px;font-size:14px}
+.element-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}.element-card{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 10px 28px rgba(82,55,40,.06)}.element-card img{width:100%;height:210px;object-fit:contain;background:#fbf2eb;padding:18px}.element-card div{padding:20px}.element-card h3{font-size:26px;margin:0 0 8px}.element-card p{font-size:14px;color:var(--muted);margin:0 0 14px}.palette{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#8b7b6f;font-weight:900}
+.content-block{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);padding:34px}.content-block img{width:100%;height:360px;object-fit:contain;border-radius:26px;background:#fbf2eb;padding:16px}.content-block h2{font-size:46px;line-height:1.05;margin:0 0 14px}.content-block p{color:var(--muted);margin:0 0 14px}
+.examples{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.example{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px 24px;box-shadow:0 10px 28px rgba(82,55,40,.06)}.example h3{font-size:23px;margin:0 0 8px}.example p{color:var(--muted);margin:0}
+.request{text-align:center;background:linear-gradient(135deg,#fff,#fff7ee);border:1px solid var(--line);border-radius:34px;padding:46px 26px;box-shadow:var(--shadow)}.request h2{font-size:44px;margin:0 0 10px}.request p{color:var(--muted);max-width:720px;margin:0 auto 22px}
+.footer{padding:48px 0 28px;background:#f5ece4;border-top:1px solid var(--line)}.copyright{padding-top:22px;color:#8a7b72;font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:1080px){.element-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:980px){.menu,.nav-icons{display:none}.hamburger{display:block}.topbar{height:68px}.logo{font-size:27px}.element-hero .container,.finder-wrap,.info-grid,.content-block{grid-template-columns:1fr}.element-hero h1{font-size:50px}.visual{min-height:360px}.examples{grid-template-columns:1fr}}
+@media(max-width:560px){.container{width:min(100% - 28px,1180px)}.section{padding:54px 0}.element-hero{padding:54px 0 56px}.element-hero h1{font-size:40px}.element-grid,.result-grid{grid-template-columns:1fr}.finder-panel,.result-panel,.content-block,.panel{padding:26px 18px}.content-block h2,.request h2,.finder-panel h2,.result-panel h2{font-size:34px}.content-block img{height:280px}.hero-actions .btn,.finder-actions .btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="logo" href="index.html">Auralis Jewelry</a>
+    <nav class="menu">
+      <a href="index.html">Home</a><a href="custom-bracelets.html">Custom Bracelets</a><a href="gemstone-jewelry.html">Gemstone Jewelry</a><a class="active" href="element-design.html">Element Design</a><a href="gift-guide.html">Gift Guide</a><a href="custom-order.html">Custom Order</a>
+    </nav>
+    <div class="nav-icons"><span>⌕</span><span>♡</span><span>✉</span></div><button class="hamburger">☰</button>
+  </div>
+</header>
+<main>
+<section class="element-hero">
+  <div class="container">
+    <div>
+      <div class="eyebrow">Five-element inspired design</div>
+      <h1>Find Your Element-Inspired Crystal Direction</h1>
+      <p>Enter your birth date and MBTI to receive a simple five-element inspired bracelet direction. The result is used as a design starting point for color, stone mood and gifting style.</p>
+      <div class="hero-actions"><a class="btn primary" href="#style-finder">Try the Finder</a><a class="btn" href="#palettes">View Element Palettes</a></div>
+      <div class="badges"><span>Wood · Fire · Earth · Metal · Water</span><span>Zodiac + MBTI style direction</span><span>Design inspiration only</span><span>Quote before payment</span></div>
+    </div>
+    <div class="visual"><img src="assets/balance.svg" alt="Five element inspired crystal bracelet color palette"><small>Element style finder</small></div>
+  </div>
+</section>
+
+<section class="section" id="style-finder">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">Interactive tool</div>
+      <h2>Element Style Finder</h2>
+      <p>A light interactive window for buyers: birth date gives a Western zodiac and a simplified five-element direction; MBTI adds a style tone. The final bracelet still needs manual quote confirmation.</p>
+    </div>
+    <div class="finder-wrap">
+      <div class="finder-panel">
+        <h2>Tell Us Your Basics</h2>
+        <p>Use this as a first design inspiration. Customers can copy the result and paste it into the custom request form.</p>
+        <div class="form-row">
+          <label for="birthdate">Birth Date</label>
+          <input type="date" id="birthdate">
+        </div>
+        <div class="form-row">
+          <label for="mbti">MBTI Type</label>
+          <select id="mbti">
+            <option value="">Not sure / Prefer not to say</option>
+            <option>INTJ</option><option>INTP</option><option>ENTJ</option><option>ENTP</option>
+            <option>INFJ</option><option>INFP</option><option>ENFJ</option><option>ENFP</option>
+            <option>ISTJ</option><option>ISFJ</option><option>ESTJ</option><option>ESFJ</option>
+            <option>ISTP</option><option>ISFP</option><option>ESTP</option><option>ESFP</option>
+          </select>
+        </div>
+        <div class="finder-actions">
+          <button class="btn primary" type="button" onclick="findStyle()">Find My Direction</button>
+          <button class="btn" type="button" onclick="resetFinder()">Reset</button>
+        </div>
+        <div class="disclaimer">For a precise traditional BaZi / lunar calendar reading, birth time and more advanced conversion would be required. This website tool uses a simplified birth-year element for jewelry design inspiration only.</div>
+      </div>
+      <div class="result-panel">
+        <h2>Your Design Direction</h2>
+        <p id="emptyText">Enter your details to generate a soft recommendation for a custom bracelet direction.</p>
+        <div id="resultBox" style="display:none">
+          <div class="result-grid">
+            <div class="result-card"><span>Western Zodiac</span><strong id="zodiacOut">-</strong></div>
+            <div class="result-card"><span>Element Direction</span><strong id="elementOut">-</strong></div>
+            <div class="result-card"><span>MBTI Tone</span><strong id="mbtiOut">-</strong></div>
+            <div class="result-card"><span>Style Mood</span><strong id="moodOut">-</strong></div>
+          </div>
+          <div class="palette-card">
+            <h3 id="paletteTitle">Recommended Palette</h3>
+            <p id="paletteText"></p>
+            <div class="stone-tags" id="stoneTags"></div>
+          </div>
+          <div class="finder-actions">
+            <button class="btn" type="button" onclick="copyBrief()">Copy Design Brief</button>
+            <a class="btn primary" href="custom-order.html">Submit Custom Request</a>
+          </div>
+          <div class="copy-note" id="copyNote">Copied. Paste this into “Tell us your idea” on the request form.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft-bg" id="palettes">
+  <div class="container">
+    <div class="section-title"><div class="eyebrow">Element palettes</div><h2>Five Elements as Jewelry Color Directions</h2><p>We use 五行 as cultural and aesthetic inspiration for color, stone selection and bracelet mood, not as a medical or guaranteed outcome claim.</p></div>
+    <div class="element-grid">
+      <article class="element-card"><img src="assets/product-green.svg" alt="Wood element green crystal bracelet palette"><div><span class="palette">Green · fresh · natural</span><h3>Wood</h3><p>Fresh greens, growth, renewal and botanical mood.</p><a class="mini-btn" href="custom-order.html">Request Wood Style</a></div></article>
+      <article class="element-card"><img src="assets/citrine.svg" alt="Fire element warm crystal palette"><div><span class="palette">Gold · red · bright</span><h3>Fire</h3><p>Warm gold, red accents, brightness and presence.</p><a class="mini-btn" href="custom-order.html">Request Fire Style</a></div></article>
+      <article class="element-card"><img src="assets/product-citrine.svg" alt="Earth element warm neutral crystal bracelet palette"><div><span class="palette">Neutral · warm · stable</span><h3>Earth</h3><p>Warm neutrals, soft yellow and balanced everyday wear.</p><a class="mini-btn" href="custom-order.html">Request Earth Style</a></div></article>
+      <article class="element-card"><img src="assets/product-moonlight.svg" alt="Metal element white clear crystal bracelet palette"><div><span class="palette">White · clear · silver</span><h3>Metal</h3><p>Clear, white, silver and minimal refined styling.</p><a class="mini-btn" href="custom-order.html">Request Metal Style</a></div></article>
+      <article class="element-card"><img src="assets/product-black.svg" alt="Water element black and blue crystal bracelet palette"><div><span class="palette">Black · blue · deep</span><h3>Water</h3><p>Deep black, smoky, blue and cool-toned stone directions.</p><a class="mini-btn" href="custom-order.html">Request Water Style</a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container info-grid">
+    <article class="panel"><div class="eyebrow">What it means</div><h2>MBTI, Zodiac and 五行 Work as Style Signals</h2><p>Customers can use MBTI to express personality tone, zodiac to create an easy birth-date connection, and five elements to guide color and stone mood.</p><p>This gives your website a more interactive, personalized feeling without forcing customers to fill a long form.</p></article>
+    <article class="panel"><div class="eyebrow">Important note</div><h2>Designed as Jewelry, Not a Promise</h2><p>The result is a symbolic design suggestion only. We avoid medical claims, guaranteed luck, destiny-changing language or therapeutic promises.</p><div class="note">Recommended wording: “element-inspired”, “symbolic”, “personal meaning”, “color direction”, “meaningful gift”.</div></article>
+  </div>
+</section>
+
+<section class="section soft-bg">
+  <div class="container">
+    <div class="content-block">
+      <img src="assets/step-2.svg" alt="Crystal bead selection for element-inspired bracelet design">
+      <div><div class="eyebrow">No need to know exact stones</div><h2>Customers Can Simply Share a Feeling</h2><p>Many customers may not know which stone to choose. This interactive window gives them a simple design brief they can copy into the custom request form.</p><p>The final bracelet is still confirmed manually based on material availability, design feasibility and shipping requirements.</p><a class="btn primary" href="custom-order.html">Start Custom Request</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-title"><div class="eyebrow">Helpful examples</div><h2>Simple Request Examples</h2><p>These examples can guide customers without forcing them to understand every detail.</p></div>
+    <div class="examples">
+      <article class="example"><h3>“I am Pisces + INFP. I want something soft.”</h3><p>We may suggest a Water-inspired soft moonstone or rose quartz direction.</p></article>
+      <article class="example"><h3>“My element is Wood and I like green.”</h3><p>We can suggest green aventurine, jade-tone beads or fresh natural palettes.</p></article>
+      <article class="example"><h3>“I don’t know my MBTI.”</h3><p>The customer can still use birth date and color preference to start the request.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section soft-bg">
+  <div class="container"><div class="request"><div class="eyebrow">Ready to begin</div><h2>Request an Element-Inspired Bracelet Direction</h2><p>Use your finder result as a starting point, then submit a simple request. We will review the design direction and send a quote before payment.</p><a class="btn primary" href="custom-order.html">Submit Custom Request</a></div></div>
+</section>
+</main>
+
+<footer class="footer"><div class="container copyright"><span>© 2026 Auralis Jewelry.</span><span>Element-inspired crystal bracelet design.</span></div></footer>
+
+<script>
+const elementData = {
+  Wood:{mood:"Growth & Renewal", palette:"Fresh green, soft botanical and natural stone direction.", stones:["Green Aventurine","Jade Tone","Green Fluorite","Clear Quartz"]},
+  Fire:{mood:"Warmth & Presence", palette:"Warm gold, red accent and bright crystal direction.", stones:["Citrine","Garnet","Red Agate","Clear Quartz"]},
+  Earth:{mood:"Grounded Balance", palette:"Warm neutral, yellow, beige and softly grounded direction.", stones:["Tiger Eye","Yellow Jasper","Citrine","Smoky Quartz"]},
+  Metal:{mood:"Clean Refinement", palette:"White, clear, silver and minimal crystal direction.", stones:["Clear Quartz","Moonstone","White Agate","Hematite Accent"]},
+  Water:{mood:"Calm Depth", palette:"Deep black, smoky, blue and cool-toned direction.", stones:["Obsidian","Smoky Quartz","Labradorite","Aquamarine Tone"]}
+};
+const mbtiTone = {
+  analyst:{types:["INTJ","INTP","ENTJ","ENTP"], tone:"Minimal · structured", extra:"clean lines, clear stones and a refined palette"},
+  idealist:{types:["INFJ","INFP","ENFJ","ENFP"], tone:"Soft · intuitive", extra:"gentle colors, layered meaning and a poetic palette"},
+  guardian:{types:["ISTJ","ISFJ","ESTJ","ESFJ"], tone:"Classic · stable", extra:"balanced colors, wearable stones and timeless styling"},
+  explorer:{types:["ISTP","ISFP","ESTP","ESFP"], tone:"Natural · expressive", extra:"mixed stones, texture and a more personal visual rhythm"}
+};
+function getZodiac(m,d){
+  const signs=[
+    ["Capricorn",1,19],["Aquarius",2,18],["Pisces",3,20],["Aries",4,19],["Taurus",5,20],["Gemini",6,20],
+    ["Cancer",7,22],["Leo",8,22],["Virgo",9,22],["Libra",10,22],["Scorpio",11,21],["Sagittarius",12,21],["Capricorn",12,31]
+  ];
+  for(const [sign,month,lastDay] of signs){ if(m===month && d<=lastDay) return sign; }
+  return signs.find(s=>s[1]===m+1)?.[0] || "Capricorn";
+}
+function getElementByYear(y){
+  const stems=["Wood","Wood","Fire","Fire","Earth","Earth","Metal","Metal","Water","Water"];
+  const idx=((y-4)%10+10)%10;
+  return stems[idx];
+}
+function getMbtiTone(type){
+  if(!type) return {tone:"Open · flexible", extra:"a flexible palette based on color preference and gift purpose"};
+  const t=type.toUpperCase();
+  for(const group of Object.values(mbtiTone)){ if(group.types.includes(t)) return group; }
+  return {tone:"Open · flexible", extra:"a flexible palette based on color preference and gift purpose"};
+}
+function findStyle(){
+  const dateVal=document.getElementById("birthdate").value;
+  const mbti=document.getElementById("mbti").value;
+  if(!dateVal){ alert("Please enter a birth date first."); return; }
+  const date=new Date(dateVal+"T00:00:00");
+  const y=date.getFullYear(), m=date.getMonth()+1, d=date.getDate();
+  const zodiac=getZodiac(m,d);
+  const element=getElementByYear(y);
+  const data=elementData[element];
+  const tone=getMbtiTone(mbti);
+  document.getElementById("zodiacOut").textContent=zodiac;
+  document.getElementById("elementOut").textContent=element;
+  document.getElementById("mbtiOut").textContent=mbti || "Not selected";
+  document.getElementById("moodOut").textContent=data.mood;
+  document.getElementById("paletteTitle").textContent=element+" Element Palette";
+  document.getElementById("paletteText").textContent=data.palette+" Based on your MBTI style tone, we would keep the design "+tone.extra+".";
+  document.getElementById("stoneTags").innerHTML=data.stones.map(s=>"<span>"+s+"</span>").join("");
+  document.getElementById("emptyText").style.display="none";
+  document.getElementById("resultBox").style.display="block";
+  document.getElementById("copyNote").style.display="none";
+}
+function resetFinder(){
+  document.getElementById("birthdate").value="";
+  document.getElementById("mbti").value="";
+  document.getElementById("emptyText").style.display="block";
+  document.getElementById("resultBox").style.display="none";
+  document.getElementById("copyNote").style.display="none";
+}
+function copyBrief(){
+  const zodiac=document.getElementById("zodiacOut").textContent;
+  const element=document.getElementById("elementOut").textContent;
+  const mbti=document.getElementById("mbtiOut").textContent;
+  const mood=document.getElementById("moodOut").textContent;
+  const palette=document.getElementById("paletteText").textContent;
+  const stones=[...document.querySelectorAll("#stoneTags span")].map(s=>s.textContent).join(", ");
+  const brief=`Element Style Finder Result: Zodiac: ${zodiac}; Element direction: ${element}; MBTI: ${mbti}; Mood: ${mood}; Palette: ${palette}; Suggested stones: ${stones}.`;
+  navigator.clipboard.writeText(brief).then(()=>{document.getElementById("copyNote").style.display="block";});
+}
+</script>
+</body>
+</html>
