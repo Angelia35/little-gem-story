@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Element-Inspired Design | Auralis Jewelry</title>
-<meta name="description" content="Try the Element Style Finder: select your birth date and MBTI to receive a five-element inspired crystal bracelet design direction.">
+<meta name="description" content="Try the Element Style Finder: select your birth date and MBTI to receive a Chinese Chinese Five Elements-inspired crystal bracelet design direction.">
 <link rel="stylesheet" href="styles.css">
 <style>
 :root{--cream:#fffaf4;--paper:#fffdf9;--soft:#f6ebe4;--blush:#ead4cf;--lav:#eee6f7;--gold:#b78a52;--gold-soft:#dbc09a;--ink:#332922;--muted:#786a62;--line:#e8d9c9;--shadow:0 24px 70px rgba(89,58,39,.12)}
@@ -71,9 +71,9 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 <section class="element-hero">
   <div class="container">
     <div>
-      <div class="eyebrow">Five-element inspired design</div>
+      <div class="eyebrow">Chinese Chinese Five Elements-inspired design</div>
       <h1>Find Your Element-Inspired Crystal Direction</h1>
-      <p>Select your birth date and MBTI to receive a simple five-element direction, zodiac result and suggested support element. The result is used as a design starting point for color, stone mood and gifting style.</p>
+      <p>Select your birth date and MBTI to receive a simple Chinese Chinese Five Elements direction, zodiac result and suggested support element. The result is used as a design starting point for color, stone mood and gifting style.</p>
       <div class="hero-actions"><a class="btn primary" href="#style-finder">Try the Finder</a><a class="btn" href="#palettes">View Element Palettes</a></div>
       <div class="badges"><span>Wood · Fire · Earth · Metal · Water</span><span>Zodiac + MBTI style direction</span><span>Design inspiration only</span><span>Quote before payment</span></div>
     </div>
@@ -86,7 +86,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     <div class="section-title">
       <div class="eyebrow">Interactive tool</div>
       <h2>Element Style Finder</h2>
-      <p>A light interactive window for buyers: birth date gives a Western zodiac, simplified five-element direction and suggested support element; MBTI adds a style tone. The final bracelet still needs manual quote confirmation.</p>
+      <p>A light interactive window for buyers: birth date gives a Western zodiac, simplified Chinese Chinese Five Elements direction and suggested support element; MBTI adds a style tone. The final bracelet still needs manual quote confirmation.</p>
     </div>
     <div class="finder-wrap">
       <div class="finder-panel">
@@ -120,7 +120,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
           <button class="btn primary" type="button" onclick="findStyle()">Find My Direction</button>
           <button class="btn" type="button" onclick="resetFinder()">Reset</button>
         </div>
-        <div class="disclaimer">For an accurate traditional BaZi reading or exact “missing element” analysis, birth time, lunar calendar conversion and solar terms would be required. This tool provides a simplified design-oriented Five Element direction only.</div>
+        <div class="disclaimer">For an accurate traditional BaZi reading or exact “missing element” analysis, birth time, lunar calendar conversion and solar-term calculation would be required. This tool provides a simplified design-oriented Chinese Chinese Five Elements direction only.</div>
       </div>
       <div class="result-panel">
         <h2>Your Design Direction</h2>
@@ -152,7 +152,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 
 <section class="section soft-bg" id="palettes">
   <div class="container">
-    <div class="section-title"><div class="eyebrow">Element palettes</div><h2>Five Elements as Jewelry Color Directions</h2><p>We use 五行 as cultural and aesthetic inspiration for color, stone selection and bracelet mood, not as a medical or guaranteed outcome claim.</p></div>
+    <div class="section-title"><div class="eyebrow">Element palettes</div><h2>Chinese Chinese Five Elements as Jewelry Color Directions</h2><p>We use Chinese Chinese Five Elements as cultural and aesthetic inspiration for color, stone selection and bracelet mood, not as a medical or guaranteed outcome claim.</p></div>
     <div class="element-grid">
       <article class="element-card"><img src="assets/product-green.svg" alt="Wood element green crystal bracelet palette"><div><span class="palette">Green · fresh · natural</span><h3>Wood</h3><p>Fresh greens, growth, renewal and botanical mood.</p><a class="mini-btn" href="custom-order.html">Request Wood Style</a></div></article>
       <article class="element-card"><img src="assets/citrine.svg" alt="Fire element warm crystal palette"><div><span class="palette">Gold · red · bright</span><h3>Fire</h3><p>Warm gold, red accents, brightness and presence.</p><a class="mini-btn" href="custom-order.html">Request Fire Style</a></div></article>
@@ -165,7 +165,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 
 <section class="section">
   <div class="container info-grid">
-    <article class="panel"><div class="eyebrow">What it means</div><h2>MBTI, Zodiac and 五行 Work as Style Signals</h2><p>Customers can use MBTI to express personality tone, zodiac to create an easy birth-date connection, and five elements to guide color and stone mood.</p><p>This gives your website a more interactive, personalized feeling without forcing customers to fill a long form.</p></article>
+    <article class="panel"><div class="eyebrow">What it means</div><h2>MBTI, Zodiac and Chinese Chinese Five Elements Work as Style Signals</h2><p>Customers can use MBTI to express personality tone, zodiac to create an easy birth-date connection, and five elements to guide color and stone mood.</p><p>This gives your website a more interactive, personalized feeling without forcing customers to fill a long form.</p></article>
     <article class="panel"><div class="eyebrow">Important note</div><h2>Designed as Jewelry, Not a Promise</h2><p>The result is a symbolic design suggestion only. We avoid medical claims, guaranteed luck, destiny-changing language or therapeutic promises.</p><div class="note">Recommended wording: “element-inspired”, “symbolic”, “personal meaning”, “color direction”, “meaningful gift”.</div></article>
   </div>
 </section>
@@ -294,7 +294,7 @@ function copyBrief(){
   const focus=document.getElementById("focusOut").textContent;
   const palette=document.getElementById("paletteText").textContent;
   const stones=[...document.querySelectorAll("#stoneTags span")].map(s=>s.textContent).join(", ");
-  const brief=`Element Style Finder Result: Zodiac: ${zodiac}; Five Element: ${element}; Suggested support / estimated missing element: ${missing}; MBTI: ${mbti}; Mood: ${mood}; Design focus: ${focus}; Palette: ${palette}; Suggested stones: ${stones}.`;
+  const brief=`Element Style Finder Result: Zodiac: ${zodiac}; Chinese Five Element: ${element}; Suggested support / estimated missing element: ${missing}; MBTI: ${mbti}; Mood: ${mood}; Design focus: ${focus}; Palette: ${palette}; Suggested stones: ${stones}.`;
   navigator.clipboard.writeText(brief).then(()=>{document.getElementById("copyNote").style.display="block";});
 }
 document.addEventListener("DOMContentLoaded", populateDateSelects);
