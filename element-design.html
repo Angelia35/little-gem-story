@@ -57,6 +57,102 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 @media(max-width:560px){.container{width:min(100% - 28px,1180px)}.section{padding:54px 0}.element-hero{padding:54px 0 56px}.element-hero h1{font-size:40px}.element-grid,.result-grid{grid-template-columns:1fr}.finder-panel,.result-panel,.content-block,.panel{padding:26px 18px}.content-block h2,.request h2,.finder-panel h2,.result-panel h2{font-size:34px}.content-block img{height:280px}.hero-actions .btn,.finder-actions .btn{width:100%}}
 </style>
 <link rel="canonical" href="https://auralisgems.com/element-design">
+
+<style id="floating-contact-style">
+.floating-contact{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  z-index:9999;
+  font-family:Inter,"Helvetica Neue",Arial,sans-serif;
+}
+.floating-contact-panel{
+  width:235px;
+  padding:14px;
+  margin-bottom:12px;
+  border:1px solid rgba(232,217,201,.95);
+  border-radius:22px;
+  background:rgba(255,253,249,.96);
+  box-shadow:0 18px 44px rgba(70,45,31,.18);
+  backdrop-filter:blur(14px);
+  display:none;
+}
+.floating-contact.is-open .floating-contact-panel{
+  display:block;
+}
+.floating-contact-title{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:20px;
+  color:#332922;
+  margin:0 0 4px;
+}
+.floating-contact-text{
+  font-size:12px;
+  line-height:1.45;
+  color:#786a62;
+  margin:0 0 12px;
+}
+.floating-contact-link{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 11px;
+  border-radius:14px;
+  color:#332922;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:800;
+  background:#fffaf4;
+  border:1px solid #eadbcb;
+  margin-top:8px;
+  transition:.2s;
+}
+.floating-contact-link:hover{
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(82,55,40,.11);
+}
+.floating-contact-icon{
+  width:26px;
+  height:26px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#fff3e3;
+  color:#b78a52;
+  flex:0 0 auto;
+}
+.floating-contact-button{
+  width:62px;
+  height:62px;
+  border:0;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  margin-left:auto;
+  cursor:pointer;
+  background:linear-gradient(135deg,#caa06c,#ad7e44);
+  color:#fff;
+  box-shadow:0 16px 34px rgba(173,126,68,.32);
+  font-size:26px;
+}
+.floating-contact-button span{
+  display:block;
+  transform:translateY(-1px);
+}
+.floating-contact.is-open .floating-contact-button span{
+  font-size:24px;
+}
+@media(max-width:560px){
+  .floating-contact{
+    right:16px;
+    bottom:16px;
+  }
+  .floating-contact-panel{
+    width:min(235px,calc(100vw - 32px));
+  }
+}
+</style>
+
 </head>
 <body>
 <header class="topbar">
@@ -196,7 +292,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 </section>
 </main>
 
-<footer class="footer"><div class="container copyright"><span>© 2026 Auralis Jewelry.</span><span>Website: <a href="https://auralisgems.com">auralisgems.com</a> · Email: <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a></span></div></footer>
+<footer class="footer"><div class="container copyright"><span>© 2026 Auralis Jewelry.</span><span>Website: <a href="https://auralisgems.com">auralisgems.com</a> · Email: <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a> · WhatsApp: <a href="https://wa.me/8618357590167">+86 183 5759 0167</a></span></div></footer>
 
 <script>
 const elementData = {
@@ -300,5 +396,41 @@ function copyBrief(){
 }
 document.addEventListener("DOMContentLoaded", populateDateSelects);
 </script>
+
+<div class="floating-contact" id="floatingContact">
+  <div class="floating-contact-panel" aria-label="Contact options">
+    <h3 class="floating-contact-title">Contact Us</h3>
+    <p class="floating-contact-text">Need help with a custom bracelet or gemstone jewelry request?</p>
+    <a class="floating-contact-link" href="https://wa.me/8618357590167" target="_blank" rel="noopener">
+      <span class="floating-contact-icon">☎</span><span>WhatsApp</span>
+    </a>
+    <a class="floating-contact-link" href="/custom-order">
+      <span class="floating-contact-icon">✉</span><span>Send Inquiry</span>
+    </a>
+    <a class="floating-contact-link" href="mailto:hello@auralisgems.com">
+      <span class="floating-contact-icon">@</span><span>Email Us</span>
+    </a>
+  </div>
+  <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><span id="floatingContactIcon">☎</span></button>
+</div>
+<script id="floating-contact-script">
+function toggleFloatingContact(){
+  var box=document.getElementById("floatingContact");
+  var icon=document.getElementById("floatingContactIcon");
+  if(!box || !icon) return;
+  box.classList.toggle("is-open");
+  icon.textContent=box.classList.contains("is-open") ? "×" : "☎";
+}
+document.addEventListener("click",function(e){
+  var box=document.getElementById("floatingContact");
+  if(!box) return;
+  if(!box.contains(e.target)){
+    box.classList.remove("is-open");
+    var icon=document.getElementById("floatingContactIcon");
+    if(icon) icon.textContent="☎";
+  }
+});
+</script>
+
 </body>
 </html>
