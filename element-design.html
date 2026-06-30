@@ -63,7 +63,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     linear-gradient(90deg, rgba(255,250,244,.98) 0%, rgba(255,250,244,.9) 36%, rgba(255,250,244,.56) 58%, rgba(255,250,244,.18) 100%),
     url("/assets/element-hero-custom.jpg");
   background-size:cover;
-  background-position:center right;
+  background-position:72% center;
   transform:scale(1.01);
 }
 .element-hero::after{
@@ -110,7 +110,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 /* Element color cards */
 .element-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
 .element-card{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 10px 28px rgba(82,55,40,.06)}
-.element-card img{width:100%;height:210px;object-fit:cover;background:#fbf2eb}
+.element-card img{width:100%;height:210px;object-fit:cover;background:#f4ede6}
 .element-card div{padding:20px}.element-card h3{font-size:26px;margin:0 0 8px}.element-card p{font-size:14px;color:var(--muted);margin:0 0 14px}.palette{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#8b7b6f;font-weight:900}
 .element-card .chip-row{display:flex;gap:6px;margin:0 0 12px}
 .chip-row i{display:block;width:16px;height:16px;border-radius:50%;border:1px solid rgba(82,55,40,.14)}
@@ -148,7 +148,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   width:100%;
   height:260px;
   object-fit:cover;
-  background:#fbf2eb;
+  background:#f4ede6;
 }
 .inspiration-card div{
   padding:18px;
@@ -165,7 +165,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 
 /* Supporting content */
 .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.panel{background:#fff;border:1px solid var(--line);border-radius:30px;padding:34px;box-shadow:0 10px 28px rgba(82,55,40,.06)}.panel h2{font-size:40px;line-height:1.05;margin:0 0 14px}.panel p{color:var(--muted);margin:0 0 14px}.note{background:#fff7ea;border:1px solid #e1c492;color:#66533a;border-radius:20px;padding:18px;margin-top:18px;font-size:14px}
-.content-block{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);padding:34px}.content-block img{width:100%;height:360px;object-fit:cover;border-radius:26px;background:#fbf2eb}.content-block h2{font-size:46px;line-height:1.05;margin:0 0 14px}.content-block p{color:var(--muted);margin:0 0 14px}
+.content-block{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);padding:34px}.content-block img{width:100%;height:360px;object-fit:cover;border-radius:26px;background:#f4ede6}.content-block h2{font-size:46px;line-height:1.05;margin:0 0 14px}.content-block p{color:var(--muted);margin:0 0 14px}
 .examples{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.example{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px 24px;box-shadow:0 10px 28px rgba(82,55,40,.06)}.example h3{font-size:23px;margin:0 0 8px}.example p{color:var(--muted);margin:0}
 .request{text-align:center;background:linear-gradient(135deg,#fff,#fff7ee);border:1px solid var(--line);border-radius:34px;padding:46px 26px;box-shadow:var(--shadow)}.request h2{font-size:44px;margin:0 0 10px}.request p{color:var(--muted);max-width:720px;margin:0 auto 22px}
 .footer{padding:48px 0 28px;background:#f5ece4;border-top:1px solid var(--line)}.footer-grid{display:grid;grid-template-columns:1.3fr .8fr .9fr .8fr 1.1fr;gap:34px}.footer p,.footer a{color:#7b6c63;font-size:13px}.footer a{display:block;margin:8px 0}.footer h3{font-size:20px;margin:0 0 12px}.subscribe{display:flex;background:#fff;border:1px solid var(--line);border-radius:999px;overflow:hidden}.subscribe input{border:0;background:transparent;padding:12px 14px;min-width:0;flex:1}.subscribe button{border:0;background:#b78a52;color:#fff;padding:0 16px}.copyright{padding-top:22px;color:#8a7b72;font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(232,217,201,.9);margin-top:28px}
@@ -181,6 +181,18 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 @media(max-width:1080px){.element-grid{grid-template-columns:repeat(3,1fr)}.inspiration-grid{grid-template-columns:repeat(2,1fr)}.reference-card,.reference-card.featured{grid-template-columns:1fr}.ring{margin:0 auto}.footer-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:980px){.menu,.nav-icons{display:none}.hamburger{display:block}.topbar{height:68px}.logo{font-size:27px}.finder-wrap,.info-grid,.content-block{grid-template-columns:1fr}.element-hero h1{font-size:50px}.examples,.reference-grid{grid-template-columns:1fr}.reference-card.featured{grid-column:span 1}}
 @media(max-width:560px){.inspiration-grid{grid-template-columns:1fr}.container{width:min(100% - 28px,1180px)}.section{padding:54px 0}.element-hero{padding:54px 0 56px}.element-hero h1{font-size:40px}.element-grid,.result-grid{grid-template-columns:1fr}.finder-panel,.result-panel,.content-block,.panel,.reference-card{padding:26px 18px}.content-block h2,.request h2,.finder-panel h2,.result-panel h2,.section-title h2{font-size:34px}.content-block img{height:280px}.hero-actions .btn,.finder-actions .btn{width:100%}.footer-grid{grid-template-columns:1fr}.floating-contact{right:16px;bottom:16px}.floating-contact-panel{width:min(235px,calc(100vw - 32px))}}
+
+.process-strip{padding:34px 0 8px}
+.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.process-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:0 10px 28px rgba(82,55,40,.06)}
+.process-step{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:999px;background:#f2dfca;color:#835d33;font-weight:900;font-size:14px;margin-bottom:14px}
+.process-card h3{font-size:24px;margin:0 0 8px}.process-card p{margin:0;color:var(--muted)}
+.element-card .stone-mini{margin-top:12px;font-size:12px;line-height:1.55;color:#8b7b6f;border-top:1px solid #efe4d7;padding-top:12px}
+.element-card .stone-mini strong{color:#5d4c42}
+.reference-intro{max-width:860px;margin:0 auto 8px;color:var(--muted);text-align:center}
+.family-note{margin-top:18px;padding:16px 18px;border-radius:18px;background:#fff8f1;border:1px solid #eadbcb;color:#7a695f;font-size:13px}
+@media (max-width:960px){.process-grid{grid-template-columns:1fr}.process-strip{padding-top:20px}}
+
 </style>
 </head>
 
@@ -207,12 +219,34 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     <div>
       <div class="eyebrow">Chinese Five Elements-Inspired Design</div>
       <h1>Find Your Element-Inspired Crystal Direction</h1>
-      <p>Select your birth date and MBTI to receive a simple Chinese Five Elements direction, zodiac result and an estimated missing/support element. The result becomes a design starting point for color, stone mood and custom bracelet style.</p>
+      <p>Select your birth date and MBTI to receive a simplified Chinese Five Elements direction, zodiac result and an estimated support or missing element. The result becomes a starting point for color, crystal mood and custom bracelet styling.</p>
       <div class="hero-actions">
         <a class="btn primary" href="#style-finder">Try the Finder</a>
         <a class="btn" href="#crystal-reference">View Crystal Families</a>
       </div>
       <div class="badges"><span>Wood · Fire · Earth · Metal · Water</span><span>Birth date + MBTI style tone</span><span>Design inspiration only</span><span>Quote before payment</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="process-strip">
+  <div class="container">
+    <div class="process-grid">
+      <article class="process-card">
+        <span class="process-step">1</span>
+        <h3>Enter Your Birth Date</h3>
+        <p>The system reads your birth date and gives a simple zodiac and Five Elements direction to start the design conversation.</p>
+      </article>
+      <article class="process-card">
+        <span class="process-step">2</span>
+        <h3>See Your Element Direction</h3>
+        <p>You will receive a main element, a support or missing element, plus a soft style tone based on your MBTI preference.</p>
+      </article>
+      <article class="process-card">
+        <span class="process-step">3</span>
+        <h3>Turn It into a Bracelet</h3>
+        <p>Use the result as a design brief. Our team then confirms available stones, bracelet style and final quotation manually.</p>
+      </article>
     </div>
   </div>
 </section>
@@ -285,28 +319,28 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     <div class="section-title">
       <div class="eyebrow">Element palettes</div>
       <h2>Chinese Five Elements as Jewelry Color Directions</h2>
-      <p>Inspired by the reference charts you provided, this section turns the Five Elements into clean English color families and crystal directions for the independent site.</p>
+      <p>Using your Five Elements reference charts as inspiration, this section turns each element into a cleaner English crystal family, color mood and product direction for the website.</p>
     </div>
     <div class="element-grid">
       <article class="element-card">
         <img src="/assets/element-wood-new.jpg" alt="Wood element green crystal bracelet palette">
-        <div><div class="chip-row"><i class="c-green"></i><i class="c-white"></i><i class="c-gold"></i></div><span class="palette">Green · fresh · natural</span><h3>Wood</h3><p>Fresh greens, renewal, growth and a natural botanical mood.</p><a class="mini-btn" href="#wood-family">View Wood Stones</a></div>
+        <div><div class="chip-row"><i class="c-green"></i><i class="c-white"></i><i class="c-gold"></i></div><span class="palette">Green · fresh · natural</span><h3>Wood</h3><p>Fresh greens, renewal, growth and a natural botanical mood.</p><div class="stone-mini"><strong>Typical stones:</strong> Green phantom, aventurine, malachite, fluorite and jade-tone greens.</div><a class="mini-btn" href="#wood-family">View Wood Stones</a></div>
       </article>
       <article class="element-card">
         <img src="/assets/element-fire-new.jpg" alt="Fire element rose quartz crystal bracelet palette">
-        <div><div class="chip-row"><i class="c-red"></i><i class="c-rose"></i><i class="c-gold"></i></div><span class="palette">Red · pink · purple</span><h3>Fire</h3><p>Warmth, brightness, confidence and an expressive color story.</p><a class="mini-btn" href="#fire-family">View Fire Stones</a></div>
+        <div><div class="chip-row"><i class="c-red"></i><i class="c-rose"></i><i class="c-gold"></i></div><span class="palette">Red · pink · purple</span><h3>Fire</h3><p>Warmth, brightness, confidence and an expressive color story.</p><div class="stone-mini"><strong>Typical stones:</strong> Rose quartz, garnet, strawberry quartz, sunstone and purple crystal.</div><a class="mini-btn" href="#fire-family">View Fire Stones</a></div>
       </article>
       <article class="element-card">
         <img src="/assets/element-earth-new.jpg" alt="Earth element citrine crystal bracelet palette">
-        <div><div class="chip-row"><i class="c-gold"></i><i class="c-brown"></i><i class="c-white"></i></div><span class="palette">Yellow · gold · warm</span><h3>Earth</h3><p>Warm neutrals, yellow tones and balanced everyday wear.</p><a class="mini-btn" href="#earth-family">View Earth Stones</a></div>
+        <div><div class="chip-row"><i class="c-gold"></i><i class="c-brown"></i><i class="c-white"></i></div><span class="palette">Yellow · gold · warm</span><h3>Earth</h3><p>Warm neutrals, yellow tones and balanced everyday wear.</p><div class="stone-mini"><strong>Typical stones:</strong> Citrine, tiger eye, yellow agate, rutilated quartz and amber tones.</div><a class="mini-btn" href="#earth-family">View Earth Stones</a></div>
       </article>
       <article class="element-card">
         <img src="/assets/element-metal-new.jpg" alt="Metal element clear crystal bracelet palette">
-        <div><div class="chip-row"><i class="c-white"></i><i class="c-silver"></i><i class="c-blue"></i></div><span class="palette">White · clear · silver</span><h3>Metal</h3><p>Clear, white, silver and minimal refined styling.</p><a class="mini-btn" href="#metal-family">View Metal Stones</a></div>
+        <div><div class="chip-row"><i class="c-white"></i><i class="c-silver"></i><i class="c-blue"></i></div><span class="palette">White · clear · silver</span><h3>Metal</h3><p>Clear, white, silver and minimal refined styling.</p><div class="stone-mini"><strong>Typical stones:</strong> Moonstone, clear quartz, white agate, pearl, opal and white jade.</div><a class="mini-btn" href="#metal-family">View Metal Stones</a></div>
       </article>
       <article class="element-card">
         <img src="/assets/element-water-new.jpg" alt="Water element smoky crystal bracelet palette">
-        <div><div class="chip-row"><i class="c-black"></i><i class="c-blue"></i><i class="c-brown"></i></div><span class="palette">Black · blue · deep</span><h3>Water</h3><p>Deep black, smoky, blue and cool-toned stone directions.</p><a class="mini-btn" href="#water-family">View Water Stones</a></div>
+        <div><div class="chip-row"><i class="c-black"></i><i class="c-blue"></i><i class="c-brown"></i></div><span class="palette">Black · blue · deep</span><h3>Water</h3><p>Deep black, smoky, blue and cool-toned stone directions.</p><div class="stone-mini"><strong>Typical stones:</strong> Obsidian, kyanite, lapis, aquamarine, blue tiger eye and smoky stones.</div><a class="mini-btn" href="#water-family">View Water Stones</a></div>
       </article>
     </div>
   </div>
@@ -318,6 +352,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
       <div class="eyebrow">Crystal reference</div>
       <h2>Five Element Crystal Families</h2>
       <p>These English crystal families replace the Chinese reference graphics with a cleaner independent-site version. They can guide customers who do not know exact stone names yet.</p>
+      <div class="reference-intro">Each family below keeps the essence of your original five-element charts, but translates them into clearer product language for overseas customers browsing the site.</div>
     </div>
 
     <div class="reference-grid">
@@ -433,12 +468,13 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 <section class="section">
   <div class="container">
     <div class="content-block">
-      <img src="/assets/element-cool-mixed-new.jpg" alt="Custom crystal bracelet held by hand as a personal design reference">
+      <img src="/assets/element-cool-story-new.jpg" alt="Cool-toned crystal bracelet image with a clean neutral composition">
       <div>
         <div class="eyebrow">No need to know exact stones</div>
         <h2>Customers Can Simply Share a Feeling</h2>
         <p>Many customers may not know which stone to choose. The Element Style Finder gives them a simple design brief they can copy into the custom request form.</p>
         <p>The final bracelet is still confirmed manually based on material availability, design feasibility and shipping requirements.</p>
+        <div class="family-note">Tip: customers do not need to know every crystal name in advance. They can simply submit a direction like “Water + calm + blue tones” or “Fire + love + warm colors”, and the final design can be built from there.</div>
         <a class="btn primary" href="/custom-order">Start Custom Request</a>
       </div>
     </div>
@@ -457,7 +493,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 </section>
 
 <section class="section">
-  <div class="container"><div class="request"><div class="eyebrow">Ready to begin</div><h2>Request an Element-Inspired Bracelet Direction</h2><p>Use your finder result as a starting point, then submit a simple request. We will review the design direction and send a quote before payment.</p><a class="btn primary" href="/custom-order">Submit Custom Request</a></div></div>
+  <div class="container"><div class="request"><div class="eyebrow">Ready to begin</div><h2>Request an Element-Inspired Bracelet Direction</h2><p>Use your finder result as a starting point, then submit a simple request. We will review the element direction, stone preference and bracelet style, then send a quote before payment.</p><a class="btn primary" href="/custom-order">Submit Custom Request</a></div></div>
 </section>
 </main>
 
