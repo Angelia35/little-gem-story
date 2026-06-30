@@ -260,6 +260,16 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 }
 
 </style>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NGF3R4L6N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4NGF3R4L6N');
+</script>
+
 </head>
 <body>
 <header class="topbar">
@@ -461,5 +471,49 @@ else if(d.querySelector('script[src="'+w+'"]')==null){
   var s=d.createElement("script");s.src=w;s.onload=v;s.onerror=v;d.body.appendChild(s);
 }
 </script>
+
+<script>
+(function(){
+  function sendEvent(name, params){
+    if (typeof gtag !== "function") return;
+    gtag("event", name, params || {});
+  }
+  document.addEventListener("click", function(event){
+    var link = event.target.closest && event.target.closest("a");
+    if (!link) return;
+    var href = link.getAttribute("href") || "";
+    var label = (link.textContent || link.getAttribute("aria-label") || href || "link").replace(/\s+/g, " ").trim().slice(0, 120);
+
+    if (href.indexOf("wa.me") !== -1) {
+      sendEvent("whatsapp_click", {
+        event_category: "contact",
+        event_label: label,
+        link_url: href
+      });
+    }
+
+    if (href.indexOf("mailto:") === 0) {
+      sendEvent("email_click", {
+        event_category: "contact",
+        event_label: label,
+        link_url: href
+      });
+    }
+
+    if (
+      href.indexOf("/custom-order") !== -1 ||
+      href.indexOf("#request-form") !== -1 ||
+      /request|quote|custom/i.test(label)
+    ) {
+      sendEvent("request_quote_click", {
+        event_category: "conversion_intent",
+        event_label: label,
+        link_url: href
+      });
+    }
+  }, true);
+})();
+</script>
+
 </body>
 </html>

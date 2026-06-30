@@ -123,6 +123,16 @@
 }
 
 </style>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4NGF3R4L6N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4NGF3R4L6N');
+</script>
+
 </head>
 <body>
 <header class="topbar">
@@ -218,5 +228,49 @@
   <div class="container copyright"><span>© 2026 Auralis Jewelry. All rights reserved.</span><span>auralisgems.com</span></div>
 </footer>
 <div class="floating-contact"><a class="float-btn" href="https://wa.me/8618357590167" aria-label="Contact on WhatsApp"><svg viewBox="0 0 24 24"><path d="M7.2 4.8 9 4.2l2.2 4.6-1.4 1.1c1.1 2.2 2.8 3.9 5 5l1.1-1.4 4.6 2.2-.6 1.8c-.4 1.1-1.5 1.8-2.7 1.6C10.8 18.4 5.6 13.2 4.9 6.8c-.1-1.2.5-2.3 1.6-2.7l.7-.3Z"/></svg></a></div>
+
+<script>
+(function(){
+  function sendEvent(name, params){
+    if (typeof gtag !== "function") return;
+    gtag("event", name, params || {});
+  }
+  document.addEventListener("click", function(event){
+    var link = event.target.closest && event.target.closest("a");
+    if (!link) return;
+    var href = link.getAttribute("href") || "";
+    var label = (link.textContent || link.getAttribute("aria-label") || href || "link").replace(/\s+/g, " ").trim().slice(0, 120);
+
+    if (href.indexOf("wa.me") !== -1) {
+      sendEvent("whatsapp_click", {
+        event_category: "contact",
+        event_label: label,
+        link_url: href
+      });
+    }
+
+    if (href.indexOf("mailto:") === 0) {
+      sendEvent("email_click", {
+        event_category: "contact",
+        event_label: label,
+        link_url: href
+      });
+    }
+
+    if (
+      href.indexOf("/custom-order") !== -1 ||
+      href.indexOf("#request-form") !== -1 ||
+      /request|quote|custom/i.test(label)
+    ) {
+      sendEvent("request_quote_click", {
+        event_category: "conversion_intent",
+        event_label: label,
+        link_url: href
+      });
+    }
+  }, true);
+})();
+</script>
+
 </body>
 </html>
