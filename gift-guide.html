@@ -42,7 +42,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 
 /* Hero */
 .gift-hero{position:relative;min-height:500px;display:flex;align-items:center;overflow:hidden;background:#f5e6db;border-bottom:1px solid var(--line)}
-.gift-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(255,250,244,.98) 0%,rgba(255,250,244,.88) 34%,rgba(255,250,244,.45) 58%,rgba(255,250,244,.06) 100%),url("/assets/gift-hero.jpg");background-size:cover;background-position:center right;transform:scale(1.01)}
+.gift-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(255,250,244,.98) 0%,rgba(255,250,244,.88) 34%,rgba(255,250,244,.45) 58%,rgba(255,250,244,.06) 100%),url("assets/gift-hero.jpg");background-size:cover;background-position:center right;transform:scale(1.01)}
 .gift-hero::after{content:"";position:absolute;inset:auto 0 0 0;height:110px;background:linear-gradient(180deg,rgba(255,250,244,0),rgba(255,250,244,.56));pointer-events:none}
 .gift-hero .container{position:relative;z-index:1}.hero-copy{max-width:630px}.gift-hero h1{font-size:56px;line-height:1.02;margin:12px 0 18px}.gift-hero p{font-size:17px;color:#705f55;max-width:590px;margin:0 0 26px}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
@@ -73,7 +73,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 /* FAQ and CTA */
 .faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 24px;max-width:980px;margin:0 auto}
 .faq-item{background:#fff;border:1px solid var(--line);border-radius:13px;padding:14px 18px;display:flex;justify-content:space-between;gap:18px;color:#5f5048;font-weight:800;font-size:14px}
-.final-cta{margin:18px auto 0;max-width:960px;background:linear-gradient(90deg,rgba(255,250,244,.95),rgba(255,247,238,.78)),url("/assets/gift-cta.jpg");background-size:cover;background-position:center right;border:1px solid var(--line);border-radius:26px;padding:40px 48px;box-shadow:var(--shadow)}
+.final-cta{margin:18px auto 0;max-width:960px;background:linear-gradient(90deg,rgba(255,250,244,.95),rgba(255,247,238,.78)),url("assets/gift-cta.jpg");background-size:cover;background-position:center right;border:1px solid var(--line);border-radius:26px;padding:40px 48px;box-shadow:var(--shadow)}
 .final-cta h2{font-size:36px;line-height:1.08;margin:0 0 10px}.final-cta p{color:var(--muted);max-width:470px;margin:0 0 20px}
 
 /* Footer */
@@ -90,7 +90,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 .floating-contact-button img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}.floating-contact-close{display:none;font-size:30px;line-height:1;color:#5fbf86;font-weight:700;transform:translateY(-1px)}.floating-contact.is-open .floating-contact-button img{display:none}.floating-contact.is-open .floating-contact-close{display:block}
 
 @media(max-width:1100px){.card-grid-5,.gallery-grid,.pack-grid{grid-template-columns:repeat(3,1fr)}.pack-intro{grid-column:1/-1}.card-grid-6{grid-template-columns:repeat(3,1fr)}.process{grid-template-columns:repeat(2,1fr)}.process::before{display:none}.footer-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:860px){.menu,.nav-icons{display:none}.hamburger{display:block}.topbar{height:68px}.logo{font-size:27px}.gift-hero h1{font-size:42px}.gift-hero::before{background-image:linear-gradient(90deg,rgba(255,250,244,.96),rgba(255,250,244,.72)),url("/assets/gift-hero.jpg");background-position:center right}.intention-row{grid-template-columns:1fr}.intention-pills{grid-template-columns:repeat(3,1fr)}.trust-grid,.faq-grid{grid-template-columns:1fr}.final-cta{padding:34px 26px}}
+@media(max-width:860px){.menu,.nav-icons{display:none}.hamburger{display:block}.topbar{height:68px}.logo{font-size:27px}.gift-hero h1{font-size:42px}.gift-hero::before{background-image:linear-gradient(90deg,rgba(255,250,244,.96),rgba(255,250,244,.72)),url("assets/gift-hero.jpg");background-position:center right}.intention-row{grid-template-columns:1fr}.intention-pills{grid-template-columns:repeat(3,1fr)}.trust-grid,.faq-grid{grid-template-columns:1fr}.final-cta{padding:34px 26px}}
 @media(max-width:560px){.container{width:min(100% - 28px,1180px)}.section{padding:54px 0}.gift-hero{min-height:560px}.gift-hero h1{font-size:36px}.card-grid-5,.card-grid-6,.gallery-grid,.pack-grid,.process{grid-template-columns:1fr}.gift-card img,.style-card img{height:210px}.occasion-card img,.pack-card img{height:160px}.intention-pills{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr}.floating-contact{right:16px;bottom:16px}.floating-contact-panel{width:min(235px,calc(100vw - 32px))}}
 </style>
 </head>
@@ -136,11 +136,11 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   <div class="container">
     <div class="section-title"><h2>Shop by Recipient</h2></div>
     <div class="card-grid-5">
-      <article class="gift-card"><img src="/assets/gift-recipient-her.jpg" alt="Crystal gift for her"><div><h3>For Her</h3><p>Elegant gifts for the special woman.</p></div></article>
-      <article class="gift-card"><img src="/assets/gift-recipient-friend.jpg" alt="Crystal gift for best friend"><div><h3>For Best Friend</h3><p>Celebrate your unbreakable bond.</p></div></article>
-      <article class="gift-card"><img src="/assets/gift-recipient-mom.jpg" alt="Crystal gift for mom"><div><h3>For Mom</h3><p>Thank her for all that she does.</p></div></article>
-      <article class="gift-card"><img src="/assets/gift-recipient-couple.jpg" alt="Crystal gift for couple"><div><h3>For Couple</h3><p>Symbols of love and connection.</p></div></article>
-      <article class="gift-card"><img src="/assets/gift-recipient-self.jpg" alt="Crystal gift for yourself"><div><h3>For Yourself</h3><p>Because you deserve it.</p></div></article>
+      <article class="gift-card"><img src="assets/gift-recipient-her.jpg" alt="Crystal gift for her"><div><h3>For Her</h3><p>Elegant gifts for the special woman.</p></div></article>
+      <article class="gift-card"><img src="assets/gift-recipient-friend.jpg" alt="Crystal gift for best friend"><div><h3>For Best Friend</h3><p>Celebrate your unbreakable bond.</p></div></article>
+      <article class="gift-card"><img src="assets/gift-recipient-mom.jpg" alt="Crystal gift for mom"><div><h3>For Mom</h3><p>Thank her for all that she does.</p></div></article>
+      <article class="gift-card"><img src="assets/gift-recipient-couple.jpg" alt="Crystal gift for couple"><div><h3>For Couple</h3><p>Symbols of love and connection.</p></div></article>
+      <article class="gift-card"><img src="assets/gift-recipient-self.jpg" alt="Crystal gift for yourself"><div><h3>For Yourself</h3><p>Because you deserve it.</p></div></article>
     </div>
   </div>
 </section>
@@ -163,12 +163,12 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   <div class="container">
     <div class="section-title"><h2>Gift by Occasion</h2></div>
     <div class="card-grid-6">
-      <article class="occasion-card"><img src="/assets/gift-occasion-birthday.jpg" alt="Birthday gift"><h3>Birthday</h3></article>
-      <article class="occasion-card"><img src="/assets/gift-occasion-anniversary.jpg" alt="Anniversary gift"><h3>Anniversary</h3></article>
-      <article class="occasion-card"><img src="/assets/gift-occasion-graduation.jpg" alt="Graduation gift"><h3>Graduation</h3></article>
-      <article class="occasion-card"><img src="/assets/gift-occasion-bridesmaid.jpg" alt="Bridesmaid gift"><h3>Bridesmaid</h3></article>
-      <article class="occasion-card"><img src="/assets/gift-occasion-holiday.jpg" alt="Holiday gift"><h3>Holiday</h3></article>
-      <article class="occasion-card"><img src="/assets/gift-occasion-selfcare.jpg" alt="Self-care gift"><h3>Self-Care</h3></article>
+      <article class="occasion-card"><img src="assets/gift-occasion-birthday.jpg" alt="Birthday gift"><h3>Birthday</h3></article>
+      <article class="occasion-card"><img src="assets/gift-occasion-anniversary.jpg" alt="Anniversary gift"><h3>Anniversary</h3></article>
+      <article class="occasion-card"><img src="assets/gift-occasion-graduation.jpg" alt="Graduation gift"><h3>Graduation</h3></article>
+      <article class="occasion-card"><img src="assets/gift-occasion-bridesmaid.jpg" alt="Bridesmaid gift"><h3>Bridesmaid</h3></article>
+      <article class="occasion-card"><img src="assets/gift-occasion-holiday.jpg" alt="Holiday gift"><h3>Holiday</h3></article>
+      <article class="occasion-card"><img src="assets/gift-occasion-selfcare.jpg" alt="Self-care gift"><h3>Self-Care</h3></article>
     </div>
   </div>
 </section>
@@ -189,14 +189,14 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   <div class="container">
     <div class="section-title"><h2>Gift Style Gallery</h2></div>
     <div class="gallery-grid">
-      <article class="style-card"><img src="/assets/gift-gallery-rose.jpg" alt="Rose quartz love bracelet"><div><h3>Rose Quartz Love</h3><p>Love · Compassion</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
-      <article class="style-card"><img src="/assets/gift-gallery-citrine.jpg" alt="Citrine abundance bracelet"><div><h3>Citrine Abundance</h3><p>Joy · Success</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
-      <article class="style-card"><img src="/assets/gift-gallery-amethyst.jpg" alt="Amethyst calm bracelet"><div><h3>Amethyst Calm</h3><p>Peace · Balance</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
-      <article class="style-card"><img src="/assets/gift-gallery-moonstone.jpg" alt="Moonstone intuition bracelet"><div><h3>Moonstone Intuition</h3><p>Intuition · New Beginnings</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
-      <article class="style-card"><img src="/assets/gift-gallery-black.jpg" alt="Black tourmaline bracelet"><div><h3>Black Tourmaline Shield</h3><p>Protection · Grounding</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
-      <article class="style-card"><img src="/assets/gift-gallery-green.jpg" alt="Green aventurine bracelet"><div><h3>Green Aventurine Luck</h3><p>Luck · Opportunity</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
-      <article class="style-card"><img src="/assets/gift-gallery-clear.jpg" alt="Clear quartz bracelet"><div><h3>Clear Quartz Clarity</h3><p>Clarity · Focus</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
-      <article class="style-card"><img src="/assets/gift-gallery-labradorite.jpg" alt="Labradorite bracelet"><div><h3>Labradorite Magic</h3><p>Transformation · Strength</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
+      <article class="style-card"><img src="assets/gift-gallery-rose.jpg" alt="Rose quartz love bracelet"><div><h3>Rose Quartz Love</h3><p>Love · Compassion</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
+      <article class="style-card"><img src="assets/gift-gallery-citrine.jpg" alt="Citrine abundance bracelet"><div><h3>Citrine Abundance</h3><p>Joy · Success</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
+      <article class="style-card"><img src="assets/gift-gallery-amethyst.jpg" alt="Amethyst calm bracelet"><div><h3>Amethyst Calm</h3><p>Peace · Balance</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
+      <article class="style-card"><img src="assets/gift-gallery-moonstone.jpg" alt="Moonstone intuition bracelet"><div><h3>Moonstone Intuition</h3><p>Intuition · New Beginnings</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
+      <article class="style-card"><img src="assets/gift-gallery-black.jpg" alt="Black tourmaline bracelet"><div><h3>Black Tourmaline Shield</h3><p>Protection · Grounding</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
+      <article class="style-card"><img src="assets/gift-gallery-green.jpg" alt="Green aventurine bracelet"><div><h3>Green Aventurine Luck</h3><p>Luck · Opportunity</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
+      <article class="style-card"><img src="assets/gift-gallery-clear.jpg" alt="Clear quartz bracelet"><div><h3>Clear Quartz Clarity</h3><p>Clarity · Focus</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
+      <article class="style-card"><img src="assets/gift-gallery-labradorite.jpg" alt="Labradorite bracelet"><div><h3>Labradorite Magic</h3><p>Transformation · Strength</p><a class="mini-btn" href="/custom-order">Custom Quote</a></div></article>
     </div>
   </div>
 </section>
@@ -205,11 +205,11 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   <div class="container">
     <div class="pack-grid">
       <div class="pack-intro"><h2>Gift Packaging<br>& Add-ons</h2><p>Make your gift extra special with thoughtful packaging and details.</p><a class="btn primary" href="/custom-order">View All Add-ons</a></div>
-      <article class="pack-card"><img src="/assets/gift-pack-box.jpg" alt="Signature gift box"><div><h3>Signature Gift Box</h3><p>Our elegant box with logo and ribbon.</p></div></article>
-      <article class="pack-card"><img src="/assets/gift-pack-card.jpg" alt="Gift message card"><div><h3>Message Card</h3><p>Add a handwritten message.</p></div></article>
-      <article class="pack-card"><img src="/assets/gift-pack-ribbon.jpg" alt="Silk ribbon"><div><h3>Silk Ribbon</h3><p>Premium ribbon in soft tones.</p></div></article>
-      <article class="pack-card"><img src="/assets/gift-pack-pouch.jpg" alt="Premium pouch"><div><h3>Premium Pouch</h3><p>Velvet pouch for added protection.</p></div></article>
-      <article class="pack-card"><img src="/assets/gift-pack-ready.jpg" alt="Ready-to-gift packaging"><div><h3>Ready-to-Gift</h3><p>Beautifully packed with care.</p></div></article>
+      <article class="pack-card"><img src="assets/gift-pack-box.jpg" alt="Signature gift box"><div><h3>Signature Gift Box</h3><p>Our elegant box with logo and ribbon.</p></div></article>
+      <article class="pack-card"><img src="assets/gift-pack-card.jpg" alt="Gift message card"><div><h3>Message Card</h3><p>Add a handwritten message.</p></div></article>
+      <article class="pack-card"><img src="assets/gift-pack-ribbon.jpg" alt="Silk ribbon"><div><h3>Silk Ribbon</h3><p>Premium ribbon in soft tones.</p></div></article>
+      <article class="pack-card"><img src="assets/gift-pack-pouch.jpg" alt="Premium pouch"><div><h3>Premium Pouch</h3><p>Velvet pouch for added protection.</p></div></article>
+      <article class="pack-card"><img src="assets/gift-pack-ready.jpg" alt="Ready-to-gift packaging"><div><h3>Ready-to-Gift</h3><p>Beautifully packed with care.</p></div></article>
     </div>
   </div>
 </section>
@@ -262,7 +262,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     <a class="floating-contact-link" href="/custom-order"><span class="floating-contact-icon">✉</span><span>Send Inquiry</span></a>
     <a class="floating-contact-link" href="mailto:hello@auralisgems.com"><span class="floating-contact-icon">@</span><span>Email Us</span></a>
   </div>
-  <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><img src="/assets/green-phone-icon.png" alt="Phone contact icon"><span class="floating-contact-close">×</span></button>
+  <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><img src="assets/green-phone-icon.png" alt="Phone contact icon"><span class="floating-contact-close">×</span></button>
 </div>
 <script>
 function toggleFloatingContact(){
