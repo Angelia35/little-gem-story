@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us | Auralis Jewelry</title>
+<meta name="description" content="Learn about Auralis Jewelry, a personalized crystal and gemstone jewelry studio focused on custom bracelets, natural gemstone pieces, gift-ready designs and quote-first service.">
+<style>
+:root{--cream:#fffaf4;--warm:#f7eee8;--paper:#fffdf9;--ink:#302720;--muted:#76675e;--line:#e8d9c9;--gold:#b78a52;--gold2:#caa06c;--dark:#2f251f;--shadow:0 22px 60px rgba(65,42,28,.11)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,"Helvetica Neue",Arial,sans-serif;line-height:1.58}a{text-decoration:none;color:inherit}.container{width:min(1180px,calc(100% - 40px));margin:0 auto}h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.025em}
+.topbar{position:sticky;top:0;z-index:40;height:76px;background:rgba(255,250,244,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(232,217,201,.78)}.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{font-size:31px;white-space:nowrap}.logo:before{content:"✦";font-size:14px;color:var(--gold);margin-right:8px;vertical-align:middle}.menu{display:flex;align-items:center;gap:24px;font-size:14px;color:#493d37}.menu a.active,.menu a:hover{color:var(--gold)}.menu a.active{font-weight:800}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;font-weight:850;white-space:nowrap;transition:.22s ease}.nav-cta{padding:12px 18px;background:linear-gradient(135deg,#caa06c,#ad7e44);color:#fff;font-size:14px;box-shadow:0 14px 28px rgba(183,138,82,.22)}.btn{padding:13px 22px;border:1px solid var(--gold2);font-size:14px;background:rgba(255,255,255,.72);color:var(--ink)}.btn.primary{background:linear-gradient(135deg,#caa06c,#ad7e44);color:#fff;border-color:transparent;box-shadow:0 14px 28px rgba(183,138,82,.22)}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(82,55,40,.12)}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:900}.section{padding:76px 0}.section-title{text-align:center;margin:0 0 36px}.section-title h2{font-size:clamp(34px,4vw,50px);line-height:1.05;margin:8px 0 10px}.section-title p{max-width:790px;margin:0 auto;color:var(--muted);font-size:16px}.icon svg,.float-btn svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.hero{position:relative;overflow:hidden;padding:66px 0 78px;background:radial-gradient(circle at 82% 18%,rgba(184,130,73,.18),transparent 32%),linear-gradient(180deg,#fffaf4,#f7eee8);border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:48px;align-items:center}.hero h1{font-size:clamp(46px,6vw,72px);line-height:.98;margin:12px 0 18px}.hero-copy{font-size:18px;color:var(--muted);max-width:650px;margin:0 0 26px}.hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin:0 0 24px}.hero-tags{display:flex;flex-wrap:wrap;gap:10px}.tag{padding:8px 13px;border:1px solid var(--line);border-radius:999px;background:rgba(255,255,255,.64);font-size:12px;font-weight:800;color:#6d5a4e}
+.hero-visual{background:#fff;border:1px solid var(--line);border-radius:34px;padding:18px;box-shadow:var(--shadow)}.visual-board{position:relative;min-height:480px;border-radius:26px;background:radial-gradient(circle at 30% 28%,rgba(210,163,108,.25),transparent 22%),radial-gradient(circle at 70% 30%,rgba(198,174,222,.24),transparent 20%),radial-gradient(circle at 55% 76%,rgba(117,167,156,.21),transparent 22%),linear-gradient(135deg,#fffaf4,#f0dfd2);border:1px solid #eadbcb;overflow:hidden;padding:28px}.studio-card{position:absolute;background:rgba(255,253,249,.9);border:1px solid rgba(232,217,201,.92);backdrop-filter:blur(12px);border-radius:24px;box-shadow:0 18px 46px rgba(80,51,31,.1)}.studio-card.main{left:34px;right:34px;top:34px;padding:26px}.studio-card.main h3{font-size:31px;line-height:1.05;margin:0 0 10px}.studio-card.main p{margin:0;color:var(--muted)}.studio-card.small{padding:18px}.studio-card.one{left:40px;bottom:48px;width:45%}.studio-card.two{right:38px;bottom:112px;width:42%}.studio-card.three{right:58px;bottom:32px;width:38%}.studio-card b{display:block;font-size:14px;margin-bottom:4px}.studio-card span{font-size:12px;color:var(--muted)}
+.story-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:42px;align-items:center}.story-panel{background:#fff;border:1px solid var(--line);border-radius:32px;padding:34px;box-shadow:var(--shadow)}.story-panel h2{font-size:clamp(34px,4vw,50px);line-height:1.05;margin:8px 0 16px}.story-panel p{color:var(--muted);margin:0 0 18px}.values{display:grid;gap:14px}.value-item{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:20px;padding:18px}.value-item .icon{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#fff3e5;color:var(--gold);flex:0 0 44px}.value-item h3{font-size:22px;margin:0 0 4px}.value-item p{font-size:14px;color:var(--muted);margin:0}
+.pillar-section{background:linear-gradient(180deg,#f7eee8,#fffaf4)}.pillar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.pillar-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 10px 30px rgba(82,55,40,.055);transition:.22s ease}.pillar-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(82,55,40,.1)}.pillar-card .icon{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#fff3e5;color:var(--gold);margin-bottom:18px}.pillar-card h3{font-size:23px;line-height:1.1;margin:0 0 8px}.pillar-card p{font-size:14px;color:var(--muted);margin:0}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.process-card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 10px 28px rgba(82,55,40,.055)}.num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#c79655;color:#fff;font-weight:900;margin-bottom:16px}.process-card h3{font-size:20px;margin:0 0 7px}.process-card p{font-size:14px;color:var(--muted);margin:0}
+.trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.trust-card{background:linear-gradient(135deg,#fffdf9,#fbf1ea);border:1px solid var(--line);border-radius:28px;padding:26px;box-shadow:var(--shadow)}.trust-card h3{font-size:25px;margin:0 0 8px}.trust-card p{color:var(--muted);font-size:14px;margin:0}.cta-section{background:linear-gradient(180deg,#fffaf4,#f7eee8)}.final-cta{background:linear-gradient(135deg,#fffdf9,#fbf1ea);border:1px solid var(--line);border-radius:34px;padding:42px;text-align:center;box-shadow:var(--shadow)}.final-cta h2{font-size:44px;line-height:1.05;margin:0 0 12px}.final-cta p{max-width:760px;margin:0 auto 24px;color:var(--muted)}
+.footer{background:#2f251f;color:#efe6dd;padding:56px 0 28px}.footer-grid{display:grid;grid-template-columns:1.35fr repeat(3,.7fr);gap:38px}.footer p,.footer a{color:#cfc1b7;font-size:14px}.footer h3{font-size:17px;margin:0 0 12px;color:#fff}.footer a{display:block;margin:8px 0}.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:18px;color:#baa99e;font-size:12px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.floating-contact{position:fixed;right:22px;bottom:22px;z-index:50}.float-btn{width:58px;height:58px;border-radius:50%;border:0;background:#fff;color:#1f8f55;box-shadow:0 14px 34px rgba(38,27,20,.22);display:grid;place-items:center;cursor:pointer}
+@media (max-width:1080px){.hero-grid,.story-grid{grid-template-columns:1fr}.pillar-grid,.process-grid{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:1fr}}@media (max-width:760px){.container{width:min(100% - 28px,1180px)}.menu,.nav-cta{display:none}.topbar{height:68px}.logo{font-size:27px}.hero{padding:42px 0 54px}.hero h1{font-size:42px}.hero-copy{font-size:16px}.visual-board{min-height:420px}.studio-card.main{left:20px;right:20px;top:22px;padding:22px}.studio-card.main h3{font-size:26px}.studio-card.small{position:static;width:auto;margin:14px 0 0}.pillar-grid,.process-grid,.footer-grid{grid-template-columns:1fr}.section{padding:56px 0}.story-panel,.final-cta{border-radius:24px;padding:25px}.final-cta h2{font-size:34px}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="logo" href="/">Auralis Jewelry</a>
+    <nav class="menu" aria-label="Primary navigation">
+      <a href="/">Home</a><a href="/custom-bracelets">Custom Bracelets</a><a href="/gemstone-jewelry">Gemstone Jewelry</a><a href="/element-design">Element Design</a><a href="/gift-guide">Gift Guide</a><a class="active" href="/about-us">About Us</a><a href="/custom-order">Custom Order</a>
+    </nav>
+    <a class="nav-cta" href="/custom-order">Start Request</a>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">About Auralis Jewelry</div>
+      <h1>Personalized Jewelry with Meaning, Style and Care</h1>
+      <p class="hero-copy">Auralis Jewelry creates personalized crystal and gemstone jewelry for people who want more than a standard accessory. Each request starts with your story, your style direction and the meaning you want the piece to carry.</p>
+      <div class="hero-actions"><a class="btn primary" href="/custom-order">Start Custom Request</a><a class="btn" href="#our-process">How We Work</a></div>
+      <div class="hero-tags"><span class="tag">Quote before payment</span><span class="tag">Custom crystal bracelets</span><span class="tag">Gemstone jewelry sourcing</span><span class="tag">Gift-ready details</span></div>
+    </div>
+    <div class="hero-visual" aria-hidden="true"><div class="visual-board">
+      <div class="studio-card main"><h3>Designed around your intention</h3><p>We help turn stones, colors, symbols and reference styles into a clear custom jewelry direction.</p></div>
+      <div class="studio-card small one"><b>Custom-first</b><span>Every piece begins with a request, not a rushed checkout.</span></div>
+      <div class="studio-card small two"><b>Meaning-led</b><span>Stones are selected by feeling, purpose and personal style.</span></div>
+      <div class="studio-card small three"><b>Gift-ready</b><span>Packaging and message details can be discussed before quote.</span></div>
+    </div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container story-grid">
+    <div class="story-panel">
+      <div class="eyebrow">Our Story</div>
+      <h2>Jewelry made for personal moments</h2>
+      <p>Auralis Jewelry was created for customers who want a more thoughtful way to choose jewelry. Instead of starting from fixed products and fixed prices, we begin with a request: the person, the occasion, the stone direction, the energy, the color mood or a reference style.</p>
+      <p>From custom crystal bracelets to natural gemstone rings and pendants, our goal is to make the inquiry process clear and low-pressure. You can send a simple idea, a screenshot, a stone name, a gift occasion or a preferred color direction. We help organize the details before a quote is confirmed.</p>
+      <a class="btn primary" href="/custom-order">Submit Your Idea</a>
+    </div>
+    <div class="values">
+      <div class="value-item"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 20.5S5 16.2 3.4 10.8C2.4 7.5 4.4 4.5 7.7 4.5c1.9 0 3.4 1 4.3 2.4.9-1.4 2.4-2.4 4.3-2.4 3.3 0 5.3 3 4.3 6.3C19 16.2 12 20.5 12 20.5Z"/></svg></div><div><h3>Meaning before decoration</h3><p>We focus on the emotion, intention and personal story behind the jewelry.</p></div></div>
+      <div class="value-item"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"/></svg></div><div><h3>Stone-led design</h3><p>Crystal and gemstone directions are selected around color, symbolism and style.</p></div></div>
+      <div class="value-item"><div class="icon"><svg viewBox="0 0 24 24"><path d="M5 10.5h14v9H5z"/><path d="M12 10.5v9"/><path d="M4.5 7.5h15v3h-15z"/><path d="M12 7.5H9.6a2.1 2.1 0 1 1 0-4.2c1.6 0 2.4 1.2 2.4 4.2Z"/><path d="M12 7.5h2.4a2.1 2.1 0 1 0 0-4.2c-1.6 0-2.4 1.2-2.4 4.2Z"/></svg></div><div><h3>Gift-ready thinking</h3><p>We consider packaging, message cards, recipient details and special occasions.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section pillar-section">
+  <div class="container">
+    <div class="section-title"><div class="eyebrow">What We Do</div><h2>Our Custom Jewelry Directions</h2><p>Auralis Jewelry is built around request-first customization. These are the main directions customers can ask about.</p></div>
+    <div class="pillar-grid">
+      <article class="pillar-card"><div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/><path d="M12 9.5c1.8 0 3.25 1.45 3.25 3.25S13.8 16 12 16s-3.25-1.45-3.25-3.25"/></svg></div><h3>Custom Crystal Bracelets</h3><p>Bracelets designed around stones, colors, intention, zodiac, element or gift meaning.</p></article>
+      <article class="pillar-card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"/></svg></div><h3>Natural Gemstone Jewelry</h3><p>Rings, pendants and mixed gemstone selections confirmed by material and availability.</p></article>
+      <article class="pillar-card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 4.5 13.8 9.8 19.5 12 13.8 14.2 12 19.5 10.2 14.2 4.5 12 10.2 9.8 12 4.5Z"/></svg></div><h3>Element-Inspired Design</h3><p>Stone directions based on element, birth date, personality or symbolic balance.</p></article>
+      <article class="pillar-card"><div class="icon"><svg viewBox="0 0 24 24"><path d="M5 10.5h14v9H5z"/><path d="M12 10.5v9"/><path d="M4.5 7.5h15v3h-15z"/><path d="M12 7.5H9.6a2.1 2.1 0 1 1 0-4.2c1.6 0 2.4 1.2 2.4 4.2Z"/><path d="M12 7.5h2.4a2.1 2.1 0 1 0 0-4.2c-1.6 0-2.4 1.2-2.4 4.2Z"/></svg></div><h3>Personalized Gift Orders</h3><p>Gift requests with packaging, message cards, recipient notes and meaningful details.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="our-process">
+  <div class="container">
+    <div class="section-title"><div class="eyebrow">How We Work</div><h2>A clear process before payment</h2><p>Because custom jewelry depends on style, stone, material and timing, we confirm details before a quote and payment.</p></div>
+    <div class="process-grid">
+      <article class="process-card"><div class="num">1</div><h3>Share your idea</h3><p>Send product type, reference photo, stone direction, color mood or gift occasion.</p></article>
+      <article class="process-card"><div class="num">2</div><h3>Confirm details</h3><p>We clarify material, size, quantity, packaging, availability and timeline.</p></article>
+      <article class="process-card"><div class="num">3</div><h3>Receive quote</h3><p>We send quote and next steps after the request details are clear.</p></article>
+      <article class="process-card"><div class="num">4</div><h3>Prepare order</h3><p>After confirmation, we arrange sourcing, production, packing and shipment.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section pillar-section">
+  <div class="container">
+    <div class="section-title"><div class="eyebrow">Why Customers Choose Us</div><h2>Built for thoughtful custom requests</h2></div>
+    <div class="trust-grid">
+      <article class="trust-card"><h3>No payment before quote</h3><p>You can submit an idea first. We review details and confirm available options before payment.</p></article>
+      <article class="trust-card"><h3>Reference photos accepted</h3><p>You can send screenshots, links, product inspiration, color preferences or stone names.</p></article>
+      <article class="trust-card"><h3>Details confirmed first</h3><p>Stone type, size, material, finish, packaging and timing are checked before final quote.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section"><div class="container"><div class="final-cta"><h2>Start with an idea, not a checkout</h2><p>Tell us what you want to create. We will help turn your idea into a clear jewelry direction, quote and next step.</p><a class="btn primary" href="/custom-order">Start Custom Request</a></div></div></section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><div class="logo">Auralis Jewelry</div><p>Personalized crystal and gemstone jewelry for custom requests, meaningful gifts and quote-based sourcing.</p><p><strong>Email:</strong> <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a></p><p><strong>WhatsApp:</strong> <a href="https://wa.me/8618357590167">+86 183 5759 0167</a></p></div>
+    <div><h3>Shop</h3><a href="/custom-bracelets">Custom Bracelets</a><a href="/gemstone-jewelry">Gemstone Jewelry</a><a href="/element-design">Element Design</a><a href="/gift-guide">Gift Guide</a></div>
+    <div><h3>About</h3><a href="/about-us">About Us</a><a href="/custom-order">Custom Order</a><a href="/gift-guide">Gift Ideas</a></div>
+    <div><h3>Contact</h3><a href="mailto:hello@auralisgems.com">Email Us</a><a href="https://wa.me/8618357590167">WhatsApp</a></div>
+  </div>
+  <div class="container copyright"><span>© 2026 Auralis Jewelry. All rights reserved.</span><span>auralisgems.com</span></div>
+</footer>
+<div class="floating-contact"><a class="float-btn" href="https://wa.me/8618357590167" aria-label="Contact on WhatsApp"><svg viewBox="0 0 24 24"><path d="M7.2 4.8 9 4.2l2.2 4.6-1.4 1.1c1.1 2.2 2.8 3.9 5 5l1.1-1.4 4.6 2.2-.6 1.8c-.4 1.1-1.5 1.8-2.7 1.6C10.8 18.4 5.6 13.2 4.9 6.8c-.1-1.2.5-2.3 1.6-2.7l.7-.3Z"/></svg></a></div>
+</body>
+</html>
