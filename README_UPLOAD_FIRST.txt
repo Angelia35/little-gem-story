@@ -1,18 +1,17 @@
-Auralis Jewelry - Homepage Optimized Source V4
+Auralis crystal module source update
 
-This update is focused on the homepage only:
-- The first product card now uses the requested clear crystal bracelet product image.
-- The step numbers in "Create Your Custom Bracelet" are forced inside each card.
-- Homepage hero layout remains the approved integrated full-width style.
-- No fixed prices are added; homepage keeps Custom Quote CTA.
-- WhatsApp / inquiry floating contact remains.
+Included updated files:
+- index.html
+- custom-bracelets.html
+- gift-guide.html
+- assets/crystal-moonlight-clear.png
+- assets/crystal-green-element.png
+- assets/crystal-lifestyle-scene.png
+- assets/crystal-pendant-soft.png
+- assets/crystal-collection-soft.png
+- assets/crystal-model-closeup.png
+- assets/crystal-white-glow.png
+- assets/hero-homepage-full.jpg
+- assets/hero-homepage-full.webp
 
-Upload:
-1. Upload / replace index.html in the GitHub repository root.
-2. Upload / replace the assets folder, especially:
-   - assets/soft-light-pendant-clear.webp
-   - assets/soft-light-pendant-clear.jpg
-3. Wait for Cloudflare deployment.
-
-Test:
-https://auralisgems.com/?v=10
+Upload these files into your existing site project, keeping the /assets/ folder structure unchanged.

@@ -3,245 +3,246 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Gemstone Jewelry | Auralis Jewelry</title>
-<meta name="description" content="Explore quote-based gemstone jewelry styles including necklaces, bracelets, rings and earrings. Availability, material details and shipping are confirmed before payment.">
-<link rel="stylesheet" href="styles.css">
+<title>Custom Crystal Bracelets | Auralis Jewelry</title>
+<meta name="description" content="Custom crystal bracelets designed around your birth date, element direction, color preference, wrist size and gift purpose. Request a custom quote from Auralis Jewelry.">
+<link rel="canonical" href="https://auralisgems.com/custom-bracelets">
 <style>
 :root{
-  --cream:#fffaf4;--paper:#fffdf9;--soft:#f6ebe4;--blush:#ead4cf;--lav:#eee6f7;
-  --gold:#b78a52;--gold-soft:#dbc09a;--ink:#332922;--muted:#786a62;
-  --line:#e8d9c9;--shadow:0 24px 70px rgba(89,58,39,.12);--radius:28px;
+  --bg:#fffaf4;
+  --paper:#ffffff;
+  --cream:#fbf0e6;
+  --soft:#f6e7d8;
+  --line:#ead8c8;
+  --text:#2d211c;
+  --muted:#7b6a60;
+  --gold:#bd8b4a;
+  --gold-dark:#9d7138;
+  --shadow:0 18px 48px rgba(80,54,36,.12);
+  --shadow-soft:0 10px 26px rgba(80,54,36,.08);
+  --radius:26px;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--cream);color:var(--ink);font-family:"Inter","Helvetica Neue",Arial,sans-serif;line-height:1.55}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-.container{width:min(1180px,calc(100% - 40px));margin:0 auto}
-h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.02em}
-.topbar{position:sticky;top:0;z-index:40;height:76px;background:rgba(255,250,244,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(232,217,201,.78)}
-.nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
-.logo{font-size:31px;white-space:nowrap}.logo::before{content:"✦";font-size:14px;color:var(--gold);margin-right:8px;vertical-align:middle}
-.menu{display:flex;align-items:center;gap:26px;font-size:14px;color:#493d37}
-.menu a{position:relative}.menu a.active,.menu a:hover{color:var(--gold)}
-.menu a.active::after{content:"";position:absolute;left:0;right:0;bottom:-11px;height:2px;background:var(--gold)}
-.nav-icons{display:flex;gap:14px;color:#3e342f;font-size:18px}.hamburger{display:none;border:0;background:transparent;font-size:27px;color:var(--ink)}
-.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 22px;border:1px solid var(--gold-soft);font-weight:700;font-size:14px;transition:.2s;background:rgba(255,255,255,.42);color:var(--ink);cursor:pointer}
-.btn.primary{background:linear-gradient(135deg,#caa06c,#ad7e44);color:#fff;border-color:transparent;box-shadow:0 14px 28px rgba(183,138,82,.22)}
-.btn:hover,.mini-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(82,55,40,.12)}
-.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:800}
-.section{padding:80px 0}.soft-bg{background:linear-gradient(180deg,#fffaf4,#f7eee8)}
-.section-title{text-align:center;margin:0 0 36px}.section-title h2{font-size:44px;line-height:1.04;margin:6px 0 10px}.section-title p{max-width:680px;margin:0 auto;color:var(--muted)}
-.section-head{display:flex;align-items:end;justify-content:space-between;margin-bottom:26px;gap:20px}.section-head h2{font-size:42px;margin:0}.text-link{color:var(--gold);font-weight:800}
-.mini-btn{border:1px solid #d6b780;border-radius:999px;padding:9px 13px;background:#fffaf4;font-size:12px;font-weight:800;color:#6d5230;transition:.2s;white-space:nowrap;display:inline-flex}
-.footer{padding:48px 0 28px;background:#f5ece4;border-top:1px solid var(--line)}
-.copyright{padding-top:22px;color:#8a7b72;font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-
-.gem-hero{padding:86px 0 82px;background:radial-gradient(circle at 78% 18%,rgba(238,230,247,.7),transparent 26%),linear-gradient(135deg,#fff8ef 0%,#f7e8df 54%,#ead4cf 100%);border-bottom:1px solid var(--line)}
-.gem-hero .container{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,520px);gap:58px;align-items:center}
-.gem-hero h1{font-size:64px;line-height:1;margin:12px 0 18px;max-width:680px}
-.gem-hero p{font-size:18px;color:var(--muted);max-width:620px;margin:0 0 28px}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
-.hero-badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-badges span{border:1px solid rgba(183,138,82,.28);background:rgba(255,255,255,.48);border-radius:999px;padding:9px 13px;font-size:12px;color:#715f54;font-weight:800}
-.gem-visual{min-height:430px;background:rgba(255,255,255,.55);border:1px solid rgba(232,217,201,.9);border-radius:38px;box-shadow:var(--shadow);padding:22px;display:grid;place-items:center;overflow:hidden;position:relative}
-.gem-visual:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.54);top:20px;left:48px}
-.gem-visual img{position:relative;z-index:1;width:100%;max-height:380px;object-fit:contain;filter:drop-shadow(0 22px 32px rgba(82,55,40,.12))}
-.gem-visual small{position:relative;z-index:1;font-family:Georgia,"Times New Roman",serif;color:var(--muted);font-size:18px}
-.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-.category-card{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px 24px;box-shadow:0 10px 28px rgba(82,55,40,.06);min-height:220px}
-.category-card .icon{width:46px;height:46px;border-radius:50%;display:grid;place-items:center;color:var(--gold);background:#fff3e3;border:1px solid #ead2aa;margin-bottom:16px;font-size:22px}
-.category-card h3{font-size:23px;margin:0 0 8px}.category-card p{margin:0;color:var(--muted);font-size:14px}
-.gem-board{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.gem-card{background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:0 10px 28px rgba(82,55,40,.06)}
-.gem-card img{width:100%;height:260px;object-fit:contain;background:#fbf2eb;padding:18px}.gem-card div{padding:20px}
-.gem-card h3{font-size:24px;margin:0 0 7px}.gem-card p{margin:0 0 16px;color:var(--muted);font-size:14px}
-.gem-note{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#8b7b6f;font-weight:900}
-.quote-process{background:linear-gradient(135deg,#faeee8,#fffaf4);border:1px solid rgba(218,196,174,.55);border-radius:36px;box-shadow:var(--shadow);padding:46px 42px}
-.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:28px}.process-item{text-align:center}
-.process-num{width:42px;height:42px;border-radius:50%;background:#fff;border:1px solid #d8b77a;color:var(--gold);display:grid;place-items:center;font-family:Georgia,"Times New Roman",serif;font-size:23px;margin:0 auto 14px;box-shadow:0 8px 18px rgba(82,55,40,.1)}
-.process-item h3{font-size:22px;margin:0 0 7px}.process-item p{color:var(--muted);font-size:14px;margin:0}
-.material-panel{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);padding:34px}
-.material-panel img{width:100%;height:360px;object-fit:contain;border-radius:26px;background:#fbf2eb;padding:16px}.material-panel h2{font-size:46px;line-height:1.05;margin:0 0 14px}.material-panel p{color:var(--muted);margin:0 0 14px}
-.request-strip{text-align:center;background:linear-gradient(135deg,#fff,#fff7ee);border:1px solid var(--line);border-radius:34px;padding:46px 26px;box-shadow:var(--shadow)}
-.request-strip h2{font-size:44px;margin:0 0 10px}.request-strip p{color:var(--muted);max-width:680px;margin:0 auto 22px}
-
-@media(max-width:980px){
-  .menu,.nav-icons{display:none}.hamburger{display:block}.topbar{height:68px}.logo{font-size:27px}
-  .gem-hero .container,.material-panel{grid-template-columns:1fr}.gem-hero h1{font-size:50px}.gem-visual{min-height:360px}
-  .category-grid,.process-grid{grid-template-columns:repeat(2,1fr)}.gem-board{grid-template-columns:1fr 1fr}
-}
-@media(max-width:560px){
-  .container{width:min(100% - 28px,1180px)}.section{padding:54px 0}.gem-hero{padding:54px 0 56px}.gem-hero h1{font-size:40px}.gem-hero .container{gap:30px}
-  .category-grid,.process-grid,.gem-board{grid-template-columns:1fr}.quote-process,.material-panel{padding:28px 18px}
-  .material-panel h2,.request-strip h2{font-size:34px}.material-panel img{height:280px}.hero-actions .btn{width:100%}
-}
-</style>
-  <link rel="canonical" href="https://auralisgems.com/gemstone-jewelry">
-
-<style id="floating-contact-style">
-.floating-contact{
-  position:fixed;
-  right:22px;
-  bottom:22px;
-  z-index:9999;
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:var(--text);
+  background:var(--bg);
   font-family:Inter,"Helvetica Neue",Arial,sans-serif;
 }
-.floating-contact-panel{
-  width:235px;
-  padding:14px;
-  margin-bottom:12px;
-  border:1px solid rgba(232,217,201,.95);
-  border-radius:22px;
-  background:rgba(255,253,249,.96);
-  box-shadow:0 18px 44px rgba(70,45,31,.18);
-  backdrop-filter:blur(14px);
-  display:none;
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.serif,h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif}
+.container{width:min(1180px,calc(100% - 48px));margin:0 auto}
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(255,250,244,.92);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid rgba(234,216,200,.75);
 }
-.floating-contact.is-open .floating-contact-panel{
-  display:block;
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{font-size:24px;letter-spacing:.2px;font-weight:500;white-space:nowrap}
+.logo::before{content:"✦";font-size:13px;color:var(--gold);margin-right:7px;vertical-align:middle}
+.menu{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:650;color:#4a3a32}
+.menu a{position:relative;padding:27px 0 24px}
+.menu a.active::after,.menu a:hover::after{content:"";position:absolute;left:0;right:0;bottom:17px;height:2px;background:var(--gold);border-radius:99px}
+.nav-icons{display:flex;gap:16px;color:#4a3a32;font-size:17px}.hamburger{display:none;border:0;background:none;font-size:24px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:44px;padding:0 22px;border-radius:999px;
+  border:1px solid #d5b076;background:#fff;color:#6b4f2a;
+  font-weight:800;font-size:13px;letter-spacing:.01em;transition:.2s ease;
 }
-.floating-contact-title{
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:20px;
-  color:#332922;
-  margin:0 0 4px;
-}
-.floating-contact-text{
-  font-size:12px;
-  line-height:1.45;
-  color:#786a62;
-  margin:0 0 12px;
-}
-.floating-contact-link{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:10px 11px;
-  border-radius:14px;
-  color:#332922;
-  text-decoration:none;
-  font-size:13px;
-  font-weight:800;
-  background:#fffaf4;
-  border:1px solid #eadbcb;
-  margin-top:8px;
-  transition:.2s;
-}
-.floating-contact-link:hover{
-  transform:translateY(-1px);
-  box-shadow:0 8px 18px rgba(82,55,40,.11);
-}
-.floating-contact-icon{
-  width:26px;
-  height:26px;
-  display:grid;
-  place-items:center;
-  border-radius:50%;
-  background:#fff3e3;
-  color:#b78a52;
-  flex:0 0 auto;
-}
-.floating-contact-button{
-  width:62px;
-  height:62px;
-  border:0;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  margin-left:auto;
-  cursor:pointer;
-  background:linear-gradient(135deg,#caa06c,#ad7e44);
-  color:#fff;
-  box-shadow:0 16px 34px rgba(173,126,68,.32);
-  font-size:26px;
-}
-.floating-contact-button span{
-  display:block;
-  transform:translateY(-1px);
-}
-.floating-contact.is-open .floating-contact-button span{
-  font-size:24px;
-}
-@media(max-width:560px){
-  .floating-contact{
-    right:16px;
-    bottom:16px;
-  }
-  .floating-contact-panel{
-    width:min(235px,calc(100vw - 32px));
-  }
-}
-</style>
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 26px rgba(80,54,36,.12)}
+.btn.primary{background:linear-gradient(135deg,#c89a55,#b4813e);color:white;border-color:transparent;box-shadow:0 12px 26px rgba(184,129,62,.22)}
+.eyebrow{text-transform:uppercase;letter-spacing:.18em;color:var(--gold);font-size:12px;font-weight:900;margin-bottom:14px}
+.section-title{text-align:center;margin:0 auto 30px;max-width:700px}.section-title h2{font-size:36px;line-height:1.1;margin:0 0 10px}.section-title p{margin:0;color:var(--muted);line-height:1.65;font-size:14px}
+.text-link{color:var(--gold-dark);font-weight:850;font-size:14px}
 
+/* Hero */
+.custom-hero{position:relative;overflow:hidden;background:#f9efe5;border-bottom:1px solid var(--line)}
+.custom-hero .container{min-height:470px;display:grid;grid-template-columns:.9fr 1.35fr;align-items:center;gap:44px}
+.hero-copy{position:relative;z-index:2;padding:66px 0}.hero-copy h1{font-size:60px;line-height:.98;margin:0 0 22px;max-width:520px;font-weight:500}.hero-copy p{font-size:17px;line-height:1.72;color:#4f423b;max-width:440px;margin:0 0 28px}.hero-badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.76);border:1px solid rgba(234,216,200,.9);padding:9px 12px;border-radius:999px;font-size:12px;font-weight:750;color:#6d5b50}.hero-badge span{color:var(--gold)}
+.hero-photo{height:470px;align-self:stretch;border-radius:0 0 0 42px;overflow:hidden;box-shadow:-22px 22px 64px rgba(80,54,36,.16)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center}
 
-<style id="gemstone-real-image-style">
+/* Directions */
+.directions{padding:50px 0 36px;background:#fffaf4}.direction-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}.direction-card{text-align:center}.direction-card figure{margin:0 0 12px;border-radius:14px;overflow:hidden;box-shadow:var(--shadow-soft);background:#f4e5d6}.direction-card img{width:100%;height:190px;object-fit:cover;transition:.28s ease}.direction-card:hover img{transform:scale(1.04)}.direction-card h3{font-size:20px;margin:0 0 5px}.direction-card p{font-size:12px;line-height:1.35;color:#735e51;margin:0}
 
-.hero-visual img{width:100%;height:100%;object-fit:cover}
-.collection-card img,.guide-card img,.product-card img{width:100%;height:260px;object-fit:cover}
-.panel img,.visual img{object-fit:cover;border-radius:24px}
+/* How */
+.how-section{padding:18px 0 50px;background:#fffaf4}.how-card{border:1px solid var(--line);background:rgba(255,255,255,.74);border-radius:24px;padding:28px 30px 34px;box-shadow:var(--shadow-soft)}.how-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;align-items:start}.how-step{text-align:center;position:relative}.how-step:not(:last-child)::after{content:"";position:absolute;top:43px;right:-20px;width:34px;border-top:1px dashed #d8b78e}.step-icon{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;margin:0 auto 12px;background:#f3e7da;color:#744f25;font-size:30px;border:1px solid #ead7c4}.how-step h3{font-size:16px;margin:0 0 7px;font-family:Georgia,"Times New Roman",serif}.how-step p{font-size:12px;line-height:1.55;color:#68574d;margin:0}
 
+/* Elements */
+.element-section{padding:10px 0 50px;background:#fffaf4}.element-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.element-card{min-height:210px;border-radius:16px;overflow:hidden;position:relative;color:#fff;padding:22px;display:flex;align-items:flex-end;justify-content:center;text-align:center;box-shadow:var(--shadow-soft)}.element-card::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.52));z-index:1}.element-card::after{content:"";position:absolute;inset:0;opacity:.9;background:var(--element-bg);background-size:cover;background-position:center;z-index:0}.element-card>div{position:relative;z-index:2}.element-symbol{width:62px;height:62px;border:2px solid rgba(255,255,255,.85);border-radius:50%;display:grid;place-items:center;margin:0 auto 10px;font-size:30px}.element-card h3{font-size:28px;margin:0 0 5px}.element-card p{font-size:12px;line-height:1.45;margin:0 0 12px}.element-pill{display:inline-flex;background:rgba(255,255,255,.92);color:#6c4b26;border-radius:999px;padding:8px 18px;font-size:12px;font-weight:850}.wood{--element-bg:linear-gradient(135deg,#264b2e,#69844d)}.fire{--element-bg:linear-gradient(135deg,#743016,#d07a2d)}.earth{--element-bg:linear-gradient(135deg,#8a6a47,#c5a574)}.metal{--element-bg:linear-gradient(135deg,#777979,#c3c0b6)}.water{--element-bg:linear-gradient(135deg,#14475a,#427a8a)}.learn-elements{text-align:center;margin-top:18px}
+
+/* Gallery */
+.gallery-section{padding:10px 0 50px;background:#fffaf4}.gallery-card{position:relative;border:1px solid var(--line);border-radius:24px;background:rgba(255,255,255,.72);padding:26px 42px 34px;box-shadow:var(--shadow-soft)}.gallery-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.gallery-item{border-radius:12px;overflow:hidden;background:#f4e7da}.gallery-item img{width:100%;height:150px;object-fit:cover;transition:.25s ease}.gallery-item:hover img{transform:scale(1.04)}.gallery-action{text-align:center;margin-top:22px}.gallery-arrow{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:#fff;display:grid;place-items:center;color:#7a5b36;box-shadow:0 8px 18px rgba(80,54,36,.09)}.gallery-arrow.left{left:-18px}.gallery-arrow.right{right:-18px}
+
+/* CTA */
+.cta-section{padding:0 0 72px;background:#fffaf4}.cta-card{border-radius:24px;overflow:hidden;display:grid;grid-template-columns:1fr 1.1fr;align-items:center;min-height:260px;background:linear-gradient(110deg,#fff,#f3dfcd);border:1px solid var(--line);box-shadow:var(--shadow)}.cta-copy{padding:42px 64px}.cta-copy h2{font-size:42px;line-height:1.06;margin:0 0 18px}.cta-list{margin:0 0 24px;padding:0;list-style:none;color:#665247}.cta-list li{margin:8px 0;font-size:14px}.cta-list li::before{content:"✓";color:var(--gold);font-weight:900;margin-right:8px}.cta-image{height:100%;min-height:260px}.cta-image img{width:100%;height:100%;object-fit:cover;object-position:center}
+
+.footer{background:#f0e3d7;border-top:1px solid var(--line);padding:34px 0;color:#5f5149}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr 1.2fr;gap:34px}.footer h3{font-size:18px;margin:0 0 14px}.footer p,.footer a{font-size:12px;line-height:1.7;color:#6f625b}.footer a{display:block;margin:6px 0}.subscribe{display:flex;border:1px solid #d6bfa8;background:#fff;border-radius:999px;overflow:hidden}.subscribe input{flex:1;border:0;background:transparent;padding:0 14px;min-height:36px;font-size:12px}.subscribe button{border:0;background:#bd8b4a;color:#fff;width:44px}.copyright{border-top:1px solid rgba(203,181,163,.7);margin-top:30px;padding-top:18px;display:flex;justify-content:space-between;gap:20px;font-size:12px;color:#766961}
+
+.floating-contact{position:fixed;right:22px;bottom:22px;z-index:9999;font-family:Inter,"Helvetica Neue",Arial,sans-serif}.floating-contact-panel{width:235px;padding:14px;margin-bottom:12px;border:1px solid rgba(232,217,201,.95);border-radius:22px;background:rgba(255,253,249,.96);box-shadow:0 18px 44px rgba(70,45,31,.18);backdrop-filter:blur(14px);display:none}.floating-contact.is-open .floating-contact-panel{display:block}.floating-contact-title{font-family:Georgia,"Times New Roman",serif;font-size:20px;color:#332922;margin:0 0 4px}.floating-contact-text{font-size:12px;line-height:1.45;color:#786a62;margin:0 0 12px}.floating-contact-link{display:flex;align-items:center;gap:10px;padding:10px 11px;border-radius:14px;color:#332922;text-decoration:none;font-size:13px;font-weight:800;background:#fffaf4;border:1px solid #eadbcb;margin-top:8px;transition:.2s}.floating-contact-link:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(82,55,40,.11)}.floating-contact-icon{width:26px;height:26px;display:grid;place-items:center;border-radius:50%;background:#fff3e3;color:#b78a52;flex:0 0 auto}.floating-contact-button{width:64px;height:64px;border:0;border-radius:50%;display:grid;place-items:center;margin-left:auto;cursor:pointer;background:#ffffff;padding:0;overflow:hidden;box-shadow:0 10px 24px rgba(80,56,34,.18)}.floating-contact-button img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}.floating-contact-close{display:none;font-size:30px;line-height:1;color:#5fbf86;font-weight:700;transform:translateY(-1px)}.floating-contact.is-open .floating-contact-button img{display:none}.floating-contact.is-open .floating-contact-close{display:block}
+
+@media(max-width:1100px){.direction-grid{grid-template-columns:repeat(3,1fr)}.element-grid{grid-template-columns:repeat(3,1fr)}.gallery-grid{grid-template-columns:repeat(3,1fr)}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:860px){.menu,.nav-icons{display:none}.hamburger{display:block}.custom-hero .container{grid-template-columns:1fr;gap:0}.hero-photo{height:360px;border-radius:28px 28px 0 0}.hero-copy h1{font-size:44px}.how-grid{grid-template-columns:1fr}.how-step:not(:last-child)::after{display:none}.element-grid{grid-template-columns:1fr}.cta-card{grid-template-columns:1fr}.cta-copy{padding:34px 28px}.copyright{flex-direction:column}.footer-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.container{width:min(100% - 28px,1180px)}.direction-grid,.gallery-grid{grid-template-columns:1fr 1fr}.direction-card img{height:170px}.gallery-card{padding:24px 18px 28px}.gallery-arrow{display:none}.hero-copy{padding:44px 0}.hero-copy h1{font-size:38px}.section-title h2{font-size:30px}.cta-copy h2{font-size:34px}}
 </style>
 </head>
 <body>
 <header class="topbar">
   <div class="container nav">
     <a class="logo" href="/">Auralis Jewelry</a>
-    <nav class="menu">
+    <nav class="menu" aria-label="Main navigation">
       <a href="/">Home</a>
-      <a href="/custom-bracelets">Custom Bracelets</a>
-      <a class="active" href="/gemstone-jewelry">Gemstone Jewelry</a>
+      <a class="active" href="/custom-bracelets">Custom Bracelets</a>
+      <a href="/gemstone-jewelry">Gemstone Jewelry</a>
       <a href="/element-design">Element Design</a>
       <a href="/gift-guide">Gift Guide</a>
       <a href="/custom-order">Custom Order</a>
     </nav>
-    <div class="nav-icons"><span>⌕</span><span>♡</span><span>✉</span></div>
-    <button class="hamburger">☰</button>
+    <div class="nav-icons" aria-label="Visual icons"><span>⌕</span><span>♡</span><span>✉</span></div>
+    <button class="hamburger" aria-label="Open menu">☰</button>
   </div>
 </header>
+
 <main>
-<section class="gem-hero"><div class="container"><div><div class="eyebrow">Quote-based gemstone styles</div><h1>Gemstone Jewelry for Meaningful Gifting</h1><p>Explore gemstone-inspired necklaces, bracelets, rings and earrings. Final material details, availability and quote are confirmed before payment.</p><div class="hero-actions"><a class="btn primary" href="/custom-order">Request This Piece</a><a class="btn" href="#collection-preview">View Collection Directions</a></div><div class="hero-badges"><span>No fixed price before confirmation</span><span>Availability checked before quote</span><span>Gift-ready option available</span><span>Request-first order flow</span></div></div><div class="gem-visual"><img src="/assets/gemstone-set-wide.webp" alt="Gemstone jewelry set displayed on soft beige linen and stone"><small>Natural-stone inspired jewelry</small></div></div></section>
-<section class="section"><div class="container"><div class="section-title"><div class="eyebrow">What you can request</div><h2>Four Gemstone Jewelry Directions</h2><p>This page is for style browsing and inquiry. Product price will be added only after supplier, material and availability details are confirmed.</p></div><div class="category-grid"><article class="category-card"><div class="icon">○</div><h3>Necklaces</h3><p>Gemstone pendants, natural-stone inspired necklaces and soft everyday styles.</p></article><article class="category-card"><div class="icon">◎</div><h3>Bracelets</h3><p>Ready-style gemstone bracelets and crystal bead directions for gift requests.</p></article><article class="category-card"><div class="icon">◇</div><h3>Rings</h3><p>Minimal gemstone rings, statement stone styles and soft feminine designs.</p></article><article class="category-card"><div class="icon">✦</div><h3>Earrings</h3><p>Stone earrings, pearl-and-gem directions and lightweight gift-ready styles.</p></article></div></div></section>
-<section class="section soft-bg" id="collection-preview"><div class="container"><div class="section-head"><div><div class="eyebrow">Collection preview</div><h2>Browse by Stone & Style</h2></div><a class="text-link" href="/custom-order">Request details →</a></div><div class="gem-board"><article class="gem-card"><img src="/assets/gemstone-gift-set.webp" alt="Gemstone jewelry gift set product photo"><div><span class="gem-note">Soft · romantic · giftable</span><h3>Rose Quartz Styles</h3><p>Soft pink gemstone-inspired pieces for gentle, feminine and romantic gift directions.</p><a class="mini-btn" href="/custom-order">Request Details</a></div></article><article class="gem-card"><img src="/assets/amethyst-bracelet.webp" alt="Amethyst gemstone bracelet product photo"><div><span class="gem-note">Purple · elegant · refined</span><h3>Amethyst Styles</h3><p>Purple stone directions for necklaces, earrings, rings or custom gift requests.</p><a class="mini-btn" href="/custom-order">Request Details</a></div></article><article class="gem-card"><img src="assets/moonstone.svg" alt="Moonstone gemstone jewelry style"><div><span class="gem-note">Light · pearly · minimal</span><h3>Moonstone Styles</h3><p>Soft white, pearly and luminous styles for daily wear and meaningful gifts.</p><a class="mini-btn" href="/custom-order">Request Details</a></div></article><article class="gem-card"><img src="assets/citrine.svg" alt="Citrine gemstone jewelry style"><div><span class="gem-note">Warm · golden · bright</span><h3>Citrine Styles</h3><p>Warm gold and yellow gemstone directions for bright, sunny and elegant looks.</p><a class="mini-btn" href="/custom-order">Request Details</a></div></article><article class="gem-card"><img src="assets/labradorite.svg" alt="Labradorite gemstone jewelry style"><div><span class="gem-note">Grey · blue flash · modern</span><h3>Labradorite Styles</h3><p>Grey and blue-flash stone directions for cooler, modern and understated designs.</p><a class="mini-btn" href="/custom-order">Request Details</a></div></article><article class="gem-card"><img src="assets/garnet.svg" alt="Garnet gemstone jewelry style"><div><span class="gem-note">Deep red · classic · bold</span><h3>Garnet Styles</h3><p>Deep red gemstone directions for classic, rich and more statement-style gifting.</p><a class="mini-btn" href="/custom-order">Request Details</a></div></article></div></div></section>
-<section class="section"><div class="container"><div class="quote-process"><div class="section-title"><div class="eyebrow">Request-first process</div><h2>How Gemstone Orders Work</h2><p>Because current gemstone styles depend on supplier availability, the order process starts with a request instead of direct checkout.</p></div><div class="process-grid"><div class="process-item"><div class="process-num">1</div><h3>Choose a Direction</h3><p>Select a stone, jewelry type or gift occasion from the preview styles.</p></div><div class="process-item"><div class="process-num">2</div><h3>Submit Request</h3><p>Tell us country, product type and any material, color or gift preference.</p></div><div class="process-item"><div class="process-num">3</div><h3>We Confirm Details</h3><p>Availability, material details, shipping and quotation are checked before payment.</p></div><div class="process-item"><div class="process-num">4</div><h3>Payment & Shipping</h3><p>After confirmation, we send a PayPal invoice or payment link and arrange shipment.</p></div></div></div></div></section>
-<section class="section soft-bg"><div class="container"><div class="material-panel"><img src="assets/story.svg" alt="Gemstone jewelry gift packaging and studio mood"><div><div class="eyebrow">Material & availability</div><h2>Details Are Confirmed Before Quote</h2><p>The gemstone page is designed for browsing and request collection. Final product photos, material composition, size, stock status and shipping cost should be confirmed before a formal quote is sent.</p><p>This keeps the website flexible while your supplier catalog and ready-to-sell product list are still being refined.</p><a class="btn primary" href="/custom-order">Request Product Details</a></div></div></div></section>
-<section class="section"><div class="container"><div class="request-strip"><div class="eyebrow">Ready to inquire</div><h2>Ask About a Gemstone Style</h2><p>You can send a simple request first. Fixed prices can be added later only for products you confirm as ready-to-sell.</p><a class="btn primary" href="/custom-order">Submit Gemstone Request</a></div></div></section>
+  <section class="custom-hero">
+    <div class="container">
+      <div class="hero-copy">
+        <div class="eyebrow">Custom bracelet studio</div>
+        <h1>Custom Crystal Bracelets Made Around You</h1>
+        <p>Personalized crystal bracelet designs inspired by your energy, style preference, wrist size and gifting purpose.</p>
+        <a class="btn primary" href="/custom-order">Start Your Custom Bracelet →</a>
+        <div class="hero-badges">
+          <span class="hero-badge"><span>✓</span>Made to Order</span>
+          <span class="hero-badge"><span>✓</span>Natural Stone Style</span>
+          <span class="hero-badge"><span>✓</span>Custom Quote</span>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="/assets/bracelet-rose-model.jpg" alt="Rose quartz crystal bracelet worn on a model wrist">
+      </div>
+    </div>
+  </section>
+
+  <section class="directions">
+    <div class="container">
+      <div class="section-title">
+        <h2>Custom Bracelet Directions</h2>
+        <p>Choose a visual direction first. Final stones, bead size and details are confirmed through your custom request.</p>
+      </div>
+      <div class="direction-grid">
+        <article class="direction-card"><figure><img src="/assets/bracelet-rose-model.jpg" alt="Rose Quartz bracelet worn on wrist"></figure><h3>Rose Quartz</h3><p>Softness · warmth · gifting</p></article>
+        <article class="direction-card"><figure><img src="/assets/bracelet-citrine-model.jpg" alt="Citrine bracelet worn on wrist"></figure><h3>Citrine</h3><p>Warmth · confidence · glow</p></article>
+        <article class="direction-card"><figure><img src="/assets/bracelet-moonstone-model.jpg" alt="Moonstone bracelet worn on wrist"></figure><h3>Moonstone</h3><p>Calm · light · clarity</p></article>
+        <article class="direction-card"><figure><img src="/assets/bracelet-green-still.jpg" alt="Green crystal bracelet on soft fabric"></figure><h3>Green Crystal</h3><p>Growth · renewal · natural tone</p></article>
+        <article class="direction-card"><figure><img src="/assets/bracelet-clear-still.jpg" alt="Clear quartz bracelet on warm surface"></figure><h3>Clear Quartz</h3><p>Clarity · focus · clean style</p></article>
+        <article class="direction-card"><figure><img src="/assets/bracelet-smoky-model.jpg" alt="Smoky quartz bracelet worn on wrist"></figure><h3>Smoky Quartz</h3><p>Grounded · warm · protective tone</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-section">
+    <div class="container how-card">
+      <div class="section-title">
+        <h2>How to Customize Your Bracelet</h2>
+        <p>We keep the process simple, visual and quote-based.</p>
+      </div>
+      <div class="how-grid">
+        <article class="how-step"><div class="step-icon">▣</div><h3>1. Birth Date</h3><p>Share your birth date as a design reference.</p></article>
+        <article class="how-step"><div class="step-icon">◇</div><h3>2. Element</h3><p>Choose your element or use our guide.</p></article>
+        <article class="how-step"><div class="step-icon">◈</div><h3>3. Color Preference</h3><p>Tell us the colors and mood you like.</p></article>
+        <article class="how-step"><div class="step-icon">◎</div><h3>4. Wrist Size</h3><p>Provide your wrist measurement.</p></article>
+        <article class="how-step"><div class="step-icon">🎁</div><h3>5. Gift Purpose</h3><p>For yourself or someone special.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="element-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Element-Inspired Bracelet Guide</h2>
+        <p>Start from Wood, Fire, Earth, Metal or Water, then match the stone direction to your style.</p>
+      </div>
+      <div class="element-grid">
+        <article class="element-card wood"><div><div class="element-symbol">♧</div><h3>Wood</h3><p>Growth · vitality · new beginnings</p><a class="element-pill" href="/element-design">Explore →</a></div></article>
+        <article class="element-card fire"><div><div class="element-symbol">△</div><h3>Fire</h3><p>Passion · energy · confidence</p><a class="element-pill" href="/element-design">Explore →</a></div></article>
+        <article class="element-card earth"><div><div class="element-symbol">▢</div><h3>Earth</h3><p>Stability · strength · nurturing</p><a class="element-pill" href="/element-design">Explore →</a></div></article>
+        <article class="element-card metal"><div><div class="element-symbol">○</div><h3>Metal</h3><p>Focus · clarity · discipline</p><a class="element-pill" href="/element-design">Explore →</a></div></article>
+        <article class="element-card water"><div><div class="element-symbol">≋</div><h3>Water</h3><p>Intuition · calm · flow</p><a class="element-pill" href="/element-design">Explore →</a></div></article>
+      </div>
+      <div class="learn-elements"><a class="text-link" href="/element-design">Learn more about Elements →</a></div>
+    </div>
+  </section>
+
+  <section class="gallery-section">
+    <div class="container gallery-card">
+      <span class="gallery-arrow left">←</span><span class="gallery-arrow right">→</span>
+      <div class="section-title">
+        <h2>Bracelet Style Gallery</h2>
+        <p>More visual references for custom bracelet requests.</p>
+      </div>
+      <div class="gallery-grid">
+        <article class="gallery-item"><img src="/assets/bracelet-soft-pink-original.jpg" alt="Pink crystal bracelet style reference"></article>
+        <article class="gallery-item"><img src="/assets/bracelet-pastel-hand-original.jpg" alt="Pastel crystal bracelet held in hand"></article>
+        <article class="gallery-item"><img src="/assets/bracelet-clear-still.jpg" alt="Clear crystal bracelet style reference"></article>
+        <article class="gallery-item"><img src="/assets/bracelet-citrine-model.jpg" alt="Citrine bracelet style reference"></article>
+        <article class="gallery-item"><img src="/assets/bracelet-brown-original.jpg" alt="Warm smoky bracelet style reference"></article>
+        <article class="gallery-item"><img src="/assets/bracelet-smoky-model.jpg" alt="Smoky quartz bracelet style reference"></article>
+      </div>
+      <div class="gallery-action"><a class="btn primary" href="/custom-order">View More Styles →</a></div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-card">
+      <div class="cta-copy">
+        <h2>Ready to Create Your One-of-a-Kind Bracelet?</h2>
+        <ul class="cta-list">
+          <li>Custom design based on your request</li>
+          <li>Natural stone style and bead direction</li>
+          <li>Quote confirmed before payment</li>
+        </ul>
+        <a class="btn primary" href="/custom-order">Request Your Custom Bracelet →</a>
+      </div>
+      <div class="cta-image"><img src="/assets/bracelet-moonstone-model.jpg" alt="Custom crystal bracelet worn on a model wrist"></div>
+    </div>
+  </section>
 </main>
-<footer class="footer"><div class="container copyright"><span>© 2026 Auralis Jewelry.</span><span>Website: <a href="https://auralisgems.com">auralisgems.com</a> · Email: <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a> · WhatsApp: <a href="https://wa.me/8618357590167">+86 183 5759 0167</a></span></div></footer>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><div class="logo">Auralis Jewelry</div><p>Personalized crystal and gemstone jewelry for your energy, your style and your story.</p><p><strong>Website:</strong> <a href="https://auralisgems.com">auralisgems.com</a><br><strong>Email:</strong> <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a><br><strong>WhatsApp:</strong> <a href="https://wa.me/8618357590167">+86 183 5759 0167</a></p></div>
+    <div><h3>Shop</h3><a href="/custom-bracelets">Custom Bracelets</a><a href="/gemstone-jewelry">Gemstone Jewelry</a><a href="/gift-guide">Gift Ideas</a></div>
+    <div><h3>Customer Care</h3><a href="/custom-order">Request a Quote</a><a href="/gift-guide">Shipping & Delivery</a><a href="/gift-guide">FAQ</a></div>
+    <div><h3>About</h3><a href="/element-design">Element Guide</a><a href="/gift-guide">Gift Guide</a><a href="mailto:hello@auralisgems.com">Contact</a></div>
+    <div><h3>Stay Connected</h3><p>Get custom design updates and gemstone inspiration.</p><div class="subscribe"><input aria-label="Email" placeholder="Enter your email"><button>→</button></div></div>
+  </div>
+  <div class="container copyright"><span>© 2026 Auralis Jewelry. All rights reserved.</span><span>Website: <a href="https://auralisgems.com">auralisgems.com</a> · Email: <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a></span></div>
+</footer>
 
 <div class="floating-contact" id="floatingContact">
   <div class="floating-contact-panel" aria-label="Contact options">
     <h3 class="floating-contact-title">Contact Us</h3>
     <p class="floating-contact-text">Need help with a custom bracelet or gemstone jewelry request?</p>
-    <a class="floating-contact-link" href="https://wa.me/8618357590167" target="_blank" rel="noopener">
-      <span class="floating-contact-icon">☎</span><span>WhatsApp</span>
-    </a>
-    <a class="floating-contact-link" href="/custom-order">
-      <span class="floating-contact-icon">✉</span><span>Send Inquiry</span>
-    </a>
-    <a class="floating-contact-link" href="mailto:hello@auralisgems.com">
-      <span class="floating-contact-icon">@</span><span>Email Us</span>
-    </a>
+    <a class="floating-contact-link" href="https://wa.me/8618357590167" target="_blank" rel="noopener"><span class="floating-contact-icon">☎</span><span>WhatsApp</span></a>
+    <a class="floating-contact-link" href="/custom-order"><span class="floating-contact-icon">✉</span><span>Send Inquiry</span></a>
+    <a class="floating-contact-link" href="mailto:hello@auralisgems.com"><span class="floating-contact-icon">@</span><span>Email Us</span></a>
   </div>
-  <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><span id="floatingContactIcon">☎</span></button>
+  <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><img src="/assets/green-phone-icon.png" alt="Phone contact icon"><span class="floating-contact-close">×</span></button>
 </div>
-<script id="floating-contact-script">
+<script>
 function toggleFloatingContact(){
   var box=document.getElementById("floatingContact");
-  var icon=document.getElementById("floatingContactIcon");
-  if(!box || !icon) return;
+  if(!box) return;
   box.classList.toggle("is-open");
-  icon.textContent=box.classList.contains("is-open") ? "×" : "☎";
 }
 document.addEventListener("click",function(e){
   var box=document.getElementById("floatingContact");
   if(!box) return;
-  if(!box.contains(e.target)){
-    box.classList.remove("is-open");
-    var icon=document.getElementById("floatingContactIcon");
-    if(icon) icon.textContent="☎";
-  }
+  if(!box.contains(e.target)) box.classList.remove("is-open");
 });
 </script>
-
 </body>
 </html>
