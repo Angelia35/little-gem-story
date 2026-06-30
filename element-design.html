@@ -46,15 +46,53 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 .section-title{text-align:center;margin:0 0 36px}.section-title h2{font-size:44px;line-height:1.04;margin:6px 0 10px}.section-title p{max-width:800px;margin:0 auto;color:var(--muted)}
 
 /* Hero */
-.element-hero{padding:86px 0 82px;background:radial-gradient(circle at 80% 12%,rgba(238,230,247,.7),transparent 28%),linear-gradient(135deg,#fff8ef 0%,#f7e8df 54%,#ead4cf 100%);border-bottom:1px solid var(--line)}
-.element-hero .container{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,520px);gap:58px;align-items:center}
-.element-hero h1{font-size:64px;line-height:1;margin:12px 0 18px;max-width:720px}.element-hero p{font-size:18px;color:var(--muted);max-width:650px;margin:0 0 28px}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.badges span{border:1px solid rgba(183,138,82,.28);background:rgba(255,255,255,.5);border-radius:999px;padding:9px 13px;font-size:12px;color:#715f54;font-weight:900}
-.hero-visual{min-height:430px;background:rgba(255,255,255,.55);border:1px solid rgba(232,217,201,.9);border-radius:38px;box-shadow:var(--shadow);padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:14px;overflow:hidden;position:relative}
-.hero-visual:before{content:"";position:absolute;width:270px;height:270px;border-radius:50%;background:rgba(255,255,255,.54);top:28px;left:86px}
-.hero-visual .large{grid-row:span 2}
-.hero-visual img{position:relative;z-index:1;width:100%;height:100%;min-height:170px;object-fit:cover;border-radius:24px;box-shadow:0 20px 38px rgba(82,55,40,.12)}
-.hero-visual .caption{position:absolute;z-index:2;left:32px;bottom:28px;background:rgba(255,253,249,.85);border:1px solid rgba(232,217,201,.9);border-radius:999px;padding:9px 14px;font-size:12px;font-weight:900;color:#6d5230}
+.element-hero{
+  position:relative;
+  overflow:hidden;
+  min-height:640px;
+  display:flex;
+  align-items:center;
+  background:#f6e8df;
+  border-bottom:1px solid var(--line);
+}
+.element-hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background-image:
+    linear-gradient(90deg, rgba(255,250,244,.98) 0%, rgba(255,250,244,.9) 36%, rgba(255,250,244,.56) 58%, rgba(255,250,244,.18) 100%),
+    url("/assets/element-hero-custom.jpg");
+  background-size:cover;
+  background-position:center right;
+  transform:scale(1.01);
+}
+.element-hero::after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0 0;
+  height:160px;
+  background:linear-gradient(180deg,rgba(255,250,244,0),rgba(255,250,244,.62));
+  pointer-events:none;
+}
+.element-hero .container{
+  position:relative;
+  z-index:1;
+}
+.element-hero h1{
+  font-size:64px;
+  line-height:1;
+  margin:12px 0 18px;
+  max-width:710px;
+}
+.element-hero p{
+  font-size:18px;
+  color:var(--muted);
+  max-width:660px;
+  margin:0 0 28px;
+}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;max-width:680px}
+.badges span{border:1px solid rgba(183,138,82,.28);background:rgba(255,255,255,.58);border-radius:999px;padding:9px 13px;font-size:12px;color:#715f54;font-weight:900}
 
 /* Interactive finder */
 .finder-wrap{display:grid;grid-template-columns:minmax(360px,500px) 1fr;gap:32px;align-items:stretch}
@@ -92,6 +130,39 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 .stone-list span{border:1px solid #eadbcb;background:#fffaf6;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:900;color:#6d5230}
 .ref-note{margin-top:18px;padding:16px 18px;border:1px solid #e1c492;background:#fff7ea;border-radius:20px;color:#7a684e;font-size:14px}
 
+
+/* Element inspiration gallery */
+.inspiration-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:22px;
+}
+.inspiration-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:28px;
+  overflow:hidden;
+  box-shadow:0 10px 28px rgba(82,55,40,.06);
+}
+.inspiration-card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  background:#fbf2eb;
+}
+.inspiration-card div{
+  padding:18px;
+}
+.inspiration-card h3{
+  margin:0 0 6px;
+  font-size:23px;
+}
+.inspiration-card p{
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+}
+
 /* Supporting content */
 .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.panel{background:#fff;border:1px solid var(--line);border-radius:30px;padding:34px;box-shadow:0 10px 28px rgba(82,55,40,.06)}.panel h2{font-size:40px;line-height:1.05;margin:0 0 14px}.panel p{color:var(--muted);margin:0 0 14px}.note{background:#fff7ea;border:1px solid #e1c492;color:#66533a;border-radius:20px;padding:18px;margin-top:18px;font-size:14px}
 .content-block{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);padding:34px}.content-block img{width:100%;height:360px;object-fit:cover;border-radius:26px;background:#fbf2eb}.content-block h2{font-size:46px;line-height:1.05;margin:0 0 14px}.content-block p{color:var(--muted);margin:0 0 14px}
@@ -107,9 +178,9 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 .floating-contact-icon{width:26px;height:26px;display:grid;place-items:center;border-radius:50%;background:#fff3e3;color:#b78a52;flex:0 0 auto}.floating-contact-button{width:64px;height:64px;border:0;border-radius:50%;display:grid;place-items:center;margin-left:auto;cursor:pointer;background:#fff;padding:0;overflow:hidden;box-shadow:0 10px 24px rgba(80,56,34,.18)}
 .floating-contact-button img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}.floating-contact-close{display:none;font-size:30px;line-height:1;color:#5fbf86;font-weight:700;transform:translateY(-1px)}.floating-contact.is-open .floating-contact-button img{display:none}.floating-contact.is-open .floating-contact-close{display:block}
 
-@media(max-width:1080px){.element-grid{grid-template-columns:repeat(3,1fr)}.reference-card,.reference-card.featured{grid-template-columns:1fr}.ring{margin:0 auto}.footer-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:980px){.menu,.nav-icons{display:none}.hamburger{display:block}.topbar{height:68px}.logo{font-size:27px}.element-hero .container,.finder-wrap,.info-grid,.content-block{grid-template-columns:1fr}.element-hero h1{font-size:50px}.hero-visual{min-height:360px}.examples,.reference-grid{grid-template-columns:1fr}.reference-card.featured{grid-column:span 1}}
-@media(max-width:560px){.container{width:min(100% - 28px,1180px)}.section{padding:54px 0}.element-hero{padding:54px 0 56px}.element-hero h1{font-size:40px}.element-grid,.result-grid{grid-template-columns:1fr}.finder-panel,.result-panel,.content-block,.panel,.reference-card{padding:26px 18px}.content-block h2,.request h2,.finder-panel h2,.result-panel h2,.section-title h2{font-size:34px}.content-block img{height:280px}.hero-actions .btn,.finder-actions .btn{width:100%}.hero-visual{grid-template-columns:1fr}.hero-visual .large{grid-row:auto}.footer-grid{grid-template-columns:1fr}.floating-contact{right:16px;bottom:16px}.floating-contact-panel{width:min(235px,calc(100vw - 32px))}}
+@media(max-width:1080px){.element-grid{grid-template-columns:repeat(3,1fr)}.inspiration-grid{grid-template-columns:repeat(2,1fr)}.reference-card,.reference-card.featured{grid-template-columns:1fr}.ring{margin:0 auto}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:980px){.menu,.nav-icons{display:none}.hamburger{display:block}.topbar{height:68px}.logo{font-size:27px}.finder-wrap,.info-grid,.content-block{grid-template-columns:1fr}.element-hero h1{font-size:50px}.examples,.reference-grid{grid-template-columns:1fr}.reference-card.featured{grid-column:span 1}}
+@media(max-width:560px){.inspiration-grid{grid-template-columns:1fr}.container{width:min(100% - 28px,1180px)}.section{padding:54px 0}.element-hero{padding:54px 0 56px}.element-hero h1{font-size:40px}.element-grid,.result-grid{grid-template-columns:1fr}.finder-panel,.result-panel,.content-block,.panel,.reference-card{padding:26px 18px}.content-block h2,.request h2,.finder-panel h2,.result-panel h2,.section-title h2{font-size:34px}.content-block img{height:280px}.hero-actions .btn,.finder-actions .btn{width:100%}.footer-grid{grid-template-columns:1fr}.floating-contact{right:16px;bottom:16px}.floating-contact-panel{width:min(235px,calc(100vw - 32px))}}
 </style>
 </head>
 
@@ -136,18 +207,12 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     <div>
       <div class="eyebrow">Chinese Five Elements-Inspired Design</div>
       <h1>Find Your Element-Inspired Crystal Direction</h1>
-      <p>Select your birth date and MBTI to receive a simple Chinese Five Elements direction, zodiac result and suggested support element. The result becomes a design starting point for color, stone mood and custom bracelet style.</p>
+      <p>Select your birth date and MBTI to receive a simple Chinese Five Elements direction, zodiac result and an estimated missing/support element. The result becomes a design starting point for color, stone mood and custom bracelet style.</p>
       <div class="hero-actions">
         <a class="btn primary" href="#style-finder">Try the Finder</a>
         <a class="btn" href="#crystal-reference">View Crystal Families</a>
       </div>
       <div class="badges"><span>Wood · Fire · Earth · Metal · Water</span><span>Birth date + MBTI style tone</span><span>Design inspiration only</span><span>Quote before payment</span></div>
-    </div>
-    <div class="hero-visual" aria-label="Element-inspired bracelet collage">
-      <img class="large" src="/assets/bracelet-green-still.jpg" alt="Green crystal bracelet for Wood element direction">
-      <img src="/assets/bracelet-citrine-model.jpg" alt="Citrine bracelet for warm element direction">
-      <img src="/assets/bracelet-clear-still.jpg" alt="Clear crystal bracelet for Metal element direction">
-      <div class="caption">Element color direction</div>
     </div>
   </div>
 </section>
@@ -224,23 +289,23 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     </div>
     <div class="element-grid">
       <article class="element-card">
-        <img src="/assets/bracelet-green-still.jpg" alt="Wood element green crystal bracelet palette">
+        <img src="/assets/element-wood-new.jpg" alt="Wood element green crystal bracelet palette">
         <div><div class="chip-row"><i class="c-green"></i><i class="c-white"></i><i class="c-gold"></i></div><span class="palette">Green · fresh · natural</span><h3>Wood</h3><p>Fresh greens, renewal, growth and a natural botanical mood.</p><a class="mini-btn" href="#wood-family">View Wood Stones</a></div>
       </article>
       <article class="element-card">
-        <img src="/assets/bracelet-rose-model.jpg" alt="Fire element rose quartz crystal bracelet palette">
+        <img src="/assets/element-fire-new.jpg" alt="Fire element rose quartz crystal bracelet palette">
         <div><div class="chip-row"><i class="c-red"></i><i class="c-rose"></i><i class="c-gold"></i></div><span class="palette">Red · pink · purple</span><h3>Fire</h3><p>Warmth, brightness, confidence and an expressive color story.</p><a class="mini-btn" href="#fire-family">View Fire Stones</a></div>
       </article>
       <article class="element-card">
-        <img src="/assets/bracelet-citrine-model.jpg" alt="Earth element citrine crystal bracelet palette">
+        <img src="/assets/element-earth-new.jpg" alt="Earth element citrine crystal bracelet palette">
         <div><div class="chip-row"><i class="c-gold"></i><i class="c-brown"></i><i class="c-white"></i></div><span class="palette">Yellow · gold · warm</span><h3>Earth</h3><p>Warm neutrals, yellow tones and balanced everyday wear.</p><a class="mini-btn" href="#earth-family">View Earth Stones</a></div>
       </article>
       <article class="element-card">
-        <img src="/assets/bracelet-clear-still.jpg" alt="Metal element clear crystal bracelet palette">
+        <img src="/assets/element-metal-new.jpg" alt="Metal element clear crystal bracelet palette">
         <div><div class="chip-row"><i class="c-white"></i><i class="c-silver"></i><i class="c-blue"></i></div><span class="palette">White · clear · silver</span><h3>Metal</h3><p>Clear, white, silver and minimal refined styling.</p><a class="mini-btn" href="#metal-family">View Metal Stones</a></div>
       </article>
       <article class="element-card">
-        <img src="/assets/bracelet-smoky-model.jpg" alt="Water element smoky crystal bracelet palette">
+        <img src="/assets/element-water-new.jpg" alt="Water element smoky crystal bracelet palette">
         <div><div class="chip-row"><i class="c-black"></i><i class="c-blue"></i><i class="c-brown"></i></div><span class="palette">Black · blue · deep</span><h3>Water</h3><p>Deep black, smoky, blue and cool-toned stone directions.</p><a class="mini-btn" href="#water-family">View Water Stones</a></div>
       </article>
     </div>
@@ -331,6 +396,23 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   </div>
 </section>
 
+
+<section class="section soft-bg">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">More design inspiration</div>
+      <h2>Element Bracelet Inspiration Gallery</h2>
+      <p>Additional bracelet references from different color families, so this page feels richer than the homepage and shows more custom design possibilities.</p>
+    </div>
+    <div class="inspiration-grid">
+      <article class="inspiration-card"><img src="/assets/element-metal-new.jpg" alt="Purple and clear crystal bracelet on soft pouch"><div><h3>Clear Purple Direction</h3><p>For Metal, Fire or soft personal style requests.</p></div></article>
+      <article class="inspiration-card"><img src="/assets/element-warm-mixed-new.jpg" alt="Warm yellow and rose crystal bracelet on soft pouch"><div><h3>Warm Mixed Direction</h3><p>Yellow, rose and clear tones for Earth and Fire palettes.</p></div></article>
+      <article class="inspiration-card"><img src="/assets/element-cool-mixed-new.jpg" alt="Blue black and clear crystal bracelet on wooden tray"><div><h3>Cool Water Direction</h3><p>Blue, black and clear stones for Water-inspired designs.</p></div></article>
+      <article class="inspiration-card"><img src="/assets/element-earth-new.jpg" alt="Mixed crystal bracelet on wooden incense box"><div><h3>Balanced Earth Direction</h3><p>Warm center stone with mixed supporting beads.</p></div></article>
+    </div>
+  </div>
+</section>
+
 <section class="section soft-bg">
   <div class="container info-grid">
     <article class="panel">
@@ -351,7 +433,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 <section class="section">
   <div class="container">
     <div class="content-block">
-      <img src="/assets/bracelet-pastel-hand-original.jpg" alt="Custom crystal bracelet held by hand as a personal design reference">
+      <img src="/assets/element-cool-mixed-new.jpg" alt="Custom crystal bracelet held by hand as a personal design reference">
       <div>
         <div class="eyebrow">No need to know exact stones</div>
         <h2>Customers Can Simply Share a Feeling</h2>
