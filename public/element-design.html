@@ -205,6 +205,110 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   display:inline-grid;place-items:center;color:var(--gold,#b78a52);
 }
 
+
+/* Mobile polish v1: keeps navigation visible, improves spacing, image ratio, forms and cards */
+@media (max-width: 860px){
+  body{overflow-x:hidden}
+  .topbar{height:auto;min-height:68px}
+  .nav{height:auto;min-height:68px;align-items:flex-start;flex-direction:column;padding:12px 0 10px;gap:9px}
+  .logo{font-size:26px;line-height:1.1}
+  .menu{
+    display:flex!important;
+    width:100%;
+    overflow-x:auto;
+    white-space:nowrap;
+    gap:10px;
+    padding:2px 2px 8px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .menu::-webkit-scrollbar{display:none}
+  .menu a{
+    flex:0 0 auto;
+    padding:8px 12px;
+    border:1px solid var(--line,#e8d9c9);
+    border-radius:999px;
+    background:rgba(255,255,255,.62);
+    font-size:12px;
+    line-height:1;
+  }
+  .menu a.active{
+    background:linear-gradient(135deg,#caa06c,#ad7e44);
+    color:#fff!important;
+    border-color:transparent;
+  }
+  .menu a.active:after{display:none!important}
+  .nav-cta{display:none!important}
+  .container{width:min(100% - 28px,1180px)}
+  .hero{padding-top:34px!important;padding-bottom:44px!important}
+  .hero-grid,.story-grid,.feature-grid,.split,.form-grid,.quote-panel{gap:24px!important}
+  h1{font-size:40px!important;line-height:1.02!important}
+  .hero h1{font-size:40px!important}
+  .section{padding:48px 0!important}
+  .section-title{margin-bottom:24px!important}
+  .section-title h2{font-size:31px!important;line-height:1.08!important}
+  .section-title p,.hero-copy{font-size:15.5px!important;line-height:1.62!important}
+  .hero-actions{gap:10px!important}
+  .btn,.nav-cta{min-height:44px}
+  .btn{width:100%;padding:13px 18px!important}
+  .hero-tags{gap:8px!important}
+  .tag,.hero-tag{font-size:11px!important;padding:7px 10px!important}
+  .card-grid-5,.card-grid-6,.category-grid,.direction-grid,.collection-grid,.gallery-grid,.preview-grid,.stone-grid,.type-grid,.pillar-grid,.process-grid,.trust-grid,.faq-grid,.footer-grid{
+    grid-template-columns:1fr!important;
+    gap:16px!important;
+  }
+  .product-media,.category-media,.gallery-card__media,.style-card img,.gift-card img,.occasion-card img,.preview-card img{
+    height:auto!important;
+    aspect-ratio:4/3!important;
+  }
+  .product-media img,.category-media img,.gallery-card__media img,.style-card img,.gift-card img,.occasion-card img,.preview-card img{
+    object-fit:cover!important;
+  }
+  .product-body,.type-card,.pillar-card,.process-card,.trust-card,.story-panel,.info-card,.form-card,.final-cta,.quote-panel{
+    padding:22px!important;
+    border-radius:22px!important;
+  }
+  .product-body h3,.type-card h3,.pillar-card h3,.process-card h3,.trust-card h3{font-size:21px!important}
+  .footer{padding:42px 0 24px!important}
+  .footer-grid{gap:22px!important}
+  .copyright{font-size:11px!important}
+  .floating-contact{right:16px!important;bottom:16px!important}
+  .float-btn{width:52px!important;height:52px!important}
+}
+@media (max-width: 520px){
+  .container{width:min(100% - 24px,1180px)}
+  h1,.hero h1{font-size:36px!important}
+  .section-title h2{font-size:28px!important}
+  .hero-copy,.section-title p{font-size:15px!important}
+  .hero-card,.hero-visual,.hero-board,.visual-board,.studio-card,.request-card-main{
+    border-radius:22px!important;
+  }
+  .hero-card,.hero-visual,.hero-board{
+    padding:14px!important;
+  }
+  .hero-main,.hero-side,.hero-card img,.feature-image img,.feature-img img{
+    height:auto!important;
+    aspect-ratio:4/3!important;
+  }
+  .hero-note,.hero-caption{
+    position:static!important;
+    margin-top:10px!important;
+  }
+  .visual-board{min-height:auto!important}
+  .studio-card,.request-card-main{
+    position:static!important;
+    width:auto!important;
+    margin:0 0 12px!important;
+  }
+  .tally-wrap iframe{min-height:920px!important}
+  .final-cta h2,.quote-panel h2{font-size:30px!important}
+}
+
+@media (max-width:860px){
+  .finder,.finder-grid,.element-grid,.combination-grid{grid-template-columns:1fr!important}
+  input,select,textarea{font-size:16px!important}
+}
+
 </style>
 </head>
 

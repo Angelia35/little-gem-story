@@ -18,6 +18,110 @@
 .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.trust-card{background:linear-gradient(135deg,#fffdf9,#fbf1ea);border:1px solid var(--line);border-radius:28px;padding:26px;box-shadow:var(--shadow)}.trust-card h3{font-size:25px;margin:0 0 8px}.trust-card p{color:var(--muted);font-size:14px;margin:0}.cta-section{background:linear-gradient(180deg,#fffaf4,#f7eee8)}.final-cta{background:linear-gradient(135deg,#fffdf9,#fbf1ea);border:1px solid var(--line);border-radius:34px;padding:42px;text-align:center;box-shadow:var(--shadow)}.final-cta h2{font-size:44px;line-height:1.05;margin:0 0 12px}.final-cta p{max-width:760px;margin:0 auto 24px;color:var(--muted)}
 .footer{background:#2f251f;color:#efe6dd;padding:56px 0 28px}.footer-grid{display:grid;grid-template-columns:1.35fr repeat(3,.7fr);gap:38px}.footer p,.footer a{color:#cfc1b7;font-size:14px}.footer h3{font-size:17px;margin:0 0 12px;color:#fff}.footer a{display:block;margin:8px 0}.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:18px;color:#baa99e;font-size:12px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.floating-contact{position:fixed;right:22px;bottom:22px;z-index:50}.float-btn{width:58px;height:58px;border-radius:50%;border:0;background:#fff;color:#1f8f55;box-shadow:0 14px 34px rgba(38,27,20,.22);display:grid;place-items:center;cursor:pointer}
 @media (max-width:1080px){.hero-grid,.story-grid{grid-template-columns:1fr}.pillar-grid,.process-grid{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:1fr}}@media (max-width:760px){.container{width:min(100% - 28px,1180px)}.menu,.nav-cta{display:none}.topbar{height:68px}.logo{font-size:27px}.hero{padding:42px 0 54px}.hero h1{font-size:42px}.hero-copy{font-size:16px}.visual-board{min-height:420px}.studio-card.main{left:20px;right:20px;top:22px;padding:22px}.studio-card.main h3{font-size:26px}.studio-card.small{position:static;width:auto;margin:14px 0 0}.pillar-grid,.process-grid,.footer-grid{grid-template-columns:1fr}.section{padding:56px 0}.story-panel,.final-cta{border-radius:24px;padding:25px}.final-cta h2{font-size:34px}}
+
+/* Mobile polish v1: keeps navigation visible, improves spacing, image ratio, forms and cards */
+@media (max-width: 860px){
+  body{overflow-x:hidden}
+  .topbar{height:auto;min-height:68px}
+  .nav{height:auto;min-height:68px;align-items:flex-start;flex-direction:column;padding:12px 0 10px;gap:9px}
+  .logo{font-size:26px;line-height:1.1}
+  .menu{
+    display:flex!important;
+    width:100%;
+    overflow-x:auto;
+    white-space:nowrap;
+    gap:10px;
+    padding:2px 2px 8px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .menu::-webkit-scrollbar{display:none}
+  .menu a{
+    flex:0 0 auto;
+    padding:8px 12px;
+    border:1px solid var(--line,#e8d9c9);
+    border-radius:999px;
+    background:rgba(255,255,255,.62);
+    font-size:12px;
+    line-height:1;
+  }
+  .menu a.active{
+    background:linear-gradient(135deg,#caa06c,#ad7e44);
+    color:#fff!important;
+    border-color:transparent;
+  }
+  .menu a.active:after{display:none!important}
+  .nav-cta{display:none!important}
+  .container{width:min(100% - 28px,1180px)}
+  .hero{padding-top:34px!important;padding-bottom:44px!important}
+  .hero-grid,.story-grid,.feature-grid,.split,.form-grid,.quote-panel{gap:24px!important}
+  h1{font-size:40px!important;line-height:1.02!important}
+  .hero h1{font-size:40px!important}
+  .section{padding:48px 0!important}
+  .section-title{margin-bottom:24px!important}
+  .section-title h2{font-size:31px!important;line-height:1.08!important}
+  .section-title p,.hero-copy{font-size:15.5px!important;line-height:1.62!important}
+  .hero-actions{gap:10px!important}
+  .btn,.nav-cta{min-height:44px}
+  .btn{width:100%;padding:13px 18px!important}
+  .hero-tags{gap:8px!important}
+  .tag,.hero-tag{font-size:11px!important;padding:7px 10px!important}
+  .card-grid-5,.card-grid-6,.category-grid,.direction-grid,.collection-grid,.gallery-grid,.preview-grid,.stone-grid,.type-grid,.pillar-grid,.process-grid,.trust-grid,.faq-grid,.footer-grid{
+    grid-template-columns:1fr!important;
+    gap:16px!important;
+  }
+  .product-media,.category-media,.gallery-card__media,.style-card img,.gift-card img,.occasion-card img,.preview-card img{
+    height:auto!important;
+    aspect-ratio:4/3!important;
+  }
+  .product-media img,.category-media img,.gallery-card__media img,.style-card img,.gift-card img,.occasion-card img,.preview-card img{
+    object-fit:cover!important;
+  }
+  .product-body,.type-card,.pillar-card,.process-card,.trust-card,.story-panel,.info-card,.form-card,.final-cta,.quote-panel{
+    padding:22px!important;
+    border-radius:22px!important;
+  }
+  .product-body h3,.type-card h3,.pillar-card h3,.process-card h3,.trust-card h3{font-size:21px!important}
+  .footer{padding:42px 0 24px!important}
+  .footer-grid{gap:22px!important}
+  .copyright{font-size:11px!important}
+  .floating-contact{right:16px!important;bottom:16px!important}
+  .float-btn{width:52px!important;height:52px!important}
+}
+@media (max-width: 520px){
+  .container{width:min(100% - 24px,1180px)}
+  h1,.hero h1{font-size:36px!important}
+  .section-title h2{font-size:28px!important}
+  .hero-copy,.section-title p{font-size:15px!important}
+  .hero-card,.hero-visual,.hero-board,.visual-board,.studio-card,.request-card-main{
+    border-radius:22px!important;
+  }
+  .hero-card,.hero-visual,.hero-board{
+    padding:14px!important;
+  }
+  .hero-main,.hero-side,.hero-card img,.feature-image img,.feature-img img{
+    height:auto!important;
+    aspect-ratio:4/3!important;
+  }
+  .hero-note,.hero-caption{
+    position:static!important;
+    margin-top:10px!important;
+  }
+  .visual-board{min-height:auto!important}
+  .studio-card,.request-card-main{
+    position:static!important;
+    width:auto!important;
+    margin:0 0 12px!important;
+  }
+  .tally-wrap iframe{min-height:920px!important}
+  .final-cta h2,.quote-panel h2{font-size:30px!important}
+}
+
+@media (max-width:860px){
+  .studio-card.small{position:static!important;width:auto!important;margin-top:12px!important}
+  .visual-board{min-height:auto!important}
+}
+
 </style>
 </head>
 <body>
