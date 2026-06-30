@@ -418,6 +418,15 @@
   .service-strip .container{grid-template-columns:1fr;}
   .story-wide-card img{height:260px;}
 }
+
+/* Unified Auralis line icon system */
+.type-icon svg,.unified-icon svg,.gift-pill .icon svg,.direction-icon svg,.process-icon svg,.trust-item .unified-icon svg,.float-btn svg,.faq-item svg{
+  width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+}
+.unified-icon,.gift-pill .icon{
+  display:inline-grid;place-items:center;color:var(--gold,#b78a52);
+}
+
 </style>
 
 <style id="floating-contact-style">
@@ -499,7 +508,7 @@
       <a href="/gift-guide">Gift Guide</a>
       <a href="/custom-order">Custom Order</a>
     </nav>
-    <div class="nav-icons" aria-label="Visual icons"><span>⌕</span><span>♡</span><span>✉</span></div>
+    <div class="nav-icons" aria-label="Visual icons"><span>⌕</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5S5 16.2 3.4 10.8C2.4 7.5 4.4 4.5 7.7 4.5c1.9 0 3.4 1 4.3 2.4.9-1.4 2.4-2.4 4.3-2.4 3.3 0 5.3 3 4.3 6.3C19 16.2 12 20.5 12 20.5Z"/></svg></span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15v11h-15z"/><path d="m5 7 7 6 7-6"/></svg></span></div>
     <button class="hamburger" aria-label="Open menu">☰</button>
   </div>
 </header>
@@ -516,10 +525,10 @@
           <a class="btn" href="/custom-bracelets">Explore Crystal Styles</a>
         </div>
         <div class="home-benefits">
-          <div class="home-benefit"><span class="home-benefit-icon">♡</span>Made<br>to Order</div>
-          <div class="home-benefit"><span class="home-benefit-icon">◇</span>Natural<br>Stones</div>
-          <div class="home-benefit"><span class="home-benefit-icon">✦</span>Custom<br>Design</div>
-          <div class="home-benefit"><span class="home-benefit-icon">🎁</span>Gift<br>Ready</div>
+          <div class="home-benefit"><span class="home-benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5S5 16.2 3.4 10.8C2.4 7.5 4.4 4.5 7.7 4.5c1.9 0 3.4 1 4.3 2.4.9-1.4 2.4-2.4 4.3-2.4 3.3 0 5.3 3 4.3 6.3C19 16.2 12 20.5 12 20.5Z"/></svg></span>Made<br>to Order</div>
+          <div class="home-benefit"><span class="home-benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"/></svg></span>Natural<br>Stones</div>
+          <div class="home-benefit"><span class="home-benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5 13.8 9.8 19.5 12 13.8 14.2 12 19.5 10.2 14.2 4.5 12 10.2 9.8 12 4.5Z"/></svg></span>Custom<br>Design</div>
+          <div class="home-benefit"><span class="home-benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10.5h14v9H5z"/><path d="M12 10.5v9"/><path d="M4.5 7.5h15v3h-15z"/><path d="M12 7.5H9.6a2.1 2.1 0 1 1 0-4.2c1.6 0 2.4 1.2 2.4 4.2Z"/><path d="M12 7.5h2.4a2.1 2.1 0 1 0 0-4.2c-1.6 0-2.4 1.2-2.4 4.2Z"/></svg></span>Gift<br>Ready</div>
         </div>
       </div>
     </div>
@@ -532,11 +541,11 @@
         <p>Start from a feeling, color story or symbolic direction. We translate it into a crystal bracelet design without exaggerated claims.</p>
       </div>
       <div class="home-direction-grid">
-        <article class="direction-tile"><div class="direction-icon">♡</div><h3>Love</h3></article>
-        <article class="direction-tile"><div class="direction-icon">♢</div><h3>Protection</h3></article>
-        <article class="direction-tile"><div class="direction-icon">☯</div><h3>Balance</h3></article>
+        <article class="direction-tile"><div class="direction-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5S5 16.2 3.4 10.8C2.4 7.5 4.4 4.5 7.7 4.5c1.9 0 3.4 1 4.3 2.4.9-1.4 2.4-2.4 4.3-2.4 3.3 0 5.3 3 4.3 6.3C19 16.2 12 20.5 12 20.5Z"/></svg></div><h3>Love</h3></article>
+        <article class="direction-tile"><div class="direction-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"/></svg></div><h3>Protection</h3></article>
+        <article class="direction-tile"><div class="direction-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 17.2A7.5 7.5 0 0 1 9.2 5.1 8 8 0 1 0 17.5 17.2Z"/></svg></div><h3>Balance</h3></article>
         <article class="direction-tile"><div class="direction-icon">✿</div><h3>Calm</h3></article>
-        <article class="direction-tile"><div class="direction-icon">☼</div><h3>Confidence</h3></article>
+        <article class="direction-tile"><div class="direction-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2.8v2.4M12 18.8v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.8 12h2.4M18.8 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg></div><h3>Confidence</h3></article>
       </div>
     </div>
   </section>
@@ -549,9 +558,9 @@
       </div>
       <div class="process-line">
         <article class="process-card"><span class="process-number">1</span><div class="process-icon">☷</div><h3>Share Your Details</h3><p>Tell us your birth date, preferences, wrist size and style direction.</p></article>
-        <article class="process-card"><span class="process-number">2</span><div class="process-icon">◇</div><h3>We Curate With Intention</h3><p>We suggest bead colors and stone directions that match your request.</p></article>
-        <article class="process-card"><span class="process-number">3</span><div class="process-icon">◎</div><h3>Crafted For You</h3><p>Each piece is prepared after design and payment confirmation.</p></article>
-        <article class="process-card"><span class="process-number">4</span><div class="process-icon">🎁</div><h3>Delivered With Love</h3><p>Gift-ready options and shipping details are confirmed before payment.</p></article>
+        <article class="process-card"><span class="process-number">2</span><div class="process-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"/></svg></div><h3>We Curate With Intention</h3><p>We suggest bead colors and stone directions that match your request.</p></article>
+        <article class="process-card"><span class="process-number">3</span><div class="process-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 9.5c1.8 0 3.25 1.45 3.25 3.25S13.8 16 12 16s-3.25-1.45-3.25-3.25"/></svg></div><h3>Crafted For You</h3><p>Each piece is prepared after design and payment confirmation.</p></article>
+        <article class="process-card"><span class="process-number">4</span><div class="process-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10.5h14v9H5z"/><path d="M12 10.5v9"/><path d="M4.5 7.5h15v3h-15z"/><path d="M12 7.5H9.6a2.1 2.1 0 1 1 0-4.2c1.6 0 2.4 1.2 2.4 4.2Z"/><path d="M12 7.5h2.4a2.1 2.1 0 1 0 0-4.2c-1.6 0-2.4 1.2-2.4 4.2Z"/></svg></div><h3>Delivered With Love</h3><p>Gift-ready options and shipping details are confirmed before payment.</p></article>
       </div>
     </div>
   </section>
@@ -634,10 +643,10 @@
 
   <section class="service-strip">
     <div class="container">
-      <div class="service-item"><span>♡</span><div><b>Made to Order</b><br>Created around your details</div></div>
-      <div class="service-item"><span>◇</span><div><b>Natural Stones</b><br>Material details confirmed</div></div>
-      <div class="service-item"><span>🎁</span><div><b>Gift-Ready Option</b><br>Packaging can be quoted</div></div>
-      <div class="service-item"><span>✉</span><div><b>Fast Inquiry</b><br>Contact by form or WhatsApp</div></div>
+      <div class="service-item"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5S5 16.2 3.4 10.8C2.4 7.5 4.4 4.5 7.7 4.5c1.9 0 3.4 1 4.3 2.4.9-1.4 2.4-2.4 4.3-2.4 3.3 0 5.3 3 4.3 6.3C19 16.2 12 20.5 12 20.5Z"/></svg></span><div><b>Made to Order</b><br>Created around your details</div></div>
+      <div class="service-item"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"/></svg></span><div><b>Natural Stones</b><br>Material details confirmed</div></div>
+      <div class="service-item"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10.5h14v9H5z"/><path d="M12 10.5v9"/><path d="M4.5 7.5h15v3h-15z"/><path d="M12 7.5H9.6a2.1 2.1 0 1 1 0-4.2c1.6 0 2.4 1.2 2.4 4.2Z"/><path d="M12 7.5h2.4a2.1 2.1 0 1 0 0-4.2c-1.6 0-2.4 1.2-2.4 4.2Z"/></svg></span><div><b>Gift-Ready Option</b><br>Packaging can be quoted</div></div>
+      <div class="service-item"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15v11h-15z"/><path d="m5 7 7 6 7-6"/></svg></span><div><b>Fast Inquiry</b><br>Contact by form or WhatsApp</div></div>
     </div>
   </section>
 </main>
@@ -657,8 +666,8 @@
   <div class="floating-contact-panel" aria-label="Contact options">
     <h3 class="floating-contact-title">Contact Us</h3>
     <p class="floating-contact-text">Need help with a custom bracelet or gemstone jewelry request?</p>
-    <a class="floating-contact-link" href="https://wa.me/8618357590167" target="_blank" rel="noopener"><span class="floating-contact-icon">☎</span><span>WhatsApp</span></a>
-    <a class="floating-contact-link" href="/custom-order"><span class="floating-contact-icon">✉</span><span>Send Inquiry</span></a>
+    <a class="floating-contact-link" href="https://wa.me/8618357590167" target="_blank" rel="noopener"><span class="floating-contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 4.8 9 4.2l2.2 4.6-1.4 1.1c1.1 2.2 2.8 3.9 5 5l1.1-1.4 4.6 2.2-.6 1.8c-.4 1.1-1.5 1.8-2.7 1.6C10.8 18.4 5.6 13.2 4.9 6.8c-.1-1.2.5-2.3 1.6-2.7l.7-.3Z"/></svg></span><span>WhatsApp</span></a>
+    <a class="floating-contact-link" href="/custom-order"><span class="floating-contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15v11h-15z"/><path d="m5 7 7 6 7-6"/></svg></span><span>Send Inquiry</span></a>
     <a class="floating-contact-link" href="mailto:hello@auralisgems.com"><span class="floating-contact-icon">@</span><span>Email Us</span></a>
   </div>
   <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><img src="/assets/green-phone-icon.png" alt="Phone contact icon"><span class="floating-contact-close">×</span></button>

@@ -75,7 +75,8 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 .type-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .type-card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px;box-shadow:0 10px 30px rgba(82,55,40,.055);transition:.22s ease}
 .type-card:hover{transform:translateY(-4px);box-shadow:0 18px 36px rgba(82,55,40,.1)}
-.type-icon{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#fff3e5;color:var(--gold);font-size:22px;margin-bottom:18px}
+.type-icon{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:#fff3e5;color:var(--gold);margin-bottom:18px;border:1px solid rgba(183,138,82,.16)}
+.type-icon svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .type-card h3{font-size:24px;margin:0 0 8px}
 .type-card p{font-size:14px;color:var(--muted);margin:0 0 15px}
 
@@ -144,6 +145,15 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   .form-card,.info-card,.final-cta{border-radius:24px}
   .tally-wrap iframe{min-height:850px}
 }
+
+/* Unified Auralis line icon system */
+.type-icon svg,.unified-icon svg,.gift-pill .icon svg,.direction-icon svg,.process-icon svg,.trust-item .unified-icon svg,.float-btn svg,.faq-item svg{
+  width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+}
+.unified-icon,.gift-pill .icon{
+  display:inline-grid;place-items:center;color:var(--gold,#b78a52);
+}
+
 </style>
 </head>
 <body>
@@ -203,25 +213,25 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     </div>
     <div class="type-grid">
       <article class="type-card">
-        <div class="type-icon">◎</div>
+        <div class="type-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"></circle><path d="M12 9.5c1.8 0 3.25 1.45 3.25 3.25S13.8 16 12 16s-3.25-1.45-3.25-3.25"></path></svg></div>
         <h3>Custom Crystal Bracelet</h3>
         <p>Personalized bracelet by stone, color, intention, size, zodiac or gift meaning.</p>
         <a class="mini-btn" href="#request-form">Request Bracelet</a>
       </article>
       <article class="type-card">
-        <div class="type-icon">◇</div>
+        <div class="type-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"></path></svg></div>
         <h3>Gemstone Jewelry</h3>
         <p>Natural gemstone rings, pendants, mixed selections or quote-based sourcing.</p>
         <a class="mini-btn" href="#request-form">Request Gemstone Piece</a>
       </article>
       <article class="type-card">
-        <div class="type-icon">✦</div>
+        <div class="type-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4.5 13.8 9.8 19.5 12 13.8 14.2 12 19.5 10.2 14.2 4.5 12 10.2 9.8 12 4.5Z"></path></svg></div>
         <h3>Element-Inspired Design</h3>
         <p>Crystal direction based on element, birth date, personality or symbolic energy.</p>
         <a class="mini-btn" href="#request-form">Request Element Design</a>
       </article>
       <article class="type-card">
-        <div class="type-icon">🎁</div>
+        <div class="type-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 10.5h14v9H5z"></path><path d="M12 10.5v9"></path><path d="M4.5 7.5h15v3h-15z"></path><path d="M12 7.5H9.6a2.1 2.1 0 1 1 0-4.2c1.6 0 2.4 1.2 2.4 4.2Z"></path><path d="M12 7.5h2.4a2.1 2.1 0 1 0 0-4.2c-1.6 0-2.4 1.2-2.4 4.2Z"></path></svg></div>
         <h3>Gift Order & Packaging</h3>
         <p>Personalized gifts with packaging, message cards, recipient details and occasion notes.</p>
         <a class="mini-btn" href="#request-form">Request Gift Order</a>
@@ -301,12 +311,12 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
       <h2>Frequently Asked Questions</h2>
     </div>
     <div class="faq-grid">
-      <div class="faq-item">Can I send reference photos or screenshots? <span>+</span></div>
-      <div class="faq-item">Do I need to pay before receiving a quote? <span>+</span></div>
-      <div class="faq-item">Can you help choose stones for a gift? <span>+</span></div>
-      <div class="faq-item">Can I request a gemstone style that is not listed? <span>+</span></div>
-      <div class="faq-item">Can I add gift packaging or a message card? <span>+</span></div>
-      <div class="faq-item">How fast will you reply? <span>+</span></div>
+      <div class="faq-item">Can I send reference photos or screenshots? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+      <div class="faq-item">Do I need to pay before receiving a quote? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+      <div class="faq-item">Can you help choose stones for a gift? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+      <div class="faq-item">Can I request a gemstone style that is not listed? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+      <div class="faq-item">Can I add gift packaging or a message card? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+      <div class="faq-item">How fast will you reply? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
     </div>
     <div class="final-cta">
       <h2>Ready to start?</h2>
@@ -333,7 +343,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 </footer>
 
 <div class="floating-contact">
-  <a class="float-btn" href="https://wa.me/8618357590167" aria-label="Contact on WhatsApp">☎</a>
+  <a class="float-btn" href="https://wa.me/8618357590167" aria-label="Contact on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 4.8 9 4.2l2.2 4.6-1.4 1.1c1.1 2.2 2.8 3.9 5 5l1.1-1.4 4.6 2.2-.6 1.8c-.4 1.1-1.5 1.8-2.7 1.6C10.8 18.4 5.6 13.2 4.9 6.8c-.1-1.2.5-2.3 1.6-2.7l.7-.3Z"/></svg></a>
 </div>
 
 <script>

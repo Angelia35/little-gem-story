@@ -1,0 +1,14 @@
+Upload these HTML files into your GitHub public folder and overwrite the existing files.
+
+Target folder: public/
+
+Files included:
+- index.html
+- custom-bracelets.html
+- gemstone-jewelry.html
+- element-design.html
+- gift-guide.html
+- custom-order.html
+
+This package unifies small UI icons across the site into the same line-style SVG icon system.
+No new assets are required.

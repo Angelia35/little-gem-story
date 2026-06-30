@@ -196,6 +196,15 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 @media(max-width:1120px){.element-grid,.combo-grid{grid-template-columns:repeat(3,1fr)}.reference-card,.reference-card.featured{grid-template-columns:1fr}.reference-card.featured{grid-column:span 1}.reference-grid{grid-template-columns:1fr}.ring{margin:0 auto}.footer-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:960px){.menu,.nav-icons{display:none}.hamburger{display:block}.topbar{height:68px}.logo{font-size:27px}.finder-card,.process-grid,.meaning-grid,.feeling-block,.info-grid{grid-template-columns:1fr}.element-hero h1{font-size:50px}.element-hero::before{background-image:linear-gradient(90deg,rgba(255,250,244,.97),rgba(255,250,244,.7)),url("/assets/element-hero-model.jpg");background-position:center right}.element-grid,.combo-grid{grid-template-columns:repeat(2,1fr)}.examples{grid-template-columns:1fr}.feeling-img{border-radius:28px;min-height:300px}.feeling-img img{min-height:300px}}
 @media(max-width:560px){.container{width:min(100% - 28px,1180px)}.section{padding:56px 0}.element-hero{min-height:620px}.element-hero h1{font-size:40px}.finder-card,.panel{padding:24px 18px}.finder-form,.element-grid,.combo-grid,.result-grid,.feeling-buttons{grid-template-columns:1fr}.element-card img{height:230px}.section-title h2,.finder-left h2,.feeling-copy h2{font-size:34px}.element-icons{grid-template-columns:repeat(5,1fr);gap:6px;padding:16px 12px}.element-icon span{width:42px;height:42px;font-size:20px}.footer-grid{grid-template-columns:1fr}.floating-contact{right:16px;bottom:16px}.floating-contact-panel{width:min(235px,calc(100vw - 32px))}}
+
+/* Unified Auralis line icon system */
+.type-icon svg,.unified-icon svg,.gift-pill .icon svg,.direction-icon svg,.process-icon svg,.trust-item .unified-icon svg,.float-btn svg,.faq-item svg{
+  width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
+}
+.unified-icon,.gift-pill .icon{
+  display:inline-grid;place-items:center;color:var(--gold,#b78a52);
+}
+
 </style>
 </head>
 
@@ -211,7 +220,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
       <a href="/gift-guide">Gift Guide</a>
       <a href="/custom-order">Custom Order</a>
     </nav>
-    <div class="nav-icons" aria-label="Visual icons"><span>⌕</span><span>♡</span><span>✉</span></div>
+    <div class="nav-icons" aria-label="Visual icons"><span>⌕</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5S5 16.2 3.4 10.8C2.4 7.5 4.4 4.5 7.7 4.5c1.9 0 3.4 1 4.3 2.4.9-1.4 2.4-2.4 4.3-2.4 3.3 0 5.3 3 4.3 6.3C19 16.2 12 20.5 12 20.5Z"/></svg></span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15v11h-15z"/><path d="m5 7 7 6 7-6"/></svg></span></div>
     <button class="hamburger" aria-label="Open menu">☰</button>
   </div>
 </header>
@@ -282,7 +291,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
           <div class="element-icon" data-element="Wood"><span>🍃</span>Wood</div>
           <div class="element-icon" data-element="Fire"><span>🔥</span>Fire</div>
           <div class="element-icon" data-element="Earth"><span>△</span>Earth</div>
-          <div class="element-icon" data-element="Metal"><span>♢</span>Metal</div>
+          <div class="element-icon" data-element="Metal"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"/></svg></span>Metal</div>
           <div class="element-icon" data-element="Water"><span>💧</span>Water</div>
         </div>
         <div class="result-lines">
@@ -339,7 +348,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     <div class="meaning-grid">
       <article class="meaning-card"><div class="meaning-icon">◔</div><div><h3>MBTI Personality Insight</h3><p>Understand your natural style preference and preferred visual mood.</p></div></article>
       <article class="meaning-card"><div class="meaning-icon">☾</div><div><h3>Zodiac Energy Influence</h3><p>Explore how your zodiac sign adds another layer of personal meaning.</p></div></article>
-      <article class="meaning-card"><div class="meaning-icon">☯</div><div><h3>Five Elements Balance</h3><p>Discover a support direction that can guide colors and crystal choices.</p></div></article>
+      <article class="meaning-card"><div class="meaning-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 17.2A7.5 7.5 0 0 1 9.2 5.1 8 8 0 1 0 17.5 17.2Z"/></svg></div><div><h3>Five Elements Balance</h3><p>Discover a support direction that can guide colors and crystal choices.</p></div></article>
     </div>
   </div>
 </section>
@@ -506,8 +515,8 @@ document.addEventListener("click",function(e){
   <div class="floating-contact-panel" aria-label="Contact options">
     <h3 class="floating-contact-title">Contact Us</h3>
     <p class="floating-contact-text">Need help with a custom bracelet or gemstone jewelry request?</p>
-    <a class="floating-contact-link" href="https://wa.me/8618357590167" target="_blank" rel="noopener"><span class="floating-contact-icon">☎</span><span>WhatsApp</span></a>
-    <a class="floating-contact-link" href="/custom-order"><span class="floating-contact-icon">✉</span><span>Send Inquiry</span></a>
+    <a class="floating-contact-link" href="https://wa.me/8618357590167" target="_blank" rel="noopener"><span class="floating-contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 4.8 9 4.2l2.2 4.6-1.4 1.1c1.1 2.2 2.8 3.9 5 5l1.1-1.4 4.6 2.2-.6 1.8c-.4 1.1-1.5 1.8-2.7 1.6C10.8 18.4 5.6 13.2 4.9 6.8c-.1-1.2.5-2.3 1.6-2.7l.7-.3Z"/></svg></span><span>WhatsApp</span></a>
+    <a class="floating-contact-link" href="/custom-order"><span class="floating-contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15v11h-15z"/><path d="m5 7 7 6 7-6"/></svg></span><span>Send Inquiry</span></a>
     <a class="floating-contact-link" href="mailto:hello@auralisgems.com"><span class="floating-contact-icon">@</span><span>Email Us</span></a>
   </div>
   <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><img src="/assets/green-phone-icon.png" alt="Phone contact icon"><span class="floating-contact-close">×</span></button>
