@@ -3,178 +3,152 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Element-Inspired Design | Auralis Jewelry</title>
-<meta name="description" content="Try the Element Style Finder: select your birth date and MBTI to receive a Chinese Five Elements-inspired crystal bracelet design direction.">
-<link rel="stylesheet" href="styles.css">
+<title>Element-Inspired Crystal Bracelet Design | Auralis Jewelry</title>
+<meta name="description" content="Use the Element Style Finder to explore Chinese Five Elements-inspired crystal bracelet color directions based on birth date, MBTI style tone and personal intention.">
+<link rel="canonical" href="https://auralisgems.com/element-design">
 <style>
-:root{--cream:#fffaf4;--paper:#fffdf9;--soft:#f6ebe4;--blush:#ead4cf;--lav:#eee6f7;--gold:#b78a52;--gold-soft:#dbc09a;--ink:#332922;--muted:#786a62;--line:#e8d9c9;--shadow:0 24px 70px rgba(89,58,39,.12)}
+:root{
+  --cream:#fffaf4;
+  --paper:#fffdf9;
+  --soft:#f6ebe4;
+  --soft2:#fbf1ea;
+  --gold:#b78a52;
+  --gold2:#caa06c;
+  --ink:#332922;
+  --muted:#786a62;
+  --line:#e8d9c9;
+  --shadow:0 24px 70px rgba(89,58,39,.12);
+  --green:#4f8f63;
+  --red:#b96863;
+  --yellow:#d6a64c;
+  --blue:#426e94;
+  --silver:#aeb7bd;
+  --brown:#8a6649;
+}
 *{box-sizing:border-box}
+html{scroll-behavior:smooth}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,"Helvetica Neue",Arial,sans-serif;line-height:1.55}
 img{max-width:100%;display:block}
 a{color:inherit;text-decoration:none}
 .container{width:min(1180px,calc(100% - 40px));margin:0 auto}
 h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.02em}
-.topbar{position:sticky;top:0;z-index:40;height:76px;background:rgba(255,250,244,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(232,217,201,.78)}
+.topbar{position:sticky;top:0;z-index:40;height:76px;background:rgba(255,250,244,.92);backdrop-filter:blur(16px);border-bottom:1px solid rgba(232,217,201,.78)}
 .nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .logo{font-size:31px;white-space:nowrap}.logo:before{content:"✦";font-size:14px;color:var(--gold);margin-right:8px}
 .menu{display:flex;align-items:center;gap:26px;font-size:14px;color:#493d37}.menu a{position:relative}.menu a.active,.menu a:hover{color:var(--gold)}.menu a.active:after{content:"";position:absolute;left:0;right:0;bottom:-11px;height:2px;background:var(--gold)}
 .nav-icons{display:flex;gap:14px;color:#3e342f;font-size:18px}.hamburger{display:none;border:0;background:transparent;font-size:27px;color:var(--ink)}
-.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 22px;border:1px solid var(--gold-soft);font-weight:700;font-size:14px;background:rgba(255,255,255,.42);color:var(--ink);cursor:pointer}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:13px 22px;border:1px solid var(--gold2);font-weight:800;font-size:14px;background:rgba(255,255,255,.5);color:var(--ink);cursor:pointer;transition:.22s ease}
 .btn.primary{background:linear-gradient(135deg,#caa06c,#ad7e44);color:#fff;border-color:transparent;box-shadow:0 14px 28px rgba(183,138,82,.22)}
 .btn:hover,.mini-btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(82,55,40,.12)}
-.mini-btn{display:inline-flex;border:1px solid #d6b780;border-radius:999px;padding:9px 13px;background:#fffaf4;font-size:12px;font-weight:800;color:#6d5230}
-.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:800}
+.mini-btn{display:inline-flex;border:1px solid #d6b780;border-radius:999px;padding:9px 13px;background:#fffaf4;font-size:12px;font-weight:900;color:#6d5230}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:900}
 .section{padding:80px 0}.soft-bg{background:linear-gradient(180deg,#fffaf4,#f7eee8)}
-.section-title{text-align:center;margin:0 0 36px}.section-title h2{font-size:44px;line-height:1.04;margin:6px 0 10px}.section-title p{max-width:760px;margin:0 auto;color:var(--muted)}
-.element-hero{padding:86px 0 82px;background:radial-gradient(circle at 78% 16%,rgba(238,230,247,.7),transparent 26%),linear-gradient(135deg,#fff8ef 0%,#f7e8df 54%,#ead4cf 100%);border-bottom:1px solid var(--line)}
+.section-title{text-align:center;margin:0 0 36px}.section-title h2{font-size:44px;line-height:1.04;margin:6px 0 10px}.section-title p{max-width:800px;margin:0 auto;color:var(--muted)}
+
+/* Hero */
+.element-hero{padding:86px 0 82px;background:radial-gradient(circle at 80% 12%,rgba(238,230,247,.7),transparent 28%),linear-gradient(135deg,#fff8ef 0%,#f7e8df 54%,#ead4cf 100%);border-bottom:1px solid var(--line)}
 .element-hero .container{display:grid;grid-template-columns:minmax(0,1fr) minmax(420px,520px);gap:58px;align-items:center}
 .element-hero h1{font-size:64px;line-height:1;margin:12px 0 18px;max-width:720px}.element-hero p{font-size:18px;color:var(--muted);max-width:650px;margin:0 0 28px}
-.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.badges span{border:1px solid rgba(183,138,82,.28);background:rgba(255,255,255,.48);border-radius:999px;padding:9px 13px;font-size:12px;color:#715f54;font-weight:800}
-.visual{min-height:430px;background:rgba(255,255,255,.55);border:1px solid rgba(232,217,201,.9);border-radius:38px;box-shadow:var(--shadow);padding:22px;display:grid;place-items:center;overflow:hidden;position:relative}
-.visual:before{content:"";position:absolute;width:280px;height:280px;border-radius:50%;background:rgba(255,255,255,.54);top:22px;left:48px}.visual img{position:relative;z-index:1;width:100%;max-height:380px;object-fit:contain;filter:drop-shadow(0 22px 32px rgba(82,55,40,.12))}.visual small{position:relative;z-index:1;font-family:Georgia,"Times New Roman",serif;color:var(--muted);font-size:18px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.badges{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.badges span{border:1px solid rgba(183,138,82,.28);background:rgba(255,255,255,.5);border-radius:999px;padding:9px 13px;font-size:12px;color:#715f54;font-weight:900}
+.hero-visual{min-height:430px;background:rgba(255,255,255,.55);border:1px solid rgba(232,217,201,.9);border-radius:38px;box-shadow:var(--shadow);padding:22px;display:grid;grid-template-columns:1fr 1fr;gap:14px;overflow:hidden;position:relative}
+.hero-visual:before{content:"";position:absolute;width:270px;height:270px;border-radius:50%;background:rgba(255,255,255,.54);top:28px;left:86px}
+.hero-visual .large{grid-row:span 2}
+.hero-visual img{position:relative;z-index:1;width:100%;height:100%;min-height:170px;object-fit:cover;border-radius:24px;box-shadow:0 20px 38px rgba(82,55,40,.12)}
+.hero-visual .caption{position:absolute;z-index:2;left:32px;bottom:28px;background:rgba(255,253,249,.85);border:1px solid rgba(232,217,201,.9);border-radius:999px;padding:9px 14px;font-size:12px;font-weight:900;color:#6d5230}
 
 /* Interactive finder */
 .finder-wrap{display:grid;grid-template-columns:minmax(360px,500px) 1fr;gap:32px;align-items:stretch}
 .finder-panel,.result-panel{background:#fff;border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);padding:34px}
 .finder-panel h2,.result-panel h2{font-size:40px;line-height:1.04;margin:0 0 12px}
 .finder-panel p,.result-panel p{color:var(--muted)}
-.form-row{margin:20px 0}.form-row label{display:block;font-weight:800;color:#5e514a;margin-bottom:8px}.form-row input,.form-row select{width:100%;border:1px solid #decfc1;border-radius:16px;padding:14px 15px;background:#fffaf6;font:inherit;color:var(--ink)}.date-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px}.date-grid select{width:100%;border:1px solid #decfc1;border-radius:16px;padding:14px 15px;background:#fffaf6;font:inherit;color:var(--ink)}
+.form-row{margin:20px 0}.form-row label{display:block;font-weight:900;color:#5e514a;margin-bottom:8px}.form-row input,.form-row select{width:100%;border:1px solid #decfc1;border-radius:16px;padding:14px 15px;background:#fffaf6;font:inherit;color:var(--ink)}.date-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:10px}.date-grid select{width:100%;border:1px solid #decfc1;border-radius:16px;padding:14px 15px;background:#fffaf6;font:inherit;color:var(--ink)}
 .finder-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.finder-actions .btn{min-width:160px}
 .result-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0}.result-card{background:#fffaf6;border:1px solid #eadbcb;border-radius:22px;padding:18px}.result-card span{display:block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:900;color:var(--gold);margin-bottom:6px}.result-card strong{font-family:Georgia,"Times New Roman",serif;font-size:25px;font-weight:500}
 .palette-card{background:linear-gradient(135deg,#fff7ee,#f8eee9);border:1px solid #eadbcb;border-radius:24px;padding:22px;margin-top:16px}
-.palette-card h3{font-size:28px;margin:0 0 8px}.palette-card p{margin:0 0 12px}.stone-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.stone-tags span{font-size:12px;font-weight:800;color:#6d5230;border:1px solid #d8b77a;border-radius:999px;padding:7px 10px;background:#fff}
+.palette-card h3{font-size:28px;margin:0 0 8px}.palette-card p{margin:0 0 12px}.stone-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.stone-tags span{font-size:12px;font-weight:900;color:#6d5230;border:1px solid #d8b77a;border-radius:999px;padding:7px 10px;background:#fff}
 .disclaimer{font-size:12px;color:#8d7f76;background:#fff7ea;border:1px solid #e1c492;border-radius:18px;padding:14px;margin-top:18px}
-.copy-note{display:none;color:var(--gold);font-weight:800;font-size:13px;margin-top:10px}
+.copy-note{display:none;color:var(--gold);font-weight:900;font-size:13px;margin-top:10px}
 
+/* Element color cards */
+.element-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
+.element-card{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 10px 28px rgba(82,55,40,.06)}
+.element-card img{width:100%;height:210px;object-fit:cover;background:#fbf2eb}
+.element-card div{padding:20px}.element-card h3{font-size:26px;margin:0 0 8px}.element-card p{font-size:14px;color:var(--muted);margin:0 0 14px}.palette{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#8b7b6f;font-weight:900}
+.element-card .chip-row{display:flex;gap:6px;margin:0 0 12px}
+.chip-row i{display:block;width:16px;height:16px;border-radius:50%;border:1px solid rgba(82,55,40,.14)}
+.c-green{background:#5e9d71}.c-gold{background:#dbad52}.c-brown{background:#8a6649}.c-white{background:#f4f1eb}.c-blue{background:#477a9f}.c-black{background:#30323a}.c-red{background:#b96863}.c-rose{background:#e8b5b8}
+
+/* New crystal reference section */
+.reference-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.reference-card{background:#fff;border:1px solid var(--line);border-radius:32px;box-shadow:0 12px 34px rgba(82,55,40,.07);padding:26px;display:grid;grid-template-columns:230px 1fr;gap:24px;align-items:center}
+.reference-card.featured{grid-column:span 2;grid-template-columns:260px 1fr}
+.ring{width:210px;height:210px;border-radius:50%;position:relative;margin:auto;background:radial-gradient(circle,#fffaf4 0 42%,transparent 43%),conic-gradient(from 0deg,var(--ring-a),var(--ring-b),var(--ring-c),var(--ring-a));box-shadow:inset 0 0 0 1px rgba(232,217,201,.9),0 18px 34px rgba(82,55,40,.08)}
+.ring span{position:absolute;width:36px;height:36px;border-radius:50%;background:var(--dot);box-shadow:inset 0 7px 12px rgba(255,255,255,.55),inset 0 -8px 14px rgba(75,48,34,.12),0 5px 12px rgba(82,55,40,.14)}
+.ring span:nth-child(1){left:87px;top:4px}.ring span:nth-child(2){right:32px;top:24px}.ring span:nth-child(3){right:4px;top:87px}.ring span:nth-child(4){right:30px;bottom:25px}.ring span:nth-child(5){left:87px;bottom:4px}.ring span:nth-child(6){left:30px;bottom:25px}.ring span:nth-child(7){left:4px;top:87px}.ring span:nth-child(8){left:32px;top:24px}
+.ring strong{position:absolute;inset:0;display:grid;place-items:center;font-family:Georgia,"Times New Roman",serif;font-size:42px;color:var(--center-color)}
+.reference-card h3{font-size:34px;line-height:1.05;margin:0 0 10px}
+.reference-card p{color:var(--muted);margin:0 0 14px}
+.stone-list{display:flex;flex-wrap:wrap;gap:8px}
+.stone-list span{border:1px solid #eadbcb;background:#fffaf6;border-radius:999px;padding:7px 10px;font-size:12px;font-weight:900;color:#6d5230}
+.ref-note{margin-top:18px;padding:16px 18px;border:1px solid #e1c492;background:#fff7ea;border-radius:20px;color:#7a684e;font-size:14px}
+
+/* Supporting content */
 .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.panel{background:#fff;border:1px solid var(--line);border-radius:30px;padding:34px;box-shadow:0 10px 28px rgba(82,55,40,.06)}.panel h2{font-size:40px;line-height:1.05;margin:0 0 14px}.panel p{color:var(--muted);margin:0 0 14px}.note{background:#fff7ea;border:1px solid #e1c492;color:#66533a;border-radius:20px;padding:18px;margin-top:18px;font-size:14px}
-.element-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:22px}.element-card{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 10px 28px rgba(82,55,40,.06)}.element-card img{width:100%;height:210px;object-fit:contain;background:#fbf2eb;padding:18px}.element-card div{padding:20px}.element-card h3{font-size:26px;margin:0 0 8px}.element-card p{font-size:14px;color:var(--muted);margin:0 0 14px}.palette{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:#8b7b6f;font-weight:900}
-.content-block{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);padding:34px}.content-block img{width:100%;height:360px;object-fit:contain;border-radius:26px;background:#fbf2eb;padding:16px}.content-block h2{font-size:46px;line-height:1.05;margin:0 0 14px}.content-block p{color:var(--muted);margin:0 0 14px}
+.content-block{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:34px;box-shadow:var(--shadow);padding:34px}.content-block img{width:100%;height:360px;object-fit:cover;border-radius:26px;background:#fbf2eb}.content-block h2{font-size:46px;line-height:1.05;margin:0 0 14px}.content-block p{color:var(--muted);margin:0 0 14px}
 .examples{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.example{background:#fff;border:1px solid var(--line);border-radius:26px;padding:28px 24px;box-shadow:0 10px 28px rgba(82,55,40,.06)}.example h3{font-size:23px;margin:0 0 8px}.example p{color:var(--muted);margin:0}
 .request{text-align:center;background:linear-gradient(135deg,#fff,#fff7ee);border:1px solid var(--line);border-radius:34px;padding:46px 26px;box-shadow:var(--shadow)}.request h2{font-size:44px;margin:0 0 10px}.request p{color:var(--muted);max-width:720px;margin:0 auto 22px}
-.footer{padding:48px 0 28px;background:#f5ece4;border-top:1px solid var(--line)}.copyright{padding-top:22px;color:#8a7b72;font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:1080px){.element-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:980px){.menu,.nav-icons{display:none}.hamburger{display:block}.topbar{height:68px}.logo{font-size:27px}.element-hero .container,.finder-wrap,.info-grid,.content-block{grid-template-columns:1fr}.element-hero h1{font-size:50px}.visual{min-height:360px}.examples{grid-template-columns:1fr}}
-@media(max-width:560px){.container{width:min(100% - 28px,1180px)}.section{padding:54px 0}.element-hero{padding:54px 0 56px}.element-hero h1{font-size:40px}.element-grid,.result-grid{grid-template-columns:1fr}.finder-panel,.result-panel,.content-block,.panel{padding:26px 18px}.content-block h2,.request h2,.finder-panel h2,.result-panel h2{font-size:34px}.content-block img{height:280px}.hero-actions .btn,.finder-actions .btn{width:100%}}
-</style>
-<link rel="canonical" href="https://auralisgems.com/element-design">
+.footer{padding:48px 0 28px;background:#f5ece4;border-top:1px solid var(--line)}.footer-grid{display:grid;grid-template-columns:1.3fr .8fr .9fr .8fr 1.1fr;gap:34px}.footer p,.footer a{color:#7b6c63;font-size:13px}.footer a{display:block;margin:8px 0}.footer h3{font-size:20px;margin:0 0 12px}.subscribe{display:flex;background:#fff;border:1px solid var(--line);border-radius:999px;overflow:hidden}.subscribe input{border:0;background:transparent;padding:12px 14px;min-width:0;flex:1}.subscribe button{border:0;background:#b78a52;color:#fff;padding:0 16px}.copyright{padding-top:22px;color:#8a7b72;font-size:13px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(232,217,201,.9);margin-top:28px}
 
-<style id="floating-contact-style">
-.floating-contact{
-  position:fixed;
-  right:22px;
-  bottom:22px;
-  z-index:9999;
-  font-family:Inter,"Helvetica Neue",Arial,sans-serif;
-}
-.floating-contact-panel{
-  width:235px;
-  padding:14px;
-  margin-bottom:12px;
-  border:1px solid rgba(232,217,201,.95);
-  border-radius:22px;
-  background:rgba(255,253,249,.96);
-  box-shadow:0 18px 44px rgba(70,45,31,.18);
-  backdrop-filter:blur(14px);
-  display:none;
-}
-.floating-contact.is-open .floating-contact-panel{
-  display:block;
-}
-.floating-contact-title{
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:20px;
-  color:#332922;
-  margin:0 0 4px;
-}
-.floating-contact-text{
-  font-size:12px;
-  line-height:1.45;
-  color:#786a62;
-  margin:0 0 12px;
-}
-.floating-contact-link{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  padding:10px 11px;
-  border-radius:14px;
-  color:#332922;
-  text-decoration:none;
-  font-size:13px;
-  font-weight:800;
-  background:#fffaf4;
-  border:1px solid #eadbcb;
-  margin-top:8px;
-  transition:.2s;
-}
-.floating-contact-link:hover{
-  transform:translateY(-1px);
-  box-shadow:0 8px 18px rgba(82,55,40,.11);
-}
-.floating-contact-icon{
-  width:26px;
-  height:26px;
-  display:grid;
-  place-items:center;
-  border-radius:50%;
-  background:#fff3e3;
-  color:#b78a52;
-  flex:0 0 auto;
-}
-.floating-contact-button{
-  width:62px;
-  height:62px;
-  border:0;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  margin-left:auto;
-  cursor:pointer;
-  background:linear-gradient(135deg,#caa06c,#ad7e44);
-  color:#fff;
-  box-shadow:0 16px 34px rgba(173,126,68,.32);
-  font-size:26px;
-}
-.floating-contact-button span{
-  display:block;
-  transform:translateY(-1px);
-}
-.floating-contact.is-open .floating-contact-button span{
-  font-size:24px;
-}
-@media(max-width:560px){
-  .floating-contact{
-    right:16px;
-    bottom:16px;
-  }
-  .floating-contact-panel{
-    width:min(235px,calc(100vw - 32px));
-  }
-}
-</style>
+.floating-contact{position:fixed;right:22px;bottom:22px;z-index:9999;font-family:Inter,"Helvetica Neue",Arial,sans-serif}
+.floating-contact-panel{width:235px;padding:14px;margin-bottom:12px;border:1px solid rgba(232,217,201,.95);border-radius:22px;background:rgba(255,253,249,.96);box-shadow:0 18px 44px rgba(70,45,31,.18);backdrop-filter:blur(14px);display:none}
+.floating-contact.is-open .floating-contact-panel{display:block}
+.floating-contact-title{font-family:Georgia,"Times New Roman",serif;font-size:20px;color:#332922;margin:0 0 4px}.floating-contact-text{font-size:12px;line-height:1.45;color:#786a62;margin:0 0 12px}
+.floating-contact-link{display:flex;align-items:center;gap:10px;padding:10px 11px;border-radius:14px;color:#332922;text-decoration:none;font-size:13px;font-weight:900;background:#fffaf4;border:1px solid #eadbcb;margin-top:8px;transition:.2s}.floating-contact-link:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(82,55,40,.11)}
+.floating-contact-icon{width:26px;height:26px;display:grid;place-items:center;border-radius:50%;background:#fff3e3;color:#b78a52;flex:0 0 auto}.floating-contact-button{width:64px;height:64px;border:0;border-radius:50%;display:grid;place-items:center;margin-left:auto;cursor:pointer;background:#fff;padding:0;overflow:hidden;box-shadow:0 10px 24px rgba(80,56,34,.18)}
+.floating-contact-button img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%}.floating-contact-close{display:none;font-size:30px;line-height:1;color:#5fbf86;font-weight:700;transform:translateY(-1px)}.floating-contact.is-open .floating-contact-button img{display:none}.floating-contact.is-open .floating-contact-close{display:block}
 
+@media(max-width:1080px){.element-grid{grid-template-columns:repeat(3,1fr)}.reference-card,.reference-card.featured{grid-template-columns:1fr}.ring{margin:0 auto}.footer-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:980px){.menu,.nav-icons{display:none}.hamburger{display:block}.topbar{height:68px}.logo{font-size:27px}.element-hero .container,.finder-wrap,.info-grid,.content-block{grid-template-columns:1fr}.element-hero h1{font-size:50px}.hero-visual{min-height:360px}.examples,.reference-grid{grid-template-columns:1fr}.reference-card.featured{grid-column:span 1}}
+@media(max-width:560px){.container{width:min(100% - 28px,1180px)}.section{padding:54px 0}.element-hero{padding:54px 0 56px}.element-hero h1{font-size:40px}.element-grid,.result-grid{grid-template-columns:1fr}.finder-panel,.result-panel,.content-block,.panel,.reference-card{padding:26px 18px}.content-block h2,.request h2,.finder-panel h2,.result-panel h2,.section-title h2{font-size:34px}.content-block img{height:280px}.hero-actions .btn,.finder-actions .btn{width:100%}.hero-visual{grid-template-columns:1fr}.hero-visual .large{grid-row:auto}.footer-grid{grid-template-columns:1fr}.floating-contact{right:16px;bottom:16px}.floating-contact-panel{width:min(235px,calc(100vw - 32px))}}
+</style>
 </head>
+
 <body>
 <header class="topbar">
   <div class="container nav">
     <a class="logo" href="/">Auralis Jewelry</a>
-    <nav class="menu">
-      <a href="/">Home</a><a href="/custom-bracelets">Custom Bracelets</a><a href="/gemstone-jewelry">Gemstone Jewelry</a><a class="active" href="/element-design">Element Design</a><a href="/gift-guide">Gift Guide</a><a href="/custom-order">Custom Order</a>
+    <nav class="menu" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/custom-bracelets">Custom Bracelets</a>
+      <a href="/gemstone-jewelry">Gemstone Jewelry</a>
+      <a class="active" href="/element-design">Element Design</a>
+      <a href="/gift-guide">Gift Guide</a>
+      <a href="/custom-order">Custom Order</a>
     </nav>
-    <div class="nav-icons"><span>⌕</span><span>♡</span><span>✉</span></div><button class="hamburger">☰</button>
+    <div class="nav-icons" aria-label="Visual icons"><span>⌕</span><span>♡</span><span>✉</span></div>
+    <button class="hamburger" aria-label="Open menu">☰</button>
   </div>
 </header>
+
 <main>
 <section class="element-hero">
   <div class="container">
     <div>
       <div class="eyebrow">Chinese Five Elements-Inspired Design</div>
       <h1>Find Your Element-Inspired Crystal Direction</h1>
-      <p>Select your birth date and MBTI to receive a simple Chinese Five Elements direction, zodiac result and suggested support element. The result is used as a design starting point for color, stone mood and gifting style.</p>
-      <div class="hero-actions"><a class="btn primary" href="#style-finder">Try the Finder</a><a class="btn" href="#palettes">View Element Palettes</a></div>
-      <div class="badges"><span>Wood · Fire · Earth · Metal · Water</span><span>Zodiac + MBTI style direction</span><span>Design inspiration only</span><span>Quote before payment</span></div>
+      <p>Select your birth date and MBTI to receive a simple Chinese Five Elements direction, zodiac result and suggested support element. The result becomes a design starting point for color, stone mood and custom bracelet style.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#style-finder">Try the Finder</a>
+        <a class="btn" href="#crystal-reference">View Crystal Families</a>
+      </div>
+      <div class="badges"><span>Wood · Fire · Earth · Metal · Water</span><span>Birth date + MBTI style tone</span><span>Design inspiration only</span><span>Quote before payment</span></div>
     </div>
-    <div class="visual"><img src="/assets/balance.svg" alt="Chinese Five Elements-inspired crystal bracelet color palette"><small>Element style finder</small></div>
+    <div class="hero-visual" aria-label="Element-inspired bracelet collage">
+      <img class="large" src="/assets/bracelet-green-still.jpg" alt="Green crystal bracelet for Wood element direction">
+      <img src="/assets/bracelet-citrine-model.jpg" alt="Citrine bracelet for warm element direction">
+      <img src="/assets/bracelet-clear-still.jpg" alt="Clear crystal bracelet for Metal element direction">
+      <div class="caption">Element color direction</div>
+    </div>
   </div>
 </section>
 
@@ -192,15 +166,9 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
         <div class="form-row">
           <label>Birth Date</label>
           <div class="date-grid">
-            <select id="birthYear" aria-label="Birth year">
-              <option value="">Year</option>
-            </select>
-            <select id="birthMonth" aria-label="Birth month">
-              <option value="">Month</option>
-            </select>
-            <select id="birthDay" aria-label="Birth day">
-              <option value="">Day</option>
-            </select>
+            <select id="birthYear" aria-label="Birth year"><option value="">Year</option></select>
+            <select id="birthMonth" aria-label="Birth month"><option value="">Month</option></select>
+            <select id="birthDay" aria-label="Birth day"><option value="">Day</option></select>
           </div>
         </div>
         <div class="form-row">
@@ -217,7 +185,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
           <button class="btn primary" type="button" onclick="findStyle()">Find My Direction</button>
           <button class="btn" type="button" onclick="resetFinder()">Reset</button>
         </div>
-        <div class="disclaimer">For an accurate traditional BaZi reading or exact “missing element” analysis, birth time, lunar calendar conversion and solar-term calculation would be required. This tool provides a simplified design-oriented Chinese Five Elements direction only.</div>
+        <div class="disclaimer">For an accurate traditional BaZi reading or exact missing element analysis, birth time, lunar calendar conversion and solar-term calculation would be required. This tool provides a simplified design-oriented Chinese Five Elements direction only.</div>
       </div>
       <div class="result-panel">
         <h2>Your Design Direction</h2>
@@ -249,66 +217,188 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 
 <section class="section soft-bg" id="palettes">
   <div class="container">
-    <div class="section-title"><div class="eyebrow">Element palettes</div><h2>Chinese Five Elements as Jewelry Color Directions</h2><p>We use the Chinese Five Elements as cultural and aesthetic inspiration for color, stone selection and bracelet mood, not as a medical or guaranteed outcome claim.</p></div>
+    <div class="section-title">
+      <div class="eyebrow">Element palettes</div>
+      <h2>Chinese Five Elements as Jewelry Color Directions</h2>
+      <p>Inspired by the reference charts you provided, this section turns the Five Elements into clean English color families and crystal directions for the independent site.</p>
+    </div>
     <div class="element-grid">
-      <article class="element-card"><img src="/assets/product-green.svg" alt="Wood element green crystal bracelet palette"><div><span class="palette">Green · fresh · natural</span><h3>Wood</h3><p>Fresh greens, growth, renewal and botanical mood.</p><a class="mini-btn" href="/custom-order">Request Wood Style</a></div></article>
-      <article class="element-card"><img src="/assets/citrine.svg" alt="Fire element warm crystal palette"><div><span class="palette">Gold · red · bright</span><h3>Fire</h3><p>Warm gold, red accents, brightness and presence.</p><a class="mini-btn" href="/custom-order">Request Fire Style</a></div></article>
-      <article class="element-card"><img src="/assets/product-citrine.svg" alt="Earth element warm neutral crystal bracelet palette"><div><span class="palette">Neutral · warm · stable</span><h3>Earth</h3><p>Warm neutrals, soft yellow and balanced everyday wear.</p><a class="mini-btn" href="/custom-order">Request Earth Style</a></div></article>
-      <article class="element-card"><img src="/assets/product-moonlight.svg" alt="Metal element white clear crystal bracelet palette"><div><span class="palette">White · clear · silver</span><h3>Metal</h3><p>Clear, white, silver and minimal refined styling.</p><a class="mini-btn" href="/custom-order">Request Metal Style</a></div></article>
-      <article class="element-card"><img src="/assets/product-black.svg" alt="Water element black and blue crystal bracelet palette"><div><span class="palette">Black · blue · deep</span><h3>Water</h3><p>Deep black, smoky, blue and cool-toned stone directions.</p><a class="mini-btn" href="/custom-order">Request Water Style</a></div></article>
+      <article class="element-card">
+        <img src="/assets/bracelet-green-still.jpg" alt="Wood element green crystal bracelet palette">
+        <div><div class="chip-row"><i class="c-green"></i><i class="c-white"></i><i class="c-gold"></i></div><span class="palette">Green · fresh · natural</span><h3>Wood</h3><p>Fresh greens, renewal, growth and a natural botanical mood.</p><a class="mini-btn" href="#wood-family">View Wood Stones</a></div>
+      </article>
+      <article class="element-card">
+        <img src="/assets/bracelet-rose-model.jpg" alt="Fire element rose quartz crystal bracelet palette">
+        <div><div class="chip-row"><i class="c-red"></i><i class="c-rose"></i><i class="c-gold"></i></div><span class="palette">Red · pink · purple</span><h3>Fire</h3><p>Warmth, brightness, confidence and an expressive color story.</p><a class="mini-btn" href="#fire-family">View Fire Stones</a></div>
+      </article>
+      <article class="element-card">
+        <img src="/assets/bracelet-citrine-model.jpg" alt="Earth element citrine crystal bracelet palette">
+        <div><div class="chip-row"><i class="c-gold"></i><i class="c-brown"></i><i class="c-white"></i></div><span class="palette">Yellow · gold · warm</span><h3>Earth</h3><p>Warm neutrals, yellow tones and balanced everyday wear.</p><a class="mini-btn" href="#earth-family">View Earth Stones</a></div>
+      </article>
+      <article class="element-card">
+        <img src="/assets/bracelet-clear-still.jpg" alt="Metal element clear crystal bracelet palette">
+        <div><div class="chip-row"><i class="c-white"></i><i class="c-silver"></i><i class="c-blue"></i></div><span class="palette">White · clear · silver</span><h3>Metal</h3><p>Clear, white, silver and minimal refined styling.</p><a class="mini-btn" href="#metal-family">View Metal Stones</a></div>
+      </article>
+      <article class="element-card">
+        <img src="/assets/bracelet-smoky-model.jpg" alt="Water element smoky crystal bracelet palette">
+        <div><div class="chip-row"><i class="c-black"></i><i class="c-blue"></i><i class="c-brown"></i></div><span class="palette">Black · blue · deep</span><h3>Water</h3><p>Deep black, smoky, blue and cool-toned stone directions.</p><a class="mini-btn" href="#water-family">View Water Stones</a></div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="section">
-  <div class="container info-grid">
-    <article class="panel"><div class="eyebrow">What it means</div><h2>MBTI, Zodiac and Chinese Five Elements Work as Style Signals</h2><p>Customers can use MBTI to express personality tone, zodiac to create an easy birth-date connection, and the Chinese Five Elements to guide color and stone mood.</p><p>This gives your website a more interactive, personalized feeling without forcing customers to fill a long form.</p></article>
-    <article class="panel"><div class="eyebrow">Important note</div><h2>Designed as Jewelry, Not a Promise</h2><p>The result is a symbolic design suggestion only. We avoid medical claims, guaranteed luck, destiny-changing language or therapeutic promises.</p><div class="note">Recommended wording: “element-inspired”, “symbolic”, “personal meaning”, “color direction”, “meaningful gift”.</div></article>
+<section class="section" id="crystal-reference">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">Crystal reference</div>
+      <h2>Five Element Crystal Families</h2>
+      <p>These English crystal families replace the Chinese reference graphics with a cleaner independent-site version. They can guide customers who do not know exact stone names yet.</p>
+    </div>
+
+    <div class="reference-grid">
+      <article class="reference-card featured" id="metal-family" style="--ring-a:#f6f3ec;--ring-b:#cfd7dd;--ring-c:#eef4f7;--center-color:#b59a55;">
+        <div class="ring">
+          <span style="--dot:#f5f1e8"></span><span style="--dot:#d9e2e8"></span><span style="--dot:#ffffff"></span><span style="--dot:#c4ccd1"></span>
+          <span style="--dot:#e6edf2"></span><span style="--dot:#f8f8f8"></span><span style="--dot:#d7d0c0"></span><span style="--dot:#c5d4e6"></span>
+          <strong>Metal</strong>
+        </div>
+        <div>
+          <div class="eyebrow">White and silver crystal family</div>
+          <h3>Metal Element</h3>
+          <p>Metal uses white, clear, silver and softly iridescent stones for a clean, refined and calm bracelet direction.</p>
+          <div class="stone-list"><span>Moonstone</span><span>Clear Quartz</span><span>White Phantom</span><span>White Agate</span><span>Pearl</span><span>Opal</span><span>White Jade</span><span>Blue Needle Quartz</span></div>
+        </div>
+      </article>
+
+      <article class="reference-card" id="wood-family" style="--ring-a:#d8ead9;--ring-b:#4f8f63;--ring-c:#b8d7b9;--center-color:#4f8f63;">
+        <div class="ring">
+          <span style="--dot:#7fbd83"></span><span style="--dot:#2f5d48"></span><span style="--dot:#7dbd9a"></span><span style="--dot:#186f4b"></span>
+          <span style="--dot:#a8c96c"></span><span style="--dot:#42a561"></span><span style="--dot:#9cc7b0"></span><span style="--dot:#6ba37a"></span>
+          <strong>Wood</strong>
+        </div>
+        <div>
+          <div class="eyebrow">Green crystal family</div>
+          <h3>Wood Element</h3>
+          <p>Wood is a fresh green direction for growth, vitality, renewal and natural style.</p>
+          <div class="stone-list"><span>Green Phantom</span><span>Aventurine</span><span>Malachite</span><span>Prehnite</span><span>Peridot</span><span>Green Fluorite</span><span>Jade Tone</span><span>Green Strawberry Quartz</span></div>
+        </div>
+      </article>
+
+      <article class="reference-card" id="water-family" style="--ring-a:#d5eaf2;--ring-b:#1f3c68;--ring-c:#1f1f26;--center-color:#2f5f92;">
+        <div class="ring">
+          <span style="--dot:#0e141c"></span><span style="--dot:#2e3438"></span><span style="--dot:#4b6f89"></span><span style="--dot:#1f66a0"></span>
+          <span style="--dot:#213c85"></span><span style="--dot:#72b6c8"></span><span style="--dot:#5fa8bb"></span><span style="--dot:#2a241e"></span>
+          <strong>Water</strong>
+        </div>
+        <div>
+          <div class="eyebrow">Blue and black crystal family</div>
+          <h3>Water Element</h3>
+          <p>Water uses black, smoky, blue and cool-toned stones for a calm, deep and flowing design mood.</p>
+          <div class="stone-list"><span>Obsidian</span><span>Golden Obsidian</span><span>Hawk's Eye</span><span>Blue Tiger Eye</span><span>Lapis Lazuli</span><span>Aquamarine</span><span>Larimar</span><span>Amazonite</span></div>
+        </div>
+      </article>
+
+      <article class="reference-card" id="fire-family" style="--ring-a:#f7d3cf;--ring-b:#b45a58;--ring-c:#8654a9;--center-color:#b96863;">
+        <div class="ring">
+          <span style="--dot:#e7a2b6"></span><span style="--dot:#9b1f2e"></span><span style="--dot:#e45c5d"></span><span style="--dot:#f09a41"></span>
+          <span style="--dot:#be5152"></span><span style="--dot:#7045a0"></span><span style="--dot:#8c45b8"></span><span style="--dot:#cc78d1"></span>
+          <strong>Fire</strong>
+        </div>
+        <div>
+          <div class="eyebrow">Red, pink and purple crystal family</div>
+          <h3>Fire Element</h3>
+          <p>Fire is expressive and bright, using rose, red, orange and purple colors for warmth and presence.</p>
+          <div class="stone-list"><span>Rose Quartz</span><span>Garnet</span><span>Strawberry Quartz</span><span>Sunstone</span><span>Red Phantom</span><span>Amethyst</span><span>Purple Rutilated Quartz</span><span>Super Seven</span></div>
+        </div>
+      </article>
+
+      <article class="reference-card" id="earth-family" style="--ring-a:#f5dd9b;--ring-b:#d6a64c;--ring-c:#8a6649;--center-color:#a77734;">
+        <div class="ring">
+          <span style="--dot:#d89d3e"></span><span style="--dot:#8d5528"></span><span style="--dot:#d5a13d"></span><span style="--dot:#e4bd55"></span>
+          <span style="--dot:#f1d564"></span><span style="--dot:#c79143"></span><span style="--dot:#b8852e"></span><span style="--dot:#e3b95c"></span>
+          <strong>Earth</strong>
+        </div>
+        <div>
+          <div class="eyebrow">Yellow and golden crystal family</div>
+          <h3>Earth Element</h3>
+          <p>Earth uses yellow, gold and warm brown tones for a stable, grounded and comforting bracelet direction.</p>
+          <div class="stone-list"><span>Citrine</span><span>Tiger Eye</span><span>Amber</span><span>Yellow Quartz</span><span>Yellow Jasper</span><span>Rutilated Quartz</span><span>Lemon Quartz</span><span>Yellow Phantom</span></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="ref-note">The Five Elements are used here as cultural color inspiration for jewelry design. We avoid medical, therapeutic, destiny-changing or guaranteed luck claims.</div>
   </div>
 </section>
 
 <section class="section soft-bg">
+  <div class="container info-grid">
+    <article class="panel">
+      <div class="eyebrow">What it means</div>
+      <h2>Birth Date, MBTI and Five Elements Work as Style Signals</h2>
+      <p>Customers can use birth date to create a simple element direction, MBTI to express personality tone, and crystal families to guide color and stone mood.</p>
+      <p>This keeps the page interactive and personalized without making customers fill a long form before they are ready to inquire.</p>
+    </article>
+    <article class="panel">
+      <div class="eyebrow">Important note</div>
+      <h2>Designed as Jewelry, Not a Promise</h2>
+      <p>The result is a symbolic design suggestion only. We avoid medical claims, guaranteed luck, destiny-changing language or therapeutic promises.</p>
+      <div class="note">Recommended wording: “element-inspired”, “symbolic”, “personal meaning”, “color direction”, “meaningful gift”.</div>
+    </article>
+  </div>
+</section>
+
+<section class="section">
   <div class="container">
     <div class="content-block">
-      <img src="/assets/step-2.svg" alt="Crystal bead selection for Chinese Five Elements-inspired bracelet design">
-      <div><div class="eyebrow">No need to know exact stones</div><h2>Customers Can Simply Share a Feeling</h2><p>Many customers may not know which stone to choose. This interactive window gives them a simple design brief they can copy into the custom request form.</p><p>The final bracelet is still confirmed manually based on material availability, design feasibility and shipping requirements.</p><a class="btn primary" href="/custom-order">Start Custom Request</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-title"><div class="eyebrow">Helpful examples</div><h2>Simple Request Examples</h2><p>These examples can guide customers without forcing them to understand every detail.</p></div>
-    <div class="examples">
-      <article class="example"><h3>“I am Pisces + INFP. I want something soft.”</h3><p>We may suggest a Water-inspired soft moonstone or rose quartz direction.</p></article>
-      <article class="example"><h3>“My element is Wood and I like green.”</h3><p>We can suggest green aventurine, jade-tone beads or fresh natural palettes.</p></article>
-      <article class="example"><h3>“I don’t know my MBTI.”</h3><p>The customer can still use birth date and color preference to start the request.</p></article>
+      <img src="/assets/bracelet-pastel-hand-original.jpg" alt="Custom crystal bracelet held by hand as a personal design reference">
+      <div>
+        <div class="eyebrow">No need to know exact stones</div>
+        <h2>Customers Can Simply Share a Feeling</h2>
+        <p>Many customers may not know which stone to choose. The Element Style Finder gives them a simple design brief they can copy into the custom request form.</p>
+        <p>The final bracelet is still confirmed manually based on material availability, design feasibility and shipping requirements.</p>
+        <a class="btn primary" href="/custom-order">Start Custom Request</a>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section soft-bg">
+  <div class="container">
+    <div class="section-title"><div class="eyebrow">Helpful examples</div><h2>Simple Request Examples</h2><p>These examples guide customers without forcing them to understand every detail.</p></div>
+    <div class="examples">
+      <article class="example"><h3>“I am Pisces + INFP. I want something soft.”</h3><p>We may suggest a Water-inspired soft moonstone, rose quartz or clear crystal direction.</p></article>
+      <article class="example"><h3>“My element is Wood and I like green.”</h3><p>We can suggest green aventurine, jade-tone beads, green phantom or fresh natural palettes.</p></article>
+      <article class="example"><h3>“My support element is Metal.”</h3><p>We may suggest clear quartz, moonstone, white agate, pearl or a silver-accented bracelet.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <div class="container"><div class="request"><div class="eyebrow">Ready to begin</div><h2>Request an Element-Inspired Bracelet Direction</h2><p>Use your finder result as a starting point, then submit a simple request. We will review the design direction and send a quote before payment.</p><a class="btn primary" href="/custom-order">Submit Custom Request</a></div></div>
 </section>
 </main>
 
-<footer class="footer"><div class="container copyright"><span>© 2026 Auralis Jewelry.</span><span>Website: <a href="https://auralisgems.com">auralisgems.com</a> · Email: <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a> · WhatsApp: <a href="https://wa.me/8618357590167">+86 183 5759 0167</a></span></div></footer>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><div class="logo">Auralis Jewelry</div><p>Personalized crystal and gemstone jewelry for your energy, your style and your story.</p><p><strong>Website:</strong> <a href="https://auralisgems.com">auralisgems.com</a><strong>Email:</strong> <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a><strong>WhatsApp:</strong> <a href="https://wa.me/8618357590167">+86 183 5759 0167</a></p></div>
+    <div><h3>Shop</h3><a href="/custom-bracelets">Custom Bracelets</a><a href="/gemstone-jewelry">Gemstone Jewelry</a><a href="/gift-guide">Gift Ideas</a></div>
+    <div><h3>Customer Care</h3><a href="/custom-order">Request a Quote</a><a href="/gift-guide">Shipping & Delivery</a><a href="/gift-guide">FAQ</a></div>
+    <div><h3>About</h3><a href="/element-design">Element Guide</a><a href="/gift-guide">Gift Guide</a><a href="mailto:hello@auralisgems.com">Contact</a></div>
+    <div><h3>Stay Connected</h3><p>Get custom design updates and gemstone inspiration.</p><div class="subscribe"><input aria-label="Email" placeholder="Enter your email"><button>→</button></div></div>
+  </div>
+  <div class="container copyright"><span>© 2026 Auralis Jewelry. All rights reserved.</span><span>Website: <a href="https://auralisgems.com">auralisgems.com</a> · Email: <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a></span></div>
+</footer>
 
 <script>
 const elementData = {
-  Wood:{mood:"Growth & Renewal", focus:"Fresh green style", palette:"Fresh green, soft botanical and natural stone direction.", stones:["Green Aventurine","Jade Tone","Green Fluorite","Clear Quartz"]},
-  Fire:{mood:"Warmth & Presence", focus:"Warm bright style", palette:"Warm gold, red accent and bright crystal direction.", stones:["Citrine","Garnet","Red Agate","Clear Quartz"]},
-  Earth:{mood:"Grounded Balance", focus:"Warm neutral style", palette:"Warm neutral, yellow, beige and softly grounded direction.", stones:["Tiger Eye","Yellow Jasper","Citrine","Smoky Quartz"]},
-  Metal:{mood:"Clean Refinement", focus:"Clear minimal style", palette:"White, clear, silver and minimal crystal direction.", stones:["Clear Quartz","Moonstone","White Agate","Hematite Accent"]},
-  Water:{mood:"Calm Depth", focus:"Deep cool style", palette:"Deep black, smoky, blue and cool-toned direction.", stones:["Obsidian","Smoky Quartz","Labradorite","Aquamarine Tone"]}
+  Wood:{mood:"Growth & Renewal", focus:"Fresh green style", palette:"Fresh green, soft botanical and natural stone direction.", stones:["Green Phantom","Green Aventurine","Jade Tone","Prehnite","Green Fluorite","Peridot"]},
+  Fire:{mood:"Warmth & Presence", focus:"Warm expressive style", palette:"Rose, red, orange, gold and purple crystal direction.", stones:["Rose Quartz","Garnet","Strawberry Quartz","Sunstone","Amethyst","Super Seven"]},
+  Earth:{mood:"Grounded Balance", focus:"Warm golden style", palette:"Yellow, gold, beige and warm brown crystal direction.", stones:["Citrine","Tiger Eye","Amber","Yellow Quartz","Yellow Jasper","Rutilated Quartz"]},
+  Metal:{mood:"Clean Refinement", focus:"Clear minimal style", palette:"White, clear, silver and softly iridescent crystal direction.", stones:["Moonstone","Clear Quartz","White Phantom","White Agate","Pearl","Opal"]},
+  Water:{mood:"Calm Depth", focus:"Deep cool style", palette:"Deep black, smoky, blue and cool-toned direction.", stones:["Obsidian","Hawk's Eye","Blue Tiger Eye","Lapis Lazuli","Aquamarine","Larimar"]}
 };
-const supportElement = {
-  Wood:"Water",
-  Fire:"Wood",
-  Earth:"Fire",
-  Metal:"Earth",
-  Water:"Metal"
-};
+const supportElement = {Wood:"Water",Fire:"Wood",Earth:"Fire",Metal:"Earth",Water:"Metal"};
 const mbtiTone = {
   analyst:{types:["INTJ","INTP","ENTJ","ENTP"], tone:"Minimal · structured", extra:"clean lines, clear stones and a refined palette"},
   idealist:{types:["INFJ","INFP","ENFJ","ENFP"], tone:"Soft · intuitive", extra:"gentle colors, layered meaning and a poetic palette"},
@@ -320,21 +410,15 @@ function populateDateSelects(){
   const month=document.getElementById("birthMonth");
   const day=document.getElementById("birthDay");
   const currentYear=new Date().getFullYear();
-  for(let y=currentYear;y>=1940;y--){
-    year.insertAdjacentHTML("beforeend",`<option value="${y}">${y}</option>`);
-  }
+  if(!year || year.options.length>1) return;
+  for(let y=currentYear;y>=1940;y--){year.insertAdjacentHTML("beforeend",`<option value="${y}">${y}</option>`)}
   const months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   months.forEach((name,i)=>month.insertAdjacentHTML("beforeend",`<option value="${i+1}">${name}</option>`));
-  for(let d=1;d<=31;d++){
-    day.insertAdjacentHTML("beforeend",`<option value="${d}">${d}</option>`);
-  }
+  for(let d=1;d<=31;d++){day.insertAdjacentHTML("beforeend",`<option value="${d}">${d}</option>`)}
 }
 function getZodiac(m,d){
-  const signs=[
-    ["Capricorn",1,19],["Aquarius",2,18],["Pisces",3,20],["Aries",4,19],["Taurus",5,20],["Gemini",6,20],
-    ["Cancer",7,22],["Leo",8,22],["Virgo",9,22],["Libra",10,22],["Scorpio",11,21],["Sagittarius",12,21],["Capricorn",12,31]
-  ];
-  for(const [sign,month,lastDay] of signs){ if(m===month && d<=lastDay) return sign; }
+  const signs=[["Capricorn",1,19],["Aquarius",2,18],["Pisces",3,20],["Aries",4,19],["Taurus",5,20],["Gemini",6,20],["Cancer",7,22],["Leo",8,22],["Virgo",9,22],["Libra",10,22],["Scorpio",11,21],["Sagittarius",12,21],["Capricorn",12,31]];
+  for(const [sign,month,lastDay] of signs){if(m===month && d<=lastDay) return sign}
   return signs.find(s=>s[1]===m+1)?.[0] || "Capricorn";
 }
 function getElementByYear(y){
@@ -345,7 +429,7 @@ function getElementByYear(y){
 function getMbtiTone(type){
   if(!type) return {tone:"Open · flexible", extra:"a flexible palette based on color preference and gift purpose"};
   const t=type.toUpperCase();
-  for(const group of Object.values(mbtiTone)){ if(group.types.includes(t)) return group; }
+  for(const group of Object.values(mbtiTone)){if(group.types.includes(t)) return group}
   return {tone:"Open · flexible", extra:"a flexible palette based on color preference and gift purpose"};
 }
 function findStyle(){
@@ -353,7 +437,7 @@ function findStyle(){
   const m=parseInt(document.getElementById("birthMonth").value,10);
   const d=parseInt(document.getElementById("birthDay").value,10);
   const mbti=document.getElementById("mbti").value;
-  if(!y || !m || !d){ alert("Please select year, month and day first."); return; }
+  if(!y || !m || !d){alert("Please select year, month and day first.");return}
   const zodiac=getZodiac(m,d);
   const element=getElementByYear(y);
   const missing=supportElement[element];
@@ -367,7 +451,7 @@ function findStyle(){
   document.getElementById("moodOut").textContent=data.mood;
   document.getElementById("focusOut").textContent=supportData.focus;
   document.getElementById("paletteTitle").textContent=element+" Element · Support with "+missing;
-  document.getElementById("paletteText").textContent="Your simplified year element is "+element+". As a design balance, we suggest adding "+missing+"-inspired colors or stones. "+supportData.palette+" Based on your MBTI style tone, we would keep the design "+tone.extra+".";
+  document.getElementById("paletteText").textContent="Your simplified birth-year element is "+element+". As a design balance, we suggest adding "+missing+"-inspired colors or stones. "+supportData.palette+" Based on your MBTI style tone, we would keep the design "+tone.extra+".";
   document.getElementById("stoneTags").innerHTML=supportData.stones.map(s=>"<span>"+s+"</span>").join("");
   document.getElementById("emptyText").style.display="none";
   document.getElementById("resultBox").style.display="block";
@@ -392,7 +476,7 @@ function copyBrief(){
   const palette=document.getElementById("paletteText").textContent;
   const stones=[...document.querySelectorAll("#stoneTags span")].map(s=>s.textContent).join(", ");
   const brief=`Element Style Finder Result: Zodiac: ${zodiac}; Chinese Five Element: ${element}; Suggested support / estimated missing element: ${missing}; MBTI: ${mbti}; Mood: ${mood}; Design focus: ${focus}; Palette: ${palette}; Suggested stones: ${stones}.`;
-  navigator.clipboard.writeText(brief).then(()=>{document.getElementById("copyNote").style.display="block";});
+  navigator.clipboard.writeText(brief).then(()=>{document.getElementById("copyNote").style.display="block"});
 }
 document.addEventListener("DOMContentLoaded", populateDateSelects);
 </script>
@@ -401,36 +485,23 @@ document.addEventListener("DOMContentLoaded", populateDateSelects);
   <div class="floating-contact-panel" aria-label="Contact options">
     <h3 class="floating-contact-title">Contact Us</h3>
     <p class="floating-contact-text">Need help with a custom bracelet or gemstone jewelry request?</p>
-    <a class="floating-contact-link" href="https://wa.me/8618357590167" target="_blank" rel="noopener">
-      <span class="floating-contact-icon">☎</span><span>WhatsApp</span>
-    </a>
-    <a class="floating-contact-link" href="/custom-order">
-      <span class="floating-contact-icon">✉</span><span>Send Inquiry</span>
-    </a>
-    <a class="floating-contact-link" href="mailto:hello@auralisgems.com">
-      <span class="floating-contact-icon">@</span><span>Email Us</span>
-    </a>
+    <a class="floating-contact-link" href="https://wa.me/8618357590167" target="_blank" rel="noopener"><span class="floating-contact-icon">☎</span><span>WhatsApp</span></a>
+    <a class="floating-contact-link" href="/custom-order"><span class="floating-contact-icon">✉</span><span>Send Inquiry</span></a>
+    <a class="floating-contact-link" href="mailto:hello@auralisgems.com"><span class="floating-contact-icon">@</span><span>Email Us</span></a>
   </div>
-  <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><span id="floatingContactIcon">☎</span></button>
+  <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><img src="/assets/green-phone-icon.png" alt="Phone contact icon"><span class="floating-contact-close">×</span></button>
 </div>
-<script id="floating-contact-script">
+<script>
 function toggleFloatingContact(){
   var box=document.getElementById("floatingContact");
-  var icon=document.getElementById("floatingContactIcon");
-  if(!box || !icon) return;
+  if(!box) return;
   box.classList.toggle("is-open");
-  icon.textContent=box.classList.contains("is-open") ? "×" : "☎";
 }
 document.addEventListener("click",function(e){
   var box=document.getElementById("floatingContact");
   if(!box) return;
-  if(!box.contains(e.target)){
-    box.classList.remove("is-open");
-    var icon=document.getElementById("floatingContactIcon");
-    if(icon) icon.textContent="☎";
-  }
+  if(!box.contains(e.target)){box.classList.remove("is-open")}
 });
 </script>
-
 </body>
 </html>
