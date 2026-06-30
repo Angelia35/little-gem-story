@@ -1,0 +1,2 @@
+Upload wrangler.jsonc to the GitHub repository root, the same level as index.html and gift-guide.html.
+This file tells Cloudflare Workers to deploy the repository as a static site.
