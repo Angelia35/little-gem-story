@@ -429,11 +429,11 @@
 .floating-contact-link{display:flex;align-items:center;gap:10px;padding:10px 11px;border-radius:14px;color:#332922;text-decoration:none;font-size:13px;font-weight:800;background:#fffaf4;border:1px solid #eadbcb;margin-top:8px;transition:.2s;}
 .floating-contact-link:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(82,55,40,.11);}
 .floating-contact-icon{width:26px;height:26px;display:grid;place-items:center;border-radius:50%;background:#fff3e3;color:#b78a52;flex:0 0 auto;}
-.floating-contact-button{width:62px;height:62px;border:0;border-radius:50%;display:grid;place-items:center;margin-left:auto;cursor:pointer;background:linear-gradient(135deg,#caa06c,#ad7e44);color:#fff;box-shadow:0 16px 34px rgba(173,126,68,.32);font-size:28px;
-  line-height:1;
-  box-shadow:0 6px 16px rgba(189,139,74,.22);}
-.floating-contact-button span{display:block;transform:translateY(-1px);}
-.floating-contact.is-open .floating-contact-button span{font-size:24px;}
+.floating-contact-button{width:64px;height:64px;border:0;border-radius:50%;display:grid;place-items:center;margin-left:auto;cursor:pointer;background:#ffffff;padding:0;overflow:hidden;box-shadow:0 10px 24px rgba(80,56,34,.18);}
+.floating-contact-button img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%;}
+.floating-contact-close{display:none;font-size:30px;line-height:1;color:#5fbf86;font-weight:700;transform:translateY(-1px);}
+.floating-contact.is-open .floating-contact-button img{display:none;}
+.floating-contact.is-open .floating-contact-close{display:block;}
 @media(max-width:560px){.floating-contact{right:16px;bottom:16px;}.floating-contact-panel{width:min(235px,calc(100vw - 32px));}}
 </style>
 
@@ -661,23 +661,19 @@
     <a class="floating-contact-link" href="/custom-order"><span class="floating-contact-icon">✉</span><span>Send Inquiry</span></a>
     <a class="floating-contact-link" href="mailto:hello@auralisgems.com"><span class="floating-contact-icon">@</span><span>Email Us</span></a>
   </div>
-  <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><span id="floatingContactIcon">☎</span></button>
+  <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><img src="/assets/green-phone-icon.png" alt="Phone contact icon"><span class="floating-contact-close">×</span></button>
 </div>
 <script id="floating-contact-script">
 function toggleFloatingContact(){
   var box=document.getElementById("floatingContact");
-  var icon=document.getElementById("floatingContactIcon");
-  if(!box || !icon) return;
+  if(!box) return;
   box.classList.toggle("is-open");
-  icon.textContent=box.classList.contains("is-open") ? "×" : "☎";
 }
 document.addEventListener("click",function(e){
   var box=document.getElementById("floatingContact");
   if(!box) return;
   if(!box.contains(e.target)){
     box.classList.remove("is-open");
-    var icon=document.getElementById("floatingContactIcon");
-    if(icon) icon.textContent="☎";
   }
 });
 </script>
