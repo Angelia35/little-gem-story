@@ -4,40 +4,54 @@
     <loc>https://auralisgems.com/</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
   </url>
   <url>
     <loc>https://auralisgems.com/custom-bracelets</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://auralisgems.com/gemstone-jewelry</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
   </url>
   <url>
     <loc>https://auralisgems.com/element-design</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://auralisgems.com/gift-guide</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://auralisgems.com/about-us</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
   </url>
   <url>
     <loc>https://auralisgems.com/custom-order</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://auralisgems.com/guides/custom-crystal-bracelet-guide</loc>
     <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://auralisgems.com/guides/crystal-bracelet-gift-for-her</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
   </url>
 </urlset>
