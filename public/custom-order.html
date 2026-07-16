@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Custom Order | Auralis Jewelry</title>
+<title>Custom Bracelet Request | Birth Date, Chinese Element & Reference Photo | Auralis Jewelry</title>
 <!-- Auralis favicon -->
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -12,7 +12,7 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#b78249">
 
-<meta name="description" content="Submit a custom jewelry request for crystal bracelets, gemstone jewelry, element-inspired designs or personalized gift orders. Quote and details are confirmed before payment.">
+<meta name="description" content="Start a custom crystal bracelet request by birth date, Chinese element, color mood, gift occasion or reference photo. No payment before quote.">
 <style>
 :root{
   --cream:#fffaf4;
@@ -267,6 +267,120 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   .tally-wrap iframe{min-height:930px!important}
 }
 
+
+/* Custom Order conversion upgrade */
+.intent-section{
+  padding:64px 0;
+  background:linear-gradient(180deg,#fffaf4,#fffdf9);
+  border-top:1px solid rgba(232,217,201,.7);
+  border-bottom:1px solid rgba(232,217,201,.7);
+}
+.intent-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+  align-items:stretch;
+}
+.intent-card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:26px;
+  box-shadow:0 18px 45px rgba(65,42,28,.08);
+}
+.intent-card h3{
+  margin:0 0 10px;
+  font-size:24px;
+}
+.intent-card p{
+  color:var(--muted);
+  margin:0 0 16px;
+}
+.intent-list{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:18px;
+}
+.intent-pill{
+  border:1px solid var(--line);
+  background:#fffaf4;
+  border-radius:18px;
+  padding:14px;
+  color:#5f4d42;
+  font-size:14px;
+  font-weight:800;
+}
+.element-map{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:10px;
+  margin-top:18px;
+}
+.element-map span{
+  background:#fffaf4;
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:12px 10px;
+  text-align:center;
+  color:#5f4d42;
+  font-size:13px;
+}
+.element-map strong{
+  display:block;
+  color:var(--dark);
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:17px;
+  margin-bottom:3px;
+}
+.quote-panel{
+  margin-top:22px;
+  background:linear-gradient(135deg,#fff7ed,#f5e4d2);
+  border:1px solid #ead4b7;
+  border-radius:26px;
+  padding:24px;
+}
+.quote-template{
+  margin-top:14px;
+  border:1px dashed #caa06c;
+  border-radius:18px;
+  background:#fffdf9;
+  padding:18px;
+  color:#5f4d42;
+  font-size:14px;
+  line-height:1.7;
+}
+.form-note-box{
+  margin:0 0 20px;
+  padding:18px 20px;
+  border-radius:20px;
+  background:#fff7ed;
+  border:1px solid #ead4b7;
+  color:#5f4d42;
+}
+.form-note-box strong{
+  color:var(--dark);
+}
+.trust-strip{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:14px;
+  margin-top:24px;
+}
+.trust-mini{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:16px;
+  color:#5f4d42;
+  font-weight:800;
+  font-size:14px;
+}
+@media (max-width: 900px){
+  .intent-grid,.intent-list,.trust-strip{grid-template-columns:1fr}
+  .element-map{grid-template-columns:1fr 1fr}
+}
+
 </style>
 
 <!-- Google Analytics 4 -->
@@ -309,9 +423,9 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
 <section class="hero">
   <div class="container hero-grid">
     <div>
-      <div class="eyebrow">Custom Jewelry Request</div>
-      <h1>Start Your Custom Jewelry Request</h1>
-      <p class="hero-copy">Submit your idea for a crystal bracelet, natural gemstone jewelry piece, element-inspired design or personalized gift order. We confirm design, material, quote and timing before payment.</p>
+      <div class="eyebrow">Custom Bracelet Request</div>
+      <h1>Start Your Custom Bracelet Request</h1>
+      <p class="hero-copy">Send your birth date, Chinese element, color mood, gift occasion or reference photo before quote. We confirm the design direction, material options, price and timing before payment.</p>
       <div class="hero-actions">
         <a class="btn primary" href="#request-form">Fill Out Request Form</a>
         <a class="btn" href="#request-types">Choose Request Type</a>
@@ -320,7 +434,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
         <span class="tag">No payment before quote</span>
         <span class="tag">Reference photos accepted</span>
         <span class="tag">Design details confirmed first</span>
-        <span class="tag">Gift packaging available</span>
+        <span class="tag">Birth date & element requests accepted</span>
       </div>
     </div>
     <div class="hero-visual" aria-hidden="true">
@@ -337,6 +451,62 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   </div>
 </section>
 
+<section class="intent-section" id="request-intent">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">Before You Fill the Form</div>
+      <h2>Choose the easiest way to start your request</h2>
+      <p>You do not need a finished design. Start with one clear direction: birth date, Chinese element, color mood, gift occasion or a real reference photo.</p>
+    </div>
+
+    <div class="intent-grid">
+      <article class="intent-card">
+        <h3>Request by birth date or Chinese element</h3>
+        <p>Send your birth date or preferred element, and we can suggest an element-inspired color direction before quote.</p>
+        <div class="element-map" aria-label="Chinese Five Elements bracelet color directions">
+          <span><strong>Wood</strong>Green / natural</span>
+          <span><strong>Fire</strong>Warm / pink / purple</span>
+          <span><strong>Earth</strong>Yellow / brown</span>
+          <span><strong>Metal</strong>Clear / white / gold</span>
+          <span><strong>Water</strong>Blue / dark / cool</span>
+        </div>
+        <div class="quote-panel">
+          <strong>Suggested message:</strong>
+          <div class="quote-template">
+            My birth date is [month/day/year]. I want an element-inspired bracelet. Please suggest a color direction and quote before payment.
+          </div>
+        </div>
+      </article>
+
+      <article class="intent-card">
+        <h3>Request by reference photo or gift idea</h3>
+        <p>A screenshot, bracelet photo, color mood or gift story is enough to begin. We will confirm what can be quoted before payment.</p>
+        <div class="intent-list">
+          <div class="intent-pill">Reference photo or screenshot</div>
+          <div class="intent-pill">Preferred color mood</div>
+          <div class="intent-pill">Wrist size or bracelet length</div>
+          <div class="intent-pill">Gift occasion or message</div>
+          <div class="intent-pill">Quantity and delivery country</div>
+          <div class="intent-pill">Budget or deadline if known</div>
+        </div>
+        <div class="quote-panel">
+          <strong>Suggested message:</strong>
+          <div class="quote-template">
+            I like this reference style. I prefer [color]. Wrist size is [size]. It is for [gift occasion]. Please check if this can be quoted.
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <div class="trust-strip">
+      <div class="trust-mini">No payment before quote</div>
+      <div class="trust-mini">Reference photos accepted</div>
+      <div class="trust-mini">Birth date requests accepted</div>
+      <div class="trust-mini">WhatsApp faster response</div>
+    </div>
+  </div>
+</section>
+
 <section class="section" id="request-types">
   <div class="container">
     <div class="section-title">
@@ -348,7 +518,7 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
       <article class="type-card">
         <div class="type-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"></circle><path d="M12 9.5c1.8 0 3.25 1.45 3.25 3.25S13.8 16 12 16s-3.25-1.45-3.25-3.25"></path></svg></div>
         <h3>Custom Crystal Bracelet</h3>
-        <p>Personalized bracelet by stone, color, intention, size, zodiac or gift meaning.</p>
+        <p>Personalized bracelet by reference photo, color mood, wrist size, birth date, element or gift meaning.</p>
         <a class="mini-btn" href="#request-form">Request Bracelet</a>
       </article>
       <article class="type-card">
@@ -359,8 +529,8 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
       </article>
       <article class="type-card">
         <div class="type-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 4.5 13.8 9.8 19.5 12 13.8 14.2 12 19.5 10.2 14.2 4.5 12 10.2 9.8 12 4.5Z"></path></svg></div>
-        <h3>Element-Inspired Design</h3>
-        <p>Crystal direction based on element, birth date, personality or symbolic energy.</p>
+        <h3>Birth Date / Chinese Element Design</h3>
+        <p>Element-inspired bracelet direction based on birth date, Wood, Fire, Earth, Metal or Water.</p>
         <a class="mini-btn" href="#request-form">Request Element Design</a>
       </article>
       <article class="type-card">
@@ -379,7 +549,8 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
       <div class="form-head">
         <div class="eyebrow">Submit Request</div>
         <h2>Tell us your idea</h2>
-        <p>Use the form below to share your request. A quote will only be prepared after we understand the style, material and timing.</p>
+        <p>Use the form below to share your request. Include your birth date, preferred element, color mood, reference photo idea, wrist size or gift occasion if relevant.</p>
+        <div class="form-note-box"><strong>No payment before quote.</strong> We review your idea first, confirm the design direction and then send available options, price and next steps.</div>
       </div>
       <div class="tally-wrap">
         <iframe data-tally-src="https://tally.so/embed/RG2NOJ?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="760" frameborder="0" marginheight="0" marginwidth="0" title="Custom jewelry request form"></iframe>
@@ -392,9 +563,10 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
         <p>You do not need complete specifications. A simple idea, reference image or product direction is enough to start.</p>
         <ul class="checklist">
           <li>Product type: bracelet, ring, pendant, set or gift order</li>
-          <li>Preferred stone, color, intention or reference style</li>
-          <li>Size, quantity, budget range or target delivery date if known</li>
-          <li>Packaging, message card or branding requirements</li>
+          <li>Birth date or preferred Chinese element if you want an element-inspired bracelet</li>
+          <li>Preferred color mood, symbolic meaning, stone direction or reference style</li>
+          <li>Wrist size, quantity, delivery country, budget range or deadline if known</li>
+          <li>Gift occasion, packaging, message card or branding requirements</li>
           <li>Any reference photos, links or screenshots you want us to review</li>
         </ul>
       </div>
@@ -429,8 +601,8 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
       <p>The process is designed to make custom jewelry requests feel simple, low-pressure and clear.</p>
     </div>
     <div class="process-grid">
-      <article class="process-card"><div class="num">1</div><h3>We review your request</h3><p>We check the product type, stone direction, quantity, timing and any reference image.</p></article>
-      <article class="process-card"><div class="num">2</div><h3>We confirm details</h3><p>We may ask follow-up questions about size, color, material, packaging or budget.</p></article>
+      <article class="process-card"><div class="num">1</div><h3>We review your request</h3><p>We check the product type, birth date or element direction, color mood, quantity, timing and any reference image.</p></article>
+      <article class="process-card"><div class="num">2</div><h3>We confirm details</h3><p>We may ask follow-up questions about wrist size, color, material, gift purpose, packaging or budget.</p></article>
       <article class="process-card"><div class="num">3</div><h3>You receive a quote</h3><p>We send available options, estimated cost and timeline before payment.</p></article>
       <article class="process-card"><div class="num">4</div><h3>Order is arranged</h3><p>After confirmation, we arrange production, sourcing, packaging and shipping.</p></article>
     </div>
@@ -446,11 +618,21 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
     <div class="faq-grid">
       <div class="faq-item">Can I send reference photos or screenshots? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
       <div class="faq-item">Do I need to pay before receiving a quote? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
-      <div class="faq-item">Can you help choose stones for a gift? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
-      <div class="faq-item">Can I request a gemstone style that is not listed? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+      <div class="faq-item">Can you suggest a bracelet by birth date or Chinese element? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
+      <div class="faq-item">Can I request by color mood instead of exact stone name? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
       <div class="faq-item">Can I add gift packaging or a message card? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
       <div class="faq-item">How fast will you reply? <span class="unified-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span></div>
     </div>
+    
+<div class="quote-panel" style="margin-top:28px">
+  <h3 style="margin:0 0 10px">Not sure what to write?</h3>
+  <p style="margin:0;color:#76675e">Send one simple message: your birth date, preferred color, wrist size and gift purpose. We will help turn it into a clearer custom bracelet direction before quote.</p>
+  <div class="hero-actions" style="margin-top:18px">
+    <a class="btn primary" href="#request-form">Fill Out Request Form</a>
+    <a class="btn" href="https://wa.me/8618357590167">Ask on WhatsApp</a>
+  </div>
+</div>
+
     <div class="final-cta">
       <h2>Ready to start?</h2>
       <p>Submit your idea first. We will help turn it into a clear design direction, quote and next step before you make payment.</p>
