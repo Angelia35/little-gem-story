@@ -731,138 +731,25 @@
 </style>
 
 
-<style id="auralis-social-contact-v2-style">
-/* Auralis sitewide social + contact v2 */
-.auralis-social-top-v2{
-  display:flex!important;
-  align-items:center!important;
-  gap:8px!important;
-  margin-left:10px!important;
-  flex:0 0 auto!important;
-}
-.auralis-social-top-v2 a{
-  width:38px!important;
-  height:38px!important;
-  border:1px solid #eadbcc!important;
-  border-radius:999px!important;
-  display:inline-flex!important;
-  align-items:center!important;
-  justify-content:center!important;
-  background:#fffdf9!important;
-  color:#7d5733!important;
-  font-size:12px!important;
-  font-weight:900!important;
-  text-decoration:none!important;
-  letter-spacing:.02em!important;
-  line-height:1!important;
-}
-.auralis-social-top-v2 a:hover{
-  background:#fff7ed!important;
-  border-color:#caa06c!important;
-  transform:translateY(-1px)!important;
-}
-.auralis-contact-v2{
-  position:fixed!important;
-  right:20px!important;
-  bottom:20px!important;
-  z-index:99999!important;
-  font-family:Arial,sans-serif!important;
-}
-.auralis-contact-v2-toggle{
-  width:60px!important;
-  height:60px!important;
-  border-radius:999px!important;
-  border:none!important;
-  cursor:pointer!important;
-  background:#b78249!important;
-  color:#fff!important;
-  box-shadow:0 14px 34px rgba(67,41,23,.28)!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:center!important;
-  font-size:25px!important;
-  font-weight:900!important;
-}
-.auralis-contact-v2-panel{
-  position:absolute!important;
-  right:0!important;
-  bottom:74px!important;
-  width:265px!important;
-  background:#fffdf9!important;
-  border:1px solid #eadbcc!important;
-  border-radius:24px!important;
-  padding:14px!important;
-  box-shadow:0 18px 50px rgba(70,43,25,.18)!important;
-  opacity:0!important;
-  pointer-events:none!important;
-  transform:translateY(10px)!important;
-  transition:.2s ease!important;
-}
-.auralis-contact-v2.open .auralis-contact-v2-panel{
-  opacity:1!important;
-  pointer-events:auto!important;
-  transform:translateY(0)!important;
-}
-.auralis-contact-v2-title{
-  font-family:Georgia,"Times New Roman",serif!important;
-  font-size:20px!important;
-  color:#2f261f!important;
-  margin:4px 4px 10px!important;
-  line-height:1.15!important;
-}
-.auralis-contact-v2-item{
-  display:flex!important;
-  align-items:center!important;
-  gap:10px!important;
-  padding:12px!important;
-  margin:7px 0!important;
-  border:1px solid #eadbcc!important;
-  border-radius:16px!important;
-  background:#fff!important;
-  color:#5f4d42!important;
-  font-weight:800!important;
-  font-size:14px!important;
-  text-decoration:none!important;
-}
-.auralis-contact-v2-item.disabled{
-  opacity:.78!important;
-  cursor:default!important;
-}
-.auralis-contact-v2-icon{
-  width:30px!important;
-  height:30px!important;
-  border-radius:999px!important;
-  display:flex!important;
-  align-items:center!important;
-  justify-content:center!important;
-  background:#fff3e4!important;
-  color:#9c6b38!important;
-  flex:0 0 auto!important;
-  font-size:12px!important;
-  font-weight:900!important;
-}
-.auralis-contact-v2-small{
-  display:block!important;
-  color:#8a7a70!important;
-  font-size:11px!important;
-  font-weight:500!important;
-  line-height:1.25!important;
-  margin-top:2px!important;
-}
-.auralis-contact-v2-note{
-  margin:10px 6px 4px!important;
-  color:#75665d!important;
-  font-size:12px!important;
-  line-height:1.45!important;
-}
-@media(max-width:980px){
-  .auralis-social-top-v2{margin-left:0!important;margin-top:8px!important;}
-  .auralis-social-top-v2 a{width:36px!important;height:36px!important;}
-}
-@media(max-width:600px){
-  .auralis-contact-v2{right:16px!important;bottom:16px!important;}
-  .auralis-contact-v2-panel{width:min(270px,calc(100vw - 32px))!important;}
-}
+
+<style id="auralis-social-contact-v3-style">
+/* Auralis sitewide social + contact v3 clean fix */
+.auralis-social-top-v2,.auralis-contact-v2{display:none!important}
+.auralis-social-top-v3{display:flex!important;align-items:center!important;gap:8px!important;margin-left:8px!important;flex:0 0 auto!important;min-width:max-content!important}
+.auralis-social-top-v3 a{min-width:40px!important;height:34px!important;padding:0 10px!important;border:1px solid #d9b98d!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;background:#fffaf4!important;color:#8b5b2f!important;font-size:12px!important;font-weight:900!important;text-decoration:none!important;letter-spacing:.02em!important;line-height:1!important;box-shadow:none!important;opacity:1!important;visibility:visible!important}
+.auralis-social-top-v3 a:hover{background:#b78249!important;color:#fff!important;border-color:#b78249!important}
+.auralis-contact-v3{position:fixed!important;right:20px!important;bottom:20px!important;z-index:2147483647!important;font-family:Arial,sans-serif!important}
+.auralis-contact-v3-toggle{width:60px!important;height:60px!important;border-radius:999px!important;border:none!important;cursor:pointer!important;background:#b78249!important;color:#fff!important;box-shadow:0 14px 34px rgba(67,41,23,.28)!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:24px!important;font-weight:900!important}
+.auralis-contact-v3-panel{position:absolute!important;right:0!important;bottom:74px!important;width:280px!important;background:#fffdf9!important;border:1px solid #eadbcc!important;border-radius:24px!important;padding:14px!important;box-shadow:0 18px 50px rgba(70,43,25,.18)!important;opacity:0!important;pointer-events:none!important;transform:translateY(10px)!important;transition:.2s ease!important}
+.auralis-contact-v3.open .auralis-contact-v3-panel{opacity:1!important;pointer-events:auto!important;transform:translateY(0)!important}
+.auralis-contact-v3-title{font-family:Georgia,"Times New Roman",serif!important;font-size:20px!important;color:#2f261f!important;margin:4px 4px 10px!important;line-height:1.15!important}
+.auralis-contact-v3-item{display:flex!important;align-items:center!important;gap:10px!important;padding:12px!important;margin:7px 0!important;border:1px solid #eadbcc!important;border-radius:16px!important;background:#fff!important;color:#5f4d42!important;font-weight:800!important;font-size:14px!important;text-decoration:none!important}
+.auralis-contact-v3-item.disabled{opacity:.76!important;cursor:default!important}
+.auralis-contact-v3-icon{width:32px!important;height:32px!important;border-radius:999px!important;display:flex!important;align-items:center!important;justify-content:center!important;background:#fff3e4!important;color:#9c6b38!important;flex:0 0 auto!important;font-size:12px!important;font-weight:900!important}
+.auralis-contact-v3-small{display:block!important;color:#8a7a70!important;font-size:11px!important;font-weight:500!important;line-height:1.25!important;margin-top:2px!important}
+.auralis-contact-v3-note{margin:10px 6px 4px!important;color:#75665d!important;font-size:12px!important;line-height:1.45!important}
+@media(max-width:980px){.auralis-social-top-v3{margin-left:0!important;margin-top:8px!important}.auralis-social-top-v3 a{height:34px!important}}
+@media(max-width:600px){.auralis-contact-v3{right:16px!important;bottom:16px!important}.auralis-contact-v3-panel{width:min(280px,calc(100vw - 32px))!important}}
 </style>
 
 </head>
@@ -880,9 +767,12 @@
       <a href="/guides/">Guides</a>
       <a href="/free-crystal-gift">Free Gift</a>
       <a href="/about-us">About Us</a><a href="/custom-order">Custom Order</a>
+      <div class="auralis-social-top-v3" aria-label="Auralis Jewelry social media">
+  <a href="https://www.instagram.com/auralisgems/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+  <a href="https://www.pinterest.com/Auralisgems/" target="_blank" rel="noopener" aria-label="Pinterest">PIN</a>
+</div>
     </nav>
-    <div class="nav-icons" aria-label="Visual icons"><span>⌕</span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5S5 16.2 3.4 10.8C2.4 7.5 4.4 4.5 7.7 4.5c1.9 0 3.4 1 4.3 2.4.9-1.4 2.4-2.4 4.3-2.4 3.3 0 5.3 3 4.3 6.3C19 16.2 12 20.5 12 20.5Z"/></svg></span><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15v11h-15z"/><path d="m5 7 7 6 7-6"/></svg></span></div>
-    <button class="hamburger" aria-label="Open menu">☰</button>
+<button class="hamburger" aria-label="Open menu">☰</button>
   </div>
 </header>
 
@@ -1153,6 +1043,63 @@ document.addEventListener("click",function(e){
       });
     }
   }, true);
+})();
+</script>
+
+
+<div class="auralis-contact-v3" aria-label="Contact Auralis Jewelry">
+  <div class="auralis-contact-v3-panel">
+    <div class="auralis-contact-v3-title">Contact Auralis</div>
+    <a class="auralis-contact-v3-item" href="https://wa.me/8618357590167?text=Hi%2C%20I%20would%20like%20to%20ask%20about%20a%20custom%20crystal%20bracelet%20or%20the%20Mystery%20Crystal%20Gift.">
+      <span class="auralis-contact-v3-icon">WA</span>
+      <strong>WhatsApp<span class="auralis-contact-v3-small">+86 18357590167</span></strong>
+    </a>
+    <a class="auralis-contact-v3-item" href="mailto:hello@auralisgems.com?subject=Auralis%20Jewelry%20Inquiry">
+      <span class="auralis-contact-v3-icon">@</span>
+      <strong>Email<span class="auralis-contact-v3-small">hello@auralisgems.com</span></strong>
+    </a>
+    <div class="auralis-contact-v3-item disabled">
+      <span class="auralis-contact-v3-icon">WX</span>
+      <strong>WeChat<span class="auralis-contact-v3-small">Official account coming soon</span></strong>
+    </div>
+    <div class="auralis-contact-v3-note">Phone is not displayed for now. Facebook and WeChat can be added after the official accounts are ready.</div>
+  </div>
+  <button class="auralis-contact-v3-toggle" type="button" aria-label="Open contact options">☎</button>
+</div>
+
+
+<script id="auralis-social-contact-v3-script">
+(function(){
+  function removeOldContactWidgets(){
+    var all=Array.prototype.slice.call(document.body.querySelectorAll('*'));
+    all.forEach(function(el){
+      if(!el||el.closest('.auralis-contact-v3')||el.closest('.auralis-social-top-v3')) return;
+      var text=(el.innerText||'').replace(/\s+/g,' ').trim();
+      if(!text) return;
+      var cls=((el.className||'')+' '+(el.id||'')).toString().toLowerCase();
+      var style=window.getComputedStyle(el);
+      var isFixed=style&&(style.position==='fixed'||style.position==='sticky');
+      var looks=/contact|float|floating|whatsapp|inquiry|chat|message/.test(cls)||
+        (text.indexOf('Contact Us')!==-1&&text.indexOf('WhatsApp')!==-1)||
+        (text.indexOf('Send Inquiry')!==-1&&text.indexOf('Email Us')!==-1);
+      if(looks&&(isFixed||text.indexOf('Send Inquiry')!==-1)){
+        el.style.display='none';
+        el.setAttribute('data-auralis-hidden-old-contact','true');
+      }
+    });
+  }
+  function initAuralisContactV3(){
+    removeOldContactWidgets();
+    setTimeout(removeOldContactWidgets,800);
+    setTimeout(removeOldContactWidgets,1800);
+    var widget=document.querySelector('.auralis-contact-v3');
+    if(!widget) return;
+    var btn=widget.querySelector('.auralis-contact-v3-toggle');
+    if(!btn) return;
+    btn.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();widget.classList.toggle('open');});
+    document.addEventListener('click',function(e){if(!widget.contains(e.target)) widget.classList.remove('open');});
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initAuralisContactV3);}else{initAuralisContactV3();}
 })();
 </script>
 
