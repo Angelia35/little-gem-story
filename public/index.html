@@ -535,6 +535,9 @@
   .final-cta h2,.quote-panel h2{font-size:30px!important}
 }
 
+
+/* v5 cleanup: hide any legacy floating widget to prevent overlap */
+.floating-contact,#floatingContact,.floating-contact-button,.float-btn,.floating-contact-panel,.floating-contact-close{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important;}
 </style>
 
 <style id="floating-contact-style">
@@ -983,31 +986,6 @@
   </div>
   <div class="container copyright"><span>© 2026 Auralis Jewelry. All rights reserved.</span><span>Website: <a href="https://auralisgems.com">auralisgems.com</a> · Email: <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a></span></div>
 </footer>
-
-<div class="floating-contact" id="floatingContact">
-  <div class="floating-contact-panel" aria-label="Contact options">
-    <h3 class="floating-contact-title">Contact Us</h3>
-    <p class="floating-contact-text">Need help with a custom bracelet or gemstone jewelry request?</p>
-    <a class="floating-contact-link" href="https://wa.me/8618357590167" target="_blank" rel="noopener"><span class="floating-contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 4.8 9 4.2l2.2 4.6-1.4 1.1c1.1 2.2 2.8 3.9 5 5l1.1-1.4 4.6 2.2-.6 1.8c-.4 1.1-1.5 1.8-2.7 1.6C10.8 18.4 5.6 13.2 4.9 6.8c-.1-1.2.5-2.3 1.6-2.7l.7-.3Z"/></svg></span><span>WhatsApp</span></a>
-    <a class="floating-contact-link" href="/custom-order"><span class="floating-contact-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15v11h-15z"/><path d="m5 7 7 6 7-6"/></svg></span><span>Send Inquiry</span></a>
-    <a class="floating-contact-link" href="mailto:hello@auralisgems.com"><span class="floating-contact-icon">@</span><span>Email Us</span></a>
-  </div>
-  <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><img src="/assets/green-phone-icon.png" alt="Phone contact icon"><span class="floating-contact-close">×</span></button>
-</div>
-<script id="floating-contact-script">
-function toggleFloatingContact(){
-  var box=document.getElementById("floatingContact");
-  if(!box) return;
-  box.classList.toggle("is-open");
-}
-document.addEventListener("click",function(e){
-  var box=document.getElementById("floatingContact");
-  if(!box) return;
-  if(!box.contains(e.target)){
-    box.classList.remove("is-open");
-  }
-});
-</script>
 
 <script>
 (function(){

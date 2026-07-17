@@ -277,6 +277,9 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   .preview-grid{grid-template-columns:1fr!important}
 }
 
+
+/* v5 cleanup: hide any legacy floating widget to prevent overlap */
+.floating-contact,#floatingContact,.floating-contact-button,.float-btn,.floating-contact-panel,.floating-contact-close{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important;}
 </style>
 
 <!-- Google Analytics 4 -->
@@ -541,10 +544,6 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   </div>
   <div class="container copyright"><span>© 2026 Auralis Jewelry. All rights reserved.</span><span>auralisgems.com</span></div>
 </footer>
-
-<div class="floating-contact">
-  <a class="float-btn" href="https://wa.me/8618357590167" aria-label="Contact on WhatsApp"><img src="assets/green-phone-icon.png" alt=""></a>
-</div>
 
 <script>
 (function(){

@@ -382,6 +382,9 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   .element-map{grid-template-columns:1fr 1fr}
 }
 
+
+/* v5 cleanup: hide any legacy floating widget to prevent overlap */
+.floating-contact,#floatingContact,.floating-contact-button,.float-btn,.floating-contact-panel,.floating-contact-close{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important;}
 </style>
 
 <!-- Google Analytics 4 -->
@@ -690,10 +693,6 @@ h1,h2,h3,.logo{font-family:Georgia,"Times New Roman",serif;font-weight:500;lette
   </div>
   <div class="container copyright"><span>© 2026 Auralis Jewelry. All rights reserved.</span><span>auralisgems.com</span></div>
 </footer>
-
-<div class="floating-contact">
-  <a class="float-btn" href="https://wa.me/8618357590167" aria-label="Contact on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 4.8 9 4.2l2.2 4.6-1.4 1.1c1.1 2.2 2.8 3.9 5 5l1.1-1.4 4.6 2.2-.6 1.8c-.4 1.1-1.5 1.8-2.7 1.6C10.8 18.4 5.6 13.2 4.9 6.8c-.1-1.2.5-2.3 1.6-2.7l.7-.3Z"/></svg></a>
-</div>
 
 <script>
 var d=document,w="https://tally.so/widgets/embed.js",v=function(){
