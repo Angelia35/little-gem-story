@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Auralis Jewelry | Personalized Crystal Bracelets & Gemstone Jewelry</title>
-<!-- Auralis favicon -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom Crystal Bracelets & Meaningful Gemstone Gifts | Auralis Jewelry</title>
+<meta name="description" content="Create a custom crystal bracelet or gemstone gift by reference photo, birth date, Chinese element, color mood, wrist size or gift story. Quote before payment.">
+<link rel="canonical" href="https://auralisgems.com/">
+
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -13,735 +15,132 @@
 <link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#b78249">
 
-  <meta name="description" content="Personalized crystal bracelets and gemstone jewelry designed around birth date, element-inspired style, color preference and meaningful gifting.">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="canonical" href="https://auralisgems.com/">
+<meta property="og:title" content="Custom Crystal Bracelets Made Around Your Story | Auralis Jewelry">
+<meta property="og:description" content="Send a reference photo, birth date, Chinese element, color mood or gift idea. We confirm the design direction and quote before payment.">
+<meta property="og:url" content="https://auralisgems.com/">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://auralisgems.com/assets/home-bracelet-video-poster.webp">
 
-<style id="homepage-approved-layout-style">
-/* Approved homepage layout: full hero image, no right-side framed card */
-.home-hero{
-  position:relative;
-  min-height:640px;
-  overflow:hidden;
-  background:#f8eee7;
-  border-bottom:1px solid rgba(232,217,201,.72);
-}
-.home-hero::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background-image:
-    linear-gradient(90deg, rgba(255,250,244,.98) 0%, rgba(255,250,244,.9) 28%, rgba(255,250,244,.35) 54%, rgba(255,250,244,.08) 100%),
-    url("/assets/hero-homepage-full.webp");
-  background-size:cover;
-  background-position:center right;
-  background-repeat:no-repeat;
-  transform:scale(1.01);
-}
-.home-hero .container{
-  position:relative;
-  z-index:2;
-  min-height:640px;
-  display:flex;
-  align-items:center;
-}
-.home-hero-content{
-  width:min(560px, 50vw);
-  padding:42px 0 34px;
-}
-.home-hero .eyebrow{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin-bottom:18px;
-}
-.home-hero .eyebrow::before{
-  content:"✦";
-  font-size:28px;
-  line-height:1;
-  box-shadow:0 6px 16px rgba(189,139,74,.22);
-  color:var(--gold);
-  letter-spacing:0;
-}
-.home-hero h1{
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(52px,6.1vw,88px);
-  line-height:.94;
-  letter-spacing:-.04em;
-  margin:0 0 22px;
-  color:#332922;
-  max-width:760px;
-}
-.home-hero p{
-  max-width:500px;
-  margin:0 0 26px;
-  color:#5f524a;
-  font-size:16px;
-  line-height:1.75;
-}
-.home-hero-actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:14px;
-  margin-bottom:30px;
-}
-.home-benefits{
-  display:flex;
-  flex-wrap:wrap;
-  gap:28px;
-  align-items:center;
-}
-.home-benefit{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  color:#5e4f47;
-  font-size:13px;
-  font-weight:800;
-  line-height:1.25;
-}
-.home-benefit-icon{
-  width:42px;
-  height:42px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  border:1px solid #dabc8d;
-  color:#b78a52;
-  background:rgba(255,255,255,.52);
-  font-size:22px;
-}
-
-/* Direction section */
-.home-direction{
-  padding:64px 0 54px;
-  background:#fffaf4;
-}
-.home-direction-grid{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:20px;
-}
-.direction-tile{
-  min-height:138px;
-  border:1px solid var(--line);
-  background:linear-gradient(180deg,#fffdf9,#fbf1ea);
-  border-radius:18px;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:13px;
-  box-shadow:0 10px 24px rgba(82,55,40,.04);
-}
-.direction-icon{
-  font-size:48px;
-  line-height:1;
-  color:#b78a52;
-  font-family:Georgia,"Times New Roman",serif;
-}
-.direction-tile h3{
-  margin:0;
-  font-size:18px;
-}
-
-/* Process */
-.home-process{
-  padding:58px 0 62px;
-  border-top:1px solid rgba(232,217,201,.72);
-  border-bottom:1px solid rgba(232,217,201,.72);
-  background:linear-gradient(180deg,#fffaf4,#fbf3ed);
-}
-.process-line{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:22px;
-  position:relative;
-}
-.process-card{
-  position:relative;
-  background:rgba(255,255,255,.64);
-  border:1px solid var(--line);
-  border-radius:28px;
-  padding:84px 24px 26px;
-  box-shadow:0 10px 24px rgba(82,55,40,.05);
-  min-height:190px;
-  overflow:hidden;
-}
-.process-number{
-  position:absolute;
-  left:22px;
-  top:22px;
-  transform:none;
-  width:48px;
-  height:48px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:linear-gradient(135deg,#d4b17a,#bd8b4a);
-  color:#fff;
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:28px;
-  line-height:1;
-  box-shadow:0 6px 16px rgba(189,139,74,.22);
-  z-index:2;
-}
-.process-icon{
-  font-size:30px;
-  color:#b78a52;
-  margin:0 0 12px 62px;
-  line-height:1;
-}
-.process-card h3{
-  font-size:20px;
-  margin:0 0 5px;
-}
-.process-card p{
-  margin:0;
-  color:var(--muted);
-  font-size:13px;
-}
-
-/* Product section */
-.home-products{
-  padding:70px 0 34px;
-  background:#fffaf4;
-}
-.product-topline{
-  display:flex;
-  align-items:flex-end;
-  justify-content:space-between;
-  gap:18px;
-  margin-bottom:24px;
-}
-.product-topline h2{
-  margin:0;
-  font-size:40px;
-}
-.home-product-grid{
-  display:grid;
-  grid-template-columns:repeat(5,1fr);
-  gap:18px;
-}
-.home-product-card{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:18px;
-  overflow:hidden;
-  box-shadow:0 10px 24px rgba(82,55,40,.06);
-  transition:.22s ease;
-}
-.home-product-card:hover{
-  transform:translateY(-4px);
-  box-shadow:0 24px 54px rgba(82,55,40,.12);
-}
-.home-product-card img{
-  width:100%;
-  height:210px;
-  object-fit:cover;
-  background:#fbf2eb;
-}
-.home-product-info{
-  padding:14px 14px 16px;
-}
-.home-product-info h3{
-  font-size:18px;
-  margin:0 0 4px;
-}
-.home-product-info p{
-  margin:0 0 12px;
-  color:var(--muted);
-  font-size:13px;
-}
-.quote-pill{
-  display:inline-flex;
-  border:1px solid #d6b780;
-  border-radius:999px;
-  padding:8px 12px;
-  font-size:12px;
-  font-weight:800;
-  color:#6d5230;
-  background:#fffaf4;
-}
-
-/* Stone guide + story block */
-.home-guide-story{
-  padding:34px 0 72px;
-  background:#fffaf4;
-}
-.guide-story-grid{
-  display:grid;
-  grid-template-columns:minmax(0,.95fr) minmax(360px,.75fr);
-  gap:30px;
-  align-items:stretch;
-}
-.stone-guide-panel,
-.story-mini-panel{
-  background:#fff;
-  border:1px solid var(--line);
-  border-radius:24px;
-  padding:24px;
-  box-shadow:0 10px 24px rgba(82,55,40,.06);
-}
-.stone-guide-head{
-  display:flex;
-  justify-content:space-between;
-  gap:16px;
-  align-items:center;
-  margin-bottom:20px;
-}
-.stone-guide-head h2,
-.story-mini-panel h2{
-  margin:0;
-  font-size:34px;
-}
-.stone-mini-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-}
-.stone-mini-card{
-  border:1px solid var(--line);
-  border-radius:18px;
-  overflow:hidden;
-  text-align:center;
-  background:#fffaf4;
-}
-.stone-mini-card img{
-  width:100%;
-  height:138px;
-  object-fit:cover;
-}
-.stone-mini-card div{
-  padding:12px 10px 14px;
-}
-.stone-mini-card h3{
-  margin:0 0 4px;
-  font-size:17px;
-}
-.stone-mini-card p{
-  margin:0;
-  font-size:12px;
-  color:var(--muted);
-}
-.story-mini-panel{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:20px;
-  align-items:center;
-}
-.story-mini-panel img{
-  width:100%;
-  height:100%;
-  min-height:270px;
-  object-fit:cover;
-  border-radius:18px;
-}
-.story-mini-panel p{
-  color:var(--muted);
-  margin:10px 0 18px;
-}
-
-/* Brand story */
-.home-story-wide{
-  padding:0 0 72px;
-  background:#fffaf4;
-}
-.story-wide-card{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:34px;
-  align-items:center;
-  background:linear-gradient(120deg,#fff,#fff7ee);
-  border:1px solid var(--line);
-  border-radius:26px;
-  padding:26px;
-  box-shadow:var(--shadow);
-}
-.story-wide-card img{
-  width:100%;
-  height:360px;
-  object-fit:cover;
-  border-radius:20px;
-}
-.story-wide-card h2{
-  font-size:42px;
-  line-height:1.04;
-  margin:6px 0 14px;
-}
-.story-wide-card p{
-  color:var(--muted);
-  max-width:540px;
-}
-
-/* Footer service strip */
-.service-strip{
-  background:#fbf1ea;
-  border-top:1px solid var(--line);
-  border-bottom:1px solid var(--line);
-}
-.service-strip .container{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-  padding:18px 0;
-}
-.service-item{
-  display:flex;
-  align-items:center;
-  gap:12px;
-  color:#6a5b53;
-  font-size:13px;
-}
-.service-item span{
-  color:#b78a52;
-  font-size:25px;
-}
-
-@media(max-width:1180px){
-  .home-product-grid{grid-template-columns:repeat(3,1fr);}
-}
-@media(max-width:980px){
-  .home-hero::before{
-    background-image:
-      linear-gradient(180deg, rgba(255,250,244,.96) 0%, rgba(255,250,244,.72) 42%, rgba(255,250,244,.25) 100%),
-      url("/assets/hero-homepage-full.webp");
-    background-position:center right;
-  }
-  .home-hero .container{align-items:flex-start;min-height:720px;padding-top:56px;}
-  .home-hero-content{width:100%;max-width:620px;}
-  .home-direction-grid{grid-template-columns:repeat(2,1fr);}
-  .process-line{grid-template-columns:1fr 1fr;}
-  .guide-story-grid,.story-wide-card,.story-mini-panel{grid-template-columns:1fr;}
-  .service-strip .container{grid-template-columns:repeat(2,1fr);}
-}
-@media(max-width:620px){
-  .home-hero{min-height:680px;}
-  .home-hero .container{min-height:680px;}
-  .home-hero h1{font-size:42px;}
-  .home-benefits{gap:14px;}
-  .home-benefit{width:calc(50% - 8px);}
-  .home-product-grid,.stone-mini-grid,.process-line{grid-template-columns:1fr;}
-  .home-direction-grid{grid-template-columns:1fr;}
-  .product-topline{align-items:flex-start;flex-direction:column;}
-  .service-strip .container{grid-template-columns:1fr;}
-  .story-wide-card img{height:260px;}
-}
-
-/* Unified Auralis line icon system */
-.type-icon svg,.unified-icon svg,.gift-pill .icon svg,.direction-icon svg,.process-icon svg,.trust-item .unified-icon svg,.float-btn svg,.faq-item svg{
-  width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;
-}
-.unified-icon,.gift-pill .icon{
-  display:inline-grid;place-items:center;color:var(--gold,#b78a52);
-}
-
-
-/* Mobile polish v1: keeps navigation visible, improves spacing, image ratio, forms and cards */
-@media (max-width: 860px){
-  body{overflow-x:hidden}
-  .topbar{height:auto;min-height:68px}
-  .nav{height:auto;min-height:68px;align-items:flex-start;flex-direction:column;padding:12px 0 10px;gap:9px}
-  .logo{font-size:26px;line-height:1.1}
-  .menu{
-    display:flex!important;
-    width:100%;
-    overflow-x:auto;
-    white-space:nowrap;
-    gap:10px;
-    padding:2px 2px 8px;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
-  }
-  .menu::-webkit-scrollbar{display:none}
-  .menu a{
-    flex:0 0 auto;
-    padding:8px 12px;
-    border:1px solid var(--line,#e8d9c9);
-    border-radius:999px;
-    background:rgba(255,255,255,.62);
-    font-size:12px;
-    line-height:1;
-  }
-  .menu a.active{
-    background:linear-gradient(135deg,#caa06c,#ad7e44);
-    color:#fff!important;
-    border-color:transparent;
-  }
-  .menu a.active:after{display:none!important}
-  .nav-cta{display:none!important}
-  .container{width:min(100% - 28px,1180px)}
-  .hero{padding-top:34px!important;padding-bottom:44px!important}
-  .hero-grid,.story-grid,.feature-grid,.split,.form-grid,.quote-panel{gap:24px!important}
-  h1{font-size:40px!important;line-height:1.02!important}
-  .hero h1{font-size:40px!important}
-  .section{padding:48px 0!important}
-  .section-title{margin-bottom:24px!important}
-  .section-title h2{font-size:31px!important;line-height:1.08!important}
-  .section-title p,.hero-copy{font-size:15.5px!important;line-height:1.62!important}
-  .hero-actions{gap:10px!important}
-  .btn,.nav-cta{min-height:44px}
-  .btn{width:100%;padding:13px 18px!important}
-  .hero-tags{gap:8px!important}
-  .tag,.hero-tag{font-size:11px!important;padding:7px 10px!important}
-  .card-grid-5,.card-grid-6,.category-grid,.direction-grid,.collection-grid,.gallery-grid,.preview-grid,.stone-grid,.type-grid,.pillar-grid,.process-grid,.trust-grid,.faq-grid,.footer-grid{
-    grid-template-columns:1fr!important;
-    gap:16px!important;
-  }
-  .product-media,.category-media,.gallery-card__media,.style-card img,.gift-card img,.occasion-card img,.preview-card img{
-    height:auto!important;
-    aspect-ratio:4/3!important;
-  }
-  .product-media img,.category-media img,.gallery-card__media img,.style-card img,.gift-card img,.occasion-card img,.preview-card img{
-    object-fit:cover!important;
-  }
-  .product-body,.type-card,.pillar-card,.process-card,.trust-card,.story-panel,.info-card,.form-card,.final-cta,.quote-panel{
-    padding:22px!important;
-    border-radius:22px!important;
-  }
-  .product-body h3,.type-card h3,.pillar-card h3,.process-card h3,.trust-card h3{font-size:21px!important}
-  .footer{padding:42px 0 24px!important}
-  .footer-grid{gap:22px!important}
-  .copyright{font-size:11px!important}
-  .floating-contact{right:16px!important;bottom:16px!important}
-  .float-btn{width:52px!important;height:52px!important}
-}
-@media (max-width: 520px){
-  .container{width:min(100% - 24px,1180px)}
-  h1,.hero h1{font-size:36px!important}
-  .section-title h2{font-size:28px!important}
-  .hero-copy,.section-title p{font-size:15px!important}
-  .hero-card,.hero-visual,.hero-board,.visual-board,.studio-card,.request-card-main{
-    border-radius:22px!important;
-  }
-  .hero-card,.hero-visual,.hero-board{
-    padding:14px!important;
-  }
-  .hero-main,.hero-side,.hero-card img,.feature-image img,.feature-img img{
-    height:auto!important;
-    aspect-ratio:4/3!important;
-  }
-  .hero-note,.hero-caption{
-    position:static!important;
-    margin-top:10px!important;
-  }
-  .visual-board{min-height:auto!important}
-  .studio-card,.request-card-main{
-    position:static!important;
-    width:auto!important;
-    margin:0 0 12px!important;
-  }
-  .tally-wrap iframe{min-height:920px!important}
-  .final-cta h2,.quote-panel h2{font-size:30px!important}
-}
-
-
-/* v5 cleanup: hide any legacy floating widget to prevent overlap */
-.floating-contact,#floatingContact,.floating-contact-button,.float-btn,.floating-contact-panel,.floating-contact-close{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important;}
-</style>
-
-<style id="floating-contact-style">
-.floating-contact{position:fixed;right:22px;bottom:22px;z-index:9999;font-family:Inter,"Helvetica Neue",Arial,sans-serif;}
-.floating-contact-panel{width:235px;padding:14px;margin-bottom:12px;border:1px solid rgba(232,217,201,.95);border-radius:22px;background:rgba(255,253,249,.96);box-shadow:0 18px 44px rgba(70,45,31,.18);backdrop-filter:blur(14px);display:none;}
-.floating-contact.is-open .floating-contact-panel{display:block;}
-.floating-contact-title{font-family:Georgia,"Times New Roman",serif;font-size:20px;color:#332922;margin:0 0 4px;}
-.floating-contact-text{font-size:12px;line-height:1.45;color:#786a62;margin:0 0 12px;}
-.floating-contact-link{display:flex;align-items:center;gap:10px;padding:10px 11px;border-radius:14px;color:#332922;text-decoration:none;font-size:13px;font-weight:800;background:#fffaf4;border:1px solid #eadbcb;margin-top:8px;transition:.2s;}
-.floating-contact-link:hover{transform:translateY(-1px);box-shadow:0 8px 18px rgba(82,55,40,.11);}
-.floating-contact-icon{width:26px;height:26px;display:grid;place-items:center;border-radius:50%;background:#fff3e3;color:#b78a52;flex:0 0 auto;}
-.floating-contact-button{width:64px;height:64px;border:0;border-radius:50%;display:grid;place-items:center;margin-left:auto;cursor:pointer;background:#ffffff;padding:0;overflow:hidden;box-shadow:0 10px 24px rgba(80,56,34,.18);}
-.floating-contact-button img{display:block;width:100%;height:100%;object-fit:cover;border-radius:50%;}
-.floating-contact-close{display:none;font-size:30px;line-height:1;color:#5fbf86;font-weight:700;transform:translateY(-1px);}
-.floating-contact.is-open .floating-contact-button img{display:none;}
-.floating-contact.is-open .floating-contact-close{display:block;}
-@media(max-width:560px){.floating-contact{right:16px;bottom:16px;}.floating-contact-panel{width:min(235px,calc(100vw - 32px));}}
-</style>
-
-<style id="process-card-final-fix">
-.process-card{
-  position:relative !important;
-  padding:88px 24px 26px !important;
-  min-height:196px !important;
-  overflow:hidden !important;
-}
-.process-number{
-  position:absolute !important;
-  left:22px !important;
-  top:22px !important;
-  transform:none !important;
-  width:48px !important;
-  height:48px !important;
-  border-radius:50% !important;
-  display:grid !important;
-  place-items:center !important;
-  font-size:28px !important;
-  line-height:1 !important;
-  z-index:2 !important;
-  box-shadow:0 6px 16px rgba(189,139,74,.22) !important;
-}
-.process-icon{
-  margin:0 0 12px 62px !important;
-  line-height:1 !important;
-}
-.process-card h3{
-  margin-top:0 !important;
-}
-@media(max-width:620px){
-  .process-card{padding:84px 22px 24px !important;}
-}
-</style>
-
-
-<style id="product-picture-fit-fix">
-.home-product-card picture,
-.home-product-card picture img{
-  display:block;
-  width:100%;
-  height:210px;
-}
-.home-product-card picture img{
-  object-fit:cover;
-  background:#fbf2eb;
-}
-</style>
-
-
-<!-- Google Analytics 4 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4NGF3R4L6N"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-4NGF3R4L6N');
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-4NGF3R4L6N');
+</script>
+<script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=d9720897"></script>
+<script>
+(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","xf7j4p2uc4");
 </script>
 
-<script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=d9720897"></script>
-<!-- Microsoft Clarity -->
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "xf7j4p2uc4");
-</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Auralis Jewelry", "url": "https://auralisgems.com/", "email": "hello@auralisgems.com", "sameAs": ["https://www.instagram.com/auralisgems/", "https://www.pinterest.com/Auralisgems/"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does a custom crystal bracelet order work?", "acceptedAnswer": {"@type": "Answer", "text": "Start by sending a reference photo, birth date, Chinese element request, color mood, wrist size, or gift idea. Auralis Jewelry reviews the request, confirms the design direction, material options, quote, and timeline before payment."}}, {"@type": "Question", "name": "Can I send only a reference photo?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A reference photo or screenshot is enough to begin. You can also add preferred colors, wrist size, delivery country, or gift purpose to help confirm the design direction faster."}}, {"@type": "Question", "name": "Do I need to pay before the quote is confirmed?", "acceptedAnswer": {"@type": "Answer", "text": "No. Payment is not required before the design direction, material options, quote, and timeline are confirmed."}}, {"@type": "Question", "name": "Are the crystals natural?", "acceptedAnswer": {"@type": "Answer", "text": "Auralis Jewelry offers natural crystal and gemstone-inspired material options. Material details can be discussed before quote confirmation. Natural stones may vary in color, pattern, and texture."}}, {"@type": "Question", "name": "What if I am not sure about my wrist size?", "acceptedAnswer": {"@type": "Answer", "text": "You can send an approximate wrist size or tell us that you are not sure yet. We will help confirm sizing guidance before production."}}]}</script>
 
 <style>
-/* Auralis home video section */
-.video-showcase {
-  padding: 76px 0;
-  background: linear-gradient(180deg, #fff8f1 0%, #fffdf9 100%);
-  border-top: 1px solid rgba(234, 219, 204, .75);
-  border-bottom: 1px solid rgba(234, 219, 204, .75);
+:root {
+  --bg:#fff8f1;
+  --cream:#fffdf9;
+  --ink:#2f261f;
+  --muted:#75665d;
+  --line:#eadbcc;
+  --gold:#b78249;
+  --gold-dark:#8b5b2f;
+  --soft:#fff2e4;
+  --green:#25D366;
+  --shadow:0 24px 70px rgba(70,43,25,.13);
 }
-.video-showcase .video-wrap {
-  width: min(1120px, calc(100% - 32px));
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
-  gap: 42px;
-  align-items: center;
-}
-.video-showcase .eyebrow {
-  margin: 0 0 12px;
-  font-size: 12px;
-  letter-spacing: .18em;
-  text-transform: uppercase;
-  color: #b78249;
-  font-weight: 900;
-}
-.video-showcase h2 {
-  margin: 0;
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: clamp(34px, 5vw, 54px);
-  line-height: 1.06;
-  color: #2f261f;
-  letter-spacing: -.04em;
-}
-.video-showcase p {
-  color: #75665d;
-  font-size: 17px;
-  line-height: 1.75;
-}
-.video-points {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-  margin: 24px 0 0;
-}
-.video-point {
-  background: #fff;
-  border: 1px solid #eadbcc;
-  border-radius: 18px;
-  padding: 15px;
-  color: #5f4d42;
-  font-weight: 700;
-  font-size: 14px;
-}
-.video-card {
-  background: #fff;
-  border: 1px solid #eadbcc;
-  border-radius: 30px;
-  padding: 14px;
-  box-shadow: 0 18px 50px rgba(70, 43, 25, .10);
-}
-.video-card video {
-  width: 100%;
-  display: block;
-  border-radius: 22px;
-  aspect-ratio: 9 / 16;
-  object-fit: cover;
-  background: #f5e4d2;
-}
-.video-cta-row {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 26px;
-}
-.video-cta-row a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 46px;
-  border-radius: 999px;
-  padding: 12px 18px;
-  font-weight: 900;
-  text-decoration: none;
-}
-.video-cta-primary {
-  background: #b78249;
-  color: #fff;
-}
-.video-cta-secondary {
-  background: #fff;
-  color: #5f4d42;
-  border: 1px solid #eadbcc;
-}
-@media (max-width: 880px) {
-  .video-showcase {
-    padding: 48px 0;
-  }
-  .video-showcase .video-wrap {
-    grid-template-columns: 1fr;
-  }
-  .video-points {
-    grid-template-columns: 1fr;
-  }
-  .video-cta-row a {
-    width: 100%;
-  }
-}
-</style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.68}
+a{text-decoration:none;color:inherit}
+img,video{display:block;max-width:100%}
+.container{width:min(1160px,calc(100% - 34px));margin:auto}
+.topbar{position:sticky;top:0;z-index:100;background:rgba(255,253,249,.96);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font-family:Georgia,"Times New Roman",serif;font-size:26px;font-weight:700;letter-spacing:-.02em;white-space:nowrap}
+.logo:before{content:"✦";font-size:13px;color:var(--gold);margin-right:8px}
+.menu{display:flex;align-items:center;gap:15px;font-size:13px;color:#5c4c43;white-space:nowrap}
+.menu a.active{color:var(--gold);font-weight:900}
+.nav-right{display:flex;align-items:center;gap:10px}
+.nav-cta{background:var(--gold);color:#fff;border-radius:999px;padding:11px 16px;font-weight:900;box-shadow:0 10px 24px rgba(183,130,73,.2)}
+.social{width:38px;height:38px;border-radius:999px;display:grid;place-items:center;color:#fff;font-size:12px;font-weight:900;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+.social.ig{background:linear-gradient(135deg,#feda75,#fa7e1e,#d62976,#962fbf,#4f5bd5)}
+.social.pin{background:#e60023}
 
+.hero{background:radial-gradient(circle at 8% 4%,#fffdf9 0 16%,transparent 34%),radial-gradient(circle at 92% 8%,#f0dcc7 0 18%,transparent 40%),linear-gradient(90deg,#fff8f1,#f7e8da);border-bottom:1px solid var(--line)}
+.hero-grid{min-height:690px;display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center;padding:64px 0}
+.eyebrow{margin:0 0 14px;color:var(--gold);font-weight:900;font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.08;margin:0;color:var(--ink)}
+h1{font-size:clamp(48px,6.4vw,78px);letter-spacing:-.055em}
+h2{font-size:clamp(34px,4.4vw,54px);letter-spacing:-.04em}
+h3{font-size:25px;letter-spacing:-.02em}
+p{color:var(--muted);font-size:16px}
+.hero-copy{font-size:18px;max-width:640px;margin:24px 0 0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:999px;padding:14px 20px;background:#fff;color:var(--ink);font-weight:900;box-shadow:0 8px 20px rgba(64,40,24,.06)}
+.btn.primary{background:var(--gold);border-color:var(--gold);color:#fff}
+.btn.green{background:var(--green);border-color:var(--green);color:#fff}
+.micro{margin-top:12px;color:#7d6a5f;font-size:13px;font-weight:800}
+.promise-card{margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.promise{background:rgba(255,253,249,.82);border:1px solid var(--line);border-radius:18px;padding:15px}
+.promise b{display:block;font-size:13px;color:var(--ink)}
+.promise span{display:block;font-size:12px;color:var(--muted);line-height:1.45;margin-top:4px}
+.hero-visual{position:relative;border-radius:36px;background:#fff;border:1px solid var(--line);padding:16px;box-shadow:var(--shadow)}
+.hero-visual video,.hero-visual img{width:100%;height:min(590px,70vh);object-fit:cover;border-radius:26px;background:#f4e6d9}
+.hero-note{position:absolute;left:34px;right:34px;bottom:34px;background:rgba(255,253,249,.93);backdrop-filter:blur(12px);border:1px solid rgba(234,219,204,.92);border-radius:22px;padding:18px}
+.hero-note b{font-family:Georgia,"Times New Roman",serif;font-size:22px;display:block}
+.hero-note span{font-size:13px;color:var(--muted)}
 
+.section{padding:78px 0}
+.section.alt{background:#fffdf9;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.section-head{text-align:center;max-width:830px;margin:0 auto 36px}
+.section-head p{max-width:720px;margin:14px auto 0}
 
-<style id="auralis-social-contact-v4-style">
-.auralis-social-top-v3{display:flex!important;align-items:center!important;gap:10px!important;margin-left:10px!important;flex:0 0 auto!important;min-width:max-content!important}
-.auralis-social-top-v3 a{width:38px!important;height:38px!important;padding:0!important;border-radius:999px!important;display:inline-flex!important;align-items:center!important;justify-content:center!important;text-decoration:none!important;box-shadow:0 6px 18px rgba(0,0,0,.12)!important;border:1px solid rgba(0,0,0,.06)!important;transition:transform .18s ease, box-shadow .18s ease!important;overflow:hidden!important}
-.auralis-social-top-v3 a svg{width:19px!important;height:19px!important;display:block!important;fill:currentColor!important}
-.auralis-social-top-v3 a.ig{background:linear-gradient(135deg,#feda75 0%,#fa7e1e 22%,#d62976 50%,#962fbf 76%,#4f5bd5 100%)!important;color:#fff!important}
-.auralis-social-top-v3 a.pin{background:#e60023!important;color:#fff!important}
-.auralis-social-top-v3 a:hover{transform:translateY(-1px)!important;box-shadow:0 10px 24px rgba(0,0,0,.16)!important}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.step{background:#fff;border:1px solid var(--line);border-radius:28px;padding:28px;box-shadow:0 15px 42px rgba(70,43,25,.06)}
+.step-num{width:48px;height:48px;border-radius:50%;background:#fff2e4;color:#9b6631;display:grid;place-items:center;font-weight:900;margin-bottom:18px}
+.step p{font-size:14px;margin-bottom:0}
+.step small{display:block;margin-top:12px;color:#9b6631;font-weight:900;line-height:1.45}
+
+.idea-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.idea{background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;min-height:176px;transition:.16s ease}
+.idea:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(70,43,25,.08)}
+.idea-icon{width:42px;height:42px;border-radius:50%;background:#fff2e4;color:#9b6631;display:grid;place-items:center;font-weight:900;margin-bottom:14px}
+.idea h3{font-size:21px}
+.idea p{font-size:13px;margin-bottom:0}
+
+.lookbook{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.look{background:#fff;border:1px solid var(--line);border-radius:26px;overflow:hidden;box-shadow:0 16px 42px rgba(70,43,25,.07)}
+.look img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#f3e3d5}
+.look div{padding:18px}
+.badge{display:inline-flex;background:#fff2e4;color:#9b6631;border-radius:999px;padding:6px 10px;font-size:12px;font-weight:900;margin-bottom:10px}
+.look h3{font-size:23px}
+.look p{font-size:14px;margin:8px 0 0}
+
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.trust{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px}
+.trust b{font-family:Georgia,"Times New Roman",serif;font-size:22px;display:block;color:var(--ink);line-height:1.12}
+.trust p{font-size:14px;margin-bottom:0}
+.trust .mini-badge{display:inline-flex;margin-bottom:14px;background:#f7ebdd;color:#9b6631;border-radius:999px;padding:6px 9px;font-size:11px;font-weight:900}
+
+.gift-band{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center;background:linear-gradient(135deg,#33261f,#714b2c);border-radius:34px;padding:42px;color:#fff;box-shadow:0 20px 60px rgba(64,40,24,.16)}
+.gift-band h2,.gift-band p{color:#fff}
+.gift-band p{opacity:.84}
+.gift-card{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);border-radius:26px;padding:24px}
+.gift-card ul{margin:0;padding-left:18px;color:#fff;opacity:.88;font-size:14px;line-height:1.8}
+
+.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.faq{background:#fff;border:1px solid var(--line);border-radius:24px;padding:24px}
+.faq h2{font-size:24px;letter-spacing:-.02em}
+.faq p{font-size:14px;margin-bottom:0}
+
+.final-cta{text-align:center;background:#fff;border:1px solid var(--line);border-radius:34px;padding:48px;box-shadow:0 18px 50px rgba(70,43,25,.08)}
+.footer{background:#2f251f;color:#efe6dd;padding:44px 0 24px}
+.footer a,.footer p{color:#cfc1b7;font-size:14px}
+.footer-grid{display:grid;grid-template-columns:1.2fr repeat(3,.7fr);gap:28px}
+.footer h3{font-size:18px;color:#fff;margin-bottom:10px}
+.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:28px;padding-top:16px;color:#baa99e;font-size:12px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
 .auralis-contact-v3{position:fixed!important;right:20px!important;bottom:20px!important;z-index:2147483647!important;font-family:Arial,sans-serif!important}
 .auralis-contact-v3-toggle{width:58px!important;height:58px!important;border-radius:999px!important;border:none!important;cursor:pointer!important;background:#25D366!important;color:#fff!important;box-shadow:0 14px 34px rgba(37,211,102,.34)!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:0!important}
 .auralis-contact-v3-toggle svg{width:28px!important;height:28px!important;display:block!important;fill:#fff!important}
@@ -753,10 +152,27 @@
 .auralis-contact-v3-icon{width:32px!important;height:32px!important;border-radius:999px!important;display:flex!important;align-items:center!important;justify-content:center!important;background:#fff3e4!important;color:#9c6b38!important;flex:0 0 auto!important;font-size:12px!important;font-weight:900!important}
 .auralis-contact-v3-small{display:block!important;color:#8a7a70!important;font-size:11px!important;font-weight:500!important;line-height:1.25!important;margin-top:2px!important}
 .auralis-contact-v3-note{margin:10px 6px 4px!important;color:#75665d!important;font-size:12px!important;line-height:1.45!important}
-@media(max-width:980px){.auralis-social-top-v3{margin-left:0!important;margin-top:8px!important}}
-@media(max-width:600px){.auralis-contact-v3{right:16px!important;bottom:16px!important}.auralis-contact-v3-panel{width:min(280px,calc(100vw - 32px))!important}}
-</style>
+.floating-contact,#floatingContact,.floating-contact-button,.float-btn,.floating-contact-panel,.floating-contact-close{display:none!important;visibility:hidden!important;opacity:0!important;pointer-events:none!important;}
 
+@media(max-width:1080px){
+  .nav{height:auto;align-items:flex-start;flex-direction:column;padding:12px 0}
+  .menu{width:100%;overflow-x:auto;gap:10px;padding-bottom:8px}
+  .nav-cta{display:none}
+  .hero-grid,.gift-band{grid-template-columns:1fr}
+  .idea-grid{grid-template-columns:repeat(2,1fr)}
+  .trust-grid,.steps,.lookbook,.faq-grid,.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:680px){
+  .container{width:min(100% - 28px,1160px)}
+  h1{font-size:44px}
+  .hero-grid{padding:42px 0}
+  .promise-card,.steps,.idea-grid,.trust-grid,.lookbook,.faq-grid,.footer-grid{grid-template-columns:1fr}
+  .section{padding:58px 0}
+  .gift-band,.final-cta{padding:30px 22px;border-radius:26px}
+  .btn{width:100%}
+  .hero-visual video,.hero-visual img{height:auto;aspect-ratio:4/5}
+}
+</style>
 </head>
 
 <body>
@@ -771,265 +187,243 @@
       <a href="/gift-guide">Gift Guide</a>
       <a href="/guides/">Guides</a>
       <a href="/free-crystal-gift">Free Gift</a>
-      <a href="/about-us">About Us</a><a href="/custom-order">Custom Order</a>
-      <div class="auralis-social-top-v3" aria-label="Auralis Jewelry social media">
-  <a class="ig" href="https://www.instagram.com/auralisgems/" target="_blank" rel="noopener" aria-label="Instagram">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm0 1.8A3.95 3.95 0 0 0 3.8 7.75v8.5a3.95 3.95 0 0 0 3.95 3.95h8.5a3.95 3.95 0 0 0 3.95-3.95v-8.5a3.95 3.95 0 0 0-3.95-3.95h-8.5Zm8.9 1.35a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2ZM12 6.85A5.15 5.15 0 1 1 6.85 12 5.15 5.15 0 0 1 12 6.85Zm0 1.8A3.35 3.35 0 1 0 15.35 12 3.35 3.35 0 0 0 12 8.65Z"/></svg>
-  </a>
-  <a class="pin" href="https://www.pinterest.com/Auralisgems/" target="_blank" rel="noopener" aria-label="Pinterest">
-    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.67 2 4 5.85 4 10.06c0 2.57.96 4.85 3.03 5.7.34.14.64.01.73-.37.07-.26.23-.93.31-1.2.1-.37.06-.5-.22-.83-.6-.71-.98-1.64-.98-2.96 0-3.82 2.85-7.24 7.43-7.24 4.05 0 6.28 2.47 6.28 5.77 0 4.34-1.92 8-4.77 8-1.57 0-2.74-1.3-2.36-2.9.45-1.9 1.33-3.95 1.33-5.32 0-1.23-.66-2.26-2.03-2.26-1.61 0-2.91 1.66-2.91 3.88 0 1.42.48 2.38.48 2.38l-1.94 8.22c-.58 2.46-.09 5.47-.04 5.77.03.18.26.22.36.09.15-.19 2.03-2.51 2.67-4.83.18-.66 1.05-4.08 1.05-4.08.52.99 2.03 1.86 3.64 1.86 4.79 0 8.04-4.36 8.04-10.2C22 6.1 18.35 2 12.04 2Z"/></svg>
-  </a>
-</div>
+      <a href="/about-us">About Us</a>
+      <a href="/custom-order">Custom Order</a>
     </nav>
-<button class="hamburger" aria-label="Open menu">☰</button>
+    <div class="nav-right">
+      <a class="social ig" href="https://www.instagram.com/auralisgems/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+      <a class="social pin" href="https://www.pinterest.com/Auralisgems/" target="_blank" rel="noopener" aria-label="Pinterest">P</a>
+      <a class="nav-cta" href="/custom-order">Start Request</a>
+    </div>
   </div>
 </header>
 
 <main>
-  <section class="home-hero">
-    <div class="container">
-      <div class="home-hero-content">
-        <div class="eyebrow">Made for your energy</div>
-        <h1>Personalized Crystal Bracelets &amp; Gemstone Jewelry</h1>
-        <p>Designed around your birth date, element, color preference and personal style — crafted as meaningful jewelry for everyday beauty and thoughtful gifting.</p>
-        <div class="home-hero-actions">
-          <a class="btn primary" href="/custom-order">Start Custom Design</a>
-          <a class="btn" href="/custom-bracelets">Explore Crystal Styles</a>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Custom Crystal Jewelry & Meaningful Gifts</p>
+        <h1>Custom Crystal Bracelets Made Around Your Story</h1>
+        <p class="hero-copy">Send a reference photo, birth date, Chinese element, color mood, wrist size or gift idea. We confirm the design direction and quote before payment.</p>
+        <div class="actions">
+          <a class="btn primary" href="/custom-order">Create My Custom Piece</a>
+          <a class="btn green" href="https://wa.me/8618357590167?text=Hi%2C%20I%20would%20like%20to%20request%20a%20custom%20crystal%20bracelet%20quote.">Send My Idea First</a>
+          <a class="btn" href="/free-crystal-gift">Claim Mystery Crystal Gift</a>
         </div>
-        <div class="home-benefits">
-          <div class="home-benefit"><span class="home-benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5S5 16.2 3.4 10.8C2.4 7.5 4.4 4.5 7.7 4.5c1.9 0 3.4 1 4.3 2.4.9-1.4 2.4-2.4 4.3-2.4 3.3 0 5.3 3 4.3 6.3C19 16.2 12 20.5 12 20.5Z"/></svg></span>Made<br>to Order</div>
-          <div class="home-benefit"><span class="home-benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"/></svg></span>Natural<br>Stones</div>
-          <div class="home-benefit"><span class="home-benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5 13.8 9.8 19.5 12 13.8 14.2 12 19.5 10.2 14.2 4.5 12 10.2 9.8 12 4.5Z"/></svg></span>Custom<br>Design</div>
-          <div class="home-benefit"><span class="home-benefit-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10.5h14v9H5z"/><path d="M12 10.5v9"/><path d="M4.5 7.5h15v3h-15z"/><path d="M12 7.5H9.6a2.1 2.1 0 1 1 0-4.2c1.6 0 2.4 1.2 2.4 4.2Z"/><path d="M12 7.5h2.4a2.1 2.1 0 1 0 0-4.2c-1.6 0-2.4 1.2-2.4 4.2Z"/></svg></span>Gift<br>Ready</div>
+        <div class="micro">No payment before design direction and quote confirmation.</div>
+        <div class="promise-card">
+          <div class="promise"><b>Natural Crystal Options</b><span>Material details can be discussed before quote.</span></div>
+          <div class="promise"><b>1-on-1 Design Direction</b><span>We help clarify color, style, size and gift purpose.</span></div>
+          <div class="promise"><b>Worldwide Shipping</b><span>Available after quote and timeline confirmation.</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <video autoplay muted loop playsinline poster="/assets/home-bracelet-video-poster.webp">
+          <source src="/assets/home-bracelet-in-real-life.mp4" type="video/mp4">
+          <img src="/assets/home-bracelet-video-poster.webp" alt="custom crystal bracelet in real life">
+        </video>
+        <div class="hero-note">
+          <b>Start with what you already have.</b>
+          <span>A photo, birthday, element, color mood or gift story is enough to begin.</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="home-direction">
+  <section class="section" id="how-it-works">
     <div class="container">
-      <div class="section-title">
-        <h2>Choose Your Direction</h2>
-        <p>Start from a feeling, color story or symbolic direction. We translate it into a crystal bracelet design without exaggerated claims.</p>
+      <div class="section-head">
+        <p class="eyebrow">How Custom Orders Work</p>
+        <h2>Three steps, no guesswork</h2>
+        <p>Customers should know exactly what happens after they send a request. This simple quote-first process lowers hesitation and makes customization easier.</p>
       </div>
-      <div class="home-direction-grid">
-        <article class="direction-tile"><div class="direction-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5S5 16.2 3.4 10.8C2.4 7.5 4.4 4.5 7.7 4.5c1.9 0 3.4 1 4.3 2.4.9-1.4 2.4-2.4 4.3-2.4 3.3 0 5.3 3 4.3 6.3C19 16.2 12 20.5 12 20.5Z"/></svg></div><h3>Love</h3></article>
-        <article class="direction-tile"><div class="direction-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"/></svg></div><h3>Protection</h3></article>
-        <article class="direction-tile"><div class="direction-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 17.2A7.5 7.5 0 0 1 9.2 5.1 8 8 0 1 0 17.5 17.2Z"/></svg></div><h3>Balance</h3></article>
-        <article class="direction-tile"><div class="direction-icon">✿</div><h3>Calm</h3></article>
-        <article class="direction-tile"><div class="direction-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2.8v2.4M12 18.8v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.8 12h2.4M18.8 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7"/></svg></div><h3>Confidence</h3></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="home-process">
-    <div class="container">
-      <div class="section-title">
-        <h2>Create Your Custom Bracelet</h2>
-        <p>From birth date and style preference to stone direction and final quote, every order starts with a short custom request.</p>
-      </div>
-      <div class="process-line">
-        <article class="process-card"><span class="process-number">1</span><div class="process-icon">☷</div><h3>Share Your Details</h3><p>Tell us your birth date, preferences, wrist size and style direction.</p></article>
-        <article class="process-card"><span class="process-number">2</span><div class="process-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"/></svg></div><h3>We Curate With Intention</h3><p>We suggest bead colors and stone directions that match your request.</p></article>
-        <article class="process-card"><span class="process-number">3</span><div class="process-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7"/><path d="M12 9.5c1.8 0 3.25 1.45 3.25 3.25S13.8 16 12 16s-3.25-1.45-3.25-3.25"/></svg></div><h3>Crafted For You</h3><p>Each piece is prepared after design and payment confirmation.</p></article>
-        <article class="process-card"><span class="process-number">4</span><div class="process-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10.5h14v9H5z"/><path d="M12 10.5v9"/><path d="M4.5 7.5h15v3h-15z"/><path d="M12 7.5H9.6a2.1 2.1 0 1 1 0-4.2c1.6 0 2.4 1.2 2.4 4.2Z"/><path d="M12 7.5h2.4a2.1 2.1 0 1 0 0-4.2c-1.6 0-2.4 1.2-2.4 4.2Z"/></svg></div><h3>Delivered With Love</h3><p>Gift-ready options and shipping details are confirmed before payment.</p></article>
-      </div>
-    </div>
-  </section>
-
-  <section class="home-products">
-    <div class="container">
-      <div class="product-topline">
-        <h2 class="serif">Custom Bracelet Styles</h2>
-        <a class="text-link" href="/custom-bracelets">View All Styles →</a>
-      </div>
-      <div class="home-product-grid">
-        <article class="home-product-card">
-          <picture>
-            <source srcset="/assets/soft-light-pendant-clear.webp" type="image/webp">
-            <img src="/assets/soft-light-pendant-clear.jpg" alt="Clear crystal bracelet with warm brown charm on a soft beige surface">
-          </picture>
-          <div class="home-product-info"><h3>Soft Light Pendant</h3><p>Clear and blush tones with a decorative focal detail.</p><a class="quote-pill" href="/custom-order">Custom Quote</a></div>
+      <div class="steps">
+        <article class="step">
+          <div class="step-num">1</div>
+          <h3>Send Your Idea</h3>
+          <p>Send a reference photo, birth date, Chinese element, color mood, wrist size or gift purpose.</p>
+          <small>You do not need to know the exact crystal name.</small>
         </article>
-        <article class="home-product-card">
-          <img src="/assets/rose-bracelet.webp" alt="Rose quartz crystal bracelet product photo">
-          <div class="home-product-info"><h3>Rose Quartz Soft Tone</h3><p>Gentle pink palette for romantic or self-gift requests.</p><a class="quote-pill" href="/custom-order">Custom Quote</a></div>
+        <article class="step">
+          <div class="step-num">2</div>
+          <h3>We Confirm the Direction</h3>
+          <p>We review the bracelet style, material direction, size, quantity, delivery country and estimated timeline.</p>
+          <small>We help turn your idea into a clear request.</small>
         </article>
-        <article class="home-product-card">
-          <img src="/assets/citrine-bracelet.webp" alt="Golden citrine crystal bracelet product photo">
-          <div class="home-product-info"><h3>Citrine Golden Tone</h3><p>Warm golden crystal direction for brighter styling.</p><a class="quote-pill" href="/custom-order">Custom Quote</a></div>
-        </article>
-        <article class="home-product-card">
-          <picture>
-            <source srcset="/assets/daily-harmony-soft.webp" type="image/webp">
-            <img src="/assets/daily-harmony-soft.jpg" alt="Pastel crystal bracelet on a soft beige background for everyday styling">
-          </picture>
-          <div class="home-product-info"><h3>Daily Harmony</h3><p>A lifestyle-inspired option for everyday wearing.</p><a class="quote-pill" href="/custom-order">Custom Quote</a></div>
-        </article>
-        <article class="home-product-card">
-          <img src="/assets/crystal-white-glow.png" alt="White glow crystal bracelet product photo">
-          <div class="home-product-info"><h3>White Glow Minimal</h3><p>Soft luminous beads for a clean and refined look.</p><a class="quote-pill" href="/custom-order">Custom Quote</a></div>
+        <article class="step">
+          <div class="step-num">3</div>
+          <h3>You Decide Before Payment</h3>
+          <p>Quote, material direction and next steps are confirmed before payment or production.</p>
+          <small>No payment before quote confirmation.</small>
         </article>
       </div>
     </div>
   </section>
 
-  <section class="home-guide-story">
-    <div class="container guide-story-grid">
-      <div class="stone-guide-panel">
-        <div class="stone-guide-head">
-          <h2 class="serif">Stone Guide</h2>
-          <a class="text-link" href="/element-design">Learn More →</a>
-        </div>
-        <div class="stone-mini-grid">
-          <article class="stone-mini-card"><img src="/assets/stone-guide-rose-model.png" alt="Rose Quartz bracelet worn on a model wrist"><div><h3>Rose Quartz</h3><p>Softness · warmth · gifting</p></div></article>
-          <article class="stone-mini-card"><img src="/assets/stone-guide-citrine-model.png" alt="Citrine bracelet worn on a model wrist"><div><h3>Citrine</h3><p>Warmth · confidence · glow</p></div></article>
-          <article class="stone-mini-card"><img src="/assets/stone-guide-moonstone-model.png" alt="Moonstone bracelet worn on a model wrist"><div><h3>Moonstone</h3><p>Calm · light · clarity</p></div></article>
-        </div>
-      </div>
-
-      <div class="story-mini-panel">
-        <div>
-          <h2>Jewelry That Feels Like You</h2>
-          <p>Each bracelet is more than an accessory — it is a visual reminder of your style, your story and your everyday intention.</p>
-          <a class="btn" href="/custom-order">Start Your Design</a>
-        </div>
-        <img src="/assets/crystal-model-closeup.png" alt="Hand holding a crystal bracelet in a soft lifestyle scene">
-      </div>
-    </div>
-  </section>
-
-  <section class="home-story-wide">
+  <section class="section alt">
     <div class="container">
-      <div class="story-wide-card">
-        <img src="/assets/crystal-collection-soft.png" alt="Curated crystal bracelet collection on soft beige fabric">
-        <div>
-          <div class="eyebrow">Our Story</div>
-          <h2>Designed with Meaning, Styled for Everyday Beauty</h2>
-          <p>Auralis Jewelry creates personalized crystal bracelets and gemstone jewelry for meaningful moments, personal style and thoughtful gifting. Every request begins with your story, then becomes a quote-based design direction.</p>
-          <a class="btn" href="/gift-guide">Read Gift Guide</a>
-        </div>
+      <div class="section-head">
+        <p class="eyebrow">Start With Your Idea</p>
+        <h2>You can customize from almost anything</h2>
+        <p>Instead of forcing customers to pick a product immediately, Auralis lets them start from the personal detail they already understand.</p>
+      </div>
+      <div class="idea-grid">
+        <a class="idea" href="/guides/how-to-customize-bracelet-from-reference-photo">
+          <div class="idea-icon">📷</div>
+          <h3>Reference Photo</h3>
+          <p>Send a bracelet photo or screenshot you like. We use it as the design direction.</p>
+        </a>
+        <a class="idea" href="/custom-order">
+          <div class="idea-icon">🎂</div>
+          <h3>Birth Date</h3>
+          <p>Use a birthday as a personal starting point for color and meaning.</p>
+        </a>
+        <a class="idea" href="/element-design">
+          <div class="idea-icon">五</div>
+          <h3>Chinese Element</h3>
+          <p>Wood, Fire, Earth, Metal or Water can guide the color mood.</p>
+        </a>
+        <a class="idea" href="/custom-bracelets">
+          <div class="idea-icon">🎨</div>
+          <h3>Color Mood</h3>
+          <p>Blue, green, yellow-brown, clear, purple, pink or mixed colors.</p>
+        </a>
+        <a class="idea" href="/gift-guide">
+          <div class="idea-icon">🎁</div>
+          <h3>Gift Story</h3>
+          <p>Create a bracelet for a birthday, friendship, self-care or a meaningful moment.</p>
+        </a>
       </div>
     </div>
   </section>
 
-  <section class="service-strip">
+  <section class="section">
     <div class="container">
-      <div class="service-item"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.5S5 16.2 3.4 10.8C2.4 7.5 4.4 4.5 7.7 4.5c1.9 0 3.4 1 4.3 2.4.9-1.4 2.4-2.4 4.3-2.4 3.3 0 5.3 3 4.3 6.3C19 16.2 12 20.5 12 20.5Z"/></svg></span><div><b>Made to Order</b><br>Created around your details</div></div>
-      <div class="service-item"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5 19.5 12 12 19.5 4.5 12 12 4.5Z"/></svg></span><div><b>Natural Stones</b><br>Material details confirmed</div></div>
-      <div class="service-item"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 10.5h14v9H5z"/><path d="M12 10.5v9"/><path d="M4.5 7.5h15v3h-15z"/><path d="M12 7.5H9.6a2.1 2.1 0 1 1 0-4.2c1.6 0 2.4 1.2 2.4 4.2Z"/><path d="M12 7.5h2.4a2.1 2.1 0 1 0 0-4.2c-1.6 0-2.4 1.2-2.4 4.2Z"/></svg></span><div><b>Gift-Ready Option</b><br>Packaging can be quoted</div></div>
-      <div class="service-item"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 6.5h15v11h-15z"/><path d="m5 7 7 6 7-6"/></svg></span><div><b>Fast Inquiry</b><br>Contact by form or WhatsApp</div></div>
+      <div class="section-head">
+        <p class="eyebrow">Bracelet Directions</p>
+        <h2>Choose a visual direction first</h2>
+        <p>These are starting points for custom requests. Final stones, size and details are confirmed after we understand your request.</p>
+      </div>
+      <div class="lookbook">
+        <article class="look">
+          <img src="/assets/stone-guide-rose-model.png" alt="soft pink custom crystal bracelet direction">
+          <div><span class="badge">Soft Pink</span><h3>Gentle Gift Mood</h3><p>For soft, feminine, birthday or meaningful gift requests.</p></div>
+        </article>
+        <article class="look">
+          <img src="/assets/stone-guide-citrine-model.png" alt="warm yellow custom crystal bracelet direction">
+          <div><span class="badge">Warm Yellow</span><h3>Warm Energy Direction</h3><p>For yellow, warm, cheerful or earth-tone bracelet ideas.</p></div>
+        </article>
+        <article class="look">
+          <img src="/assets/stone-guide-moonstone-model.png" alt="clear soft custom crystal bracelet direction">
+          <div><span class="badge">Clear Soft</span><h3>Minimal Daily Style</h3><p>For clear, calm, simple or everyday custom bracelet requests.</p></div>
+        </article>
+      </div>
+      <div class="actions" style="justify-content:center;margin-top:28px">
+        <a class="btn primary" href="/custom-bracelets">Explore Custom Bracelets</a>
+        <a class="btn" href="/guides/">Read Jewelry Guides</a>
+      </div>
     </div>
   </section>
 
-<section class="seo-guides-inline" style="padding:64px 0;background:linear-gradient(180deg,#fffaf5,#f8eee4);border-top:1px solid #eadbcc;">
-  <div style="width:min(1120px,calc(100% - 32px));margin:auto;">
-    <p style="margin:0 0 10px;color:#b78249;font-size:12px;letter-spacing:.18em;text-transform:uppercase;font-weight:900;">Jewelry guides</p>
-    <h2 style="margin:0 0 14px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(30px,4vw,44px);line-height:1.08;color:#2f261f;">Learn Before You Request a Custom Piece</h2>
-    <p style="max-width:760px;margin:0 0 24px;color:#75665d;font-size:16px;line-height:1.7;">Explore custom crystal bracelet meanings, gift ideas and the request process before sending your idea for a quote.</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;">
-      <a href="/guides/custom-crystal-bracelet-guide" style="display:block;background:#fff;border:1px solid #eadbcc;border-radius:22px;padding:22px;color:#2f261f;text-decoration:none;box-shadow:0 14px 36px rgba(70,43,25,.08);">
-        <strong style="display:block;font-family:Georgia,'Times New Roman',serif;font-size:23px;line-height:1.15;margin-bottom:8px;">Custom Crystal Bracelet Guide</strong>
-        <span style="color:#75665d;font-size:14px;line-height:1.6;">Design by meaning, color, stone, zodiac, birth month or intention.</span>
-      </a>
-      <a href="/guides/crystal-bracelet-gift-for-her" style="display:block;background:#fff;border:1px solid #eadbcc;border-radius:22px;padding:22px;color:#2f261f;text-decoration:none;box-shadow:0 14px 36px rgba(70,43,25,.08);">
-        <strong style="display:block;font-family:Georgia,'Times New Roman',serif;font-size:23px;line-height:1.15;margin-bottom:8px;">Crystal Bracelet Gift for Her</strong>
-        <span style="color:#75665d;font-size:14px;line-height:1.6;">Meaningful gift ideas for birthdays, friendship and personal moments.</span>
-      </a>
-      <a href="/guides/how-to-request-custom-jewelry-online" style="display:block;background:#fff;border:1px solid #eadbcc;border-radius:22px;padding:22px;color:#2f261f;text-decoration:none;box-shadow:0 14px 36px rgba(70,43,25,.08);">
-        <strong style="display:block;font-family:Georgia,'Times New Roman',serif;font-size:23px;line-height:1.15;margin-bottom:8px;">How to Request Custom Jewelry</strong>
-        <span style="color:#75665d;font-size:14px;line-height:1.6;">Send a reference photo, size, color mood and gift idea before quote.</span>
-      </a>
+  <section class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Trust & Material Guidance</p>
+        <h2>Designed to reduce buyer hesitation</h2>
+      </div>
+      <div class="trust-grid">
+        <article class="trust"><span class="mini-badge">Material</span><b>Natural Crystal Options</b><p>Material details and stone direction can be discussed before quote confirmation.</p></article>
+        <article class="trust"><span class="mini-badge">Handmade</span><b>Hand-Assembled by Request</b><p>Each bracelet is arranged around color mood, wrist size, style direction and gift purpose.</p></article>
+        <article class="trust"><span class="mini-badge">Preview</span><b>Direction Before Production</b><p>We help clarify the design direction before the order moves forward.</p></article>
+        <article class="trust"><span class="mini-badge">Support</span><b>30-Day After-Sale Support</b><p>If an item arrives damaged or incorrect, contact us with photos and order details.</p></article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section class="section">
+    <div class="container gift-band">
+      <div>
+        <p class="eyebrow">New Visitor Entry</p>
+        <h2>Not ready to customize yet? Start with a Mystery Crystal Gift.</h2>
+        <p>Claim a small crystal gift first, cover shipping, and get to know Auralis before placing a custom bracelet request.</p>
+        <div class="actions">
+          <a class="btn primary" href="/free-crystal-gift">Claim Free Gift</a>
+          <a class="btn" href="/custom-order">Ask About Custom Order</a>
+        </div>
+      </div>
+      <div class="gift-card">
+        <ul>
+          <li>One gift per new customer</li>
+          <li>Customer covers shipping</li>
+          <li>Gift style selected based on available stock</li>
+          <li>Custom bracelet orders are quoted separately</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions before you send a custom request</h2>
+      </div>
+      <div class="faq-grid">
+        <article class="faq">
+          <h2>How does a custom crystal bracelet order work?</h2>
+          <p>You can start by sending a reference photo, birth date, Chinese element request, color mood, wrist size or gift idea. We review your request and confirm the design direction, material options, quote and timeline before payment.</p>
+        </article>
+        <article class="faq">
+          <h2>Can I send only a reference photo?</h2>
+          <p>Yes. A photo or screenshot is enough to begin. You can also add preferred colors, wrist size, delivery country or gift purpose to help us understand the request faster.</p>
+        </article>
+        <article class="faq">
+          <h2>Do I need to pay before the quote is confirmed?</h2>
+          <p>No. Payment is not required before the design direction, material options, quote and timeline are confirmed.</p>
+        </article>
+        <article class="faq">
+          <h2>Are the crystals natural?</h2>
+          <p>Auralis offers natural crystal and gemstone-inspired material options. Material details can be discussed before quote confirmation. Natural stones may vary in color, pattern and texture.</p>
+        </article>
+        <article class="faq">
+          <h2>What if I am not sure about my wrist size?</h2>
+          <p>You can tell us you are not sure yet. We will help confirm sizing guidance before production.</p>
+        </article>
+        <article class="faq">
+          <h2>How long does custom jewelry take?</h2>
+          <p>Timeline depends on design complexity, material availability, quantity and destination country. We confirm the estimated crafting and shipping timeline before the order moves forward.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container final-cta">
+      <p class="eyebrow">Ready to start?</p>
+      <h2>Send your idea first. Decide after the quote.</h2>
+      <p>Reference photo, birth date, Chinese element, color mood, wrist size or gift story — any one of these is enough to begin.</p>
+      <div class="actions" style="justify-content:center">
+        <a class="btn primary" href="/custom-order">Create My Custom Piece</a>
+        <a class="btn green" href="https://wa.me/8618357590167?text=Hi%2C%20I%20would%20like%20to%20request%20a%20custom%20crystal%20bracelet%20quote.">Send My Idea on WhatsApp</a>
+      </div>
+    </div>
+  </section>
 </main>
 
-
-<section class="video-showcase" id="real-life-video">
-  <div class="video-wrap">
-    <div>
-      <p class="eyebrow">Custom bracelet in real life</p>
-      <h2>See the Bracelet Before You Request</h2>
-      <p>
-        A custom crystal bracelet feels different when you see it moving in real light.
-        Use this real-life reference to share your color mood, gift purpose, wrist size,
-        birth date or preferred element before quote.
-      </p>
-      <div class="video-points">
-        <div class="video-point">Real bracelet reference</div>
-        <div class="video-point">Gift-ready visual mood</div>
-        <div class="video-point">Send your idea before quote</div>
-      </div>
-      <div class="video-cta-row">
-        <a class="video-cta-primary" href="/custom-order">Start Custom Request</a>
-        <a class="video-cta-secondary" href="https://wa.me/8618357590167">Send Idea on WhatsApp</a>
-      </div>
-    </div>
-    <div class="video-card">
-      <video controls muted playsinline preload="metadata" poster="/assets/home-bracelet-video-poster.webp">
-        <source src="/assets/home-bracelet-in-real-life.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
-</section>
-
 <footer class="footer">
-  <div class="container footer-grid">
-    <div><div class="logo">Auralis Jewelry</div><p>Personalized crystal and gemstone jewelry for your energy, your style and your story.</p><p><strong>Website:</strong> <a href="https://auralisgems.com">auralisgems.com</a><br><strong>Email:</strong> <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a><br><strong>WhatsApp:</strong> <a href="https://wa.me/8618357590167">+86 183 5759 0167</a></p></div>
-    <div><h3>Shop</h3><a href="/custom-bracelets">Custom Bracelets</a><a href="/gemstone-jewelry">Gemstone Jewelry</a><a href="/gift-guide">Gift Ideas</a></div>
-    <div><h3>Customer Care</h3><a href="/custom-order">Request a Quote</a><a href="/gift-guide">Shipping & Delivery</a><a href="/gift-guide">FAQ</a></div>
-    <div><h3>About</h3><a href="/element-design">Element Guide</a><a href="/gift-guide">Gift Guide</a><a href="mailto:hello@auralisgems.com">Contact</a></div>
-    <div><h3>Stay Connected</h3><p>Get custom design updates and gemstone inspiration.</p><div class="subscribe"><input aria-label="Email" placeholder="Enter your email"><button>→</button></div></div>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Auralis Jewelry</h3>
+        <p>Custom crystal bracelets, gemstone jewelry and meaningful gifts by request.</p>
+      </div>
+      <div><h3>Customize</h3><p><a href="/custom-bracelets">Custom Bracelets</a></p><p><a href="/custom-order">Custom Order</a></p><p><a href="/element-design">Element Design</a></p></div>
+      <div><h3>Explore</h3><p><a href="/free-crystal-gift">Free Gift</a></p><p><a href="/gift-guide">Gift Guide</a></p><p><a href="/guides/">Guides</a></p></div>
+      <div><h3>Contact</h3><p><a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a></p><p><a href="https://wa.me/8618357590167">WhatsApp</a></p></div>
+    </div>
+    <div class="copyright"><span>© 2026 Auralis Jewelry. All rights reserved.</span><span>Quote-first custom crystal jewelry.</span></div>
   </div>
-  <div class="container copyright"><span>© 2026 Auralis Jewelry. All rights reserved.</span><span>Website: <a href="https://auralisgems.com">auralisgems.com</a> · Email: <a href="mailto:hello@auralisgems.com">hello@auralisgems.com</a></span></div>
 </footer>
-
-<script>
-(function(){
-  function sendEvent(name, params){
-    if (typeof gtag !== "function") return;
-    gtag("event", name, params || {});
-  }
-  document.addEventListener("click", function(event){
-    var link = event.target.closest && event.target.closest("a");
-    if (!link) return;
-    var href = link.getAttribute("href") || "";
-    var label = (link.textContent || link.getAttribute("aria-label") || href || "link").replace(/\s+/g, " ").trim().slice(0, 120);
-
-    if (href.indexOf("wa.me") !== -1) {
-      sendEvent("whatsapp_click", {
-        event_category: "contact",
-        event_label: label,
-        link_url: href
-      });
-    }
-
-    if (href.indexOf("mailto:") === 0) {
-      sendEvent("email_click", {
-        event_category: "contact",
-        event_label: label,
-        link_url: href
-      });
-    }
-
-    if (
-      href.indexOf("/custom-order") !== -1 ||
-      href.indexOf("#request-form") !== -1 ||
-      /request|quote|custom/i.test(label)
-    ) {
-      sendEvent("request_quote_click", {
-        event_category: "conversion_intent",
-        event_label: label,
-        link_url: href
-      });
-    }
-  }, true);
-})();
-</script>
-
 
 <div class="auralis-contact-v3" aria-label="Contact Auralis Jewelry">
   <div class="auralis-contact-v3-panel">
@@ -1052,40 +446,26 @@
     <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.29c-.29-.14-1.71-.84-1.97-.94-.27-.1-.46-.14-.66.15-.19.29-.75.94-.92 1.13-.17.2-.34.22-.63.08-.29-.14-1.23-.45-2.34-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.12-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.2.05-.37-.02-.51-.08-.14-.66-1.59-.91-2.18-.24-.57-.48-.49-.66-.5h-.56c-.2 0-.51.08-.77.37-.27.29-1.02 1-1.02 2.44 0 1.44 1.04 2.84 1.19 3.03.14.2 2.04 3.11 5.04 4.36 2.99 1.25 2.99.83 3.53.77.54-.05 1.71-.7 1.95-1.37.24-.67.24-1.24.17-1.37-.07-.12-.26-.19-.56-.33Z"/><path d="M16.01 3C8.82 3 3 8.7 3 15.72c0 2.46.73 4.85 2.12 6.91L3.73 29l6.58-1.35a13.16 13.16 0 0 0 5.69 1.29h.01C23.2 28.94 29 23.24 29 16.22 29 9.2 23.2 3.5 16.01 3Zm0 23.76h-.01a10.98 10.98 0 0 1-5.59-1.53l-.4-.24-3.9.8.83-3.8-.26-.39A10.61 10.61 0 0 1 5.19 15.7c0-5.83 4.85-10.58 10.82-10.58 5.97 0 10.82 4.74 10.82 10.58 0 5.84-4.85 10.6-10.82 10.6Z"/></svg>
   </button>
 </div>
-<script id="auralis-social-contact-v3-script">
+
+<script>
 (function(){
-  function removeOldContactWidgets(){
-    var all=Array.prototype.slice.call(document.body.querySelectorAll('*'));
-    all.forEach(function(el){
-      if(!el||el.closest('.auralis-contact-v3')||el.closest('.auralis-social-top-v3')) return;
-      var text=(el.innerText||'').replace(/\s+/g,' ').trim();
-      if(!text) return;
-      var cls=((el.className||'')+' '+(el.id||'')).toString().toLowerCase();
-      var style=window.getComputedStyle(el);
-      var isFixed=style&&(style.position==='fixed'||style.position==='sticky');
-      var looks=/contact|float|floating|whatsapp|inquiry|chat|message/.test(cls)||
-        (text.indexOf('Contact Us')!==-1&&text.indexOf('WhatsApp')!==-1)||
-        (text.indexOf('Send Inquiry')!==-1&&text.indexOf('Email Us')!==-1);
-      if(looks&&(isFixed||text.indexOf('Send Inquiry')!==-1)){
-        el.style.display='none';
-        el.setAttribute('data-auralis-hidden-old-contact','true');
-      }
-    });
-  }
-  function initAuralisContactV3(){
-    removeOldContactWidgets();
-    setTimeout(removeOldContactWidgets,800);
-    setTimeout(removeOldContactWidgets,1800);
-    var widget=document.querySelector('.auralis-contact-v3');
-    if(!widget) return;
+  var widget=document.querySelector('.auralis-contact-v3');
+  if(widget){
     var btn=widget.querySelector('.auralis-contact-v3-toggle');
-    if(!btn) return;
-    btn.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();widget.classList.toggle('open');});
+    btn&&btn.addEventListener('click',function(e){e.preventDefault();e.stopPropagation();widget.classList.toggle('open');});
     document.addEventListener('click',function(e){if(!widget.contains(e.target)) widget.classList.remove('open');});
   }
-  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initAuralisContactV3);}else{initAuralisContactV3();}
+  function sendEvent(name, params){ if(typeof gtag !== "function") return; gtag("event", name, params || {}); }
+  document.addEventListener("click", function(event){
+    var link = event.target.closest && event.target.closest("a");
+    if (!link) return;
+    var href = link.getAttribute("href") || "";
+    var label = (link.textContent || link.getAttribute("aria-label") || href || "link").replace(/\s+/g, " ").trim().slice(0, 120);
+    if (href.indexOf("wa.me") !== -1) sendEvent("whatsapp_click", {event_category:"contact",event_label:label,link_url:href});
+    if (href.indexOf("mailto:") === 0) sendEvent("email_click", {event_category:"contact",event_label:label,link_url:href});
+    if (href.indexOf("/custom-order") !== -1 || /request|quote|custom/i.test(label)) sendEvent("request_quote_click", {event_category:"conversion_intent",event_label:label,link_url:href});
+  }, true);
 })();
 </script>
-
 </body>
 </html>
