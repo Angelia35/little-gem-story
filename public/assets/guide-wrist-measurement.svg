@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffdf9"/>
+      <stop offset="1" stop-color="#f2dcc5"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff1c7"/>
+      <stop offset="0.45" stop-color="#b78249"/>
+      <stop offset="1" stop-color="#8b5b2f"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#462b19" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="900" rx="56" fill="url(#bg)"/>
+  <circle cx="940" cy="120" r="180" fill="#fff8ef" opacity="0.72"/>
+  <circle cx="150" cy="720" r="220" fill="#fff8ef" opacity="0.65"/>
+  <g filter="url(#shadow)">
+    <path d="M370 470 C405 305 775 305 830 465 C880 610 750 705 605 705 C455 705 335 615 370 470Z" fill="#f5c7a5"/>
+    <path d="M415 470 C450 365 740 365 785 472 C815 565 720 625 605 625 C488 625 387 565 415 470Z" fill="#fffdf9" opacity="0.86"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="250" y="420" width="710" height="88" rx="44" fill="#fff"/>
+    <rect x="282" y="444" width="646" height="40" rx="20" fill="#f4e4d4"/>
+    <g font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#8b5b2f" font-weight="700">
+      <text x="300" y="474">0</text><text x="382" y="474">2</text><text x="464" y="474">4</text><text x="546" y="474">6</text><text x="628" y="474">8</text><text x="708" y="474">10</text><text x="800" y="474">12</text><text x="882" y="474">14</text>
+    </g>
+    <g stroke="#b78249" stroke-width="5">
+      <line x1="320" y1="430" x2="320" y2="496"/><line x1="402" y1="430" x2="402" y2="496"/><line x1="484" y1="430" x2="484" y2="496"/><line x1="566" y1="430" x2="566" y2="496"/><line x1="648" y1="430" x2="648" y2="496"/><line x1="730" y1="430" x2="730" y2="496"/><line x1="812" y1="430" x2="812" y2="496"/><line x1="894" y1="430" x2="894" y2="496"/>
+    </g>
+  </g>
+  <g filter="url(#shadow)">
+    <circle cx="295" cy="620" r="31" fill="url(#gold)"/><circle cx="360" cy="660" r="31" fill="#d9efff"/><circle cx="430" cy="686" r="31" fill="#f8fbff"/><circle cx="505" cy="695" r="31" fill="#79b8e8"/><circle cx="582" cy="687" r="31" fill="#f8fbff"/><circle cx="655" cy="660" r="31" fill="#79b8e8"/><circle cx="720" cy="620" r="31" fill="url(#gold)"/>
+    <g fill="#fff" opacity="0.65"><circle cx="283" cy="608" r="7"/><circle cx="348" cy="648" r="7"/><circle cx="418" cy="674" r="7"/><circle cx="493" cy="683" r="7"/><circle cx="570" cy="675" r="7"/><circle cx="643" cy="648" r="7"/><circle cx="708" cy="608" r="7"/></g>
+  </g>
+  <text x="95" y="120" fill="#2f261f" font-family="Georgia, serif" font-size="56" font-weight="700">Measure Your Wrist</text>
+  <text x="98" y="165" fill="#75665d" font-family="Arial, Helvetica, sans-serif" font-size="26">Use a soft tape or paper strip before requesting a custom bracelet.</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="24" fill="#2f261f" font-weight="700">
+    <text x="118" y="270">1. Wrap snugly around your wrist</text>
+    <text x="118" y="315">2. Mark the meeting point</text>
+    <text x="118" y="360">3. Add comfort room if needed</text>
+  </g>
+  <rect x="760" y="650" width="330" height="92" rx="28" fill="#fffdf9" stroke="#eadbcc"/>
+  <text x="790" y="690" fill="#b78249" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">Not sure?</text>
+  <text x="790" y="722" fill="#75665d" font-family="Arial, Helvetica, sans-serif" font-size="18">Send “Not sure yet” with your request.</text>
+</svg>
