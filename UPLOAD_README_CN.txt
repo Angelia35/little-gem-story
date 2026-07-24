@@ -1,45 +1,33 @@
-Auralis 第一阶段第二个统一更新包 v1
+Auralis 第二阶段第一个统一更新包：降低选择风险 v1
 
-一、先上传公共文件
-public/assets/auralis-phase1-v4.css
-public/assets/auralis-phase1-v4.js
+建议上传顺序：
+1. public/assets/auralis-phase2-v1.css
+2. public/assets/auralis-phase1-v4.js（可覆盖，也可保留现有同名文件）
+3. public/guides/how-to-choose-crystals-for-a-bracelet.html
+4. public/guides/how-to-measure-your-wrist-for-a-crystal-bracelet.html
+5. public/gift-guide.html
+6. public/guides/blue-crystal-bracelet-ideas.html
+7. public/guides/purple-blue-crystal-bracelet-ideas.html
+8. public/guides/yellow-crystal-bracelet-meaning.html
+9. public/guides/custom-crystal-bracelet-guide.html
+10. public/guides/index.html
+11. public/custom-bracelets.html
+12. public/custom-order.html
+13. public/sitemap.xml
 
-二、上传三个新页面
-public/crystal-material-authenticity.html
-public/wholesale-custom-crystal-bracelets.html
-public/wholesale-inquiry.html
+测试链接：
+https://auralisgems.com/guides/how-to-choose-crystals-for-a-bracelet?v=phase2v1
+https://auralisgems.com/guides/how-to-measure-your-wrist-for-a-crystal-bracelet?v=phase2v1
+https://auralisgems.com/gift-guide?v=phase2v1
+https://auralisgems.com/guides/blue-crystal-bracelet-ideas?v=phase2v1
+https://auralisgems.com/guides/purple-blue-crystal-bracelet-ideas?v=phase2v1
+https://auralisgems.com/guides/yellow-crystal-bracelet-meaning?v=phase2v1
+https://auralisgems.com/guides/?v=phase2v1
+https://auralisgems.com/custom-bracelets?v=phase2v1
+https://auralisgems.com/custom-order?v=phase2v1
 
-三、覆盖三个已更新页面
-public/custom-bracelets.html
-public/custom-bracelet-pricing-process-delivery.html
-public/custom-order.html
-
-四、覆盖 sitemap
-public/sitemap.xml
-
-本包没有重复放入图片，调用的是网站已有素材：
-/assets/gemstone-set-wide.webp
-/assets/bracelet-collection-wide.webp
-/assets/gemstone-gift-set.webp
-/assets/custom-bracelet-hero.webp
-/assets/custom-bracelet-mixed-color.webp
-
-上线测试链接
-https://auralisgems.com/crystal-material-authenticity?v=stage2v1
-https://auralisgems.com/wholesale-custom-crystal-bracelets?v=stage2v1
-https://auralisgems.com/wholesale-inquiry?v=stage2v1
-https://auralisgems.com/custom-bracelets?v=stage2v1
-https://auralisgems.com/custom-bracelet-pricing-process-delivery?v=stage2v1
-https://auralisgems.com/custom-order?v=stage2v1
-https://auralisgems.com/sitemap.xml
-
-GSC 请求收录
-https://auralisgems.com/crystal-material-authenticity
-https://auralisgems.com/wholesale-custom-crystal-bracelets
-https://auralisgems.com/wholesale-inquiry
-
-注意
-1. 本包所有包含页面已统一引用 v4 CSS / JS，避免旧缓存。
-2. 批发 MOQ、样品费、交期和包装均按项目确认，页面没有编造固定数字。
-3. 材质页没有宣称所有产品天然或 GIA 认证。
-4. 外部 GIA / FTC 链接用于资料参考，不代表官方背书。
+重要说明：
+- 本包引用的图片均为站点现有 assets 路径，没有新造产品款式。
+- 新选石指南不承诺未经确认的具体石种或功效。
+- 完整定制通常 US$60 起；现货和既有设计独立定价，可能低于或高于 US$60。
+- 客户先提供预算，再由 Auralis 推荐现货、轻调整或完整定制。

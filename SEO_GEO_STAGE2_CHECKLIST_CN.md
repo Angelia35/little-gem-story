@@ -1,36 +1,31 @@
-# 第一阶段第二包 SEO / GEO / 询盘检查清单
+# 第二阶段 SEO / GEO / 询盘检查清单
 
-## 新页面
-- `/crystal-material-authenticity`
-- `/wholesale-custom-crystal-bracelets`
-- `/wholesale-inquiry`
+## 上线后技术检查
+- 页面返回 200，不跳转到 `.html`。
+- canonical 与正式 URL 一致。
+- 移动端表格可横向滚动。
+- 所有 CTA 可进入 Custom Order 或 WhatsApp。
+- sitemap.xml 可访问并已重新提交。
 
-## 搜索决策问题
-### 材质页
-- Is this crystal natural?
-- Are crystal beads treated or dyed?
-- What does lab-grown gemstone mean?
-- Why do natural crystal beads look different?
-- Does every bracelet have a GIA certificate?
+## GSC 请求收录
+优先提交：
+1. 新选石指南
+2. 升级手围页
+3. 升级 Gift Guide
+4. 三个颜色页
+5. Guides Hub
+6. 更新后的 Custom Bracelets 和 Custom Order
 
-### 批发页
-- Can boutiques buy custom crystal bracelets wholesale?
-- What is the wholesale MOQ?
-- Can I start with samples or a trial order?
-- Can I add custom cards, labels or packaging?
-- How do I request a wholesale quote by target retail price?
+## 询盘事件观察
+- selection_guide_to_order：选石页进入 Custom Order
+- wrist_guide_to_order：尺寸页进入 Custom Order
+- gift_guide_to_order：礼物页进入 Custom Order
+- whatsapp_click：WhatsApp 点击
+- request_quote_click：报价意向点击
 
-## 转化事件
-- material_authenticity_click
-- wholesale_page_click
-- wholesale_form_started
-- wholesale_inquiry_submit
-- wholesale_request_copy
-
-## 上线后检查
-- 移动端表格可横向滚动
-- 所有 CTA 指向正确的个人或批发路径
-- WhatsApp 预填文案完整
-- sitemap 返回 200
-- GSC 分别请求收录三个新 URL
-- 检查页面源代码中的 FAQPage / Article / Service Schema
+## 两周复盘
+- 哪个指南的 WhatsApp 点击率最高
+- 表单中预算字段完成率
+- “Not sure yet” 占比
+- 询盘从哪一个页面进入
+- 现货、轻调整、完整定制的推荐占比

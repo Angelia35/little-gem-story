@@ -1,25 +1,15 @@
-# Auralis 第一阶段第二个统一更新包 — 变更记录
+# 第二阶段第一个统一更新包变更记录
 
-## 新增
-- 水晶材质真实性、处理披露与天然差异页面
-- 精品店、礼品店、珠宝零售商和电商卖家的批发页面
-- 独立批发询盘表单页面
-- 批发 WhatsApp / Email / Copy 询盘生成器
-- FAQPage、Article、Service、Organization Schema
-- GIA 与 FTC 官方参考链接
+## 新建
+- `/guides/how-to-choose-crystals-for-a-bracelet`：按预算、颜色、珠径、手围、用途和材质披露选石。
 
-## 更新
-- `/custom-bracelets`：增加材质真实性与批发分流内链
-- `/custom-bracelet-pricing-process-delivery`：增加材质与批发相关决策入口
-- `/custom-order`：增加“个人订单 vs 批发订单”分流
-- 主导航与页脚：增加 Wholesale、Material Authenticity、Wholesale Inquiry
-- sitemap：增加三个新 URL
-- 公共样式升级为 `auralis-phase1-v4.css`，公共脚本升级为 `auralis-phase1-v4.js`
+## 升级
+- 手围尺寸页：增加珠径对内圈的影响、礼物测量、准确参数表和预算询盘。
+- Gift Guide：增加按对象、场景、预算、风格、手围和材质风险选择。
+- 蓝色、紫蓝色、黄色/琥珀色页面：统一链接至完整选石指南。
+- Guides Hub：将选石指南设为第二阶段核心入口，Gift Guide 继续位于 Guides 中。
+- `/custom-bracelets`：增加选石、尺寸、礼物三入口。
+- `/custom-order`：增加提交前选择帮助模块。
 
-## 未写入的未经确认信息
-- 固定批发 MOQ
-- 固定样品费
-- 固定批发交期
-- 所有材料 100% 天然
-- 所有产品附 GIA 证书
-- 必然支持混款、品牌包装或低数量订单
+## 核心转化路径
+不知道选什么 → 看选石指南 → 确认手围 → 看礼物场景 → 提交预算 → Auralis 推荐现货/轻调整/完整定制。
