@@ -1,30 +1,25 @@
-# 内容变更记录
+# Auralis 第一阶段第二个统一更新包 — 变更记录
 
-## /custom-bracelets
-- 从“按参考图/生日/颜色开始”升级为“预算优先推荐”
-- 新增三种购买路径
-- 新增价格影响因素
-- 新增五行分析价格与范围
-- 新增完整定制规则摘要
-- 加强价格页与 Custom Order 内链
+## 新增
+- 水晶材质真实性、处理披露与天然差异页面
+- 精品店、礼品店、珠宝零售商和电商卖家的批发页面
+- 独立批发询盘表单页面
+- 批发 WhatsApp / Email / Copy 询盘生成器
+- FAQPage、Article、Service、Organization Schema
+- GIA 与 FTC 官方参考链接
 
-## /custom-bracelet-pricing-process-delivery
-- 新页面
-- 集中回答多少钱、怎么做、多久、定金、修改、尾款、取消、发货、售后
+## 更新
+- `/custom-bracelets`：增加材质真实性与批发分流内链
+- `/custom-bracelet-pricing-process-delivery`：增加材质与批发相关决策入口
+- `/custom-order`：增加“个人订单 vs 批发订单”分流
+- 主导航与页脚：增加 Wholesale、Material Authenticity、Wholesale Inquiry
+- sitemap：增加三个新 URL
+- 公共样式升级为 `auralis-phase1-v4.css`，公共脚本升级为 `auralis-phase1-v4.js`
 
-## /custom-order
-- 从“先选请求类型”改为“先提交预算和 5 项核心信息”
-- 默认 Let Auralis recommend
-- 支持 WhatsApp / Email / Copy 三种提交方式
-
-## Schema
-- Organization
-- Service
-- Article
-- FAQPage
-
-## 未加入
-- 虚构 Review / AggregateRating
-- 未验证的天然认证
-- 固定现货价格
-- 保证运势、疗愈或未来结果的表述
+## 未写入的未经确认信息
+- 固定批发 MOQ
+- 固定样品费
+- 固定批发交期
+- 所有材料 100% 天然
+- 所有产品附 GIA 证书
+- 必然支持混款、品牌包装或低数量订单
