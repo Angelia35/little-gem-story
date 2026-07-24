@@ -1,33 +1,58 @@
-Auralis 第二阶段第一个统一更新包：降低选择风险 v1
+Auralis 第三阶段第一个统一更新包 v1
 
-建议上传顺序：
-1. public/assets/auralis-phase2-v1.css
-2. public/assets/auralis-phase1-v4.js（可覆盖，也可保留现有同名文件）
-3. public/guides/how-to-choose-crystals-for-a-bracelet.html
-4. public/guides/how-to-measure-your-wrist-for-a-crystal-bracelet.html
-5. public/gift-guide.html
-6. public/guides/blue-crystal-bracelet-ideas.html
-7. public/guides/purple-blue-crystal-bracelet-ideas.html
-8. public/guides/yellow-crystal-bracelet-meaning.html
-9. public/guides/custom-crystal-bracelet-guide.html
-10. public/guides/index.html
-11. public/custom-bracelets.html
-12. public/custom-order.html
-13. public/sitemap.xml
+本包目标：真实参数 + 作者审核 + 权威来源 + 匿名案例框架 + GEO测试工具。
 
-测试链接：
-https://auralisgems.com/guides/how-to-choose-crystals-for-a-bracelet?v=phase2v1
-https://auralisgems.com/guides/how-to-measure-your-wrist-for-a-crystal-bracelet?v=phase2v1
-https://auralisgems.com/gift-guide?v=phase2v1
-https://auralisgems.com/guides/blue-crystal-bracelet-ideas?v=phase2v1
-https://auralisgems.com/guides/purple-blue-crystal-bracelet-ideas?v=phase2v1
-https://auralisgems.com/guides/yellow-crystal-bracelet-meaning?v=phase2v1
-https://auralisgems.com/guides/?v=phase2v1
-https://auralisgems.com/custom-bracelets?v=phase2v1
-https://auralisgems.com/custom-order?v=phase2v1
+一、先上传公共文件
+public/assets/auralis-phase3-v1.css
+public/assets/auralis-phase3-v1.js
 
-重要说明：
-- 本包引用的图片均为站点现有 assets 路径，没有新造产品款式。
-- 新选石指南不承诺未经确认的具体石种或功效。
-- 完整定制通常 US$60 起；现货和既有设计独立定价，可能低于或高于 US$60。
-- 客户先提供预算，再由 Auralis 推荐现货、轻调整或完整定制。
+二、上传新页面
+public/custom-crystal-bracelet-specifications.html
+  -> public/custom-crystal-bracelet-specifications.html
+  -> URL: https://auralisgems.com/custom-crystal-bracelet-specifications
+
+public/content-standards.html
+  -> public/content-standards.html
+  -> URL: https://auralisgems.com/content-standards
+
+三、上传并覆盖已更新页面
+public/custom-bracelets.html
+public/custom-bracelet-pricing-process-delivery.html
+public/crystal-material-authenticity.html
+public/gift-guide.html
+public/guides/how-to-choose-crystals-for-a-bracelet.html
+public/guides/how-to-measure-your-wrist-for-a-crystal-bracelet.html
+public/guides/index.html
+
+四、案例框架
+public/custom-bracelet-case-studies.html
+此页面已设置 noindex,follow，且未写入 sitemap。可以上传作为内部草稿预览，但没有加入至少2个真实匿名案例之前，不要删除 noindex，也不要在GSC请求收录。
+
+五、最后覆盖
+public/sitemap.xml
+
+六、上线测试
+https://auralisgems.com/custom-crystal-bracelet-specifications?v=phase3v1
+https://auralisgems.com/content-standards?v=phase3v1
+https://auralisgems.com/custom-bracelets?v=phase3v1
+https://auralisgems.com/crystal-material-authenticity?v=phase3v1
+https://auralisgems.com/guides/how-to-choose-crystals-for-a-bracelet?v=phase3v1
+https://auralisgems.com/guides/?v=phase3v1
+https://auralisgems.com/custom-bracelet-case-studies?v=phase3draft1
+
+七、GSC优先请求收录
+https://auralisgems.com/custom-crystal-bracelet-specifications
+https://auralisgems.com/content-standards
+
+重新请求抓取
+https://auralisgems.com/custom-bracelets
+https://auralisgems.com/custom-bracelet-pricing-process-delivery
+https://auralisgems.com/crystal-material-authenticity
+https://auralisgems.com/gift-guide
+https://auralisgems.com/guides/how-to-choose-crystals-for-a-bracelet
+https://auralisgems.com/guides/how-to-measure-your-wrist-for-a-crystal-bracelet
+https://auralisgems.com/guides/
+
+八、工具
+tools/auralis_geo_evidence_testing_tracker_v1.xlsx
+用于记录Google SERP、Google AI Overview和ChatGPT Search测试，不含虚构测试结果。
