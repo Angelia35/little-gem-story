@@ -1,0 +1,38 @@
+name: Submit changed pages to IndexNow
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "public/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  submit-indexnow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Collect changed public files
+        id: changed
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
+            echo "files=" >> "$GITHUB_OUTPUT"
+          else
+            files=$(git diff --name-only "${{ github.event.before }}" "${{ github.sha }}" -- public | tr '\n' '|' | sed 's/|$//')
+            echo "files=$files" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Submit URLs
+        env:
+          CHANGED_FILES_PIPE: ${{ steps.changed.outputs.files }}
+        run: |
+          export CHANGED_FILES=$(printf '%s' "$CHANGED_FILES_PIPE" | tr '|' '\n')
+          node scripts/submit-indexnow.mjs
