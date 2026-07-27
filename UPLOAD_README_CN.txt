@@ -1,58 +1,35 @@
-Auralis 第三阶段第一个统一更新包 v1
+AURALIS 第三阶段第二个统一更新包：AI搜索抓取与引用基础 v1
 
-本包目标：真实参数 + 作者审核 + 权威来源 + 匿名案例框架 + GEO测试工具。
+核心目标
+- 允许 ChatGPT Search、Perplexity、Claude Search、Bing/Google 搜索抓取
+- 明确允许 search 和 ai-input，拒绝 ai-train
+- 使用 IndexNow 通知 Bing 及参与搜索引擎已更新的URL
+- 统一 Auralis 品牌实体 Schema
+- 给商业页面增加可以被独立引用的 Direct Answer Blocks
+- 建立跨 ChatGPT、Google AI、Bing Copilot、Perplexity、Claude 的测试表
 
-一、先上传公共文件
-public/assets/auralis-phase3-v1.css
-public/assets/auralis-phase3-v1.js
+上传顺序
+1. public/assets/auralis-phase3-v2.css
+2. public/assets/auralis-phase3-v2.js
+3. public/robots.txt
+4. public/llms.txt
+5. public/024166fbd8937dee265822c7e903b3af.txt
+6. public 目录中的所有 HTML 页面
+7. public/sitemap.xml
+8. scripts/submit-indexnow.mjs
+9. .github/workflows/indexnow-submit.yml
 
-二、上传新页面
-public/custom-crystal-bracelet-specifications.html
-  -> public/custom-crystal-bracelet-specifications.html
-  -> URL: https://auralisgems.com/custom-crystal-bracelet-specifications
+注意
+- snippets 中的首页与 About 模块是安全插入片段，不要用旧首页文件整页覆盖现在的网站。
+- llms.txt 是辅助机器读取的可选文件，不是 Google、ChatGPT 或任何AI平台承诺的排名因素。
+- IndexNow 只是通知搜索引擎URL已更新，不保证收录或AI引用。
 
-public/content-standards.html
-  -> public/content-standards.html
-  -> URL: https://auralisgems.com/content-standards
-
-三、上传并覆盖已更新页面
-public/custom-bracelets.html
-public/custom-bracelet-pricing-process-delivery.html
-public/crystal-material-authenticity.html
-public/gift-guide.html
-public/guides/how-to-choose-crystals-for-a-bracelet.html
-public/guides/how-to-measure-your-wrist-for-a-crystal-bracelet.html
-public/guides/index.html
-
-四、案例框架
-public/custom-bracelet-case-studies.html
-此页面已设置 noindex,follow，且未写入 sitemap。可以上传作为内部草稿预览，但没有加入至少2个真实匿名案例之前，不要删除 noindex，也不要在GSC请求收录。
-
-五、最后覆盖
-public/sitemap.xml
-
-六、上线测试
-https://auralisgems.com/custom-crystal-bracelet-specifications?v=phase3v1
-https://auralisgems.com/content-standards?v=phase3v1
-https://auralisgems.com/custom-bracelets?v=phase3v1
-https://auralisgems.com/crystal-material-authenticity?v=phase3v1
-https://auralisgems.com/guides/how-to-choose-crystals-for-a-bracelet?v=phase3v1
-https://auralisgems.com/guides/?v=phase3v1
-https://auralisgems.com/custom-bracelet-case-studies?v=phase3draft1
-
-七、GSC优先请求收录
-https://auralisgems.com/custom-crystal-bracelet-specifications
-https://auralisgems.com/content-standards
-
-重新请求抓取
-https://auralisgems.com/custom-bracelets
-https://auralisgems.com/custom-bracelet-pricing-process-delivery
-https://auralisgems.com/crystal-material-authenticity
-https://auralisgems.com/gift-guide
-https://auralisgems.com/guides/how-to-choose-crystals-for-a-bracelet
-https://auralisgems.com/guides/how-to-measure-your-wrist-for-a-crystal-bracelet
-https://auralisgems.com/guides/
-
-八、工具
-tools/auralis_geo_evidence_testing_tracker_v1.xlsx
-用于记录Google SERP、Google AI Overview和ChatGPT Search测试，不含虚构测试结果。
+上线测试
+https://auralisgems.com/robots.txt
+https://auralisgems.com/llms.txt
+https://auralisgems.com/024166fbd8937dee265822c7e903b3af.txt
+https://auralisgems.com/custom-bracelets?v=ai-search-v1
+https://auralisgems.com/custom-bracelet-pricing-process-delivery?v=ai-search-v1
+https://auralisgems.com/crystal-material-authenticity?v=ai-search-v1
+https://auralisgems.com/wholesale-custom-crystal-bracelets?v=ai-search-v1
+https://auralisgems.com/guides/how-to-choose-crystals-for-a-bracelet?v=ai-search-v1
