@@ -168,10 +168,10 @@ p{color:var(--muted);font-size:16px}
 .trust-chip span{display:block;color:var(--muted);font-size:13px;line-height:1.5;margin-top:7px}
 
 /* Crystal directions */
-.direction-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.direction-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;max-width:1120px;margin:0 auto}
 .direction-card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 12px 32px rgba(70,43,25,.06);transition:.2s ease}
 .direction-card:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(70,43,25,.11)}
-.direction-card img{width:100%;aspect-ratio:4/4.25;object-fit:cover;background:#efe1d5}
+.direction-card img{width:100%;height:320px;aspect-ratio:auto;object-fit:cover;object-position:center;background:#efe1d5}
 .direction-body{text-align:center;padding:14px 10px 16px}
 .direction-body h3{font-size:19px}
 .direction-body p{font-size:11.5px;margin:6px 0 0;color:#966b3f;line-height:1.4}
@@ -196,19 +196,19 @@ p{color:var(--muted);font-size:16px}
 .mini-btn{display:inline-flex;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.92);color:#5e472f;font-size:12px;font-weight:900}
 
 /* Gallery */
-.gallery-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.gallery-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;max-width:1040px;margin:0 auto}
 .gallery-card{position:relative;border-radius:24px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 12px 30px rgba(70,43,25,.06)}
-.gallery-card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:#eee0d4}
-.gallery-label{padding:13px 12px;text-align:center;font-family:Georgia,"Times New Roman",serif;font-size:17px}
+.gallery-card img{width:100%;height:280px;aspect-ratio:auto;object-fit:cover;object-position:center;background:#eee0d4}
+.gallery-label{padding:16px 14px;text-align:center;font-family:Georgia,"Times New Roman",serif;font-size:28px;line-height:1.2}
 
 /* Gift scenarios */
-.gift-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
-.gift-card{position:relative;min-height:390px;border-radius:28px;overflow:hidden;box-shadow:0 16px 42px rgba(40,27,18,.13)}
-.gift-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.gift-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,rgba(35,23,16,.82))}
-.gift-content{position:absolute;z-index:1;left:20px;right:20px;bottom:20px}
+.gift-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;max-width:1180px;margin:0 auto}
+.gift-card{position:relative;min-height:520px;border-radius:30px;overflow:hidden;box-shadow:0 18px 46px rgba(40,27,18,.13)}
+.gift-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;image-rendering:auto;backface-visibility:hidden;filter:none}
+.gift-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,23,16,0) 18%,rgba(35,23,16,.08) 46%,rgba(35,23,16,.76) 100%)}
+.gift-content{position:absolute;z-index:1;left:24px;right:24px;bottom:24px}
 .gift-content h3,.gift-content p{color:#fff}
-.gift-content p{font-size:13px;margin:8px 0 0;opacity:.9}
+.gift-content p{font-size:18px;margin:10px 0 0;opacity:.96;line-height:1.55}
 .mystery-band{margin-top:18px;display:grid;grid-template-columns:1.25fr .75fr;align-items:center;gap:20px;padding:30px;border-radius:30px;background:linear-gradient(135deg,#33261f,#76502e);color:#fff}
 .mystery-band h3,.mystery-band p{color:#fff}
 .mystery-band p{opacity:.84}
@@ -279,7 +279,8 @@ p{color:var(--muted);font-size:16px}
 @media(max-width:1120px){
   .menu{gap:12px}
   .nav-cta{display:none}
-  .direction-grid,.gallery-grid{grid-template-columns:repeat(3,1fr)}
+  .direction-grid,.gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .gift-grid{grid-template-columns:1fr}
   .element-grid{grid-template-columns:repeat(3,1fr)}
   .element-card:nth-child(4),.element-card:nth-child(5){min-height:330px}
 }
@@ -325,6 +326,47 @@ p{color:var(--muted);font-size:16px}
   .auralis-contact-v3{right:15px!important;bottom:15px!important}
   .auralis-contact-v3-panel{width:min(280px,calc(100vw - 30px))!important}
 }
+
+/* Gift Scenarios image clarity update */
+.gift-card img{
+  object-fit:cover;
+  object-position:center;
+  image-rendering:auto;
+  backface-visibility:hidden;
+}
+.gift-card:nth-child(1) img{object-position:center 42%;}
+.gift-card:nth-child(2) img{object-position:center 50%;}
+.gift-card:nth-child(3) img{object-position:center 48%;}
+.gift-card:nth-child(4) img{object-position:center 45%;}
+.gift-card::after{
+  background:linear-gradient(
+    180deg,
+    rgba(35,23,16,0) 34%,
+    rgba(35,23,16,.18) 54%,
+    rgba(35,23,16,.82) 100%
+  );
+}
+
+
+@media(max-width:1120px){
+  .direction-card img{height:280px}
+  .gallery-card img{height:240px}
+  .gallery-label{font-size:24px}
+  .gift-card{min-height:480px}
+  .gift-content h3{font-size:24px}
+  .gift-content p{font-size:16px}
+}
+@media(max-width:620px){
+  .direction-card{display:block}
+  .direction-card img{height:260px}
+  .gallery-card img{height:220px}
+  .gallery-label{font-size:22px}
+  .gift-grid{grid-template-columns:1fr}
+  .gift-card{min-height:420px}
+  .gift-content h3{font-size:22px}
+  .gift-content p{font-size:15px}
+}
+
 </style>
 </head>
 
@@ -433,8 +475,8 @@ p{color:var(--muted);font-size:16px}
           <img src="/soft-light-pendant-clear.webp" alt="Clear crystal jewelry style direction" loading="lazy">
           <div class="direction-body"><h3>Clear Quartz</h3><p>Minimal · Clean · Versatile</p></div>
         </a>
-        <a class="direction-card" href="/element-design">
-          <img src="/assets/element-water-card.jpg" alt="Smoky and deep tone crystal bracelet direction" loading="lazy">
+        <a class="direction-card" href="/custom-order">
+          <img src="/assets/element-water-card.jpg" alt="Deep tones crystal bracelet direction" loading="lazy">
           <div class="direction-body"><h3>Deep Tones</h3><p>Grounded · Calm · Refined</p></div>
         </a>
       </div>
@@ -502,12 +544,12 @@ p{color:var(--muted);font-size:16px}
         <p>Use these styles as inspiration. Final bead size, layout, material and wrist fit are confirmed for each request.</p>
       </div>
       <div class="gallery-grid">
+        <figure class="gallery-card"><img src="/soft-light-pendant-clear.webp" alt="Clear crystal bracelet style" loading="lazy"><figcaption class="gallery-label">Clear Minimal</figcaption></figure>
         <figure class="gallery-card"><img src="/rose-bracelet.webp" alt="Soft pink crystal bracelet style" loading="lazy"><figcaption class="gallery-label">Soft Pink</figcaption></figure>
         <figure class="gallery-card"><img src="/amethyst-bracelet.webp" alt="Purple crystal bracelet style" loading="lazy"><figcaption class="gallery-label">Purple Calm</figcaption></figure>
-        <figure class="gallery-card"><img src="/soft-light-pendant-clear.webp" alt="Clear crystal jewelry style" loading="lazy"><figcaption class="gallery-label">Clear Minimal</figcaption></figure>
-        <figure class="gallery-card"><img src="/assets/stone-guide-citrine-model.png" alt="Golden yellow crystal bracelet style" loading="lazy"><figcaption class="gallery-label">Golden Warmth</figcaption></figure>
-        <figure class="gallery-card"><img src="/assets/element-earth-card.jpg" alt="Earth tone crystal bracelet style" loading="lazy"><figcaption class="gallery-label">Earthy Neutrals</figcaption></figure>
-        <figure class="gallery-card"><img src="/hero-crystal-lifestyle.webp" alt="Lifestyle crystal bracelet style" loading="lazy"><figcaption class="gallery-label">Everyday Story</figcaption></figure>
+        <figure class="gallery-card"><img src="/assets/stone-guide-citrine-model.png" alt="Golden crystal bracelet style" loading="lazy"><figcaption class="gallery-label">Golden Warmth</figcaption></figure>
+        <figure class="gallery-card"><img src="/assets/stone-guide-moonstone-model.png" alt="Moonstone bracelet style" loading="lazy"><figcaption class="gallery-label">Soft Neutrals</figcaption></figure>
+        <figure class="gallery-card"><img src="/assets/stone-guide-rose-model.png" alt="Everyday rose crystal bracelet style" loading="lazy"><figcaption class="gallery-label">Everyday Story</figcaption></figure>
       </div>
       <div class="actions center"><a class="btn primary" href="/gemstone-jewelry">View More Bracelet Styles</a></div>
     </div>
@@ -522,10 +564,22 @@ p{color:var(--muted);font-size:16px}
         <p>A gift request can begin with the recipient, occasion, favorite colors, birth date or the story you want the bracelet to carry.</p>
       </div>
       <div class="gift-grid">
-        <a class="gift-card" href="/gift-guide"><img src="/gift-recipient-her.jpg" alt="Personalized crystal bracelet gift for her" loading="lazy"><div class="gift-content"><h3>Gift for Her</h3><p>Designed around her style, colors or personal story.</p></div></a>
-        <a class="gift-card" href="/gift-guide"><img src="/gift-recipient-friend.jpg" alt="Meaningful crystal bracelet friendship gift" loading="lazy"><div class="gift-content"><h3>Friendship Gift</h3><p>A shared color, memory or meaningful detail can guide the design.</p></div></a>
-        <a class="gift-card" href="/gift-guide"><img src="/gift-recipient-mom.jpg" alt="Personalized crystal bracelet gift for mom" loading="lazy"><div class="gift-content"><h3>Gift for Mom</h3><p>Create a gentle, warm or symbolic bracelet direction.</p></div></a>
-        <a class="gift-card" href="/gift-guide"><img src="/gift-recipient-couple.jpg" alt="Anniversary or couple crystal bracelet gift idea" loading="lazy"><div class="gift-content"><h3>Anniversary Gift</h3><p>Build around shared colors, dates or a meaningful moment.</p></div></a>
+        <a class="gift-card" href="/gift-guide">
+          <img src="/assets/stone-guide-rose-model.png" alt="Personalized rose crystal bracelet gift for her" loading="lazy" decoding="async">
+          <div class="gift-content"><h3>Gift for Her</h3><p>Designed around her style, colors or personal story.</p></div>
+        </a>
+        <a class="gift-card" href="/gift-guide">
+          <img src="/amethyst-bracelet.webp" alt="Meaningful amethyst bracelet friendship gift" loading="lazy" decoding="async">
+          <div class="gift-content"><h3>Friendship Gift</h3><p>A shared color, memory or meaningful detail can guide the design.</p></div>
+        </a>
+        <a class="gift-card" href="/gift-guide">
+          <img src="/assets/stone-guide-moonstone-model.png" alt="Moonstone bracelet gift for mom" loading="lazy" decoding="async">
+          <div class="gift-content"><h3>Gift for Mom</h3><p>Create a gentle, warm or symbolic bracelet direction.</p></div>
+        </a>
+        <a class="gift-card" href="/gift-guide">
+          <img src="/assets/stone-guide-citrine-model.png" alt="Citrine anniversary bracelet gift idea" loading="lazy" decoding="async">
+          <div class="gift-content"><h3>Anniversary Gift</h3><p>Build around shared colors, dates or a meaningful moment.</p></div>
+        </a>
       </div>
 
       <div class="mystery-band">
@@ -677,9 +731,7 @@ p{color:var(--muted);font-size:16px}
     </div>
     <div class="auralis-contact-v3-note">Send a reference photo, birth date, color direction, wrist size or gift idea to begin.</div>
   </div>
-  <button class="auralis-contact-v3-toggle" type="button" aria-label="Open contact options">
-    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.29c-.29-.14-1.71-.84-1.97-.94-.27-.1-.46-.14-.66.15-.19.29-.75.94-.92 1.13-.17.2-.34.22-.63.08-.29-.14-1.23-.45-2.34-1.43-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.12-.6.13-.13.29-.34.44-.51.15-.17.19-.29.29-.49.1-.2.05-.37-.02-.51-.08-.14-.66-1.59-.91-2.18-.24-.57-.48-.49-.66-.5h-.56c-.2 0-.51.08-.77.37-.27.29-1.02 1-1.02 2.44 0 1.44 1.04 2.84 1.19 3.03.14.2 2.04 3.11 5.04 4.36 2.99 1.25 2.99.83 3.53.77.54-.05 1.71-.7 1.95-1.37.24-.67.24-1.24.17-1.37-.07-.12-.26-.19-.56-.33Z"/><path d="M16.01 3C8.82 3 3 8.7 3 15.72c0 2.46.73 4.85 2.12 6.91L3.73 29l6.58-1.35a13.16 13.16 0 0 0 5.69 1.29h.01C23.2 28.94 29 23.24 29 16.22 29 9.2 23.2 3.5 16.01 3Zm0 23.76h-.01a10.98 10.98 0 0 1-5.59-1.53l-.4-.24-3.9.8.83-3.8-.26-.39A10.61 10.61 0 0 1 5.19 15.7c0-5.83 4.85-10.58 10.82-10.58 5.97 0 10.82 4.74 10.82 10.58 0 5.84-4.85 10.6-10.82 10.6Z"/></svg>
-  </button>
+  <button class="auralis-contact-v3-toggle" type="button" aria-label="Open contact options" style="font-weight:900;font-size:15px;">WA</button>
 </div>
 
 <script>
