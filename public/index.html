@@ -367,6 +367,21 @@ p{color:var(--muted);font-size:16px}
   .gift-content p{font-size:15px}
 }
 
+
+/* SEO Phase 4: lightweight emotional-intention entry */
+.intention-entry{padding:76px 0;background:linear-gradient(180deg,#fffdf9,#f7eee5);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.intention-entry-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:30px;align-items:center}
+.intention-entry-copy{background:#fff;border:1px solid var(--line);border-radius:30px;padding:32px;box-shadow:var(--shadow)}
+.intention-entry-copy h2{font-size:clamp(34px,4vw,48px)}
+.intention-entry-copy p{font-size:15px}
+.intention-mini-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}
+.intention-mini{display:block;background:#fff;border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:0 12px 30px rgba(70,43,25,.06);transition:.2s ease}
+.intention-mini:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(70,43,25,.10)}
+.intention-mini b{display:block;font-family:Georgia,"Times New Roman",serif;font-size:20px;line-height:1.2}
+.intention-mini span{display:block;margin-top:6px;color:var(--muted);font-size:12px;line-height:1.45}
+@media(max-width:900px){.intention-entry-grid{grid-template-columns:1fr}.intention-mini-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.intention-entry{padding:58px 0}.intention-entry-copy{padding:24px}.intention-mini-grid{grid-template-columns:1fr}}
+
 </style>
 </head>
 
@@ -481,6 +496,27 @@ p{color:var(--muted);font-size:16px}
         </a>
       </div>
       <div class="actions center"><a class="btn primary" href="/custom-bracelets">Explore Custom Bracelets</a></div>
+    </div>
+  </section>
+
+
+  <!-- SEO Phase 4: Choose by feeling and intention -->
+  <section class="intention-entry">
+    <div class="container intention-entry-grid">
+      <div class="intention-entry-copy">
+        <p class="eyebrow">Choose by Feeling and Intention</p>
+        <h2>Start With What You Want This Bracelet to Represent</h2>
+        <p>You do not need to know every crystal name. Begin with the emotion, life chapter or personal reminder you want to carry, then let Auralis translate it into a personalized bracelet direction.</p>
+        <div class="actions"><a class="btn primary" href="/crystal-bracelets-by-intention">Explore Bracelets by Intention</a></div>
+      </div>
+      <div class="intention-mini-grid">
+        <a class="intention-mini" href="/crystal-bracelets-by-intention#calm"><b>Calm & Grounding</b><span>A quieter, steadier daily reminder.</span></a>
+        <a class="intention-mini" href="/crystal-bracelets-by-intention#comfort"><b>Emotional Comfort</b><span>Gentle companionship for a difficult season.</span></a>
+        <a class="intention-mini" href="/crystal-bracelets-by-intention#self-love"><b>Self-Love</b><span>A wearable self-care and boundary reminder.</span></a>
+        <a class="intention-mini" href="/crystal-bracelets-by-intention#confidence"><b>Confidence</b><span>For courage, milestones and important moments.</span></a>
+        <a class="intention-mini" href="/crystal-bracelets-by-intention#new-beginnings"><b>New Beginnings</b><span>For a fresh chapter, move, role or transition.</span></a>
+        <a class="intention-mini" href="/crystal-bracelets-by-intention#gift"><b>Meaningful Gift</b><span>Designed around a person, message or life moment.</span></a>
+      </div>
     </div>
   </section>
 
