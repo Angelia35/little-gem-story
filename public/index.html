@@ -232,7 +232,7 @@ p{color:var(--muted);font-size:16px}
 .why-card span{display:block;color:var(--muted);font-size:13px;line-height:1.5;margin-top:6px}
 
 /* Guides */
-.guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.guide-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .guide-card{background:#fff;border:1px solid var(--line);border-radius:28px;overflow:hidden;box-shadow:0 14px 38px rgba(70,43,25,.07)}
 .guide-card img{width:100%;aspect-ratio:16/9;object-fit:cover}
 .guide-body{padding:21px}
@@ -382,10 +382,25 @@ p{color:var(--muted);font-size:16px}
 @media(max-width:900px){.intention-entry-grid{grid-template-columns:1fr}.intention-mini-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:620px){.intention-entry{padding:58px 0}.intention-entry-copy{padding:24px}.intention-mini-grid{grid-template-columns:1fr}}
 
+
+/* Growth Phase 1: new-customer gift and emotional-content entry */
+.gift-promo-bar{background:linear-gradient(90deg,#8f6035,#c3945e);color:#fff;border-bottom:1px solid rgba(255,255,255,.18)}
+.gift-promo-inner{min-height:42px;display:flex;align-items:center;justify-content:center;gap:12px;text-align:center;font-size:13px;font-weight:800;padding:8px 0}
+.gift-promo-inner a{display:inline-flex;align-items:center;justify-content:center;padding:7px 12px;border-radius:999px;background:#fff;color:#7b4f2b;font-size:12px;font-weight:900;white-space:nowrap}
+.gift-promo-inner small{font-size:11px;opacity:.9;font-weight:700}
+@media(max-width:620px){.gift-promo-inner{align-items:flex-start;flex-direction:column;gap:7px;padding:10px 0}.gift-promo-inner a{width:100%}}
+
 </style>
 </head>
 
 <body>
+<div class="gift-promo-bar" role="region" aria-label="New customer crystal gift offer">
+  <div class="container gift-promo-inner">
+    <span>New to Auralis? Claim a complimentary Mystery Crystal Gift. <small>Shipping fee applies · One per new customer · Style depends on availability.</small></span>
+    <a href="/free-crystal-gift" data-growth-cta="home-top-gift">View Gift Offer →</a>
+  </div>
+</div>
+
 <header class="topbar">
   <div class="container nav">
     <a class="logo" href="/">AURALIS<small>GEMS</small></a>
@@ -621,9 +636,9 @@ p{color:var(--muted);font-size:16px}
       <div class="mystery-band">
         <div>
           <p class="eyebrow">New Visitor Entry</p>
-          <h3>Not ready to customize yet? Start with a Mystery Crystal Gift.</h3>
+          <h3>New to Auralis? Begin with a complimentary Mystery Crystal Gift.</h3>
           <p>Claim a small crystal gift first, cover shipping, and get to know Auralis before a full custom request.</p>
-          <div class="actions"><a class="btn primary" href="/free-crystal-gift">Claim Free Gift</a><a class="btn" href="/custom-order">Ask About Custom Order</a></div>
+          <div class="actions"><a class="btn primary" href="/free-crystal-gift">Claim Complimentary Gift</a><a class="btn" href="/custom-order">Ask About Custom Order</a></div>
         </div>
         <div class="mystery-list">
           <span>✓ One gift per new customer</span>
@@ -694,6 +709,11 @@ p{color:var(--muted);font-size:16px}
         <a class="guide-card" href="/guides/how-to-measure-your-wrist-for-a-crystal-bracelet">
           <img src="/hero-crystal-lifestyle.webp" alt="Guide to measuring wrist size for a crystal bracelet" loading="lazy">
           <div class="guide-body"><h3>How to Measure Your Wrist</h3><p>Understand exact wrist circumference and how bead size affects inner fit.</p><span class="text-link">Open Guide →</span></div>
+        </a>
+
+        <a class="guide-card" href="/guides/crystal-bracelet-for-emotional-comfort">
+          <img src="/assets/stone-guide-rose-model.png" alt="Guide to choosing a crystal bracelet for emotional comfort" loading="lazy">
+          <div class="guide-body"><h3>Bracelet for Emotional Comfort</h3><p>Choose a gentle color direction and meaningful daily reminder for a difficult season.</p><span class="text-link">Open Guide →</span></div>
         </a>
         <a class="guide-card" href="/guides/what-to-send-for-a-custom-crystal-bracelet-request">
           <img src="/gift-packaging-wide.jpg" alt="Guide explaining what to send for a custom bracelet request" loading="lazy">
@@ -803,5 +823,17 @@ p{color:var(--muted);font-size:16px}
   },true);
 })();
 </script>
+
+<script>
+document.addEventListener('click',function(e){
+  var a=e.target.closest&&e.target.closest('a');
+  if(!a)return;
+  var h=a.getAttribute('href')||'';
+  if(typeof gtag==='function'&&h.indexOf('/free-crystal-gift')!==-1){
+    gtag('event','free_gift_cta_click',{event_category:'lead_generation',event_label:(a.textContent||'Free gift').trim(),link_url:h});
+  }
+},true);
+</script>
+
 </body>
 </html>
