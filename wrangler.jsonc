@@ -1,9 +1,18 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "little-gem-story",
+  "main": "./src/worker.js",
   "compatibility_date": "2026-06-30",
   "assets": {
     "directory": "./public",
+    "binding": "ASSETS",
     "html_handling": "auto-trailing-slash"
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "REQUESTS_DB",
+      "database_name": "auralis-requests",
+      "database_id": "5852aee0-f9b7-49da-81ac-b73766057a23"
+    }
+  ]
 }
