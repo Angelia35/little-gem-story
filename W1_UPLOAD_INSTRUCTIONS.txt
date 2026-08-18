@@ -1,0 +1,52 @@
+Auralis W1 SEO Update — 2026-08-18
+====================================
+
+UPLOAD / REPLACE
+----------------
+1) NEW:
+   /guides/personalized-crystal-bracelet-birthday-gift.html
+
+2) REPLACE:
+   /guides/index.html
+
+3) REPLACE:
+   /sitemap.xml
+
+NO PUBLIC CSS OR JS CHANGES
+---------------------------
+The new article reuses:
+- /assets/auralis-phase2-v1.css?v=1
+- /assets/auralis-phase1-v4.js?v=4
+
+The Guides index keeps:
+- /assets/auralis-phase3-v2.css?v=2
+- /assets/auralis-phase3-v2.js?v=2
+
+OPTIONAL REVERSE INTERNAL LINKS
+-------------------------------
+I did not overwrite gift-guide.html or crystal-bracelet-gift-for-her.html because their latest full source files were not available in the retrieved site files. Add these snippets manually when you next touch those pages.
+
+A) On /gift-guide, add a natural link near the birthday/gift selection content:
+
+<p>Planning a birthday gift? See our <a href="/guides/personalized-crystal-bracelet-birthday-gift"><strong>personalized crystal bracelet birthday gift guide</strong></a> for a simple way to choose by color, birth date, wrist size, style and personal meaning.</p>
+
+B) On /guides/crystal-bracelet-gift-for-her, add a natural link near the birthday or occasion section:
+
+<p>If the occasion is a birthday, use our <a href="/guides/personalized-crystal-bracelet-birthday-gift"><strong>birthday personalization guide</strong></a> to narrow the design by color, birth date, fit, style and personal story.</p>
+
+AFTER DEPLOYMENT
+----------------
+1) Confirm this URL opens:
+   https://auralisgems.com/guides/personalized-crystal-bracelet-birthday-gift
+
+2) Confirm it appears on:
+   https://auralisgems.com/guides/
+
+3) Confirm sitemap contains the new URL:
+   https://auralisgems.com/sitemap.xml
+
+4) In Google Search Console:
+   URL Inspection -> paste the new article URL -> Test Live URL -> Request Indexing
+
+5) Do not keep editing the article immediately after submission.
+   Let Google crawl it first, then review queries/impressions in the next weekly SEO check.
