@@ -95,6 +95,60 @@ gtag('config','G-4NGF3R4L6N');
   ]
 }
 </script>
+
+<style>
+/* W1 page-only layout fixes: 2026-08-18 */
+.article-shell{grid-template-columns:minmax(0,1fr) 280px;}
+.article-main{min-width:0;}
+.article-nav{align-self:start;}
+.actions{flex-wrap:wrap;}
+.decision-table-wrap{
+  width:100%;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+  margin:18px 0 24px;
+  border-radius:22px;
+}
+.decision-table{
+  width:100%;
+  min-width:720px;
+  table-layout:fixed;
+  margin:0;
+}
+.decision-table th,
+.decision-table td{
+  word-break:break-word;
+  overflow-wrap:anywhere;
+  vertical-align:top;
+}
+.budget-band .actions a{
+  min-width:210px;
+  justify-content:center;
+}
+.btn.btn-outline-dark{
+  background:transparent !important;
+  color:#fff !important;
+  border:1.5px solid rgba(255,255,255,.62) !important;
+}
+.btn.btn-outline-dark:hover{
+  background:rgba(255,255,255,.12) !important;
+  color:#fff !important;
+}
+@media (max-width: 1280px){
+  .article-shell{grid-template-columns:minmax(0,1fr);}
+  .article-nav{
+    position:static !important;
+    top:auto !important;
+    width:100%;
+    margin-top:20px;
+  }
+}
+@media (max-width: 860px){
+  .decision-table{min-width:640px;}
+  .budget-band .actions a{min-width:unset; width:100%;}
+}
+</style>
+
 </head>
 
 <body>
@@ -170,23 +224,25 @@ gtag('config','G-4NGF3R4L6N');
       <h2 id="personalization-route">2. Choose a personalization route</h2>
       <p>You do not need to customize every possible detail. One or two strong personalization routes are usually enough.</p>
 
-      <table class="decision-table">
-        <thead>
-          <tr>
-            <th>Personalization route</th>
-            <th>What you can provide</th>
-            <th>Best for</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td><strong>Color-based</strong></td><td>Favorite colors or outfit palette</td><td>Someone with a clear personal style</td></tr>
-          <tr><td><strong>Birth-date based</strong></td><td>Date of birth</td><td>A more personal design starting point</td></tr>
-          <tr><td><strong>Reference-photo based</strong></td><td>Bracelet or jewelry photo</td><td>Someone who already knows the look they like</td></tr>
-          <tr><td><strong>Story-based</strong></td><td>A life event or message</td><td>Meaningful milestone birthdays</td></tr>
-          <tr><td><strong>Intention-based</strong></td><td>Words such as calm, confidence or new beginnings</td><td>Symbolic everyday gifts</td></tr>
-          <tr><td><strong>Style-based</strong></td><td>Minimal, elegant, warm, colorful or layered</td><td>Fashion-led gifting</td></tr>
-        </tbody>
-      </table>
+      <div class="decision-table-wrap">
+        <table class="decision-table">
+          <thead>
+            <tr>
+              <th>Personalization route</th>
+              <th>What you can provide</th>
+              <th>Best for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Color-based</strong></td><td>Favorite colors or outfit palette</td><td>Someone with a clear personal style</td></tr>
+            <tr><td><strong>Birth-date based</strong></td><td>Date of birth</td><td>A more personal design starting point</td></tr>
+            <tr><td><strong>Reference-photo based</strong></td><td>Bracelet or jewelry photo</td><td>Someone who already knows the look they like</td></tr>
+            <tr><td><strong>Story-based</strong></td><td>A life event or message</td><td>Meaningful milestone birthdays</td></tr>
+            <tr><td><strong>Intention-based</strong></td><td>Words such as calm, confidence or new beginnings</td><td>Symbolic everyday gifts</td></tr>
+            <tr><td><strong>Style-based</strong></td><td>Minimal, elegant, warm, colorful or layered</td><td>Fashion-led gifting</td></tr>
+          </tbody>
+        </table>
+      </div>
 
       <p>Useful combinations include <strong>birth date + favorite color</strong>, <strong>reference photo + personal story</strong>, or <strong>minimal style + new beginnings</strong>. Keeping the direction simple usually makes the final bracelet feel more intentional.</p>
 
@@ -287,7 +343,7 @@ gtag('config','G-4NGF3R4L6N');
           <p>Send the birthday occasion, preferred budget, color or style direction, wrist size and either a birth date, story or reference photo. Auralis can clarify the remaining details before quotation and payment.</p>
           <div class="actions" style="justify-content:flex-start">
             <a class="btn green" href="https://wa.me/8618357590167?text=Hi%20Auralis%20Jewelry%2C%20I%20would%20like%20a%20personalized%20crystal%20bracelet%20for%20a%20birthday%20gift.%0A%0ARecipient%3A%0ABirthday%20or%20milestone%3A%0APreferred%20colors%20or%20style%3A%0AWrist%20size%3A%0ABirth%20date%20(optional)%3A%0ABudget%3A%0APersonal%20meaning%20or%20story%3A%0ADelivery%20country%3A%0ANeeded-by%20date%3A">Start on WhatsApp</a>
-            <a class="btn secondary-light" href="/custom-order">Open Custom Order</a>
+            <a class="btn btn-outline-dark" href="/custom-order">Open Custom Order</a>
           </div>
         </div>
         <div class="budget-fields">
