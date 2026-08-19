@@ -1,0 +1,28 @@
+Auralis SEO Article #03 Fix — 2026-08-19
+
+REPLACE THESE 3 FILES:
+
+1) /guides/personalized-crystal-bracelet-anniversary-gift.html
+   - Fixes the broken Reference Photo internal link.
+   - Correct destination:
+     /guides/how-to-request-custom-jewelry-online
+
+2) /guides/index.html
+   - Fixes the broken Reference Photo guide card.
+   - Keeps the Anniversary Gift #03 card.
+
+3) /sitemap.xml
+   - Ensures the #03 Anniversary Gift URL is present.
+   - Removes the broken old Reference Photo URL.
+   - Adds the live Reference Photo / custom jewelry request URL:
+     https://auralisgems.com/guides/how-to-request-custom-jewelry-online
+
+AFTER DEPLOYMENT CHECK:
+A) https://auralisgems.com/guides/personalized-crystal-bracelet-anniversary-gift
+B) https://auralisgems.com/guides/
+C) https://auralisgems.com/sitemap.xml
+   Search for:
+   personalized-crystal-bracelet-anniversary-gift
+D) https://auralisgems.com/guides/how-to-request-custom-jewelry-online
+
+If sitemap still looks old after deployment, hard refresh or append ?v=20260819 once when checking in browser.
