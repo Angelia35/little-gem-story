@@ -1,19 +1,18 @@
-REQUIRED IMAGE ASSETS
+Auralis Article #08 — Included Crystal Bead Assets
 
-Upload four square, clean-background crystal bead images to:
+These four image files are INCLUDED in this folder and are already referenced by the HTML:
 
-public/assets/guides/mens-black-obsidian-bead.webp
-public/assets/guides/mens-golden-rutilated-quartz-bead.webp
-public/assets/guides/mens-lapis-lazuli-bead.webp
-public/assets/guides/mens-green-phantom-quartz-bead.webp
+- mens-black-obsidian-bead.webp
+- mens-golden-rutilated-quartz-bead.webp
+- mens-lapis-lazuli-bead.webp
+- mens-green-phantom-quartz-bead.webp
 
-Recommended image spec:
-- 400x400 px or 600x600 px
-- WebP
-- Single polished round bead or very tight bead crop
-- Neutral light background
-- Consistent lighting and scale across all four
-- No watermark
-- Compress each file ideally below 120 KB
+Upload the entire public/assets/guides/ folder together with the revised article HTML.
 
-Do not hotlink retailer product photos. Use Auralis-owned photography, supplier-authorized images, or newly created original visuals.
+Image format: WebP
+Image size: 600 x 600 px
+Background: clean light neutral
+Usage: Article #08 hero palette cards
+
+Note:
+These visuals were newly generated for Auralis as original illustrative product-style assets. They are not hotlinked retailer images.
