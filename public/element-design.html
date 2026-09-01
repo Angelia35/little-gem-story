@@ -718,50 +718,6 @@ document.addEventListener("click",function(e){
   <button class="floating-contact-button" type="button" aria-label="Open contact options" onclick="toggleFloatingContact()"><img src="/assets/green-phone-icon.png" alt="Phone contact icon"><span class="floating-contact-close">×</span></button>
 </div>
 
-<script>
-(function(){
-  function sendEvent(name, params){
-    if (typeof gtag !== "function") return;
-    gtag("event", name, params || {});
-  }
-  document.addEventListener("click", function(event){
-    var link = event.target.closest && event.target.closest("a");
-    if (!link) return;
-    var href = link.getAttribute("href") || "";
-    var label = (link.textContent || link.getAttribute("aria-label") || href || "link").replace(/\s+/g, " ").trim().slice(0, 120);
-
-    if (href.indexOf("wa.me") !== -1) {
-      sendEvent("whatsapp_click", {
-        event_category: "contact",
-        event_label: label,
-        link_url: href
-      });
-    }
-
-    if (href.indexOf("mailto:") === 0) {
-      sendEvent("email_click", {
-        event_category: "contact",
-        event_label: label,
-        link_url: href
-      });
-    }
-
-    if (
-      href.indexOf("/custom-order") !== -1 ||
-      href.indexOf("#request-form") !== -1 ||
-      /request|quote|custom/i.test(label)
-    ) {
-      sendEvent("request_quote_click", {
-        event_category: "conversion_intent",
-        event_label: label,
-        link_url: href
-      });
-    }
-  }, true);
-})();
-</script>
-
-
 <div class="auralis-contact-v3" aria-label="Contact Auralis Jewelry">
   <div class="auralis-contact-v3-panel">
     <div class="auralis-contact-v3-title">Contact Auralis</div>
@@ -818,5 +774,6 @@ document.addEventListener("click",function(e){
 })();
 </script>
 
+<script src="/assets/auralis-tracking-v2.js?v=2" defer></script>
 </body>
 </html>
