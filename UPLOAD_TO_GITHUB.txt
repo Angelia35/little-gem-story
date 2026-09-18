@@ -1,0 +1,40 @@
+AURALIS HOME — INTEGRATED FINAL CANDIDATE
+
+Upload/replace:
+1. public/index.html
+2. public/assets/hero-main-v2.webp
+3. public/assets/hero-inset.webp
+4. public/assets/product-clear.webp
+5. public/assets/product-rose.webp
+6. public/assets/product-purple.webp
+7. public/assets/product-colorful.webp
+8. public/assets/product-dark.webp
+9. public/assets/five-elements-v2.webp
+10. public/assets/gift.webp
+11. public/assets/custom-design.webp
+
+Existing asset required and already expected in the repo:
+- public/assets/auralis-tracking-v2.js
+
+After deployment:
+- Test desktop + mobile.
+- Submit one homepage Mini Intake.
+- Confirm POST /api/custom-request = 200 on successful notification.
+- Confirm request ID appears.
+- Confirm GA4 custom_request_submitted.
+- Request GSC re-indexing for homepage once after the live QA passes.
+
+
+WHATSAPP FLOATING BUTTON UPDATE
+- A persistent WhatsApp button is now fixed at the bottom-right of the homepage.
+- Link: +86 183 5759 0167
+- Includes a prefilled custom-bracelet inquiry message.
+- Existing Tracking V2 is preserved so WhatsApp clicks can continue to be measured.
+
+WHATSAPP ICON UPDATE
+- Floating WhatsApp button changed from long pill style to compact circular icon-only style.
+
+MOBILE WHATSAPP SAFE-POSITION UPDATE
+- Desktop position unchanged.
+- On screens <= 640px, WhatsApp icon now sits higher: bottom = 64px + safe-area inset.
+- This helps avoid overlap with mobile browser bottom toolbars / gesture areas.

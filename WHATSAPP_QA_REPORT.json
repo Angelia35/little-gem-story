@@ -1,0 +1,10 @@
+{
+  "floating_whatsapp_present": true,
+  "correct_whatsapp_number": true,
+  "prefilled_message_present": true,
+  "opens_new_tab": true,
+  "tracking_v2_preserved": true,
+  "api_post_preserved": true,
+  "canonical_preserved": true,
+  "no_noindex": true
+}
