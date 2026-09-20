@@ -1,16 +1,12 @@
 {
-  "how_custom_works_present": true,
-  "trust_strip_present": true,
-  "faq_present": true,
-  "five_elements_new_asset": true,
-  "hero_new_crop": true,
-  "product_images_contain": true,
-  "canonical_home": true,
-  "no_noindex": true,
-  "api_post": true,
-  "custom_request_submitted": true,
-  "ga4": true,
-  "clarity": true,
-  "lucky_orange": true,
-  "tracking_v2": true
+  "canonical": true,
+  "title": true,
+  "h1": true,
+  "custom_cta": true,
+  "whatsapp": true,
+  "bead_internal_link": true,
+  "wrist_internal_link": true,
+  "care_internal_link": true,
+  "tracking_v2": true,
+  "no_noindex": true
 }
